@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We're Cured! | Handmade Resin Art</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Righteous&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --hot-pink:   #FF2D78;
+      --electric:   #00D4FF;
+      --lime:       #A8FF3E;
+      --orange:     #FF6B1A;
+      --purple:     #BF5AF2;
+      --yellow:     #FFE600;
+      --dark:       #1A001F;
+      --white:      #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--dark);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--dark); }
+    ::-webkit-scrollbar-thumb { background: var(--hot-pink); border-radius: 4px; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: rgba(26, 0, 31, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 3px solid var(--hot-pink);
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-family: 'Righteous', sans-serif;
+      font-size: 1rem;
+      color: var(--white);
+      text-decoration: none;
+      padding: 6px 18px;
+      border-radius: 50px;
+      border: 2px solid transparent;
+      transition: all 0.25s;
+    }
+
+    nav a:hover                  { background: var(--hot-pink);  border-color: var(--hot-pink); transform: scale(1.08); }
+    nav a:nth-child(2):hover     { background: var(--electric);  border-color: var(--electric); color: var(--dark); }
+    nav a:nth-child(3):hover     { background: var(--lime);      border-color: var(--lime);     color: var(--dark); }
+    nav a:nth-child(4):hover     { background: var(--orange);    border-color: var(--orange); }
+    nav a:nth-child(5):hover     { background: var(--purple);    border-color: var(--purple); }
+
+    /* ── Hero ── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg,
+        #FF2D78, #FF6B1A, #FFE600, #A8FF3E,
+        #00D4FF, #BF5AF2, #FF2D78);
+      background-size: 400% 400%;
+      animation: gradShift 12s ease infinite;
+      opacity: 0.18;
+      z-index: 0;
+    }
+
+    @keyframes gradShift {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.35;
+      animation: float 8s ease-in-out infinite;
+      z-index: 0;
+    }
+    .blob-1 { width:420px; height:420px; background:var(--hot-pink);  top:-100px; left:-100px; animation-delay:0s; }
+    .blob-2 { width:360px; height:360px; background:var(--electric);  bottom:-80px; right:-80px; animation-delay:-3s; }
+    .blob-3 { width:300px; height:300px; background:var(--purple);    top:40%; left:60%; animation-delay:-6s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%       { transform: translateY(-30px) scale(1.05); }
+    }
+
+    #hero .content { position: relative; z-index: 1; }
+
+    .hero-tagline {
+      font-family: 'Righteous', sans-serif;
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      color: var(--lime);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-family: 'Bungee', sans-serif;
+      font-size: clamp(3rem, 10vw, 7rem);
+      line-height: 1.1;
+      background: linear-gradient(90deg, var(--hot-pink), var(--yellow), var(--electric), var(--lime));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 4px 24px rgba(255,45,120,0.5));
+      margin-bottom: 24px;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      font-family: 'Righteous', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, var(--hot-pink), var(--purple));
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 8px 30px rgba(255,45,120,0.45);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hero-btn:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 16px 40px rgba(255,45,120,0.6);
+    }
+
+    /* ── Sections ── */
+    section { padding: 80px 20px; }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-label {
+      font-family: 'Righteous', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: 'Bungee', sans-serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.1;
+    }
+
+    .section-divider {
+      width: 80px;
+      height: 5px;
+      border-radius: 3px;
+      margin: 18px auto 0;
+    }
+
+    /* ── Gallery Grid ── */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.05);
+      border: 2px solid rgba(255,255,255,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover { transform: translateY(-8px) rotate(1deg); }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      filter: brightness(1.15) saturate(1.4) contrast(1.05);
+      transition: filter 0.3s;
+    }
+
+    .card:hover img {
+      filter: brightness(1.25) saturate(1.6) contrast(1.08);
+    }
+
+    .card-body {
+      padding: 14px 16px 18px;
+    }
+
+    .card-name {
+      font-family: 'Righteous', sans-serif;
+      font-size: 1rem;
+    }
+
+    /* ── Pendants ── */
+    #pendants { background: linear-gradient(180deg, var(--dark) 0%, #2a0030 100%); }
+    #pendants .section-label  { color: var(--hot-pink); }
+    #pendants .section-title  { color: var(--hot-pink); }
+    #pendants .section-divider { background: linear-gradient(90deg, var(--hot-pink), var(--purple)); }
+    #pendants .card:hover      { box-shadow: 0 20px 50px rgba(255,45,120,0.3); }
+    #pendants .card-name       { color: var(--hot-pink); }
+
+    /* ── Earrings ── */
+    #earrings { background: linear-gradient(180deg, #001a2a 0%, #002a40 100%); }
+    #earrings .section-label  { color: var(--electric); }
+    #earrings .section-title  { color: var(--electric); }
+    #earrings .section-divider { background: linear-gradient(90deg, var(--electric), var(--lime)); }
+    #earrings .card:hover      { box-shadow: 0 20px 50px rgba(0,212,255,0.3); }
+    #earrings .card-name       { color: var(--electric); }
+
+    /* ── Coasters ── */
+    #coasters { background: linear-gradient(180deg, #1a2a00 0%, #2a3d00 100%); }
+    #coasters .section-label  { color: var(--lime); }
+    #coasters .section-title  { color: var(--lime); }
+    #coasters .section-divider { background: linear-gradient(90deg, var(--lime), var(--yellow)); }
+    #coasters .card:hover      { box-shadow: 0 20px 50px rgba(168,255,62,0.3); }
+    #coasters .card-name       { color: var(--lime); }
+
+    /* ── Home Decor ── */
+    #homedecor { background: linear-gradient(180deg, #2a1500 0%, #3d2000 100%); }
+    #homedecor .section-label  { color: var(--orange); }
+    #homedecor .section-title  { color: var(--orange); }
+    #homedecor .section-divider { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
+    #homedecor .card:hover      { box-shadow: 0 20px 50px rgba(255,107,26,0.3); }
+    #homedecor .card-name       { color: var(--orange); }
+
+    /* ── About ── */
+    #about {
+      background: linear-gradient(135deg, var(--hot-pink), var(--purple), var(--electric));
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-family: 'Bungee', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* ── Contact ── */
+    #contact {
+      background: var(--dark);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-family: 'Bungee', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      background: linear-gradient(90deg, var(--yellow), var(--orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 14px;
+    }
+
+    #contact p { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 36px; }
+
+    .contact-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.05);
+      border: 2px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 28px 36px;
+      flex: 1;
+      min-width: 180px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .contact-card:hover { transform: translateY(-4px); border-color: var(--yellow); }
+    .contact-card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .contact-card h3 { font-family: 'Righteous', sans-serif; font-size: 1rem; color: var(--yellow); margin-bottom: 6px; }
+    .contact-card p  { font-size: 0.9rem; color: rgba(255,255,255,0.55); margin: 0; }
+
+    /* ── Footer ── */
+    footer {
+      background: #0d000f;
+      border-top: 3px solid var(--hot-pink);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer .footer-logo {
+      font-family: 'Bungee', sans-serif;
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, var(--hot-pink), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.35); }
+
+    @media (max-width: 500px) {
+      .gallery { grid-template-columns: 1fr 1fr; gap: 14px; }
+      nav a { font-size: 0.85rem; padding: 5px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#pendants">Pendants</a>
+    <a href="#earrings">Earrings</a>
+    <a href="#coasters">Coasters</a>
+    <a href="#homedecor">Home Decor</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="content">
+      <p class="hero-tagline">Handmade Resin Art</p>
+      <h1 class="hero-title">We're Cured!</h1>
+      <p class="hero-sub">Bold, one-of-a-kind resin jewelry and home decor pieces made with love, color, and a whole lot of fun.</p>
+      <a href="#pendants" class="hero-btn">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Pendants -->
+  <section id="pendants">
+    <div class="section-header">
+      <p class="section-label">Jewelry</p>
+      <h2 class="section-title">Pendants</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery">
+
+      <div class="card">
+        <img src="images/IMG_1875.jpg" alt="Teal and red branch pendant" />
+        <div class="card-body"><p class="card-name">Coral Branch Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1876.jpg" alt="Dark green iridescent pendant" />
+        <div class="card-body"><p class="card-name">Emerald Galaxy Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1877.jpg" alt="Teal glitter circle pendant" />
+        <div class="card-body"><p class="card-name">Teal Stardust Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1878.jpg" alt="Opalescent oval pendant" />
+        <div class="card-body"><p class="card-name">Opal Dream Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1879.jpg" alt="Purple glitter circle pendant" />
+        <div class="card-body"><p class="card-name">Purple Confetti Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1881.jpg" alt="Red heart pendant" />
+        <div class="card-body"><p class="card-name">Red Heart Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1887.jpg" alt="Silver and black bubble oval pendant" />
+        <div class="card-body"><p class="card-name">Silver Bubble Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1899.jpg" alt="Blue oval pendant" />
+        <div class="card-body"><p class="card-name">Ocean Blue Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1900.jpg" alt="Periwinkle circle pendant" />
+        <div class="card-body"><p class="card-name">Periwinkle Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1901.jpg" alt="Teal iridescent oval pendant" />
+        <div class="card-body"><p class="card-name">Mermaid Oval Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1903.jpg" alt="Pink rose heart pendant" />
+        <div class="card-body"><p class="card-name">Pink Rose Heart Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1904.jpg" alt="Clear ball with red rose pendant" />
+        <div class="card-body"><p class="card-name">Encapsulated Rose Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1905.jpg" alt="Amber heart pendant" />
+        <div class="card-body"><p class="card-name">Amber Heart Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1907.jpg" alt="Blue purple swirl oval pendant" />
+        <div class="card-body"><p class="card-name">Galaxy Swirl Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1908.jpg" alt="Blue purple oval pendant" />
+        <div class="card-body"><p class="card-name">Twilight Oval Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1909.jpg" alt="Blue circle pendant" />
+        <div class="card-body"><p class="card-name">Sky Blue Circle Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1910.jpg" alt="Lavender oval pendant" />
+        <div class="card-body"><p class="card-name">Lavender Floral Pendant</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1911.jpg" alt="Large teal green oval pendant" />
+        <div class="card-body"><p class="card-name">Teal Wave Pendant</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Earrings -->
+  <section id="earrings">
+    <div class="section-header">
+      <p class="section-label">Jewelry</p>
+      <h2 class="section-title">Earrings</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery">
+
+      <div class="card">
+        <img src="images/IMG_1880.jpg" alt="Red heart earrings with matching pendant" />
+        <div class="card-body"><p class="card-name">Red Heart Set</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1912.jpg" alt="Gold flower earring" />
+        <div class="card-body"><p class="card-name">Gold Flower Earrings</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1913.jpg" alt="Red orange round earring" />
+        <div class="card-body"><p class="card-name">Ember Circle Earrings</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1914.jpg" alt="Blue oval earring" />
+        <div class="card-body"><p class="card-name">Blue Oval Earrings</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1915.jpg" alt="Purple round earring" />
+        <div class="card-body"><p class="card-name">Purple Galaxy Earrings</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Coasters -->
+  <section id="coasters">
+    <div class="section-header">
+      <p class="section-label">Home</p>
+      <h2 class="section-title">Coasters</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery">
+
+      <div class="card">
+        <img src="images/IMG_1917.jpg" alt="Navy blue daisy flower coaster set" />
+        <div class="card-body"><p class="card-name">Navy Daisy Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1918.jpg" alt="Clear white daisy coaster set" />
+        <div class="card-body"><p class="card-name">White Daisy Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1920.jpg" alt="Red poppy coaster set" />
+        <div class="card-body"><p class="card-name">Red Poppy Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1921.jpg" alt="Blue teal lacy flower coaster set" />
+        <div class="card-body"><p class="card-name">Blue Lace Flower Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1922.jpg" alt="Blue red ornate flower coaster set" />
+        <div class="card-body"><p class="card-name">Blue Burst Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1923.jpg" alt="Purple daisy coaster set" />
+        <div class="card-body"><p class="card-name">Purple Daisy Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1924.jpg" alt="Bright neon splat coasters with googly eyes" />
+        <div class="card-body"><p class="card-name">Monster Splat Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1925.jpg" alt="Blue bubble round coaster set" />
+        <div class="card-body"><p class="card-name">Ocean Bubble Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1939.jpg" alt="Purple red square coaster set" />
+        <div class="card-body"><p class="card-name">Nebula Square Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1940.jpg" alt="Purple daisy coaster set" />
+        <div class="card-body"><p class="card-name">Violet Bloom Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1943.jpg" alt="Iridescent round coaster set" />
+        <div class="card-body"><p class="card-name">Aurora Round Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1944.jpg" alt="Grey silver bubble coaster set" />
+        <div class="card-body"><p class="card-name">Silver Foam Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1945.jpg" alt="Aqua red teal abstract coaster set" />
+        <div class="card-body"><p class="card-name">Tropical Storm Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1946.jpg" alt="Clear coasters with green flower" />
+        <div class="card-body"><p class="card-name">Green Star Flower Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1947.jpg" alt="Bright neon blob coaster set" />
+        <div class="card-body"><p class="card-name">Neon Blob Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1949.jpg" alt="Clear round coasters with rose flower" />
+        <div class="card-body"><p class="card-name">Rose Garden Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1952.jpg" alt="Blue green brown marble oval coaster set" />
+        <div class="card-body"><p class="card-name">Ocean Marble Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1953.jpg" alt="White clear coasters with yellow sunflower" />
+        <div class="card-body"><p class="card-name">Sunflower Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1954.jpg" alt="Clear round coasters with orange flower" />
+        <div class="card-body"><p class="card-name">Autumn Bloom Set of 4</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1955.jpg" alt="Yellow orange sunflower coaster set" />
+        <div class="card-body"><p class="card-name">Golden Sunflower Set of 4</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Home Decor -->
+  <section id="homedecor">
+    <div class="section-header">
+      <p class="section-label">Art</p>
+      <h2 class="section-title">Home Decor</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery">
+
+      <div class="card">
+        <img src="images/IMG_1928.jpg" alt="Blue resin dome art piece" />
+        <div class="card-body"><p class="card-name">Ocean Wave Bowl</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1930.jpg" alt="Red crystal geode art piece" />
+        <div class="card-body"><p class="card-name">Red Geode Crystal</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1935.jpg" alt="Blue purple resin dome art piece" />
+        <div class="card-body"><p class="card-name">Glacier Wave Bowl</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1936.jpg" alt="Orange red yellow geode art piece" />
+        <div class="card-body"><p class="card-name">Sunset Geode Crystal</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>The Story Behind the Art</h2>
+    <p>
+      Every piece I make is poured with passion and a whole lot of color. No two pieces are ever exactly alike — that's the magic of resin. Whether you're looking for a statement pendant, a pair of show-stopping earrings, or something to make your home a little more vibrant, you're in the right place.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Custom orders welcome! Reach out and let's make something amazing.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">&#9993;&#65039;</div>
+        <h3>Email</h3>
+        <p>your@email.com</p>
+      </div>
+      <div class="contact-card">
+        <div class="icon">&#128248;</div>
+        <h3>Instagram</h3>
+        <p>@werecured</p>
+      </div>
+      <div class="contact-card">
+        <div class="icon">&#127978;</div>
+        <h3>Etsy Shop</h3>
+        <p>WereCured on Etsy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-logo">We're Cured!</p>
+    <p>&copy; 2026 We're Cured! &mdash; Handmade with love &amp; resin.</p>
+  </footer>
+
+</body>
+</html>

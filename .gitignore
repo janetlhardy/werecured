@@ -1,0 +1,7 @@
+# Original iPhone photo files - not needed for the website
+*.HEIC
+*.aae
+*.AAE
+
+# Mac system files
+.DS_Store
