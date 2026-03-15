@@ -226,6 +226,32 @@
       filter: brightness(1.25) saturate(1.6) contrast(1.08);
     }
 
+    /* ── Multi-image card galleries ── */
+    .card-thumbs {
+      display: flex;
+      gap: 3px;
+      padding: 3px;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .card-thumbs img {
+      flex: 1;
+      min-width: 0;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+      opacity: 0.62;
+      cursor: pointer;
+      filter: brightness(1.05) saturate(1.2);
+      transition: opacity 0.2s;
+    }
+
+    .card-thumbs img:hover { opacity: 1; }
+
+    /* Prevent card hover from over-brightening thumbnails */
+    .card:hover .card-thumbs img { filter: brightness(1.05) saturate(1.2); }
+    .card:hover .card-thumbs img:hover { filter: brightness(1.2) saturate(1.4); opacity: 1; }
+
     .card-body {
       padding: 14px 16px 18px;
     }
@@ -518,6 +544,11 @@
         <div class="card-body"><p class="card-name">Teal Wave Pendant</p></div>
       </div>
 
+      <div class="card">
+        <img src="images/IMG_1987.jpeg" alt="Glow-in-the-dark skull pendant" />
+        <div class="card-body"><p class="card-name">Glow Skull Pendant</p></div>
+      </div>
+
     </div>
   </section>
 
@@ -569,81 +600,150 @@
 
       <div class="card">
         <img src="images/IMG_1917.jpg" alt="Navy blue daisy flower coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1998.jpeg" alt="Navy daisy coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_1999.jpeg" alt="Navy daisy coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Navy Daisy Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1918.jpg" alt="Clear white daisy coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2012.jpeg" alt="White daisy coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2013.jpeg" alt="White daisy coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2018.jpeg" alt="White daisy coaster view 4" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">White Daisy Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1920.jpg" alt="Red poppy coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2033.jpeg" alt="Red poppy coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2036.jpeg" alt="Red poppy coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Red Poppy Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1921.jpg" alt="Blue teal lacy flower coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2044.jpeg" alt="Blue lace flower coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2045.jpeg" alt="Blue lace flower coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2046.jpeg" alt="Blue lace flower coaster view 4" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Blue Lace Flower Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1922.jpg" alt="Blue red ornate flower coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2022.jpeg" alt="Blue burst coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2023.jpeg" alt="Blue burst coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Blue Burst Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1923.jpg" alt="Purple daisy coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2007.jpeg" alt="Purple daisy coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2008.jpeg" alt="Purple daisy coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2009.jpeg" alt="Purple daisy coaster view 4" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Purple Daisy Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1924.jpg" alt="Bright neon splat coasters with googly eyes" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2037.jpeg" alt="Monster splat coasters glowing under UV light" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Monster Splat Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1925.jpg" alt="Blue bubble round coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2030.jpeg" alt="Ocean bubble coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2031.jpeg" alt="Ocean bubble coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2032.jpeg" alt="Ocean bubble coaster view 4" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Ocean Bubble Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1939.jpg" alt="Purple red square coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2028.jpeg" alt="Nebula square coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2029.jpeg" alt="Nebula square coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Nebula Square Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1940.jpg" alt="Purple daisy coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2010.jpeg" alt="Violet bloom coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2011.jpeg" alt="Violet bloom coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Violet Bloom Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1943.jpg" alt="Iridescent round coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1988.jpeg" alt="Aurora round coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2042.jpeg" alt="Aurora round coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2043.jpeg" alt="Aurora round coaster view 4" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Aurora Round Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1944.jpg" alt="Grey silver bubble coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2016.jpeg" alt="Silver foam coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2017.jpeg" alt="Silver foam coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Silver Foam Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1945.jpg" alt="Aqua red teal abstract coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1995.jpeg" alt="Tropical storm coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_1997.jpeg" alt="Tropical storm coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2003.jpeg" alt="Tropical storm coaster view 4" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Tropical Storm Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1946.jpg" alt="Clear coasters with green flower" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2001.jpeg" alt="Green star flower coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2002.jpeg" alt="Green star flower coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Green Star Flower Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1947.jpg" alt="Bright neon blob coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2038.jpeg" alt="Neon blob coasters glowing under UV light" onclick="showImg(this)" />
+          <img src="images/IMG_2039.jpeg" alt="Neon blob coasters view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Neon Blob Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1949.jpg" alt="Clear round coasters with rose flower" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1993.jpeg" alt="Rose garden coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_1994.jpeg" alt="Rose garden coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Rose Garden Set of 4</p></div>
       </div>
 
@@ -654,16 +754,28 @@
 
       <div class="card">
         <img src="images/IMG_1953.jpg" alt="White clear coasters with yellow sunflower" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1991.jpeg" alt="Sunflower coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_1992.jpeg" alt="Sunflower coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Sunflower Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1954.jpg" alt="Clear round coasters with orange flower" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2019.jpeg" alt="Autumn bloom coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2021.jpeg" alt="Autumn bloom coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Autumn Bloom Set of 4</p></div>
       </div>
 
       <div class="card">
         <img src="images/IMG_1955.jpg" alt="Yellow orange sunflower coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_2026.jpeg" alt="Golden sunflower coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2027.jpeg" alt="Golden sunflower coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Golden Sunflower Set of 4</p></div>
       </div>
 
@@ -697,6 +809,14 @@
       <div class="card">
         <img src="images/IMG_1936.jpg" alt="Orange red yellow geode art piece" />
         <div class="card-body"><p class="card-name">Sunset Geode Crystal</p></div>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_1979.jpeg" alt="Red orange ruffled resin bowl" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1980.jpeg" alt="Red orange ruffled bowl with candle" onclick="showImg(this)" />
+        </div>
+        <div class="card-body"><p class="card-name">Flame Ruffled Bowl</p></div>
       </div>
 
     </div>
@@ -740,6 +860,18 @@
     <p class="footer-logo">We're Cured!</p>
     <p>&copy; 2026 We're Cured! &mdash; Handmade with love &amp; resin.</p>
   </footer>
+
+  <script>
+    function showImg(thumb) {
+      const card = thumb.closest('.card');
+      const main = card.querySelector('img'); // first img = main display image
+      const tmpSrc = main.src, tmpAlt = main.alt;
+      main.src = thumb.src;
+      main.alt = thumb.alt;
+      thumb.src = tmpSrc;
+      thumb.alt = tmpAlt;
+    }
+  </script>
 
 </body>
 </html>
