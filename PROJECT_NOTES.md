@@ -5,6 +5,8 @@
 - **Products:** Handmade resin jewelry (pendants, earrings) and home goods (coasters, home decor)
 - **Physical location:** None currently — fully online
 - **Selling channels:** To be decided
+- **Instagram:** @were_cured
+- **Website email:** hello@werecured.ca
 
 ---
 
@@ -77,7 +79,7 @@ website/
 - [ ] Confirm `werecured.com` redirect to `werecured.ca` still works
 - [ ] Add `werecured.com` to Google Workspace
 - [ ] Add DNS records for `werecured.com` email in Namecheap
-- [ ] Update website Contact section with real email address (janethardy@werecured.ca)
+- [x] Update website Contact section with real email address (hello@werecured.ca) ✅
 - [ ] Decide on online selling method (Etsy, website shop, Instagram, etc.)
 - [ ] Add prices to product listings when ready
 
