@@ -218,12 +218,12 @@
       aspect-ratio: 1 / 1;
       object-fit: cover;
       display: block;
-      filter: brightness(1.15) saturate(1.4) contrast(1.05);
+      filter: brightness(1.12) saturate(1.6) contrast(1.1);
       transition: filter 0.3s;
     }
 
     .card:hover img {
-      filter: brightness(1.25) saturate(1.6) contrast(1.08);
+      filter: brightness(1.22) saturate(1.8) contrast(1.12);
     }
 
     /* ── Multi-image card galleries ── */
@@ -240,17 +240,17 @@
       aspect-ratio: 1/1;
       object-fit: cover;
       display: block;
-      opacity: 0.62;
+      opacity: 0.68;
       cursor: pointer;
-      filter: brightness(1.05) saturate(1.2);
+      filter: brightness(1.12) saturate(1.6) contrast(1.1);
       transition: opacity 0.2s;
     }
 
     .card-thumbs img:hover { opacity: 1; }
 
     /* Prevent card hover from over-brightening thumbnails */
-    .card:hover .card-thumbs img { filter: brightness(1.05) saturate(1.2); }
-    .card:hover .card-thumbs img:hover { filter: brightness(1.2) saturate(1.4); opacity: 1; }
+    .card:hover .card-thumbs img { filter: brightness(1.12) saturate(1.6) contrast(1.1); }
+    .card:hover .card-thumbs img:hover { filter: brightness(1.22) saturate(1.8) contrast(1.12); opacity: 1; }
 
     .card-body {
       padding: 14px 16px 18px;
@@ -629,8 +629,8 @@
       <div class="card">
         <img src="images/IMG_1921.jpg" alt="Blue teal lacy flower coaster set" />
         <div class="card-thumbs">
-          <img src="images/IMG_2005.jpeg" alt="Blue lace flower coaster view 2" onclick="showImg(this)" />
-          <img src="images/IMG_2006.jpeg" alt="Blue lace flower coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2022.jpeg" alt="Blue lace flower coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2023.jpeg" alt="Blue lace flower coaster view 3" onclick="showImg(this)" />
         </div>
         <div class="card-body"><p class="card-name">Blue Lace Flower Set of 4</p></div>
       </div>
@@ -647,8 +647,8 @@
       <div class="card">
         <img src="images/IMG_1922.jpg" alt="Blue red ornate flower coaster set" />
         <div class="card-thumbs">
-          <img src="images/IMG_2022.jpeg" alt="Blue burst coaster view 2" onclick="showImg(this)" />
-          <img src="images/IMG_2023.jpeg" alt="Blue burst coaster view 3" onclick="showImg(this)" />
+          <img src="images/IMG_2005.jpeg" alt="Blue burst coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2006.jpeg" alt="Blue burst coaster view 3" onclick="showImg(this)" />
         </div>
         <div class="card-body"><p class="card-name">Blue Burst Set of 4</p></div>
       </div>
@@ -721,9 +721,8 @@
       <div class="card">
         <img src="images/IMG_1945.jpg" alt="Aqua red teal abstract coaster set" />
         <div class="card-thumbs">
-          <img src="images/IMG_1995.jpeg" alt="Tropical storm coaster view 2" onclick="showImg(this)" />
-          <img src="images/IMG_1997.jpeg" alt="Tropical storm coaster view 3" onclick="showImg(this)" />
-          <img src="images/IMG_2003.jpeg" alt="Tropical storm coaster view 4" onclick="showImg(this)" />
+          <img src="images/IMG_2003.jpeg" alt="Tropical storm coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_2004.jpeg" alt="Tropical storm coaster view 3" onclick="showImg(this)" />
         </div>
         <div class="card-body"><p class="card-name">Tropical Storm Set of 4</p></div>
       </div>
@@ -757,6 +756,10 @@
 
       <div class="card">
         <img src="images/IMG_1952.jpg" alt="Blue green brown marble oval coaster set" />
+        <div class="card-thumbs">
+          <img src="images/IMG_1995.jpeg" alt="Ocean marble coaster view 2" onclick="showImg(this)" />
+          <img src="images/IMG_1997.jpeg" alt="Ocean marble coaster view 3" onclick="showImg(this)" />
+        </div>
         <div class="card-body"><p class="card-name">Ocean Marble Set of 4</p></div>
       </div>
 
