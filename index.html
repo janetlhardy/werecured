@@ -278,15 +278,52 @@
       font-family: 'Bungee', sans-serif;
       font-size: clamp(2rem, 5vw, 3rem);
       color: var(--white);
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+    }
+
+    .about-inner {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .about-photo-wrap { flex-shrink: 0; }
+
+    .about-photo-wrap img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.6);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .about-photo-placeholder {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px dashed rgba(255,255,255,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Righteous', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      background: rgba(255,255,255,0.1);
     }
 
     #about p {
       font-size: 1.1rem;
-      max-width: 620px;
-      margin: 0 auto;
       line-height: 1.8;
       color: rgba(255,255,255,0.9);
+    }
+
+    @media (max-width: 600px) {
+      .about-inner { flex-direction: column; text-align: center; }
     }
 
     /* ── Contact ── */
@@ -668,9 +705,16 @@
   <!-- About -->
   <section id="about">
     <h2>The Story Behind the Art</h2>
-    <p>
-      Every piece I make is poured with passion and a whole lot of color. No two pieces are ever exactly alike — that's the magic of resin. Whether you're looking for a statement pendant, a pair of show-stopping earrings, or something to make your home a little more vibrant, you're in the right place.
-    </p>
+    <div class="about-inner">
+      <div class="about-photo-wrap">
+        <div class="about-photo-placeholder">
+          <span>Photo<br>Coming Soon</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p>I've been making things for as long as I can remember. Over the years my hands have been busy with painting, ceramics, polymer clay, wire jewelry, mosaics in every medium imaginable — tesserae, mirror, eggshells — and I'm also a master knitter. Resin found me when I was looking for my next obsession, and let's just say I'm cured. I live in beautiful Victoria, BC with my husband and a very important dog.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
