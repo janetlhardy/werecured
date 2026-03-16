@@ -71,17 +71,47 @@ website/
 
 ## Outstanding To-Dos
 
-- [ ] Create GitHub account
-- [ ] Create GitHub repository
-- [ ] Push website to GitHub
-- [ ] Enable GitHub Pages on the repository
-- [ ] Connect `werecured.ca` domain to GitHub Pages (add CNAME file + update Namecheap DNS)
-- [ ] Confirm `werecured.com` redirect to `werecured.ca` still works
+### GitHub & Hosting
+- [x] Create GitHub account ✅
+- [x] Create GitHub repository ✅
+- [x] Push website to GitHub ✅
+- [x] Enable GitHub Pages on the repository ✅
+- [x] Connect `werecured.ca` domain to GitHub Pages (CNAME file + Namecheap DNS) ✅
+- [ ] Enable "Enforce HTTPS" in GitHub Pages settings (waiting for certificate — check back in an hour)
+- [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
+
+### Email
 - [ ] Add `werecured.com` to Google Workspace
 - [ ] Add DNS records for `werecured.com` email in Namecheap
+- [ ] Fix hello@werecured.ca delivery (DNS/DMARC issue — son helping with this)
+
+### High Priority — Website Improvements
+- [ ] Add lazy loading to all images (`loading="lazy"` on every img tag) — speeds up page load significantly
+- [ ] Add meta description and Open Graph tags — controls how site appears in Google and when link is shared on social media
+- [ ] Create a custom 404 page (`404.html`) — shows branded error page instead of plain GitHub error when someone types a wrong URL
+
+### Medium Priority — Website Improvements
+- [ ] Add a favicon (the small icon in browser tabs) — need to create a small logo image first
+- [ ] Add `robots.txt` file — tells search engines how to crawl the site
+- [ ] Add `sitemap.xml` file — helps Google find and index the site
+- [ ] Move original HEIC photo files out of the website folder to a separate backup location (they are excluded from GitHub but clutter the local folder)
+
+### Lower Priority — Website Improvements
+- [ ] Improve alt text on thumbnail images (currently "view 2", "view 3" etc. — more descriptive text helps Google Image search and accessibility)
+- [ ] Add ARIA labels to Quick Look buttons for screen reader accessibility
+
+### Future — Product Data Refactor (son's suggestion)
+- [ ] Create a `products.json` file storing all product data: name, category, description, photos (main + thumbnails), date added, glow-in-the-dark flag, availability status
+- [ ] Write a build script (`build.py` or `build.js`) that reads `products.json` and rewrites the product sections of `index.html` automatically
+- [ ] After that: adding/removing products only requires editing the JSON file and running the script — no touching HTML directly
+- [ ] Consider adding price field to JSON now even if prices aren't shown yet, so the data is ready when selling begins
+
+### Business
 - [x] Update website Contact section with real email address (hello@werecured.ca) ✅
 - [ ] Decide on online selling method (Etsy, website shop, Instagram, etc.)
 - [ ] Add prices to product listings when ready
+- [ ] Write a privacy policy (required under Canadian law PIPEDA once selling begins)
+- [ ] Write a return/shipping policy (customers expect this before purchasing)
 
 ---
 
