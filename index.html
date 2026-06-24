@@ -63,6 +63,7 @@
     nav a:nth-child(3):hover     { background: var(--lime);      border-color: var(--lime);     color: var(--dark); }
     nav a:nth-child(4):hover     { background: var(--orange);    border-color: var(--orange); }
     nav a:nth-child(5):hover     { background: var(--purple);    border-color: var(--purple); }
+    nav a:nth-child(6):hover     { background: var(--yellow);    border-color: var(--yellow);   color: var(--dark); }
 
     /* ── Hero ── */
     #hero {
@@ -392,13 +393,21 @@
     #coasters .card:hover      { box-shadow: 0 20px 50px rgba(168,255,62,0.3); }
     #coasters .card-name       { color: var(--lime); }
 
-    /* ── Home Decor ── */
-    #homedecor { background: linear-gradient(180deg, #2a1500 0%, #3d2000 100%); }
-    #homedecor .section-label  { color: var(--orange); }
-    #homedecor .section-title  { color: var(--orange); }
-    #homedecor .section-divider { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
-    #homedecor .card:hover      { box-shadow: 0 20px 50px rgba(255,107,26,0.3); }
-    #homedecor .card-name       { color: var(--orange); }
+    /* ── Bowls & Platters ── */
+    #bowls { background: linear-gradient(180deg, #2a1500 0%, #3d2000 100%); }
+    #bowls .section-label  { color: var(--orange); }
+    #bowls .section-title  { color: var(--orange); }
+    #bowls .section-divider { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
+    #bowls .card:hover      { box-shadow: 0 20px 50px rgba(255,107,26,0.3); }
+    #bowls .card-name       { color: var(--orange); }
+
+    /* ── Decorative Accents ── */
+    #accents { background: linear-gradient(180deg, #1a0030 0%, #2a0050 100%); }
+    #accents .section-label  { color: var(--purple); }
+    #accents .section-title  { color: var(--purple); }
+    #accents .section-divider { background: linear-gradient(90deg, var(--purple), var(--hot-pink)); }
+    #accents .card:hover      { box-shadow: 0 20px 50px rgba(180,0,255,0.3); }
+    #accents .card-name       { color: var(--purple); }
 
     /* ── About ── */
     #about {
@@ -537,7 +546,8 @@
     <a href="#pendants">Pendants</a>
     <a href="#earrings">Earrings</a>
     <a href="#coasters">Coasters</a>
-    <a href="#homedecor">Home Decor</a>
+    <a href="#bowls">Bowls &amp; Platters</a>
+    <a href="#accents">Decorative Accents</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -1263,11 +1273,11 @@
     </div>
   </section>
 
-  <!-- Home Decor -->
-  <section id="homedecor">
+  <!-- Bowls & Platters -->
+  <section id="bowls">
     <div class="section-header">
       <p class="section-label">Art</p>
-      <h2 class="section-title">Home Decor</h2>
+      <h2 class="section-title">Bowls &amp; Platters</h2>
       <div class="section-divider"></div>
     </div>
     <div class="gallery">
@@ -1344,6 +1354,18 @@
         </div>
         <div class="card-body"><p class="card-name">Balloon Bowl</p></div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- Decorative Accents -->
+  <section id="accents">
+    <div class="section-header">
+      <p class="section-label">Art</p>
+      <h2 class="section-title">Decorative Accents</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery">
 
       <div class="card">
         <img src="images/IMG_2974.jpeg" alt="Air Plant Hands — silver pearl resin cupped hands holding an air plant" />
