@@ -94,11 +94,11 @@ website/
 - [x] Add a favicon — smiley emoji on a dark circle (`favicon.png`, `favicon-32.png`, `apple-touch-icon.png`) ✅ Easy to swap the emoji later on request.
 - [x] Add `robots.txt` file — tells search engines how to crawl the site ✅
 - [x] Add `sitemap.xml` file — helps Google find and index the site ✅
-- [ ] Move original HEIC photo files out of the website folder to a separate backup location (they are excluded from GitHub but clutter the local folder)
+- [x] Move original HEIC photo files out of the website folder ✅ → now in `/Users/knitwit1/website/werecured-HEIC-originals` (49 photos + iPhone sidecar files)
 
 ### Lower Priority — Website Improvements
-- [ ] Improve alt text on thumbnail images (currently "view 2", "view 3" etc. — more descriptive text helps Google Image search and accessibility)
-- [ ] Add ARIA labels to Quick Look buttons for screen reader accessibility
+- [x] Add ARIA labels for screen readers ✅ (Quick Look buttons now name their product; lightbox close/prev/next buttons + dialog role labeled)
+- [~] Improve alt text on thumbnail images — reviewed: the 231 "view N" thumbnails already include the product name (e.g., "Purple confetti pendant view 2"), which is reasonable for screen readers. Main product images have full descriptive alt text. Rewriting all 231 by hand risks inaccuracy without viewing each; leaving as-is unless we improve them gradually.
 
 ### Future — Product Data Refactor (son's suggestion)
 - [ ] Create a `products.json` file storing all product data: name, category, description, photos (main + thumbnails), date added, glow-in-the-dark flag, availability status

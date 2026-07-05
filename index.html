@@ -2081,11 +2081,11 @@
   </section>
 
   <!-- Lightbox -->
-  <div id="lightbox">
-    <button id="lb-close" onclick="closeLightbox()">&times;</button>
-    <button id="lb-prev" onclick="lbPrev()">&#8249;</button>
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Product image viewer">
+    <button id="lb-close" onclick="closeLightbox()" aria-label="Close image viewer">&times;</button>
+    <button id="lb-prev" onclick="lbPrev()" aria-label="Previous image">&#8249;</button>
     <img loading="lazy" id="lb-img" src="" alt="" />
-    <button id="lb-next" onclick="lbNext()">&#8250;</button>
+    <button id="lb-next" onclick="lbNext()" aria-label="Next image">&#8250;</button>
     <p id="lb-counter"></p>
   </div>
 
@@ -2164,6 +2164,8 @@
       const btn = document.createElement('button');
       btn.className = 'quick-look-btn';
       btn.textContent = 'Quick Look';
+      const nameEl = card.querySelector('.card-name');
+      btn.setAttribute('aria-label', nameEl ? 'Quick Look: ' + nameEl.textContent : 'Quick Look');
       btn.addEventListener('click', e => { e.stopPropagation(); openLightbox(card, 0); });
       card.appendChild(btn);
     });
