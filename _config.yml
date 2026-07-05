@@ -1,4 +1,5 @@
 exclude:
   - CLAUDE.md
   - PROJECT_NOTES.md
+  - PRICING_SCHEME.md
   - print-materials

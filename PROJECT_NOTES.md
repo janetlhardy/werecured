@@ -109,7 +109,7 @@ website/
 ### Business
 - [x] Update website Contact section with real email address (hello@werecured.ca) ✅
 - [ ] Decide on online selling method (Etsy, website shop, Instagram, etc.)
-- [ ] Add prices to product listings when ready
+- [ ] Add prices to product listings when ready — use the method in `PRICING_SCHEME.md`
 - [ ] Write a privacy policy (required under Canadian law PIPEDA once selling begins)
 - [ ] Write a return/shipping policy (customers expect this before purchasing)
 
