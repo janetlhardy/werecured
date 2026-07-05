@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&family=Shrikhand&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600; --dark:#1A001F;
+  }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Home-printable sheet on US Letter cardstock */
+  @page { size:8.5in 11in; margin:0; }
+  body{ background:#fff; }
+
+  .sheet{
+    width:8.5in; height:11in; padding:.45in .35in;
+    display:flex; flex-wrap:wrap; align-content:flex-start;
+    gap:.3in .28in; justify-content:center;
+  }
+
+  .tag{
+    position:relative; width:2.4in; height:3.1in; border-radius:16px; overflow:hidden;
+    background:var(--dark); color:#fff; font-family:'Righteous',sans-serif;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+    outline:1px dashed rgba(0,0,0,.28); outline-offset:0;   /* faint cut guide */
+  }
+  .glow{ position:absolute; inset:0; z-index:0; opacity:.92;
+    background:
+      radial-gradient(circle at 15% 12%, rgba(255,45,120,.32), transparent 44%),
+      radial-gradient(circle at 85% 88%, rgba(0,212,255,.30),  transparent 44%),
+      radial-gradient(circle at 85% 14%, rgba(168,255,62,.22), transparent 44%),
+      radial-gradient(circle at 12% 88%, rgba(191,90,242,.32), transparent 44%);
+  }
+  /* punch-hole guide near the top */
+  .hole{ position:absolute; top:.18in; left:50%; transform:translateX(-50%);
+    width:.2in; height:.2in; border-radius:50%; z-index:5;
+    border:2px dashed rgba(255,255,255,.6); }
+
+  .in{ position:relative; z-index:3; padding:.28in .2in 0; }
+  .thanks{ font-family:'Shrikhand',cursive; font-size:30pt; line-height:.95;
+    background:linear-gradient(90deg,#FFE600,#FF6B1A,#FF2D78,#BF5AF2);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 6px rgba(0,0,0,.55)); }
+  .lime{ color:var(--lime); text-transform:uppercase; letter-spacing:.12em; font-size:8pt;
+    margin-top:12pt; text-shadow:0 1px 3px rgba(0,0,0,.6); }
+  .wm{ font-family:'Bagel Fat One',cursive; font-size:15pt; margin-top:16pt;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 34%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 5px rgba(0,0,0,.5)); }
+  .url{ font-size:7.5pt; color:#fff; margin-top:6pt; opacity:.9; text-shadow:0 1px 3px rgba(0,0,0,.6); }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <!-- 9 identical Thank-You tags -->
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+    <div class="tag"><div class="glow"></div><div class="hole"></div><div class="in">
+      <div class="thanks">Thank<br>You!</div><div class="lime">for supporting handmade</div>
+      <div class="wm">We're Cured!</div><div class="url">werecured.ca</div></div></div>
+  </div>
+</body>
+</html>

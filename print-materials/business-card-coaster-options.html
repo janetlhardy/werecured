@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{ --lime:#A8FF3E; --dark:#1A001F; }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  @page { size:3.75in 2.25in; margin:0; }
+
+  .card{
+    position:relative; width:3.75in; height:2.25in; overflow:hidden;
+    page-break-after:always; background:var(--dark);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+    font-family:'Righteous',sans-serif; color:#fff;
+  }
+  .card:last-child{ page-break-after:auto; }
+
+  /* muted coaster photo */
+  .photo{ position:absolute; inset:0; background-position:center; background-size:cover;
+    filter:brightness(.60) saturate(.85) contrast(1.02); z-index:0; }
+  /* legibility veil: soft overall + a touch darker behind the name */
+  .veil{ position:absolute; inset:0; z-index:1;
+    background:
+      radial-gradient(ellipse 62% 58% at 50% 48%, rgba(26,0,31,.62) 0%, rgba(26,0,31,.18) 72%, rgba(26,0,31,.30) 100%);
+  }
+  .safe{ position:relative; z-index:3; padding:0 .3in; }
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; line-height:.92; font-size:40pt;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 34%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 8px rgba(0,0,0,.75));
+  }
+  .tagline{ color:var(--lime); letter-spacing:.14em; text-transform:uppercase; font-size:9.5pt;
+    margin-top:7pt; text-shadow:0 1px 4px rgba(0,0,0,.85); }
+  .url{ font-size:8.5pt; color:#fff; margin-top:6pt; text-shadow:0 1px 4px rgba(0,0,0,.85); }
+  .tag{ position:absolute; top:7px; left:8px; z-index:5; font-family:'Righteous';
+    font-size:7pt; color:#fff; background:rgba(0,0,0,.45); padding:2px 6px; border-radius:4px; }
+</style>
+</head>
+<body>
+
+  <!-- OPTION 1 : Galaxy Petal (dark centre) -->
+  <div class="card">
+    <div class="photo" style="background-image:url('../images/IMG_3320.jpeg'); background-size:150%; background-position:52% 46%"></div>
+    <div class="veil"></div>
+    <div class="tag">Galaxy Petal</div>
+    <div class="safe">
+      <div class="wordmark">We're<br>Cured!</div>
+      <div class="tagline">Handmade Resin Art</div>
+      <div class="url">werecured.ca</div>
+    </div>
+  </div>
+
+  <!-- OPTION 2 : Ocean Daisy (clean radial) -->
+  <div class="card">
+    <div class="photo" style="background-image:url('../images/IMG_3091.jpeg'); background-size:130%; background-position:center"></div>
+    <div class="veil"></div>
+    <div class="tag">Ocean Daisy</div>
+    <div class="safe">
+      <div class="wordmark">We're<br>Cured!</div>
+      <div class="tagline">Handmade Resin Art</div>
+      <div class="url">werecured.ca</div>
+    </div>
+  </div>
+
+  <!-- OPTION 3 : Prism Eye (rainbow tie-dye) -->
+  <div class="card">
+    <div class="photo" style="background-image:url('../images/IMG_3064.jpeg'); background-position:center"></div>
+    <div class="veil"></div>
+    <div class="tag">Prism Eye</div>
+    <div class="safe">
+      <div class="wordmark">We're<br>Cured!</div>
+      <div class="tagline">Handmade Resin Art</div>
+      <div class="url">werecured.ca</div>
+    </div>
+  </div>
+
+  <!-- OPTION 4 : Tide Pool (warm cellular) -->
+  <div class="card">
+    <div class="photo" style="background-image:url('../images/IMG_3061.jpeg'); background-position:center"></div>
+    <div class="veil"></div>
+    <div class="tag">Tide Pool</div>
+    <div class="safe">
+      <div class="wordmark">We're<br>Cured!</div>
+      <div class="tagline">Handmade Resin Art</div>
+      <div class="url">werecured.ca</div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&family=Shrikhand&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600; --dark:#1A001F;
+  }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* 3in round sticker + 0.125in bleed = 3.25 x 3.25in square. Circle = cut line. */
+  @page { size:3.25in 3.25in; margin:0; }
+
+  .sticker{
+    position:relative; width:3.25in; height:3.25in; overflow:hidden;
+    page-break-after:always; font-family:'Nunito',sans-serif; color:#fff;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+  }
+  .sticker:last-child{ page-break-after:auto; }
+
+  /* faint dashed guide showing the 3in cut circle (safe to ignore at print) */
+  .cutline{
+    position:absolute; width:3in; height:3in; border-radius:50%;
+    border:1px dashed rgba(255,255,255,.28); z-index:5; pointer-events:none;
+  }
+
+  .fill{ position:absolute; inset:0; z-index:0; }
+  .photo{ position:absolute; inset:0; background-position:center; background-size:cover; z-index:0; }
+
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; line-height:.9;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 34%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 5px rgba(0,0,0,.5));
+  }
+  .content{ position:relative; z-index:3; padding:0 .35in; }
+  .tagline{
+    font-family:'Righteous',sans-serif; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--lime); font-size:9pt; margin-top:7pt; text-shadow:0 1px 3px rgba(0,0,0,.7);
+  }
+  .handle{
+    font-family:'Righteous',sans-serif; font-size:8pt; color:#fff; margin-top:5pt;
+    text-shadow:0 1px 3px rgba(0,0,0,.7);
+  }
+
+  /* Sticker A veil for legibility */
+  .veilA{ position:absolute; inset:0; z-index:1;
+    background:radial-gradient(circle at 50% 50%, rgba(26,0,31,.35) 0%, rgba(26,0,31,.86) 72%); }
+
+  /* Sticker C solid rainbow */
+  .rainbow{ position:absolute; inset:0; z-index:0;
+    background:conic-gradient(from 210deg,#FF2D78,#FF6B1A,#FFE600,#A8FF3E,#00D4FF,#BF5AF2,#FF2D78); }
+  .rainbow-veil{ position:absolute; inset:0; z-index:1;
+    background:radial-gradient(circle at 50% 46%, rgba(26,0,31,.90) 0%, rgba(26,0,31,.86) 46%, rgba(26,0,31,0) 66%); }
+
+  /* Curved-text SVG sticker (B) */
+  .svgwrap{ position:absolute; inset:0; z-index:4; }
+  svg{ width:100%; height:100%; display:block; }
+</style>
+</head>
+<body>
+
+  <!-- STICKER : bold rainbow brand dot -->
+  <div class="sticker">
+    <div class="rainbow"></div>
+    <div class="rainbow-veil"></div>
+    <div class="cutline"></div>
+    <div class="content">
+      <div class="wordmark" style="font-size:34pt">We're<br>Cured!</div>
+      <div class="tagline" style="color:#fff">✦ Handmade Resin Art ✦</div>
+      <div class="handle">werecured.ca</div>
+    </div>
+  </div>
+
+</body>
+</html>

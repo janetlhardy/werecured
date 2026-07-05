@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bungee&family=Righteous&family=Shrikhand&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600; --dark:#1A001F;
+  }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Bleed size = trim 3.5x2in + 0.125in bleed all round = 3.75 x 2.25in */
+  @page { size:3.75in 2.25in; margin:0; }
+
+  .card{
+    position:relative; width:3.75in; height:2.25in; overflow:hidden;
+    page-break-after:always; background:var(--dark);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; font-family:'Nunito',sans-serif; color:#fff;
+  }
+  .card:last-child{ page-break-after:auto; }
+
+  /* content kept inside the "safe" area, 0.22in from every edge */
+  .safe{ position:relative; z-index:3; padding:0 .28in; }
+
+  /* ---------- FRONT (name centred on a bright Ocean Daisy coaster) ---------- */
+  .front .photo{
+    position:absolute; inset:0; background:url('../images/IMG_3091.jpeg') center/130%;
+    filter:brightness(.98) saturate(1.12) contrast(1.02); z-index:0;
+  }
+  .front .veil{
+    position:absolute; inset:0; z-index:1;
+    background:radial-gradient(ellipse 56% 50% at 50% 47%,
+      rgba(26,0,31,.48) 0%, rgba(26,0,31,.12) 55%, rgba(26,0,31,0) 80%);
+  }
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; line-height:.92;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 35%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 6px rgba(0,0,0,.55));
+  }
+  .front .wordmark{ font-size:40pt;
+    filter:drop-shadow(0 1px 2px rgba(0,0,0,.95)) drop-shadow(0 3px 11px rgba(0,0,0,.7)); }
+  .tagline{
+    font-family:'Righteous',sans-serif; color:var(--lime);
+    letter-spacing:.13em; text-transform:uppercase; font-size:10.5pt; margin-top:6pt;
+    text-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+  .front .url{
+    font-family:'Righteous',sans-serif; font-size:9pt; color:#fff; margin-top:10pt;
+    letter-spacing:.04em; text-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  /* ---------- BACK (plain white) ---------- */
+  .back{ background:#ffffff; color:#2c1436; }
+  .back .glow{ display:none; }
+  .back .rule{
+    width:1.9in; height:3px; margin:9pt auto;
+    background:linear-gradient(90deg,var(--hot-pink),var(--yellow),var(--lime),var(--electric),var(--purple));
+    border-radius:3px;
+  }
+  .back .brand{ font-family:'Bagel Fat One',cursive; font-size:26pt; }
+  .back .sub{ font-family:'Nunito'; font-weight:800; font-size:8pt; color:#4a2a55;
+    max-width:2.9in; margin:0 auto; line-height:1.45; }
+  .contact{ font-family:'Righteous',sans-serif; font-size:9pt; margin-top:9pt; line-height:1.7; color:#3a1f45; }
+  .contact .row span{ color:var(--hot-pink); }
+  .dot{ color:var(--purple); padding:0 5px; }
+</style>
+</head>
+<body>
+
+  <!-- FRONT -->
+  <div class="card front">
+    <div class="photo"></div>
+    <div class="veil"></div>
+    <div class="safe">
+      <div class="wordmark">We're<br>Cured!</div>
+      <div class="tagline">Handmade Resin Art</div>
+      <div class="url">werecured.ca</div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div class="card back">
+    <div class="glow"></div>
+    <div class="safe">
+      <div class="wordmark brand">We're Cured!</div>
+      <div class="rule"></div>
+      <div class="sub">Bold, one-of-a-kind resin jewelry &amp; home decor, made with color and a whole lot of fun.</div>
+      <div class="contact">
+        <div class="row"><span>&#9733;</span> werecured.ca</div>
+        <div class="row">@were_cured <span class="dot">&bull;</span> hello@werecured.ca</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

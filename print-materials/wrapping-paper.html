@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600; --dark:#1A001F;
+  }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* 12 x 12in gift-wrap sheet (confetti base tiles seamlessly if repeated) */
+  @page { size:12in 12in; margin:0; }
+
+  .sheet{
+    position:relative; width:12in; height:12in; overflow:hidden;
+    background-color:var(--dark);
+    /* seamless 3in confetti tile of resin "bubbles" */
+    background-image:
+      radial-gradient(circle .20in at .55in .50in, var(--hot-pink) 96%, transparent 0),
+      radial-gradient(circle .12in at 1.55in .80in, var(--yellow) 96%, transparent 0),
+      radial-gradient(circle .16in at 2.45in .45in, var(--electric) 96%, transparent 0),
+      radial-gradient(circle .10in at .95in 1.55in, var(--lime) 96%, transparent 0),
+      radial-gradient(circle .18in at 2.10in 1.75in, var(--purple) 96%, transparent 0),
+      radial-gradient(circle .11in at 1.65in 2.35in, var(--orange) 96%, transparent 0),
+      radial-gradient(circle .15in at .45in 2.45in, var(--electric) 96%, transparent 0),
+      radial-gradient(circle .09in at 2.60in 2.60in, var(--hot-pink) 96%, transparent 0),
+      radial-gradient(circle .07in at 1.20in .30in, var(--lime) 96%, transparent 0),
+      radial-gradient(circle .07in at 2.10in 1.10in, var(--yellow) 96%, transparent 0),
+      radial-gradient(circle .06in at .30in 1.20in, var(--purple) 96%, transparent 0),
+      radial-gradient(circle .06in at 2.85in 1.95in, var(--lime) 96%, transparent 0);
+    background-size:3in 3in;
+    background-repeat:repeat;
+  }
+  /* soft color glows behind everything */
+  .glow{ position:absolute; inset:0; z-index:0; opacity:.5;
+    background:
+      radial-gradient(circle at 20% 18%, rgba(255,45,120,.35), transparent 30%),
+      radial-gradient(circle at 78% 30%, rgba(0,212,255,.30), transparent 30%),
+      radial-gradient(circle at 30% 80%, rgba(168,255,62,.28), transparent 30%),
+      radial-gradient(circle at 82% 82%, rgba(191,90,242,.32), transparent 30%);
+    mix-blend-mode:screen; pointer-events:none; }
+
+  .mark{
+    position:absolute; z-index:2; font-family:'Bagel Fat One',cursive; white-space:nowrap;
+    background:linear-gradient(92deg,#FF2D78,#FFE600,#A8FF3E,#00D4FF,#BF5AF2);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));
+  }
+  .star{ position:absolute; z-index:2; color:var(--yellow); filter:drop-shadow(0 1px 3px rgba(0,0,0,.5)); }
+  .coaster{ position:absolute; z-index:2; border-radius:50%; background-size:cover; background-position:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.45), 0 0 0 4px rgba(255,255,255,.14); }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="glow"></div>
+
+    <!-- scattered wordmarks -->
+    <div class="mark" style="top:0.7in;  left:1.0in;  font-size:30pt; transform:rotate(-10deg)">We're Cured!</div>
+    <div class="mark" style="top:3.1in;  left:6.6in;  font-size:26pt; transform:rotate(8deg)">We're Cured!</div>
+    <div class="mark" style="top:6.0in;  left:0.7in;  font-size:28pt; transform:rotate(6deg)">We're Cured!</div>
+    <div class="mark" style="top:8.4in;  left:5.6in;  font-size:30pt; transform:rotate(-8deg)">We're Cured!</div>
+    <div class="mark" style="top:10.6in; left:1.4in;  font-size:22pt; transform:rotate(5deg)">We're Cured!</div>
+    <div class="mark" style="top:4.7in;  left:2.4in;  font-size:16pt; transform:rotate(-6deg); font-family:'Righteous'; -webkit-text-fill-color:#A8FF3E; background:none">handmade resin art</div>
+    <div class="mark" style="top:1.9in;  left:8.4in;  font-size:16pt; transform:rotate(9deg);  font-family:'Righteous'; -webkit-text-fill-color:#00D4FF; background:none">werecured.ca</div>
+
+    <!-- little circular resin "coasters" (real macros) -->
+    <div class="coaster" style="top:1.2in;  left:5.2in; width:1.5in; height:1.5in; background-image:url('../images/IMG_3064.jpeg'); transform:rotate(6deg)"></div>
+    <div class="coaster" style="top:4.4in;  left:9.2in; width:1.7in; height:1.7in; background-image:url('../images/IMG_3131.jpeg'); transform:rotate(-8deg)"></div>
+    <div class="coaster" style="top:6.7in;  left:3.4in; width:1.6in; height:1.6in; background-image:url('../images/IMG_3188.jpeg'); transform:rotate(10deg)"></div>
+    <div class="coaster" style="top:9.0in;  left:8.7in; width:1.4in; height:1.4in; background-image:url('../images/IMG_3309.jpeg'); transform:rotate(-5deg)"></div>
+    <div class="coaster" style="top:2.6in;  left:2.9in; width:1.1in; height:1.1in; background-image:url('../images/IMG_3134.jpeg'); transform:rotate(7deg)"></div>
+
+    <!-- sparkle stars -->
+    <div class="star" style="top:0.6in;  left:4.4in; font-size:20pt">✦</div>
+    <div class="star" style="top:3.6in;  left:0.9in; font-size:16pt; color:#FF2D78">✦</div>
+    <div class="star" style="top:5.6in;  left:7.9in; font-size:22pt; color:#00D4FF">✦</div>
+    <div class="star" style="top:8.0in;  left:2.1in; font-size:18pt; color:#A8FF3E">✦</div>
+    <div class="star" style="top:10.2in; left:9.6in; font-size:20pt; color:#BF5AF2">✦</div>
+    <div class="star" style="top:7.7in;  left:6.1in; font-size:14pt">✦</div>
+    <div class="star" style="top:11.0in; left:4.6in; font-size:16pt; color:#FF6B1A">✦</div>
+  </div>
+</body>
+</html>

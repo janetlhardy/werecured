@@ -115,6 +115,33 @@ website/
 
 ---
 
+## Print & Packaging Materials
+
+Print-ready designs live in the `print-materials/` folder (excluded from the public website).
+They match the site branding, using a groovy retro wordmark font (**Bagel Fat One**) mixed with
+Righteous and Nunito, on the rainbow-on-dark palette.
+
+| File | What it is | Finished size |
+|---|---|---|
+| `business-cards.pdf` | Front + back | 3.5 × 2 in, double-sided |
+| `stickers.pdf` | 3 designs | 3 in round die-cut |
+| `thankyou-cards.pdf` | Front + inside | 5 × 7 in, double-sided |
+| `wrapping-paper.pdf` | Repeating gift-wrap pattern | 12 × 12 in seamless tile |
+| `gift-tags.pdf` | 9 "Thank You" tags per sheet | Letter cardstock (cut + punch at home) |
+
+- All files include a print "bleed" edge, ready for an online service (VistaPrint, Canva Print,
+  Sticker Mule) or a local print shop. See `print-materials/README.md` for ordering steps.
+- Featured close-up photos: IMG_3064, IMG_3309, IMG_3134, IMG_3131, IMG_3188.
+- Business card front: name centred on the bright **Ocean Daisy** coaster (IMG_3091); back is **plain white** with the rainbow logo.
+- `business-card-coaster-options.html/.png` keeps the four coaster mock-ups that were considered.
+
+### To do — Print materials
+- [ ] Choose a print service and order a small test batch of business cards + stickers
+- [ ] Decide on sticker cut type (die-cut vs kiss-cut) and quantity
+- [x] Matching "Thank You" gift tags created (`gift-tags.pdf`) ✅
+
+---
+
 ## Accounts Summary
 
 | Service | Purpose | Login | Password |

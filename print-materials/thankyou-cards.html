@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bungee&family=Righteous&family=Shrikhand&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600; --dark:#1A001F;
+  }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Flat 5x7in card + 0.125in bleed = 5.25 x 7.25in */
+  @page { size:5.25in 7.25in; margin:0; }
+
+  .card{
+    position:relative; width:5.25in; height:7.25in; overflow:hidden;
+    page-break-after:always; background:var(--dark); color:#fff;
+    font-family:'Nunito',sans-serif;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+  }
+  .card:last-child{ page-break-after:auto; }
+  .safe{ position:relative; z-index:3; padding:0 .55in; }
+
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; line-height:.92;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 34%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 3px 8px rgba(0,0,0,.5));
+  }
+
+  /* ---------- FRONT ---------- */
+  .front .photo{ position:absolute; inset:0; background:url('../images/IMG_3064.jpeg') center/cover; z-index:0; }
+  .front .veil{ position:absolute; inset:0; z-index:1;
+    background:radial-gradient(ellipse at 50% 42%, rgba(26,0,31,.45) 0%, rgba(26,0,31,.9) 82%),
+               linear-gradient(180deg, rgba(26,0,31,.3), rgba(26,0,31,.7)); }
+  .thanks{ font-family:'Shrikhand',cursive; font-size:52pt; line-height:.95;
+    background:linear-gradient(90deg,#FFE600,#FF6B1A,#FF2D78,#BF5AF2);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 3px 10px rgba(0,0,0,.6)); }
+  .front .sub{ font-family:'Righteous',sans-serif; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--lime); font-size:12pt; margin-top:14pt; text-shadow:0 1px 4px rgba(0,0,0,.7); }
+
+  /* ---------- BACK (inside message) ---------- */
+  .back .glow{ position:absolute; inset:0; z-index:0; opacity:.9;
+    background:
+      radial-gradient(circle at 15% 8%, rgba(255,45,120,.30), transparent 40%),
+      radial-gradient(circle at 85% 10%, rgba(0,212,255,.26), transparent 40%),
+      radial-gradient(circle at 85% 92%, rgba(168,255,62,.22), transparent 42%),
+      radial-gradient(circle at 12% 90%, rgba(191,90,242,.30), transparent 42%); }
+  .back .hi{ font-family:'Bagel Fat One',cursive; font-size:24pt; color:var(--yellow);
+    filter:drop-shadow(0 2px 5px rgba(0,0,0,.4)); }
+  .rule{ width:2.4in; height:4px; margin:16pt auto;
+    background:linear-gradient(90deg,var(--hot-pink),var(--yellow),var(--lime),var(--electric),var(--purple));
+    border-radius:4px; }
+  .msg{ font-family:'Nunito'; font-weight:600; font-size:12.5pt; line-height:1.6;
+    color:rgba(255,255,255,.92); max-width:3.6in; margin:0 auto; }
+  .msg strong{ color:var(--lime); }
+  .signoff{ font-family:'Bagel Fat One',cursive; font-size:20pt; color:var(--hot-pink); margin-top:18pt;
+    filter:drop-shadow(0 2px 5px rgba(0,0,0,.4)); }
+  .contact{ font-family:'Righteous',sans-serif; font-size:10.5pt; margin-top:26pt; line-height:1.9; }
+  .contact .dot{ color:var(--hot-pink); padding:0 6px; }
+  .contact .hl{ color:var(--electric); }
+</style>
+</head>
+<body>
+
+  <!-- FRONT -->
+  <div class="card front">
+    <div class="photo"></div>
+    <div class="veil"></div>
+    <div class="safe">
+      <div class="thanks">Thank<br>You!</div>
+      <div class="sub">for supporting handmade</div>
+    </div>
+  </div>
+
+  <!-- INSIDE / BACK -->
+  <div class="card back">
+    <div class="glow"></div>
+    <div class="safe">
+      <div class="hi">You're the best! ✦</div>
+      <div class="rule"></div>
+      <div class="msg">
+        Thank you so much for your order. Every piece is poured, colored and
+        finished <strong>by hand</strong> — so a little piece of my studio is
+        now yours. I hope it brings a splash of color to your day!
+      </div>
+      <div class="signoff">— Janet</div>
+      <div class="wordmark" style="font-size:26pt; margin-top:30pt">We're Cured!</div>
+      <div class="contact">
+        <div>werecured.ca</div>
+        <div><span class="hl">@were_cured</span><span class="dot">✦</span>hello@werecured.ca</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
