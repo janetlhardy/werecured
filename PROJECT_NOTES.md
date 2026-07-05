@@ -86,14 +86,14 @@ website/
 - [ ] Fix hello@werecured.ca delivery (DNS/DMARC issue — son helping with this)
 
 ### High Priority — Website Improvements
-- [ ] Add lazy loading to all images (`loading="lazy"` on every img tag) — speeds up page load significantly
-- [ ] Add meta description and Open Graph tags — controls how site appears in Google and when link is shared on social media
-- [ ] Create a custom 404 page (`404.html`) — shows branded error page instead of plain GitHub error when someone types a wrong URL
+- [x] Add lazy loading to all images (`loading="lazy"` on all 617 img tags) ✅
+- [x] Add meta description and Open Graph tags (in `index.html` head) ✅
+- [x] Create a custom 404 page (`404.html`) — branded error page ✅
 
 ### Medium Priority — Website Improvements
 - [ ] Add a favicon (the small icon in browser tabs) — need to create a small logo image first
-- [ ] Add `robots.txt` file — tells search engines how to crawl the site
-- [ ] Add `sitemap.xml` file — helps Google find and index the site
+- [x] Add `robots.txt` file — tells search engines how to crawl the site ✅
+- [x] Add `sitemap.xml` file — helps Google find and index the site ✅
 - [ ] Move original HEIC photo files out of the website folder to a separate backup location (they are excluded from GitHub but clutter the local folder)
 
 ### Lower Priority — Website Improvements

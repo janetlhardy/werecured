@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | We're Cured!</title>
+  <meta name="robots" content="noindex" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Righteous&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root{
+      --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+      --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600; --dark:#1A001F; --white:#fff;
+    }
+    body{
+      font-family:'Nunito',sans-serif; background:var(--dark); color:var(--white);
+      min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+      text-align:center; padding:40px 20px; overflow:hidden; position:relative;
+    }
+    body::before{
+      content:''; position:absolute; inset:0; z-index:0;
+      background:linear-gradient(135deg,#FF2D78,#FF6B1A,#FFE600,#A8FF3E,#00D4FF,#BF5AF2,#FF2D78);
+      background-size:400% 400%; animation:grad 12s ease infinite; opacity:.16;
+    }
+    @keyframes grad{ 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .content{ position:relative; z-index:1; }
+    .code{
+      font-family:'Bungee',sans-serif; font-size:clamp(4rem,18vw,9rem); line-height:1;
+      background:linear-gradient(90deg,var(--hot-pink),var(--yellow),var(--electric),var(--lime));
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      filter:drop-shadow(0 4px 24px rgba(255,45,120,.5)); margin-bottom:8px;
+    }
+    .tagline{
+      font-family:'Righteous',sans-serif; color:var(--lime); letter-spacing:4px;
+      text-transform:uppercase; font-size:clamp(.85rem,2.5vw,1.1rem); margin-bottom:18px;
+    }
+    p.msg{ font-size:clamp(1rem,2.5vw,1.2rem); font-weight:600; color:rgba(255,255,255,.85);
+      max-width:460px; margin:0 auto 34px; line-height:1.6; }
+    .btn{
+      display:inline-block; font-family:'Righteous',sans-serif; font-size:1.15rem; letter-spacing:1px;
+      padding:15px 38px; color:var(--white); text-decoration:none; border-radius:50px;
+      background:linear-gradient(135deg,var(--hot-pink),var(--purple));
+      box-shadow:0 8px 30px rgba(255,45,120,.45); transition:transform .2s, box-shadow .2s;
+    }
+    .btn:hover{ transform:translateY(-4px) scale(1.05); box-shadow:0 16px 40px rgba(255,45,120,.6); }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="code">404</div>
+    <p class="tagline">Well, that didn't set right</p>
+    <p class="msg">Looks like this page hasn't cured yet! The link may be broken or the page may have moved. Let's get you back to the good stuff.</p>
+    <a class="btn" href="/">Back to We're Cured!</a>
+  </div>
+</body>
+</html>
