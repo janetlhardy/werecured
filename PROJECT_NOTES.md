@@ -91,7 +91,7 @@ website/
 - [x] Create a custom 404 page (`404.html`) — branded error page ✅
 
 ### Medium Priority — Website Improvements
-- [ ] Add a favicon (the small icon in browser tabs) — need to create a small logo image first
+- [x] Add a favicon — smiley emoji on a dark circle (`favicon.png`, `favicon-32.png`, `apple-touch-icon.png`) ✅ Easy to swap the emoji later on request.
 - [x] Add `robots.txt` file — tells search engines how to crawl the site ✅
 - [x] Add `sitemap.xml` file — helps Google find and index the site ✅
 - [ ] Move original HEIC photo files out of the website folder to a separate backup location (they are excluded from GitHub but clutter the local folder)
