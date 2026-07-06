@@ -108,7 +108,7 @@ website/
 
 ### Business
 - [x] Update website Contact section with real email address (hello@werecured.ca) ✅
-- [ ] Decide on online selling method (Etsy, website shop, Instagram, etc.)
+- [x] Decide on online selling method ✅ → **Shopify** (headless: Shopify runs products/inventory/checkout + in-person POS; werecured.ca stays as the custom storefront). Setup steps in `shopify/SHOPIFY_SETUP.md`; integration plan approved.
 - [ ] Add prices to product listings when ready — use the method in `PRICING_SCHEME.md`
 - [ ] Write a privacy policy (required under Canadian law PIPEDA once selling begins)
 - [ ] Write a return/shipping policy (customers expect this before purchasing)
@@ -142,6 +142,20 @@ Righteous and Nunito, on the rainbow-on-dark palette.
 
 ---
 
+## Online Store (Shopify — headless)
+
+Plan: **headless Shopify** — Shopify holds products, inventory, and checkout; werecured.ca stays
+the custom storefront ("Enhance current cards" approach). In-person sales will use **Shopify POS**
+so online + markets share one inventory. Full plain-language steps: `shopify/SHOPIFY_SETUP.md`.
+
+- **Account:** created, signed in via the **Google account janethardy@werecured.ca**.
+- **Status (as of 2026-07-05):** ⏳ Shopify is requiring **identity-document verification** before
+  payments can be set up. Payments (Shopify Payments) are **blocked until that's approved**.
+- **Products:** `shopify/products-import.csv` is ready — 132 products, all as **Drafts**, quantity 1,
+  **no prices yet** (set prices on import using `PRICING_SCHEME.md`).
+- **Next steps:** (1) finish identity verification → (2) import the CSV → (3) set prices →
+  (4) create a Storefront API token and send it to Claude → (5) Claude wires cart/checkout into the site.
+
 ## Accounts Summary
 
 | Service | Purpose | Login | Password |
@@ -149,3 +163,4 @@ Righteous and Nunito, on the rainbow-on-dark palette.
 | Namecheap | Domain registration | knitwit1@telus.net | Dashlane |
 | Google Workspace | Business email | janethardy@werecured.ca | Dashlane |
 | GitHub | Website hosting (GitHub Pages) | janetlhardy / knitwit1@telus.net | Dashlane |
+| Shopify | Online store + POS | janethardy@werecured.ca (Google sign-in) | via Google / Dashlane |
