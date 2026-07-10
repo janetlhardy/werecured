@@ -5,3 +5,10 @@
 
 # Mac system files
 .DS_Store
+
+# Sensitive — never commit
+shopify/shopify_recovery_codes.txt
+*recovery_codes*
+
+# Local tooling / editor config
+.claude/

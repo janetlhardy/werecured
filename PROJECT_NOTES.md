@@ -110,8 +110,8 @@ website/
 - [x] Update website Contact section with real email address (hello@werecured.ca) ✅
 - [x] Decide on online selling method ✅ → **Shopify** (headless: Shopify runs products/inventory/checkout + in-person POS; werecured.ca stays as the custom storefront). Setup steps in `shopify/SHOPIFY_SETUP.md`; integration plan approved.
 - [ ] Add prices to product listings when ready — use the method in `PRICING_SCHEME.md`
-- [ ] Write a privacy policy (required under Canadian law PIPEDA once selling begins)
-- [ ] Write a return/shipping policy (customers expect this before purchasing)
+- [x] Write a privacy policy ✅ (Shopify template) — see `shopify/STORE_POLICIES.md`
+- [x] Write a return/shipping policy ✅ (all-sales-final + damaged-refund; flat-rate shipping) — `shopify/STORE_POLICIES.md`
 
 ---
 

@@ -43,15 +43,18 @@ _This file is kept off the public website._
 - (Shopify's bulk editor lets you set many prices on one screen: Products → select all → **Edit**.)
 
 ### 5. Get the website key (Storefront API token) — this is what links Shopify to your site
-- **Settings → Apps and sales channels → Develop apps → Create an app** → name it **Website**.
-- Open **Configuration → Storefront API** → **Configure** and tick:
-  - read products,
-  - read product inventory,
-  - manage (read/write) carts & checkouts.
-- **Save → Install app → API credentials** → copy the **Storefront API access token**.
-- **Send Claude two things:** that **token** and your store address (looks like **yourshop.myshopify.com**).
-- ✅ This token is **safe to share and to put on the website** — it can only *read* products and
-  build shopping carts. It cannot see orders, customers, or money.
+_Shopify changed this in 2026. The old "Develop apps" flow now sends you to a Dev Dashboard that
+only gives a Client ID/Secret (which needs a server we don't have). **Ignore the Shopify CLI and the
+"create app" buttons.** Use the free **Headless channel** instead — it's built for exactly this and
+gives a public token directly._
+- In the **Shopify App Store**, search **"Headless"** (published by Shopify) and **Add channel** (free).
+- In your admin sidebar, open the new **Headless** channel → click **Create storefront** (name it "We're Cured!").
+- It generates a **Public access token** and a Private access token, plus API permissions. Confirm it can
+  **read products, read inventory, and manage carts/checkouts** (on by default).
+- Copy the **PUBLIC access token**.
+- **Send Claude two things:** that **public token** and your store address (looks like **yourshop.myshopify.com**).
+- ✅ The public token is **safe to share and put on the website** — it can only read products and build
+  carts, never orders, customers, or money. ⚠️ Do **not** send the *private* token.
 
 ### 6. In-person selling (later, when you're ready for markets)
 - Install the **Shopify POS** app on your phone/tablet and order a **Shopify card reader**.

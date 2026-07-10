@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A; --purple:#BF5AF2; --yellow:#FFE600;
+  }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* 3 x 3in card + 0.125in bleed = 3.25 x 3.25in. Holes come pre-punched on the cards. */
+  @page { size:3.25in 3.25in; margin:0; }
+
+  .card{
+    position:relative; width:3.25in; height:3.25in; overflow:hidden;
+    background:#fdf5ff; color:#3a1f45; font-family:'Nunito',sans-serif; text-align:center;
+  }
+  /* soft pastel wash: small pink far top-left, blue swept across from the right */
+  .glow{ position:absolute; inset:0; z-index:0;
+    background:
+      radial-gradient(circle at 5% 6%,   rgba(255,45,120,.17), transparent 26%),
+      radial-gradient(circle at 70% 30%,  rgba(0,212,255,.26), transparent 64%),
+      radial-gradient(circle at 90% 85%,  rgba(0,212,255,.15), transparent 46%),
+      radial-gradient(circle at 14% 90%,  rgba(191,90,242,.13), transparent 44%),
+      radial-gradient(circle at 92% 10%,  rgba(168,255,62,.10), transparent 38%);
+  }
+
+  .top{ position:absolute; z-index:3; top:.30in; left:0; right:0; }
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; font-size:22pt; line-height:.95;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 34%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 1px 2px rgba(0,0,0,.30));
+  }
+  .tagline{
+    font-family:'Righteous',sans-serif; color:#c0348a; letter-spacing:.13em;
+    text-transform:uppercase; font-size:7.5pt; margin-top:5pt;
+  }
+
+  .bottom{ position:absolute; z-index:3; bottom:.30in; left:0; right:0;
+    font-family:'Righteous',sans-serif; font-size:7pt; color:#5a2f5a; letter-spacing:.03em; }
+  .bottom .dot{ color:var(--hot-pink); padding:0 5px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="glow"></div>
+    <div class="top">
+      <div class="wordmark">We're Cured!</div>
+      <div class="tagline">Handmade Resin Art</div>
+    </div>
+    <div class="bottom">
+      @were_cured <span class="dot">✦</span> werecured.ca
+    </div>
+  </div>
+</body>
+</html>

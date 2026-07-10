@@ -33,18 +33,28 @@ _Currency: **Canadian dollars (CAD)**. Default labour rate: **$25/hr** (adjust i
 
 ---
 
-## Tiers (size & difficulty)
+## ⭐ Key principle: price by CATEGORY & perceived value, not by size or material
 
-Sort products into bands so pricing is quick and consistent:
+Small doesn't mean cheap. Jewellery is worn, personal, and giftable, so it carries a **premium** —
+a tiny pendant can out-earn a big coaster. Buyers also compare *within a category* (a coaster vs
+cheap mass-produced coasters → price pressure; a pendant vs other handmade necklaces → $40–80).
+So always compare **like-for-like** (set-to-set, pendant-to-pendant), and let the category — not the
+gram weight — lead the price.
 
-| Tier | Examples | Rough band (CAD) |
+## Tiers (category-based)
+
+| Category | Examples | Rough band (CAD) |
 |---|---|---|
-| Small / simple | Pendants, earrings | $18–35 |
-| Medium | Single coaster, simple set of 4 | $28–55 |
-| Large / complex | Geode sets w/ crystal edges, mandalas | $60–110 |
-| Statement pieces | Bowls, platters, "hands" sculptures | $90–200+ |
+| Earrings | studs, small drops | $20–40 |
+| **Pendants** | worn jewellery — commands a premium for its size | **$45–70** |
+| Coaster sets | set of 4, priced by complexity | $25–70 |
+| Statement pieces | bowls, platters, "hands" sculptures | $60–200+ |
 
-**Difficulty bump:** plain pour ×1 · geode with crystal edges / intricate work ×1.3–1.6.
+**Difficulty bump within a category:** plain pour ×1 · geode with crystal edges / intricate work ×1.3–1.6.
+
+> Reality check (Etsy, 2026): handmade resin coasters start ~$15 (often *singles* or basic), while
+> resin pendants reach ~$70. Don't chase the $15 coaster number — those aren't comparable to sets of 4
+> with crystal edges. And don't be shy on pendants: the market supports jewellery pricing.
 
 ---
 
