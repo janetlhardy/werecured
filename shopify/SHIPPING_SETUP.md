@@ -96,6 +96,31 @@ You'll get an **email**, and the order appears in **Shopify admin → Orders**.
 
 ---
 
+## Shipping jewellery cheaply by Lettermail (no Shopify label) 💎✉️
+Shopify only sells Canada Post **parcel** labels (~$12 min), which is far too much for light
+jewellery. Ship those by **Lettermail** at the post office instead — the customer pays your **$5 flat
+jewellery rate**, and postage only costs ~$2–4, so you come out ahead.
+
+**Steps when a jewellery order comes in:**
+1. Open the order in Shopify and note the customer's **shipping address**.
+2. **Hand-address a thin padded envelope** (customer address + your return address). Tuck in a
+   thank-you card / sticker.
+3. **Buy Lettermail postage at the post office** (or use stamps) — just ask for "lettermail," ~$2–4.
+4. In Shopify, on the order, click **"Mark as fulfilled"** *instead of* "Buy shipping label" →
+   **leave the tracking number blank** → **Fulfill.** (The customer still gets a "shipped" email.)
+
+**Keep in mind:**
+- Lettermail must be **under 2 cm thick** and **under 500 g**. Flat earrings = fine; a **chunky
+  pendant may be too thick** → that one has to go as a parcel (pricier label).
+- **No tracking** = no proof of delivery. **Snap a photo of the sealed, addressed envelope** before
+  mailing, as insurance against "it never arrived" claims.
+- Coasters, bowls, and home décor still ship as normal **parcels** with a Shopify Canada Post label.
+
+_Later option: a discount broker like **Chit Chats** or **Stallion Express** offers cheap **tracked**
+small-parcel rates — worth exploring if jewellery sells well and you want tracking._
+
+---
+
 ## When to upgrade to live calculated rates
 If shipping variance starts costing you (lots of far-away orders on the heavy items), you can unlock
 real weight+size+distance quotes at checkout by **switching to Shopify annual billing** (often unlocks
