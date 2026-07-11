@@ -247,11 +247,12 @@
     }
 
     /* Zoom on main card image hover */
-    .card > img {
+    .card-photo { overflow: hidden; }
+    .card-photo img {
       transition: transform 0.35s ease, filter 0.3s;
       cursor: zoom-in;
     }
-    .card:hover > img { transform: scale(1.07); }
+    .card:hover .card-photo img { transform: scale(1.07); }
 
     /* Quick Look button */
     .quick-look-btn {
@@ -780,7 +781,7 @@
 
     function openLightbox(card, startIndex) {
       lbImages = [];
-      const main = card.querySelector(':scope > img');
+      const main = card.querySelector('.card-photo img');
       if (main) lbImages.push({ src: main.src, alt: main.alt });
       card.querySelectorAll('.card-thumbs img').forEach(img => {
         lbImages.push({ src: img.src, alt: img.alt });
@@ -824,11 +825,12 @@
 
     // Wire lightbox + Quick Look for one card. Called by the Shopify renderer after cards are built.
     function wireCard(card){
-      const mainImg = card.querySelector(':scope > img');
-      if (mainImg) mainImg.addEventListener('click', () => openLightbox(card, 0));
+      // clicking anywhere on the card opens the expanded image viewer
+      card.addEventListener('click', () => openLightbox(card, 0));
+      // thumbnails jump to their own image (stop the click from also firing the card)
       card.querySelectorAll('.card-thumbs img').forEach((img, i) => {
         img.onclick = null;
-        img.addEventListener('click', () => openLightbox(card, i + 1));
+        img.addEventListener('click', e => { e.stopPropagation(); openLightbox(card, i + 1); });
       });
       const btn = document.createElement('button');
       btn.className = 'quick-look-btn';
@@ -923,7 +925,7 @@
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML =
-            `<img loading="lazy" src="${esc(main.url)}" alt="${esc(main.altText||p.title)}" />` +
+            `<div class="card-photo"><img loading="lazy" src="${esc(main.url)}" alt="${esc(main.altText||p.title)}" /></div>` +
             (thumbs ? `<div class="card-thumbs">${thumbs}</div>` : '') +
             `<div class="card-body"><p class="card-name">${esc(p.title)}</p>` +
             (glow ? `<span class="glow-badge">I glow in the dark</span>` : '') +
