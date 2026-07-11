@@ -416,7 +416,6 @@
     #coasters .section-label  { color: var(--lime); }
     #coasters .section-title  { color: var(--lime); }
     #coasters .section-divider { background: linear-gradient(90deg, var(--lime), var(--yellow)); }
-    .section-note { max-width: 560px; margin: 16px auto 0; font-family: 'Nunito', sans-serif; font-size: 0.95rem; line-height: 1.5; color: rgba(255,255,255,0.72); }
     #coasters .card:hover      { box-shadow: 0 20px 50px rgba(168,255,62,0.3); }
     #coasters .card-name       { color: var(--lime); }
 
@@ -632,6 +631,10 @@
     .pm-add.sold{ background:rgba(255,255,255,.15); color:rgba(255,255,255,.7); cursor:default; box-shadow:none; }
     .pm-add:disabled{ cursor:default; }
     .pm-note{ font-size:.75rem; color:rgba(255,255,255,.4); margin-top:14px; }
+    .cork-opt{ display:flex; align-items:flex-start; gap:9px; font-family:'Nunito',sans-serif; font-size:.85rem;
+      color:rgba(255,255,255,.85); margin-bottom:14px; cursor:pointer; line-height:1.4; }
+    .cork-opt input{ margin-top:2px; width:16px; height:16px; accent-color:var(--hot-pink); cursor:pointer; flex:none; }
+    .cork-opt em{ font-style:normal; color:var(--lime); }
     @media (max-width:760px){
       .pm-panel{ flex-direction:column; max-height:94vh; overflow-y:auto; }
       .pm-media{ flex:none; }
@@ -736,7 +739,6 @@
       <p class="section-label">Home</p>
       <h2 class="section-title">Coasters</h2>
       <div class="section-divider"></div>
-      <p class="section-note">Every coaster set includes a set of cork pads you can attach if you'd like. 🌿</p>
     </div>
     <div class="gallery">
       </div>
@@ -809,6 +811,7 @@
       <p class="cart-empty">Your cart is empty.</p>
     </div>
     <div class="cart-foot" id="cart-foot" style="display:none">
+      <label class="cork-opt" id="cork-opt" style="display:none"><input type="checkbox" id="cork-check"><span>🌿 Add cork pads to stick on my coasters <em>(free)</em></span></label>
       <div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
       <p class="cart-note">Taxes &amp; shipping calculated at checkout.</p>
       <a class="checkout-btn" id="checkout-btn" href="#">Checkout</a>
@@ -955,11 +958,11 @@
       return j.data;
     }
 
-    const CART_FIELDS = `id checkoutUrl totalQuantity
+    const CART_FIELDS = `id checkoutUrl totalQuantity attributes{ key value }
       cost{ subtotalAmount{ amount currencyCode } }
       lines(first:100){ edges{ node{ id quantity
         merchandise{ ... on ProductVariant{ id
-          product{ title featuredImage{ url } } price{ amount currencyCode } } } } } }`;
+          product{ title productType featuredImage{ url } } price{ amount currencyCode } } } } } }`;
 
     // Shopify product type -> on-page section id
     const TYPE_TO_SECTION = {
@@ -1108,6 +1111,11 @@
       body.querySelectorAll('.rm').forEach(b =>
         b.addEventListener('click', () => removeLine(b.dataset.line, b.dataset.variant)));
       document.getElementById('cart-subtotal').textContent = money(cart.cost.subtotalAmount);
+      // cork-pad option only appears when a coaster is in the cart
+      const hasCoasters = lines.some(e => e.node.merchandise.product.productType === 'Coasters');
+      document.getElementById('cork-opt').style.display = hasCoasters ? 'flex' : 'none';
+      const corkAttr = (cart.attributes || []).find(a => a.key === 'Cork pads');
+      document.getElementById('cork-check').checked = !!(corkAttr && /yes/i.test(corkAttr.value || ''));
       foot.style.display = 'block';
       document.getElementById('checkout-btn').href = checkoutUrl || '#';
     }
@@ -1119,6 +1127,14 @@
     document.getElementById('cart-close').addEventListener('click', closeCart);
     document.getElementById('cart-overlay').addEventListener('click', closeCart);
     document.getElementById('checkout-btn').addEventListener('click', e => { if(!checkoutUrl) e.preventDefault(); });
+
+    // cork-pad opt-in — tags the order so Janet knows to include cork pads
+    async function setCorkPads(checked){
+      if(!CART_ID) return;
+      await gql('mutation($id:ID!,$a:[AttributeInput!]!){ cartAttributesUpdate(cartId:$id, attributes:$a){ cart{ id } userErrors{ message } } }',
+        { id: CART_ID, a: [{ key:'Cork pads', value: checked ? 'Yes please 🌿' : 'No thanks' }] });
+    }
+    document.getElementById('cork-check').addEventListener('change', e => setCorkPads(e.target.checked));
 
     // ── Product quick-view modal ──
     const pm = document.getElementById('product-modal');
