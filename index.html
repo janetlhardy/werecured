@@ -229,6 +229,9 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      will-change: transform;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
     }
 
     .card:hover { transform: translateY(-8px) rotate(1deg); }
@@ -576,6 +579,65 @@
       letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,.75);
       border:2px solid rgba(255,255,255,.3); border-radius:50px; padding:7px 18px;
     }
+
+    /* ── Product quick-view modal ── */
+    .pm-overlay{
+      position:fixed; inset:0; z-index:400; background:rgba(0,0,0,.75);
+      backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center;
+      padding:20px; opacity:0; pointer-events:none; transition:opacity .25s;
+    }
+    .pm-overlay.open{ opacity:1; pointer-events:auto; }
+    .pm-panel{
+      position:relative; background:var(--dark); border:2px solid rgba(255,255,255,.12);
+      border-radius:22px; width:min(1000px,96vw); max-height:92vh; overflow:hidden;
+      display:flex; box-shadow:0 30px 80px rgba(0,0,0,.6);
+    }
+    .pm-close{
+      position:absolute; top:12px; right:14px; z-index:6; width:40px; height:40px; border-radius:50%;
+      border:none; background:rgba(0,0,0,.5); color:#fff; font-size:1.7rem; line-height:1; cursor:pointer;
+      transition:background .2s;
+    }
+    .pm-close:hover{ background:var(--hot-pink); }
+    .pm-media{ flex:1 1 55%; min-width:0; background:#0d0011; padding:22px; display:flex; flex-direction:column; gap:14px; }
+    .pm-stage{ position:relative; flex:1; display:flex; align-items:center; justify-content:center; min-height:0; }
+    .pm-main{ max-width:100%; max-height:58vh; object-fit:contain; border-radius:12px; display:block; }
+    .pm-nav{
+      position:absolute; top:50%; transform:translateY(-50%); z-index:3; width:44px; height:44px;
+      border-radius:50%; border:none; background:rgba(0,0,0,.5); color:#fff; font-size:1.8rem; cursor:pointer;
+      transition:background .2s;
+    }
+    .pm-prev{ left:6px; } .pm-next{ right:6px; }
+    .pm-nav:hover{ background:var(--hot-pink); }
+    .pm-thumbs{ display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+    .pm-thumbs img{
+      width:52px; height:52px; object-fit:cover; border-radius:8px; cursor:pointer; opacity:.6;
+      border:2px solid transparent; transition:opacity .2s, border-color .2s;
+    }
+    .pm-thumbs img:hover{ opacity:1; }
+    .pm-thumbs img.active{ opacity:1; border-color:var(--hot-pink); }
+    .pm-info{ flex:1 1 45%; min-width:0; padding:34px 30px; overflow-y:auto; display:flex; flex-direction:column; }
+    .pm-title{ font-family:'Bungee',sans-serif; font-size:1.45rem; color:#fff; margin-bottom:10px; line-height:1.15; }
+    .pm-price{ font-family:'Righteous',sans-serif; color:var(--yellow); font-size:1.6rem; margin-bottom:20px; }
+    .pm-desc{ font-family:'Nunito',sans-serif; color:rgba(255,255,255,.85); line-height:1.65; margin-bottom:26px; }
+    .pm-desc p{ margin-bottom:10px; }
+    .pm-add{
+      font-family:'Righteous',sans-serif; font-size:1.1rem; letter-spacing:.5px; padding:14px 32px;
+      border:none; border-radius:50px; cursor:pointer; color:#fff; align-self:flex-start;
+      background:linear-gradient(135deg,var(--hot-pink),var(--purple));
+      box-shadow:0 8px 24px rgba(255,45,120,.45); transition:transform .18s, box-shadow .18s;
+    }
+    .pm-add:hover{ transform:translateY(-2px) scale(1.03); box-shadow:0 12px 30px rgba(255,45,120,.55); }
+    .pm-add.in-cart{ background:linear-gradient(135deg,var(--lime),var(--electric)); color:var(--dark); }
+    .pm-add.sold{ background:rgba(255,255,255,.15); color:rgba(255,255,255,.7); cursor:default; box-shadow:none; }
+    .pm-add:disabled{ cursor:default; }
+    .pm-note{ font-size:.75rem; color:rgba(255,255,255,.4); margin-top:14px; }
+    @media (max-width:760px){
+      .pm-panel{ flex-direction:column; max-height:94vh; overflow-y:auto; }
+      .pm-media{ flex:none; }
+      .pm-main{ max-height:42vh; }
+      .pm-info{ overflow:visible; padding:24px 22px 30px; }
+      .pm-title{ font-size:1.2rem; }
+    }
     .cart-toggle{
       position:fixed; bottom:22px; right:22px; z-index:200; width:60px; height:60px; border-radius:50%;
       border:none; cursor:pointer; color:#fff; font-size:1.5rem;
@@ -648,7 +710,7 @@
   <!-- Pendants -->
   <section id="pendants">
     <div class="section-header">
-      <p class="section-label">Jewelry</p>
+      <p class="section-label">Jewellery</p>
       <h2 class="section-title">Pendants</h2>
       <div class="section-divider"></div>
     </div>
@@ -659,7 +721,7 @@
   <!-- Earrings -->
   <section id="earrings">
     <div class="section-header">
-      <p class="section-label">Jewelry</p>
+      <p class="section-label">Jewellery</p>
       <h2 class="section-title">Earrings</h2>
       <div class="section-divider"></div>
     </div>
@@ -761,6 +823,28 @@
     <p id="lb-counter"></p>
   </div>
 
+  <!-- Product quick-view modal -->
+  <div id="product-modal" class="pm-overlay" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="pm-panel">
+      <button class="pm-close" aria-label="Close">&times;</button>
+      <div class="pm-media">
+        <div class="pm-stage">
+          <button class="pm-nav pm-prev" aria-label="Previous image">&#8249;</button>
+          <img class="pm-main" src="" alt="" />
+          <button class="pm-nav pm-next" aria-label="Next image">&#8250;</button>
+        </div>
+        <div class="pm-thumbs"></div>
+      </div>
+      <div class="pm-info">
+        <h2 class="pm-title"></h2>
+        <p class="pm-price"></p>
+        <div class="pm-desc"></div>
+        <button class="pm-add">Add to Cart</button>
+        <p class="pm-note">🔒 Secure checkout powered by Shopify</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
     <p class="footer-logo">We're Cured!</p>
@@ -825,19 +909,20 @@
 
     // Wire lightbox + Quick Look for one card. Called by the Shopify renderer after cards are built.
     function wireCard(card){
-      // clicking anywhere on the card opens the expanded image viewer
-      card.addEventListener('click', () => openLightbox(card, 0));
+      const open = (i) => window.openProductModal && window.openProductModal(card._product, i);
+      // clicking anywhere on the card opens the full product view
+      card.addEventListener('click', () => open(0));
       // thumbnails jump to their own image (stop the click from also firing the card)
       card.querySelectorAll('.card-thumbs img').forEach((img, i) => {
         img.onclick = null;
-        img.addEventListener('click', e => { e.stopPropagation(); openLightbox(card, i + 1); });
+        img.addEventListener('click', e => { e.stopPropagation(); open(i + 1); });
       });
       const btn = document.createElement('button');
       btn.className = 'quick-look-btn';
       btn.textContent = 'Quick Look';
       const nameEl = card.querySelector('.card-name');
       btn.setAttribute('aria-label', nameEl ? 'Quick Look: ' + nameEl.textContent : 'Quick Look');
-      btn.addEventListener('click', e => { e.stopPropagation(); openLightbox(card, 0); });
+      btn.addEventListener('click', e => { e.stopPropagation(); open(0); });
       card.appendChild(btn);
     }
     window.wireCard = wireCard;
@@ -886,7 +971,7 @@
     async function loadProducts(){
       const out = []; let cursor = null, more = true;
       const q = `query($c:String){ products(first:60, after:$c){ pageInfo{ hasNextPage endCursor }
-        edges{ node{ title productType tags
+        edges{ node{ title productType tags descriptionHtml
           images(first:12){ edges{ node{ url altText } } }
           variants(first:1){ edges{ node{ id availableForSale price{ amount currencyCode } } } } } } } }`;
       while(more){
@@ -896,7 +981,7 @@
           const n = e.node, v = n.variants.edges[0] && n.variants.edges[0].node;
           const imgs = n.images.edges.map(x => x.node);
           if(v && imgs.length) out.push({
-            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs,
+            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml,
             variantId:v.id, price:v.price, avail:v.availableForSale
           });
         });
@@ -945,6 +1030,7 @@
             s.className = 'sold-badge'; s.textContent = 'Sold';
             body.appendChild(s);
           }
+          card._product = p;
           gallery.appendChild(card);
           if(window.wireCard) window.wireCard(card);
           rendered++;
@@ -1032,6 +1118,60 @@
     document.getElementById('cart-close').addEventListener('click', closeCart);
     document.getElementById('cart-overlay').addEventListener('click', closeCart);
     document.getElementById('checkout-btn').addEventListener('click', e => { if(!checkoutUrl) e.preventDefault(); });
+
+    // ── Product quick-view modal ──
+    const pm = document.getElementById('product-modal');
+    const pmMain = pm.querySelector('.pm-main');
+    const pmThumbs = pm.querySelector('.pm-thumbs');
+    const pmTitle = pm.querySelector('.pm-title');
+    const pmPrice = pm.querySelector('.pm-price');
+    const pmDesc = pm.querySelector('.pm-desc');
+    const pmAdd = pm.querySelector('.pm-add');
+    let pmImgs = [], pmIndex = 0;
+
+    function updatePmImage(){
+      const im = pmImgs[pmIndex]; if(!im) return;
+      pmMain.src = im.url; pmMain.alt = im.altText || pmTitle.textContent;
+      pmThumbs.querySelectorAll('img').forEach((t,i)=> t.classList.toggle('active', i===pmIndex));
+      const multi = pmImgs.length > 1;
+      pm.querySelector('.pm-prev').style.display = multi ? '' : 'none';
+      pm.querySelector('.pm-next').style.display = multi ? '' : 'none';
+    }
+    function pmPrev(){ pmIndex = (pmIndex-1+pmImgs.length)%pmImgs.length; updatePmImage(); }
+    function pmNext(){ pmIndex = (pmIndex+1)%pmImgs.length; updatePmImage(); }
+    function closeProductModal(){ pm.classList.remove('open'); document.body.style.overflow=''; }
+
+    function openProductModal(p, startIndex){
+      if(!p) return;
+      pmImgs = p.imgs; pmIndex = Math.min(startIndex||0, pmImgs.length-1);
+      pmTitle.textContent = p.title;
+      pmPrice.textContent = money(p.price);
+      pmDesc.innerHTML = p.descriptionHtml || '';
+      pmThumbs.innerHTML = pmImgs.map((im,i)=>
+        `<img src="${esc(im.url)}" alt="${esc(im.altText||p.title)}" data-i="${i}">`).join('');
+      pmThumbs.querySelectorAll('img').forEach(t =>
+        t.addEventListener('click', ()=>{ pmIndex = +t.dataset.i; updatePmImage(); }));
+      updatePmImage();
+      pmAdd.classList.remove('in-cart','sold');
+      if(!p.avail){ pmAdd.textContent='Sold'; pmAdd.disabled=true; pmAdd.classList.add('sold'); }
+      else if(buttonsByVariant[p.variantId] && buttonsByVariant[p.variantId].classList.contains('in-cart')){
+        pmAdd.textContent='In Cart ✓'; pmAdd.disabled=true; pmAdd.classList.add('in-cart');
+      } else { pmAdd.textContent='Add to Cart'; pmAdd.disabled=false; }
+      pmAdd.onclick = async ()=>{ if(pmAdd.disabled) return; await addToCart(p.variantId, pmAdd); closeProductModal(); };
+      pm.classList.add('open'); document.body.style.overflow='hidden';
+    }
+    window.openProductModal = openProductModal;
+
+    pm.querySelector('.pm-close').addEventListener('click', closeProductModal);
+    pm.querySelector('.pm-prev').addEventListener('click', pmPrev);
+    pm.querySelector('.pm-next').addEventListener('click', pmNext);
+    pm.addEventListener('click', e=>{ if(e.target===pm) closeProductModal(); });
+    document.addEventListener('keydown', e=>{
+      if(!pm.classList.contains('open')) return;
+      if(e.key==='Escape') closeProductModal();
+      else if(e.key==='ArrowLeft') pmPrev();
+      else if(e.key==='ArrowRight') pmNext();
+    });
 
     (async function init(){
       try{
