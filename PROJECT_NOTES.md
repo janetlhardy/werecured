@@ -112,7 +112,7 @@ website/
 - [ ] Add prices to product listings when ready — use the method in `PRICING_SCHEME.md`
 - [x] Write a privacy policy ✅ (Shopify template) — see `shopify/STORE_POLICIES.md`
 - [x] Write a return/shipping policy ✅ (all-sales-final + damaged-refund; flat-rate shipping) — `shopify/STORE_POLICIES.md`
-- [ ] Turn OFF tax collection in Shopify (small seller — see Sales Tax section): untick "Charge tax" on all products + no tax in Settings → Taxes
+- [x] Turn OFF tax collection in Shopify ✅ (2026-07-15) — "Charge tax" unticked on all products (small seller — see Sales Tax section). Confirm via a test checkout showing $0 tax.
 - [ ] Keep an eye on gross sales vs the **$10k BC PST** threshold (then $30k GST) — register when approaching
 
 ---
