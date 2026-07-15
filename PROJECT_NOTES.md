@@ -112,6 +112,8 @@ website/
 - [ ] Add prices to product listings when ready — use the method in `PRICING_SCHEME.md`
 - [x] Write a privacy policy ✅ (Shopify template) — see `shopify/STORE_POLICIES.md`
 - [x] Write a return/shipping policy ✅ (all-sales-final + damaged-refund; flat-rate shipping) — `shopify/STORE_POLICIES.md`
+- [ ] Turn OFF tax collection in Shopify (small seller — see Sales Tax section): untick "Charge tax" on all products + no tax in Settings → Taxes
+- [ ] Keep an eye on gross sales vs the **$10k BC PST** threshold (then $30k GST) — register when approaching
 
 ---
 
@@ -155,6 +157,30 @@ so online + markets share one inventory. Full plain-language steps: `shopify/SHO
   **no prices yet** (set prices on import using `PRICING_SCHEME.md`).
 - **Next steps:** (1) finish identity verification → (2) import the CSV → (3) set prices →
   (4) create a Storefront API token and send it to Claude → (5) Claude wires cart/checkout into the site.
+
+### Sales Tax (BC) — currently charging NO tax
+
+Janet lives in **BC** and operates as an unregistered **small seller / small supplier** (sole
+proprietor, no business number, selling online from home + occasional markets). Under Canadian and
+BC rules she is **not required to register for or charge any sales tax** while under the thresholds:
+
+- **BC PST (7%):** exempt as a **"small seller"** while gross sales are **≤ $10,000** over the previous
+  12 months **and** she has no established commercial premises (home + markets qualifies). This is the
+  **lower threshold — the one to watch.**
+- **GST (5%, federal):** exempt as a **"small supplier"** while total sales are **under $30,000**
+  over a rolling 12 months.
+
+**Decision (2026-07-15): charge no tax.** In Shopify, tax collection is being turned **off**:
+- Settings → Taxes and duties → Canada: no GST/PST number entered, no tax collected.
+- Per-product **"Charge tax on this item"** unticked. (Bulk-edit method: Products → select all →
+  **Edit products** → add the **Charge tax** column → uncheck all → Save. New products: untick it on
+  the product page before saving.)
+
+⚠️ **Watch the $10k PST threshold.** Once gross sales approach $10,000 in any 12-month period, Janet
+must register for BC PST and start charging 7% (and register for GST at $30,000). Use Shopify
+Analytics to keep an eye on the running total. BC PST info line: **1-877-388-4440**.
+
+_Note: general guidance, not accountant advice — confirm edge cases with the CRA / BC Ministry of Finance._
 
 ## Accounts Summary
 
