@@ -182,6 +182,19 @@ Analytics to keep an eye on the running total. BC PST info line: **1-877-388-444
 
 _Note: general guidance, not accountant advice — confirm edge cases with the CRA / BC Ministry of Finance._
 
+## Marketing / Social Media
+
+- **Instagram:** @were_cured — main channel for reaching new customers and driving traffic to werecured.ca.
+- **Guide:** `marketing/INSTAGRAM_GUIDE.md` — plain-language starter kit (bio, weekly plan, Reel ideas,
+  caption templates, copy-paste hashtag sets, First Week Checklist). Kept off the public site.
+- **Strategy in a nutshell:** lean on **Reels** (process/pour/glow-reveal videos), post ~3×/week,
+  always end with a call to action + link to werecured.ca. Consistency over perfection.
+
+### To do — Marketing
+- [ ] Update Instagram bio + put werecured.ca in the profile website field (see guide, section 1)
+- [ ] Post first process/glow Reel and 2 finished-piece photos this week (First Week Checklist)
+- [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
+
 ## Accounts Summary
 
 | Service | Purpose | Login | Password |
