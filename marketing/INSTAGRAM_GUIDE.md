@@ -17,19 +17,31 @@ You don't need to go viral. A steady trickle of the *right* people finding your 
 ---
 
 ## 1. Your bio (do this once)
-Your bio is your "shop window." Here's a ready-to-use version — copy, tweak, paste:
+Instagram has a few **separate fields** — put the right text in each:
 
-> **We're Cured! ✨ Resin Art**
-> Handmade coasters, jewellery & home décor 🌈
-> One-of-a-kind, made in BC 🇨🇦
-> Glow-in-the-dark pieces that actually glow 🌙
-> 🛒 Shop new arrivals ↓
+**Name field** (the bold line, max 30 characters — this one is searchable):
+> We're Cured! ✨ Resin Art
+
+**Bio text** (the description, max 150 characters):
+> Handmade resin coasters, jewellery & décor 🌈
+> One-of-a-kind • Made in BC 🇨🇦
+> Glow-in-the-dark pieces that really glow 🌙
+> Shop new arrivals ↓
+
+_Trimmed version if it's over the 150-char limit (emojis count extra):_
+> Handmade resin coasters, jewellery & décor 🌈
+> One-of-a-kind • Made in BC 🇨🇦
+> Glow pieces that really glow 🌙
+> Shop below ↓
+
+**Website field** (the only clickable link on Instagram — point it at the shop):
 > werecured.ca
 
 **Tips**
-- Put **werecured.ca** in the "Website" field of your profile (that's the clickable link).
-- Keep the ✨ emoji flavour — it matches your bright, playful brand.
-- When you add a new batch, you can change the last line to "🛒 19 new pieces just dropped ↓".
+- The `↓` arrows point down to the website link.
+- Switch to a free **Professional / Business account** (Settings → Account type and tools) for a
+  category label, contact button, and insights.
+- When you add a new batch, change the last bio line to "New pieces just dropped ↓".
 
 ---
 
