@@ -22,32 +22,65 @@ _This file is kept off the public website._
      difficulty**, and Claude runs the formula.
 6. **Inventory** — tick **Track quantity**, set **Quantity = 1** (one-of-a-kind, so it auto-marks
    "Sold" after it sells). Make sure **"Continue selling when out of stock" is OFF**.
-7. **Collections** — add the product to the matching section collection:
-   **Pendants · Earrings · Coasters · Bowls & Platters · Decorative Accents.**
-   (This decides which section it shows up in, and the collection's order controls its position.)
+7. **Product type** — ⭐ THIS is what decides which section the product shows up in on the site.
+   You must type it **exactly** as one of these five values (spelling and capitals matter — no plurals,
+   no "&", no extra words):
+   - `Pendant`
+   - `Earrings`
+   - `Coasters`
+   - `Bowls and Platters`
+   - `Home Decor`
+
+   ⚠️ If the Product type is blank or spelled differently (e.g. "Coaster set", "Planter", "Tray",
+   "Pendants"), the site has no section for it and **silently skips the product** — even when it's
+   Active, priced, and on the Headless channel. This is the #1 reason a product doesn't appear.
 8. **Glow-in-the-dark?** Add the tag **`Glow in the dark`** to show the little glow badge.
 9. **Sales channels / Publishing** — make it available on the **Headless** channel (that's your website).
+   (The other boxes — Online store, Point of sale, Shop — are *different* storefronts and do **not**
+   put the product on werecured.ca. Headless is the only one that feeds your site.)
 10. **Status = Active → Save.**
-11. Refresh werecured.ca — it's there. To move it up/down in its section, drag it in the collection.
+11. Refresh werecured.ca — it's there. Within a section, products are ordered **alphabetically by title**.
+
+> **Note:** Collections do *not* control what shows on the website — the site ignores them and sorts
+> purely by **Product type**. You can still use collections in Shopify for your own organizing, but
+> they have no effect on werecured.ca.
+
+### Adding a whole batch at once (bulk edit tip)
+When you import or edit many products together, set Product type in the **bulk editor**
+(Products → select all → **Edit products** → add the **Product type** column). Type the value in the
+first cell, then **copy it and paste down the *entire* column** — select every cell first, or some rows
+get left blank (a blank Product type = product won't show). After saving, ask Claude to double-check;
+Claude can read the live site data and tell you exactly which ones, if any, still have the wrong type.
 
 ---
 
-## If a product doesn't appear on the site, check:
-- ✅ Status is **Active** (not Draft)
+## If a product doesn't appear on the site, check (in this order):
+- ✅ **Product type** is exactly one of: `Pendant`, `Earrings`, `Coasters`, `Bowls and Platters`,
+  `Home Decor` (this is the most common cause — a blank or misspelled type means no section)
+- ✅ It's available on the **Headless** channel (not just Online store)
 - ✅ It has a **price**
-- ✅ It's available on the **Headless** channel
-- ✅ It's in one of the five **Collections**
+- ✅ It has at least one **photo**
+- ✅ Status is **Active** (not Draft)
+
+💡 Can't tell which products are missing without comparing lists by hand? Just ask Claude — Claude can
+read the live product data straight from Shopify and name the exact products that are off.
 
 ---
 
-## One-time setup (do once, before launch)
-1. Create **5 collections** named exactly: **Pendants, Earrings, Coasters, Bowls & Platters,
-   Decorative Accents.**
-2. Put the existing products into them quickly: **Products** list → filter by **Tag** (e.g., "Coasters")
-   → select all → **Add to collection** → pick the matching collection. Repeat for each of the five tags:
-   `Pendants`, `Earrings`, `Coasters`, `Bowls & Platters`, `Decorative Accents`.
-3. Set prices, Quantity = 1, and publish everything to the **Headless** channel.
-4. Tell Claude when this is done — Claude builds the Path A site rendering and you test locally.
+## How the site decides sections (reference)
+The website (`index.html`) reads products from Shopify's Headless channel and drops each one into a
+section **based only on its Product type field**:
+
+| Product type (exact) | Website section |
+|---|---|
+| `Pendant` | Pendants |
+| `Earrings` | Earrings |
+| `Coasters` | Coasters |
+| `Bowls and Platters` | Bowls & Platters |
+| `Home Decor` | Home Decor |
+
+To display, a product also needs: a **price**, at least one **photo**, and to be published to the
+**Headless** channel. Collections are not used by the site.
 
 ---
 
