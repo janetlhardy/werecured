@@ -193,6 +193,7 @@ _Note: general guidance, not accountant advice — confirm edge cases with the C
 ### To do — Marketing
 - [ ] Update Instagram bio + put werecured.ca in the profile website field (see guide, section 1)
 - [ ] Post first process/glow Reel and 2 finished-piece photos this week (First Week Checklist)
+- [ ] Work through `marketing/FIRST_MONTH_POSTS.md` — 4 weeks of ready-to-paste captions for real pieces
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
 ## Accounts Summary
