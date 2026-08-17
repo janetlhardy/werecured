@@ -182,6 +182,44 @@ Analytics to keep an eye on the running total. BC PST info line: **1-877-388-444
 
 _Note: general guidance, not accountant advice — confirm edge cases with the CRA / BC Ministry of Finance._
 
+## In-Person Sales — Shopify POS (craft shows / markets)
+
+In-person sales use the **Shopify Point of Sale (POS)** app, which shares one inventory with the
+online store. POS sales live on the **Point of Sale** channel — completely separate from the
+**Headless** channel that feeds werecured.ca, so nothing sold in person appears on the website.
+
+### Taking card payments — Tap to Pay
+- **Phone = the card reader.** Shopify **Tap to Pay** turns the phone itself into the reader; the
+  customer taps their card/phone/watch on it. No separate device needed.
+- **iPhone XS or newer** (recent iOS) supported; many newer **Android phones** too.
+- **iPad/tablet can NOT be the tap reader** — it can run POS and ring up sales, but needs a separate
+  card reader or manual card entry. **Use the phone for tap-to-pay.**
+- **Manual card entry** (typing the number) works on either device as a backup.
+- Card sales deposit to the **same Shopify Payments bank account** as online orders.
+
+### One-time setup
+- [ ] Download **Shopify Point of Sale** app (separate from the admin app) on the phone
+- [ ] Sign in (janethardy@werecured.ca — Google sign-in; password in Dashlane)
+- [ ] POS menu → **Settings → Payments → Set up Tap to Pay on iPhone** → accept terms
+- [ ] Confirm **Shopify Payments** is active (same as online payments)
+- [ ] Do a small **test sale + refund** to confirm it all works
+- Note: **POS Lite is free/included** — no need for paid POS Pro for markets.
+
+### Selling an in-person-only item (not on the website)
+Two ways — neither touches werecured.ca:
+1. **Quick custom sale (easiest for one-offs):** POS sale screen → **Add custom sale** → type a name
+   + price → add to cart → checkout. Nothing gets added to the catalogue or website.
+2. **POS-only product (if reselling / tracking stock):** create the product but publish it to the
+   **Point of Sale** channel only — leave **Headless unchecked** so it stays off the website.
+
+### Craft-show day checklist
+- [ ] Phone charged + charging cable / battery bank
+- [ ] Shopify POS app installed, signed in, Tap to Pay tested
+- [ ] Internet available (wifi or cell data — required to take payment)
+- [ ] Cash float for change (if taking cash); record cash sales in POS too
+- [ ] Packaging: bags, thank-you cards, business cards, stickers
+- [ ] Price list / prices visible on items
+
 ## Marketing / Social Media
 
 - **Instagram:** @were_cured — main channel for reaching new customers and driving traffic to werecured.ca.
