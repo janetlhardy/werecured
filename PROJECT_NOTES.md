@@ -180,6 +180,25 @@ BC rules she is **not required to register for or charge any sales tax** while u
 must register for BC PST and start charging 7% (and register for GST at $30,000). Use Shopify
 Analytics to keep an eye on the running total. BC PST info line: **1-877-388-4440**.
 
+### How to turn tax back ON later (when registering)
+
+Two switches control tax: (1) the **store-level master switch** — Settings → Taxes and duties, where
+you enter a GST/PST number and set a region to collect; and (2) the per-product **"Charge tax on this
+item"** box. **Tax is only charged when BOTH are on.** Right now the master switch is off, so no tax is
+charged regardless of the checkboxes; the per-product boxes were also unticked as a safety measure.
+
+When gross sales hit the threshold and Janet registers:
+1. **Master switch:** Settings → Taxes and duties → Canada → enter the **PST (and later GST) number**
+   and set BC to collect. This is the main one.
+2. **Re-tick the products in bulk** (not one-by-one): Products → select all → **Edit products** → add
+   the **Charge tax** column → tick the first cell and copy it down the whole column → **Save**.
+   (New products default to "Charge tax" already ticked, so only the previously-unticked ones need it.)
+3. In **POS**, the same tax settings apply automatically once the master switch is on.
+
+_Alternative lower-effort approach (not currently used): leave every product's "Charge tax" box ticked
+and rely solely on the master switch being off. Then registering = flip the one master switch, no bulk
+edit needed. Current setup unticks per-product instead, which is a touch safer._
+
 _Note: general guidance, not accountant advice — confirm edge cases with the CRA / BC Ministry of Finance._
 
 ## In-Person Sales — Shopify POS (craft shows / markets)
