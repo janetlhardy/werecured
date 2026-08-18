@@ -1,7 +1,8 @@
 exclude:
-  - CLAUDE.md
+  - AGENTS.md
   - PROJECT_NOTES.md
   - PRICING_SCHEME.md
+  - docs
   - print-materials
   - shopify
   - marketing
