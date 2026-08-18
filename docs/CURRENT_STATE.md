@@ -8,27 +8,6 @@ _Updated: 2026-08-17._
 
 ---
 
-## Waiting on Janet
-
-### Moving the product photos out of the repository
-
-The new photo pipeline is documented and in force for future batches, but the **existing ~1,053
-product photos are still in `images/`**. They've done their job — every imported product's images
-now live on Shopify's servers — so they can move to a local archive folder alongside
-`werecured-HEIC-originals`.
-
-- **Keep in `images/`:** the 9 the website actually uses — `IMG_4625` (About photo), `IMG_3064`
-  (social share), and `IMG_3061`, `IMG_3091`, `IMG_3131`, `IMG_3134`, `IMG_3188`, `IMG_3309`,
-  `IMG_3320` (source art for the print designs).
-- **Effect:** published site drops from about 703 MB to roughly 5 MB.
-- **Not a delete** — it's a move, and git history keeps every version regardless.
-- **Side effect to accept:** the `werecured.ca/images/…` URLs inside the old import CSVs stop
-  resolving. Those CSVs are historical records already.
-
-Janet asked to confirm immediately before this runs, since it's the only bulk file operation.
-
----
-
 ## Worth a look sometime
 
 ### `CLAUDE.md` has no backup
@@ -55,5 +34,7 @@ Not blocking anything, just flagged so nobody assumes they were checked:
 
 ## Recently finished
 
-_Nothing outstanding from the August 2026 documentation work — the rest of it landed and the details
-that matter went into `PROJECT_MEMORY.md`._
+_The August 2026 tidy-up is complete: the agent docs were written, the stale notes corrected, the
+photo pipeline redesigned, and the 1,052 product photos moved out to
+`/Users/knitwit1/website/werecured-product-photos/`. The published site went from about 703 MB to
+4.4 MB. Details worth keeping are in `PROJECT_MEMORY.md`; there's nothing left outstanding._
