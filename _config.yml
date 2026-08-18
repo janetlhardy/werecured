@@ -6,3 +6,4 @@ exclude:
   - print-materials
   - shopify
   - marketing
+  - images/README.md
