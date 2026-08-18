@@ -9,12 +9,31 @@ _This file is kept off the public website._
 
 ---
 
-## 📍 Current status (2026-07-05)
+## ✅ This setup is finished — kept as a record
+
+**The shop went live on 2026-07-10.** Identity verification cleared, payments are active, prices are
+set, and werecured.ca renders products straight from Shopify. There's nothing to do in this file
+anymore.
+
+It's kept because it explains **how the shop was put together**, which is useful if something ever
+needs rebuilding or you're wondering why a setting is the way it is.
+
+**For everyday jobs, use these instead:**
+- Adding one new piece → `ADDING_PRODUCTS.md`
+- Adding a whole batch → `ADDING_A_BATCH.md`
+- Shipping rates → `SHIPPING_SETUP.md`
+- Markets and craft shows → `CRAFT_SHOW_POS.md`
+
+<details>
+<summary>Status as it stood on 2026-07-05 (all since completed)</summary>
+
 - ✅ Shopify account **created** — signed in with the **Google account janethardy@werecured.ca**.
 - ⏳ Shopify is asking for **identity-document verification** before payments. **Payments are on hold
   until that's approved** — so Step 2 below is blocked for now. Everything else can proceed.
 - ✅ **`products-import.csv` is ready** in this folder (132 products, drafts, quantity 1, no prices yet).
 - ▶️ **Next up:** finish verification, then do Step 3 (import) and Step 4 (prices).
+
+</details>
 
 ---
 

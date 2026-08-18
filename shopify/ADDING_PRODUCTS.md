@@ -77,7 +77,11 @@ section **based only on its Product type field**:
 | `Earrings` | Earrings |
 | `Coasters` | Coasters |
 | `Bowls and Platters` | Bowls & Platters |
-| `Home Decor` | Home Decor |
+| `Home Decor` | Decorative Accents |
+
+⚠️ Watch that last row — the Product type is `Home Decor`, but the heading on the website reads
+**Decorative Accents**. They're deliberately different, so don't go looking for a "Home Decor"
+heading on the site.
 
 To display, a product also needs: a **price**, at least one **photo**, and to be published to the
 **Headless** channel. Collections are not used by the site.

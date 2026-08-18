@@ -4,7 +4,7 @@
 - **Business name:** We're Cured!
 - **Products:** Handmade resin jewelry (pendants, earrings) and home goods (coasters, home decor)
 - **Physical location:** None currently — fully online
-- **Selling channels:** To be decided
+- **Selling channels:** Online at werecured.ca (Shopify checkout) + in person at markets via Shopify POS
 - **Instagram:** @were_cured
 - **Website email:** hello@werecured.ca
 
@@ -13,31 +13,41 @@
 ## Website
 
 ### Files
-- **Location on computer:** `/Users/knitwit1/website/`
+- **Location on computer:** `/Users/knitwit1/website/werecured/`
 - **Main file:** `index.html` — this is the entire website (single file)
-- **Photos:** All stored as `.jpg` files in the `images/` subfolder (converted from HEIC iPhone photos using the macOS `sips` command)
+- **Photos:** Product photos live in **Shopify**, not here. The `images/` folder holds only the few images the website itself displays. See `shopify/ADDING_A_BATCH.md`.
 
 ### Design
 - **Fonts:** Bungee (titles), Righteous (headings/labels), Nunito (body text) — all from Google Fonts
 - **Color palette:** Hot pink, electric blue, lime green, orange, purple, yellow on a dark purple-black background
-- **Sections:** Pendants (18 items), Earrings (5 items), Coasters (20 sets), Home Decor (4 items), About, Contact
+- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (153 pieces as of 2026-08-17)
 
 ### Web Hosting
 - **Service:** GitHub Pages (free)
-- **Status:** Setting up
-- **GitHub repository:** To be created
+- **Status:** ✅ Live at https://werecured.ca
+- **GitHub repository:** https://github.com/janetlhardy/werecured (**public** — see note below)
 - **GitHub account:** janetlhardy (knitwit1@telus.net — password in Dashlane)
-- **How it works:** Website files are stored in a GitHub repository and automatically served as a live website. To update the site, changes are pushed to GitHub via git.
+- **How it works:** Website files are stored in a GitHub repository and automatically served as a live website. To update the site, changes are pushed to GitHub via git — usually live a minute or two later.
+- ⚠️ **The repository is public.** `_config.yml` keeps this file off werecured.ca, but that only hides it from the *website* — it's still readable by anyone on github.com. Never put a password, recovery code or customer detail in this folder. (Passwords belong in Dashlane, which is where they are.)
 
 ### File Structure
 ```
-website/
+werecured/
 ├── index.html        ← the entire website
-├── images/           ← all product photos (.jpg)
+├── AGENTS.md         ← start-here file for Claude
+├── docs/             ← how the site works, decisions, current state
+├── images/           ← only images the website itself displays
+├── shopify/          ← guides for running the shop
+├── marketing/        ← Instagram guides
+├── print-materials/  ← business cards, stickers, gift wrap
 ├── PROJECT_NOTES.md  ← this file
-├── CLAUDE.md         ← instructions for Claude
+├── PRICING_SCHEME.md ← how to price a piece
+├── CNAME             ← points GitHub Pages at werecured.ca
+├── _config.yml       ← keeps working files off the public site
 └── .gitignore        ← tells git which files to ignore
 ```
+_(`CLAUDE.md` lives one folder up, in `/Users/knitwit1/website/`, because it's shared with
+The Shivering Sheep.)_
 
 ---
 
@@ -77,7 +87,7 @@ website/
 - [x] Push website to GitHub ✅
 - [x] Enable GitHub Pages on the repository ✅
 - [x] Connect `werecured.ca` domain to GitHub Pages (CNAME file + Namecheap DNS) ✅
-- [ ] Enable "Enforce HTTPS" in GitHub Pages settings (waiting for certificate — check back in an hour)
+- [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
 ### Email
@@ -100,16 +110,21 @@ website/
 - [x] Add ARIA labels for screen readers ✅ (Quick Look buttons now name their product; lightbox close/prev/next buttons + dialog role labeled)
 - [~] Improve alt text on thumbnail images — reviewed: the 231 "view N" thumbnails already include the product name (e.g., "Purple confetti pendant view 2"), which is reasonable for screen readers. Main product images have full descriptive alt text. Rewriting all 231 by hand risks inaccuracy without viewing each; leaving as-is unless we improve them gradually.
 
-### Future — Product Data Refactor (son's suggestion)
-- [ ] Create a `products.json` file storing all product data: name, category, description, photos (main + thumbnails), date added, glow-in-the-dark flag, availability status
-- [ ] Write a build script (`build.py` or `build.js`) that reads `products.json` and rewrites the product sections of `index.html` automatically
-- [ ] After that: adding/removing products only requires editing the JSON file and running the script — no touching HTML directly
-- [ ] Consider adding price field to JSON now even if prices aren't shown yet, so the data is ready when selling begins
+### ~~Future — Product Data Refactor (son's suggestion)~~ — no longer needed ✅
+
+_This was a good idea for the problem at the time: keep all the product details in a `products.json`
+file and write a build script that rewrites `index.html` from it, so adding a piece wouldn't mean
+editing HTML by hand._
+
+**The move to Shopify (July 2026) solved the same problem better** — products live in Shopify, the
+website builds its galleries from them automatically, and inventory and checkout come along for
+free. There's nothing left for a JSON file and build script to do, so **this isn't being built**.
+Kept here so the idea doesn't get proposed again from scratch.
 
 ### Business
 - [x] Update website Contact section with real email address (hello@werecured.ca) ✅
 - [x] Decide on online selling method ✅ → **Shopify** (headless: Shopify runs products/inventory/checkout + in-person POS; werecured.ca stays as the custom storefront). Setup steps in `shopify/SHOPIFY_SETUP.md`; integration plan approved.
-- [ ] Add prices to product listings when ready — use the method in `PRICING_SCHEME.md`
+- [x] Add prices to product listings ✅ — all 153 pieces priced ($25–$150). Use `PRICING_SCHEME.md` for each new piece.
 - [x] Write a privacy policy ✅ (Shopify template) — see `shopify/STORE_POLICIES.md`
 - [x] Write a return/shipping policy ✅ (all-sales-final + damaged-refund; flat-rate shipping) — `shopify/STORE_POLICIES.md`
 - [x] Turn OFF tax collection in Shopify ✅ (2026-07-15) — "Charge tax" unticked on all products (small seller — see Sales Tax section). Confirm via a test checkout showing $0 tax.
@@ -151,12 +166,14 @@ the custom storefront ("Enhance current cards" approach). In-person sales will u
 so online + markets share one inventory. Full plain-language steps: `shopify/SHOPIFY_SETUP.md`.
 
 - **Account:** created, signed in via the **Google account janethardy@werecured.ca**.
-- **Status (as of 2026-07-05):** ⏳ Shopify is requiring **identity-document verification** before
-  payments can be set up. Payments (Shopify Payments) are **blocked until that's approved**.
-- **Products:** `shopify/products-import.csv` is ready — 132 products, all as **Drafts**, quantity 1,
-  **no prices yet** (set prices on import using `PRICING_SCHEME.md`).
-- **Next steps:** (1) finish identity verification → (2) import the CSV → (3) set prices →
-  (4) create a Storefront API token and send it to Claude → (5) Claude wires cart/checkout into the site.
+- **Status: ✅ Live since 2026-07-10.** Identity verification cleared, payments active, the website
+  renders products straight from Shopify, and the cart and checkout work. **153 pieces live** as of
+  2026-08-17, all priced and photographed.
+- **Adding more:** one piece at a time → `shopify/ADDING_PRODUCTS.md`. A whole batch →
+  `shopify/ADDING_A_BATCH.md`.
+
+_The July 2026 setup steps (identity verification, the first CSV import, wiring up the cart) are all
+finished. They're kept in `shopify/SHOPIFY_SETUP.md` as a record of how the shop was built._
 
 ### Sales Tax (BC) — currently charging NO tax
 
