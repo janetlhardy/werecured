@@ -3,6 +3,10 @@
 *.aae
 *.AAE
 
+# Videos - too big for the repo; keep them with the photo originals
+*.mov
+*.MOV
+
 # Mac system files
 .DS_Store
 
