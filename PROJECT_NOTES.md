@@ -91,20 +91,26 @@ The Shivering Sheep.)_
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
 ### New Pieces — Thinker Statuettes (August 2026)
-- [ ] Set a price for each of the four thinker sets (see below), then import
-      `shopify/new-thinkers-2026-08.csv` into Shopify
+- [x] Set a price for each of the four thinker sets ✅ (2026-08-19)
+- [ ] Import `shopify/new-thinkers-2026-08.csv` into Shopify
 - [ ] Drag each set's photo folder onto its product in Shopify — folders are in
       `werecured-product-photos/batch-2026-08b/`
 - [ ] Switch the four products from **Draft** to **Active** once priced and photographed
 
 Four sets of three seated "thinker" figures, all Product type **Home Decor**:
 
-| Set | Handle | SKU |
-|---|---|---|
-| Garden Bloom Thinkers — Set of 3 | `garden-bloom-thinkers` | WC-3820 |
-| Liquid Metal Thinkers — Set of 3 | `liquid-metal-thinkers` | WC-3825 |
-| Moonstone Thinkers — Set of 3 | `moonstone-thinkers` | WC-3830 |
-| Gilded Lagoon Thinkers — Set of 3 | `gilded-lagoon-thinkers` | WC-3835 |
+| Set | Handle | SKU | Price |
+|---|---|---|---|
+| Garden Bloom Thinkers — Set of 3 | `garden-bloom-thinkers` | WC-3820 | $109 |
+| Liquid Metal Thinkers — Set of 3 | `liquid-metal-thinkers` | WC-3825 | $65 |
+| Moonstone Thinkers — Set of 3 | `moonstone-thinkers` | WC-3830 | $65 |
+| Gilded Lagoon Thinkers — Set of 3 | `gilded-lagoon-thinkers` | WC-3835 | $65 |
+
+The Garden Bloom set is priced higher because it took roughly three times the active labour
+(1.5 hr vs ~35 min) — materials were the same. See `PRICING_SCHEME.md`.
+
+- [ ] **Reshoot these four in the new light box** (arriving 2026-08-20) — the current shots are
+      outdoors with harsh shadows and reflections off the glass table
 
 ### Email
 - [ ] Add `werecured.com` to Google Workspace
