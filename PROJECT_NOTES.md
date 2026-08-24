@@ -92,8 +92,10 @@ The Shivering Sheep.)_
 
 ### New Pieces — Thinker Statuettes (August 2026)
 - [x] Set a price for each of the four thinker sets ✅ (2026-08-19)
-- [ ] **Waiting on the light box** (arriving 2026-08-20) — reshoot all four sets indoors first,
-      then do the Shopify import once. Nothing to do until the new photos exist.
+- [x] Light box arrived and all four sets reshot ✅ (2026-08-24) — a big improvement on the
+      outdoor shots
+- [ ] **Second short reshoot in progress** — backlit Garden Blooms, plus individual figure shots
+      for Gilded Lagoon and Liquid Metal. Then import.
 - [ ] Import `shopify/new-thinkers-2026-08.csv` into Shopify
 - [ ] Drag each set's photo folder onto its product in Shopify — folders are in
       `werecured-product-photos/batch-2026-08b/`
@@ -111,9 +113,15 @@ Four sets of three seated "thinker" figures, all Product type **Home Decor**:
 The Garden Bloom set is priced higher because it took roughly three times the active labour
 (1.5 hr vs ~35 min) — materials were the same. See `PRICING_SCHEME.md`.
 
-The current photos in `batch-2026-08b/` are outdoor shots with harsh shadows and reflections off
-the glass table. They're usable, but the plan is to replace them with light box shots before
-anything goes into Shopify.
+**Photos.** `batch-2026-08b/<handle>/` now holds the light box shots. The original outdoor shots
+are kept in `batch-2026-08b/outdoor-originals/` as a backup and aren't used.
+
+The Moonstone set photographs best on a **black background** — it shows the iridescent ghost
+pigment, which washes out to plain cream on white. A white group shot leads so the product grid
+stays consistent, with the black singles at positions 3–5.
+
+Translucent pieces (Garden Bloom especially) need **light coming through them from behind**, not
+front lighting — that's what makes the flowers glow the way they do in person.
 
 ### Email
 - [ ] Add `werecured.com` to Google Workspace
