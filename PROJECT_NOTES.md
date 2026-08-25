@@ -137,6 +137,29 @@ stays consistent, with the black singles at positions 3–5.
 Translucent pieces (Garden Bloom especially) need **light coming through them from behind**, not
 front lighting — that's what makes the flowers glow the way they do in person.
 
+### New Pieces — Batch 2026-08c (ready to import)
+
+- [ ] Import `shopify/new-products-2026-08c.csv`
+- [ ] Drag photo folders from `werecured-product-photos/batch-2026-08c/`
+- [ ] **Check stock quantity is 1 on all four** — this is the step that silently failed last time
+- [ ] Switch from Draft to Active
+
+| Piece | Handle | SKU | Price | Photos |
+|---|---|---|---|---|
+| Sapphire Blossom Coasters — Set of 4 | `sapphire-blossom-coasters` | WC-3840 | $70 | 10 |
+| Abalone Shell Bowl | `abalone-shell-bowl` | WC-3845 | $75 | 12 |
+| Wisteria Shell Bowl | `wisteria-shell-bowl` | WC-3850 | $75 | 9 |
+| Aurora Thinkers — Set of 3 | `aurora-thinkers` | WC-3855 | $65 | 24 |
+
+Both bowls are from the same mould as the **Opal Wave Bowl** and are roughly 18 cm across. Opal
+Wave was listed at $50; Janet is raising it to $75 so all three match.
+
+The Aurora Thinkers have glitter bases and **ghost pigment** upper bodies, which look completely
+different in shade, sunlight and the light box — the sunlit shots showing the opal rainbow effect
+are included deliberately, and the description explains it.
+
+Scale shots (bowl beside a tape measure) sit at **position 2** on both bowls.
+
 ### Email
 - [ ] Add `werecured.com` to Google Workspace
 - [ ] Add DNS records for `werecured.com` email in Namecheap
