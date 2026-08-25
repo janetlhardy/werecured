@@ -20,7 +20,7 @@
 ### Design
 - **Fonts:** Bungee (titles), Righteous (headings/labels), Nunito (body text) — all from Google Fonts
 - **Color palette:** Hot pink, electric blue, lime green, orange, purple, yellow on a dark purple-black background
-- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (153 pieces as of 2026-08-17)
+- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (173 pieces as of 2026-08-25)
 
 ### Web Hosting
 - **Service:** GitHub Pages (free)
@@ -137,12 +137,13 @@ stays consistent, with the black singles at positions 3–5.
 Translucent pieces (Garden Bloom especially) need **light coming through them from behind**, not
 front lighting — that's what makes the flowers glow the way they do in person.
 
-### New Pieces — Batch 2026-08c (ready to import)
+### New Pieces — Batch 2026-08c ✅ DONE (2026-08-25)
 
-- [ ] Import `shopify/new-products-2026-08c.csv`
-- [ ] Drag photo folders from `werecured-product-photos/batch-2026-08c/`
-- [ ] **Check stock quantity is 1 on all four** — this is the step that silently failed last time
-- [ ] Switch from Draft to Active
+- [x] Import `shopify/new-products-2026-08c.csv` ✅
+- [x] Drag photo folders from `werecured-product-photos/batch-2026-08c/` ✅
+- [x] Stock quantity fixed on Wisteria Shell Bowl and Aurora Thinkers ✅
+- [x] Switched from Draft to Active ✅ — all four verified live and buyable
+- [x] Opal Wave Bowl raised $50 → $75 to match the two new bowls ✅
 
 | Piece | Handle | SKU | Price | Photos |
 |---|---|---|---|---|
