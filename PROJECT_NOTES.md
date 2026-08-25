@@ -330,9 +330,12 @@ Two ways — neither touches werecured.ca:
 ## Current focus (decided 2026-08-25)
 
 **Uploading new pieces is paused.** With 173 products live the site has plenty of variety, and
-nothing has sold online yet — but the cause is almost certainly **no traffic**, not too little
-stock: the whole marketing to-do list below is still untouched, including putting werecured.ca in
-the Instagram bio. Adding more products would not have fixed that.
+nothing has sold online yet — but the cause is **reach, not stock**. The Instagram account
+(@were_cured) is set up properly, bio and werecured.ca link in place, with posts up — but around
+**59 followers** as of 2026-08-25. That's the bottleneck. Adding more products would not have
+fixed it.
+
+_Janet's daughter helps with Instagram._
 
 So the plan is:
 - **Keep the remaining inventory for the gift show, first weekend of November 2026.** Roughly 30–40
@@ -357,7 +360,7 @@ later.
   always end with a call to action + link to werecured.ca. Consistency over perfection.
 
 ### To do — Marketing
-- [ ] Update Instagram bio + put werecured.ca in the profile website field (see guide, section 1)
+- [x] Update Instagram bio + put werecured.ca in the profile website field ✅ (verified live 2026-08-25)
 - [ ] Post first process/glow Reel and 2 finished-piece photos this week (First Week Checklist)
 - [ ] Work through `marketing/FIRST_MONTH_POSTS.md` — 4 weeks of ready-to-paste captions for real pieces
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
