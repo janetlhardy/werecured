@@ -368,6 +368,8 @@ later.
 - [ ] Work through `marketing/FIRST_MONTH_POSTS.md` — 4 weeks of ready-to-paste captions for real pieces
 - [ ] Fill in show name / venue / hours at the top of `marketing/SHOW_POSTS.md`
 - [ ] Take the pendant group photo (needed for the first countdown post, ~5 Oct)
+- [x] Booth banner designed ✅ — `print-materials/booth-banner.html`, 72" × 24" vinyl
+- [ ] Print the booth banner (open the file, Print → Save as PDF at 72 × 24 in, send to a printer)
 - [ ] Make a small table sign with `@were_cured` + `werecured.ca` for the show
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
