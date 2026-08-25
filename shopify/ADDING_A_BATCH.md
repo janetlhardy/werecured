@@ -117,6 +117,10 @@ worrying about the limit.
 
 ## Notes for Claude
 
+- **Sizing: never ask Janet to measure and document pieces** — it's too time-consuming for the
+  return. Instead she includes a **frame of reference in one photo** (her hand, or a small ruler).
+  So: don't put dimensions in descriptions, and make sure every product has at least one scale
+  shot. If a batch arrives without one, ask for that single photo rather than for measurements.
 - Compress photos at intake with **`sips -Z 2048 -s formatOptions 75`** before handing them over.
   2048 px is Shopify's threshold for zoom quality, so don't go below it for product shots. (The
   1500 px figure in `CLAUDE.md` predates the shop and is too small for product photos now.)
