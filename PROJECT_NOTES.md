@@ -95,8 +95,8 @@ The Shivering Sheep.)_
 - [x] Light box arrived and all four sets reshot ✅ (2026-08-24) — a big improvement on the
       outdoor shots
 - [x] Backlit Garden Bloom reshoot ✅ (2026-08-24) — worked beautifully, 11 backlit shots now lead
-- [ ] Still needed before import: individual figure shots for **Gilded Lagoon** (only 2 group
-      shots) and **Liquid Metal** (3)
+- [x] Individual figure shots for **Gilded Lagoon** and **Liquid Metal** ✅ (2026-08-25)
+      — **all four sets are now fully photographed and ready to import**
 - [ ] Import `shopify/new-thinkers-2026-08.csv` into Shopify
 - [ ] Drag each set's photo folder onto its product in Shopify — folders are in
       `werecured-product-photos/batch-2026-08b/`
@@ -114,7 +114,8 @@ Four sets of three seated "thinker" figures, all Product type **Home Decor**:
 The Garden Bloom set is priced higher because it took roughly three times the active labour
 (1.5 hr vs ~35 min) — materials were the same. See `PRICING_SCHEME.md`.
 
-**Photos.** `batch-2026-08b/<handle>/` holds the shots that will be uploaded. Superseded shots are kept as backups in
+**Photos — all four sets complete:** Garden Bloom 13, Gilded Lagoon 20, Liquid Metal 13,
+Moonstone 7. `batch-2026-08b/<handle>/` holds the shots to upload, numbered, `-1` first. Superseded shots are kept as backups in
 `batch-2026-08b/outdoor-originals/` and `batch-2026-08b/lightbox-frontlit/` and aren't used.
 
 **Also ready — photo replacements for three products already live in the shop** (this is a
