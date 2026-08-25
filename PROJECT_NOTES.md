@@ -327,6 +327,27 @@ Two ways — neither touches werecured.ca:
 - [ ] Packaging: bags, thank-you cards, business cards, stickers
 - [ ] Price list / prices visible on items
 
+## Current focus (decided 2026-08-25)
+
+**Uploading new pieces is paused.** With 173 products live the site has plenty of variety, and
+nothing has sold online yet — but the cause is almost certainly **no traffic**, not too little
+stock: the whole marketing to-do list below is still untouched, including putting werecured.ca in
+the Instagram bio. Adding more products would not have fixed that.
+
+So the plan is:
+- **Keep the remaining inventory for the gift show, first weekend of November 2026.** Roughly 30–40
+  pendants, no two alike, all around $50. Sell them via POS **Add custom sale** — no listings or
+  photography needed (see the In-Person Sales section).
+- **Photograph and list only what doesn't sell**, after the show.
+- **Take one group photo of all the pendants before the show** — a strong pre-show Instagram post,
+  a record of what was there, and insurance on ~$2,000 of stock.
+- **Make sure every show customer leaves with the website address** — cards, stickers, a QR code on
+  the table. Show buyers are the warmest possible audience for later online sales.
+
+Note for pricing at the show: keep pendants at the online price (~$50) so nobody finds a different
+price afterwards. A bundle (2 for $90, 3 for $130) moves stock and reduces what needs photographing
+later.
+
 ## Marketing / Social Media
 
 - **Instagram:** @were_cured — main channel for reaching new customers and driving traffic to werecured.ca.
