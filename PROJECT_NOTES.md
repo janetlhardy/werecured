@@ -356,6 +356,9 @@ later.
 - **Instagram:** @were_cured — main channel for reaching new customers and driving traffic to werecured.ca.
 - **Guide:** `marketing/INSTAGRAM_GUIDE.md` — plain-language starter kit (bio, weekly plan, Reel ideas,
   caption templates, copy-paste hashtag sets, First Week Checklist). Kept off the public site.
+- **Show countdown:** `marketing/SHOW_POSTS.md` — ready-to-paste posts counting down to the
+  November 2026 gift show, plus a local/show hashtag set and the after-the-show post that sends
+  visitors to werecured.ca. Fill in the show name, venue and hours once at the top.
 - **Strategy in a nutshell:** lean on **Reels** (process/pour/glow-reveal videos), post ~3×/week,
   always end with a call to action + link to werecured.ca. Consistency over perfection.
 
@@ -363,6 +366,9 @@ later.
 - [x] Update Instagram bio + put werecured.ca in the profile website field ✅ (verified live 2026-08-25)
 - [ ] Post first process/glow Reel and 2 finished-piece photos this week (First Week Checklist)
 - [ ] Work through `marketing/FIRST_MONTH_POSTS.md` — 4 weeks of ready-to-paste captions for real pieces
+- [ ] Fill in show name / venue / hours at the top of `marketing/SHOW_POSTS.md`
+- [ ] Take the pendant group photo (needed for the first countdown post, ~5 Oct)
+- [ ] Make a small table sign with `@were_cured` + `werecured.ca` for the show
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
 ## Accounts Summary
