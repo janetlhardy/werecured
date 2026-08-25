@@ -97,10 +97,11 @@ The Shivering Sheep.)_
 - [x] Backlit Garden Bloom reshoot ✅ (2026-08-24) — worked beautifully, 11 backlit shots now lead
 - [x] Individual figure shots for **Gilded Lagoon** and **Liquid Metal** ✅ (2026-08-25)
       — **all four sets are now fully photographed and ready to import**
-- [ ] Import `shopify/new-thinkers-2026-08.csv` into Shopify
-- [ ] Drag each set's photo folder onto its product in Shopify — folders are in
-      `werecured-product-photos/batch-2026-08b/`
-- [ ] Switch the four products from **Draft** to **Active** once priced and photographed
+- [x] Import `shopify/new-thinkers-2026-08.csv` into Shopify ✅ (2026-08-25)
+- [x] Photos added to all four ✅ — verified live: 13 / 13 / 7 / 20
+- [x] Switched from Draft to Active ✅ — all four confirmed live and buyable
+- [x] Photo replacements done for Amethyst Crystal Coasters, Blue Dahlia Coasters and the
+      Golden Tide Trinket Dish ✅
 
 Four sets of three seated "thinker" figures, all Product type **Home Decor**:
 
@@ -118,10 +119,16 @@ The Garden Bloom set is priced higher because it took roughly three times the ac
 Moonstone 7. `batch-2026-08b/<handle>/` holds the shots to upload, numbered, `-1` first. Superseded shots are kept as backups in
 `batch-2026-08b/outdoor-originals/` and `batch-2026-08b/lightbox-frontlit/` and aren't used.
 
-**Also ready — photo replacements for three products already live in the shop** (this is a
-different job from an import; see the to-do above): `reshoots-2026-08/` holds 4 new light box
-photos each for **Amethyst Crystal Coasters**, **Blue Dahlia Coasters** and the
-**Golden Tide Trinket Dish**.
+**Photo replacements — done.** `reshoots-2026-08/` holds the light box photos that went onto
+**Amethyst Crystal Coasters**, **Blue Dahlia Coasters** and the **Golden Tide Trinket Dish**.
+A few of the older outdoor **macro close-ups were deliberately kept** — at that magnification the
+background and harsh light don't show, and they reveal surface detail the light box shots don't.
+`blue-dahlia-coasters-2` (in hand) is kept as the **scale** shot. Rule of thumb: whole-product
+shots first, close-ups last.
+
+⚠️ **Watch the stock quantity on CSV imports.** Garden Bloom imported at qty 0 and showed as sold
+out on the live site despite looking perfect in admin. Always check `availableForSale` after an
+import — see the storefront query in `shopify/ADDING_A_BATCH.md`.
 
 The Moonstone set photographs best on a **black background** — it shows the iridescent ghost
 pigment, which washes out to plain cream on white. A white group shot leads so the product grid

@@ -133,3 +133,28 @@ worrying about the limit.
   considered and rejected; see `docs/PROJECT_MEMORY.md`.
 - After Janet reports she's done, offer to check the live storefront for products missing a photo or
   carrying an unrecognised Product type.
+
+---
+
+## Checking a batch went in properly (for Claude)
+
+After Janet reports she's done, verify against the live storefront rather than trusting admin:
+
+```
+curl -s -X POST "https://fbkwka-jw.myshopify.com/api/2024-10/graphql.json" \
+ -H "X-Shopify-Storefront-Access-Token: 4b5f552cdecea53a71057cf281cdd532" \
+ -H "Content-Type: application/json" \
+ -d '{"query":"{ products(first:20, query:\"<search>\") { edges { node { title handle productType availableForSale images(first:50){edges{node{url}}} priceRange{minVariantPrice{amount}} } } } }"}'
+```
+
+Check each product for: right `productType`, a price, at least one image, and
+**`availableForSale: true`**.
+
+⚠️ **`availableForSale: false` is the one that bites.** In August 2026 a product imported with
+quantity 0 and showed as sold out on the live site while looking completely correct in the Shopify
+admin. The fix is Products → the product → Inventory → Quantity → 1 → Save. A CSV can carry
+`Variant Inventory Qty` and still land at zero, so always check this after an import.
+
+Image filenames come back with a UUID suffix (`name-1_a3f8….jpg`) where the name collided with an
+existing file — that suffix marks the **newly uploaded** copy, which is a handy way to tell new
+photos from ones already on the product.
