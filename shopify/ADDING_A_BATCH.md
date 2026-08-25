@@ -124,6 +124,15 @@ worrying about the limit.
 - Compress photos at intake with **`sips -Z 2048 -s formatOptions 75`** before handing them over.
   2048 px is Shopify's threshold for zoom quality, so don't go below it for product shots. (The
   1500 px figure in `CLAUDE.md` predates the shop and is too small for product photos now.)
+- ⚠️ **Open EVERY photo before assigning it to a product. Never infer from consecutive filenames.**
+  In August 2026 two similar bowls shot in one session (Sea Blue / Sea Green Splash) were sorted by
+  sampling every second photo and assuming neighbouring numbers matched — nine ended up named for
+  the wrong bowl, and Janet had to re-sort them by hand while uploading. Photo numbers do not run
+  cleanly piece by piece: she moves back and forth between items. The check is cheap; the fix is
+  not, because it lands on her.
+- Also beware **the same piece looking like two different pieces.** Colour-shift and ghost pigments
+  photograph completely differently in shade, direct sun and the light box. Ask before splitting a
+  set on appearance alone.
 - Save them **outside the repository**, one sub-folder per product, files named
   `<product-handle>-1.jpeg`, `-2`, and so on. The intended main shot is `-1`.
 - Avoid filenames ending in `_thumb`, `_small`, `_medium`, `large`, `grande`, `compact`, `icon` or
