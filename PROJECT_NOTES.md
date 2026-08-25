@@ -114,8 +114,13 @@ Four sets of three seated "thinker" figures, all Product type **Home Decor**:
 The Garden Bloom set is priced higher because it took roughly three times the active labour
 (1.5 hr vs ~35 min) — materials were the same. See `PRICING_SCHEME.md`.
 
-**Photos.** `batch-2026-08b/<handle>/` holds the shots that will be uploaded. The original outdoor shots
-are kept in `batch-2026-08b/outdoor-originals/` as a backup and aren't used.
+**Photos.** `batch-2026-08b/<handle>/` holds the shots that will be uploaded. Superseded shots are kept as backups in
+`batch-2026-08b/outdoor-originals/` and `batch-2026-08b/lightbox-frontlit/` and aren't used.
+
+**Also ready — photo replacements for three products already live in the shop** (this is a
+different job from an import; see the to-do above): `reshoots-2026-08/` holds 4 new light box
+photos each for **Amethyst Crystal Coasters**, **Blue Dahlia Coasters** and the
+**Golden Tide Trinket Dish**.
 
 The Moonstone set photographs best on a **black background** — it shows the iridescent ghost
 pigment, which washes out to plain cream on white. A white group shot leads so the product grid
