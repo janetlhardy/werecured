@@ -2,6 +2,7 @@ exclude:
   - AGENTS.md
   - PROJECT_NOTES.md
   - PRICING_SCHEME.md
+  - SECURITY_NOTES.md
   - docs
   - print-materials
   - shopify
