@@ -20,7 +20,7 @@
 ### Design
 - **Fonts:** Bungee (titles), Righteous (headings/labels), Nunito (body text) — all from Google Fonts
 - **Color palette:** Hot pink, electric blue, lime green, orange, purple, yellow on a dark purple-black background
-- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (173 pieces as of 2026-08-25)
+- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (176 pieces as of 2026-08-27)
 
 ### Web Hosting
 - **Service:** GitHub Pages (free)
@@ -161,12 +161,15 @@ are included deliberately, and the description explains it.
 
 Scale shots (bowl beside a tape measure) sit at **position 2** on both bowls.
 
-### New Pieces — Batch 2026-08d (prepped 2026-08-27)
+### New Pieces — Batch 2026-08d ✅ DONE (2026-08-27)
 
-- [ ] Import `shopify/new-products-2026-08d.csv`
-- [ ] Drag photo folders from `werecured-product-photos/batch-2026-08d/`
-- [ ] Check stock quantity landed at 1, not 0, on all three
-- [ ] Switch from Draft to Active once they look right
+- [x] Import `shopify/new-products-2026-08d.csv` ✅
+- [x] Drag photo folders from `werecured-product-photos/batch-2026-08d/` ✅
+- [x] Stock quantity checked — all three `availableForSale`, none stuck at 0 ✅
+- [x] Switched from Draft to Active ✅ — all three verified live, right type, right price,
+      photos in the intended order with `-1` leading
+- [x] Instagram captions written and passed to Janet's daughter ✅ —
+      `marketing/BATCH_2026_08D_POSTS.md`
 
 | Piece | Handle | SKU | Price | Photos |
 |---|---|---|---|---|
