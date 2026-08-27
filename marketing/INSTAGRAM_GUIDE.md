@@ -154,5 +154,11 @@ Next week: repeat, and add one more Reel. That's the whole game — **consistenc
 
 ---
 
+### Ready-made post files
+- `FIRST_MONTH_POSTS.md` — a 4-week starter plan, 3 posts a week.
+- `SHOW_POSTS.md` — countdown posts for the November 2026 gift show.
+- `BATCH_2026_08D_POSTS.md` — Golden Bough Platter, Blue Hibiscus Coasters, Moss Agate Bowl
+  (added 2026-08-27), with photo picks and a suggested running order.
+
 _Claude can help anytime: write captions for specific pieces, build a month-long posting calendar,
 suggest Reel ideas for a new batch, or refresh your hashtag sets. Just ask._
