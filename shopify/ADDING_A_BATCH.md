@@ -121,6 +121,9 @@ worrying about the limit.
   return. Instead she includes a **frame of reference in one photo** (her hand, or a small ruler).
   So: don't put dimensions in descriptions, and make sure every product has at least one scale
   shot. If a batch arrives without one, ask for that single photo rather than for measurements.
+  **Exception: coasters don't need one** — the size is self-evident from the category, and most of
+  the existing coaster sets have no scale shot. Don't ask for one. This applies to coasters only;
+  bowls, platters, trays and decor pieces still need a hand or ruler in one shot.
 - Compress photos at intake with **`sips -Z 2048 -s formatOptions 75`** before handing them over.
   2048 px is Shopify's threshold for zoom quality, so don't go below it for product shots. (The
   1500 px figure in `CLAUDE.md` predates the shop and is too small for product photos now.)

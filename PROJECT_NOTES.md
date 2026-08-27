@@ -161,6 +161,39 @@ are included deliberately, and the description explains it.
 
 Scale shots (bowl beside a tape measure) sit at **position 2** on both bowls.
 
+### New Pieces — Batch 2026-08d (prepped 2026-08-27)
+
+- [ ] Import `shopify/new-products-2026-08d.csv`
+- [ ] Drag photo folders from `werecured-product-photos/batch-2026-08d/`
+- [ ] Check stock quantity landed at 1, not 0, on all three
+- [ ] Switch from Draft to Active once they look right
+
+| Piece | Handle | SKU | Price | Photos |
+|---|---|---|---|---|
+| Golden Bough Platter | `golden-bough-platter` | WC-3860 | $150 | 6 |
+| Blue Hibiscus Coasters — Set of 4 | `blue-hibiscus-coasters` | WC-3865 | $70 | 8 |
+| Moss Agate Bowl | `moss-agate-bowl` | WC-3870 | $70 | 9 |
+
+**Golden Bough Platter** is the most involved piece in the shop — **three separate pours and cures**
+plus the gold branch handles fitted afterwards. Priced above the Opal Sunset Tray ($110), which is
+the closest comparable (scalloped tray, gold handles, but a single pour). Worth knowing:
+`PRICING_SCHEME.md` run strictly would put this piece near **$300**; the catalogue ladder tops out
+at $150, so $150 is the ceiling of the existing range rather than what the formula says. The gap
+between the written scheme and the actual price ladder is real and applies across the shop.
+
+**Blue Hibiscus Coasters** are the same five-petal mould as the Sapphire Blossom Coasters, so they
+carry the same $70.
+
+**Moss Agate Bowl** is a deeply fluted, ribbed bowl — a **mould piece, not freeform**, which is why
+it sits at $70 rather than the $80 of the Sea Blue / Sea Green Splash Bowls. No other piece in the
+shop uses this mould.
+
+Scale shots: ruler at position 6 on the platter, position 3 on the bowl. **The coasters have none
+deliberately** — see the note below.
+
+**Coasters don't need scale shots.** Size is self-evident from the category and most existing
+coaster sets have none. Recorded in `shopify/ADDING_A_BATCH.md` so it doesn't get asked again.
+
 ### Email
 - [ ] Add `werecured.com` to Google Workspace
 - [ ] Add DNS records for `werecured.com` email in Namecheap
