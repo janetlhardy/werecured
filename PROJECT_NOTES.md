@@ -362,11 +362,20 @@ Two ways — neither touches werecured.ca:
 
 ## Current focus (decided 2026-08-25)
 
-**Uploading new pieces is paused.** With 173 products live the site has plenty of variety, and
-nothing has sold online yet — but the cause is **reach, not stock**. The Instagram account
-(@were_cured) is set up properly, bio and werecured.ca link in place, with posts up — but around
-**59 followers** as of 2026-08-25. That's the bottleneck. Adding more products would not have
-fixed it.
+**Pendant uploads are paused — everything else carries on as normal.** Bowls, platters, coasters
+and home decor keep getting photographed and listed as they're finished. It's specifically the
+**pendants** being held back: there are 30–40 of them, no two alike, and listing that many
+one-of-a-kind variations is a lot of work for pieces that will likely sell at the show anyway.
+(Clarified 2026-08-27 — an earlier version of this note said uploads were paused across the board,
+which was wrong.)
+
+Separately: with 173 products live nothing has sold online yet, and the cause is **reach, not
+stock**. The Instagram account (@were_cured) is set up properly, bio and werecured.ca link in
+place, with posts up — but around **59 followers** as of 2026-08-25. More products won't fix that;
+that's an argument for putting effort into Instagram, not an argument against listing finished work.
+
+**Listing finished pieces is also what makes an Instagram post worth doing** — if someone sees a
+piece in a post and wants it, it needs to already be buyable on the site.
 
 _Janet's daughter helps with Instagram._
 
