@@ -27,29 +27,27 @@
   }
 
   /* ---- The photo ----
-     This is `images/banner-background.jpeg`, a purpose-cut 2000 x 667 slice of the same
-     Ocean Daisy coaster that is on the business cards. It is a separate file from
-     images/IMG_3091.jpeg on purpose — the cards and the table sign want the whole coaster,
-     the banner wants a wide band of it, and the two crops fight each other.
+     `images/banner-background.jpeg` — a purpose-cut 3600 x 1200 band from IMG_4374, one of the
+     rainbow-pour coasters, shot close-up on 2026-09-07. It is a separate file from the photos
+     in images/ that the cards use: the cards want a whole coaster, the banner wants a wide
+     band, and the two crops fight each other.
 
-     How the crop was chosen, so it can be reasoned about later rather than re-guessed:
+     Why this band, out of ten photos and every 3:1 crop of each:
 
-       - The coaster's dark green centre used to sit directly behind the wordmark, which
-         read as a murky blob. This band is taken from BELOW the centre, through the
-         radiating petals, so the dark middle is out of frame entirely.
-       - It cannot be any wider. Every 3:1 band wide enough to span the whole coaster also
-         ran off its edge onto the pale table underneath — measured at 15% of the banner
-         given over to bare background. At 2000px the band stays inside the art (measured
-         0.5% pale) while staying as wide as possible.
-       - Cut from the 4032 x 3024 camera original, so 2000px across 72in is about
-         28 dots per inch. Large-format printers generally want 30, and this picture is
-         soft organic colour with no fine detail, which is the forgiving case.
-       - The EXIF orientation tag was stripped and the rotation baked into the pixels, so
-         the file cannot be turned sideways by whatever opens it next.
+       - It is the widest band that still keeps good contrast behind the lettering. Contrast is
+         only needed at 4.5:1; searching for maximum contrast instead just picks ever-narrower
+         crops and throws away resolution, which is a bad trade. Requiring 7:1 and then taking
+         the widest band that clears it gives 3600px — 50 dots per inch across 6 feet, up from
+         28 on the coaster this replaced.
+       - Almost no bare table in shot: 0.04% of the band, against 0.75% for the runner-up.
+       - Richest colour of the ten (mean saturation 0.56).
+       - Dust and lint specks were healed out. They are told apart from the bright glints on the
+         resin by size and peak brightness — a plain blur or median filter flattens both.
+       - EXIF orientation stripped and the rotation baked into the pixels, so nothing can turn
+         it sideways.
 
      brightness(1.16) and the lightened veil below are the "1B" setting Janet chose on
-     2026-09-06 — about twice as bright as the first draft, keeping good contrast behind
-     the small print. */
+     2026-09-06 — about twice as bright as the first draft, keeping the small print readable. */
   .photo{
     position:absolute; inset:0; z-index:0;
     background:url('../images/banner-background.jpeg') center/cover no-repeat;
@@ -130,9 +128,9 @@
      tick <b>Background graphics</b> &rarr; Save. That PDF goes to the printer.</p>
   <p>If your printer asks for <b>bleed</b>, tell them to add 0.25&Prime; on each side — there's
      plenty of background colour to pull from.</p>
-  <p>The background is a wide slice of your Ocean Daisy coaster, cut from the full-size camera
-     photo and taken from below the flower's dark centre so it doesn't sit behind the name.
-     It lives at <code>images/banner-background.jpeg</code> and is used only by this banner.</p>
+  <p>The background is a wide band of one of your rainbow-pour coasters (IMG_4374), cut from the
+     full-size camera photo. It lives at <code>images/banner-background.jpeg</code> and is used
+     only by this banner.</p>
 </div>
 
 <div class="banner">

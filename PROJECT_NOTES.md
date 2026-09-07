@@ -436,14 +436,11 @@ later.
       Bagel Fat One wordmark, matching the business cards, at the middle of three brightness
       levels ("1B"). It is now `print-materials/booth-banner.html`; the options file is deleted.
       The all-caps and light-cream alternatives were dropped, as was an earlier medallions design
-- [x] Bigger `IMG_3091` swapped into `images/` ✅ 2026-09-06 — now **1890 × 2048** (was 1384 ×
-      1500), taken from the `werecured-product-photos` folder. Puts the banner at ~20 dpi, up
-      from ~15
-- [x] Camera original found and used ✅ 2026-09-06 — `IMG_3091.HEIC`, 4032 × 3024. The banner
-      background is now `images/banner-background.jpeg`, a 2000 × 667 band cut from it
-      (~28 dpi across 6 feet). Cropped from **below the flower's dark centre**, which used to sit
-      behind the wordmark as a murky blob
-- [ ] Nothing outstanding on the banner — it is ready to print
+- [x] Banner photo settled ✅ 2026-09-07 — Janet reshot the coasters close-up and filling the
+      frame. Ten candidates were scored; **IMG_4374** won: 50 dpi across 6 feet (was 28), richest
+      colour of the set, and virtually no table in shot. `images/banner-background.jpeg` is a
+      3600 × 1200 band from it. The Ocean Daisy coaster is no longer used by the banner — its
+      white flecks are embedded in the resin, not surface dust
 - [ ] Print the booth banner (open the file, Print → Save as PDF at 72 × 24 in, send to a printer)
 - [x] Table sign made ✅ — `print-materials/table-sign.html`, 5" × 7", carries the QR code to
       werecured.ca (the banner deliberately has no QR: hung behind the table it is too far away

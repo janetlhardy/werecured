@@ -6,14 +6,13 @@
 - `IMG_3064.jpeg` — the preview image shown when the site is shared on social media
 - `IMG_3061`, `IMG_3091`, `IMG_3131`, `IMG_3134`, `IMG_3188`, `IMG_3309`, `IMG_3320` — source art
   used by the designs in `print-materials/`
-- `banner-background.jpeg` — a 2000 × 667 slice of the Ocean Daisy coaster, cut from the
-  full-size camera original for the booth banner only. It is deliberately a separate file from
-  `IMG_3091.jpeg`: the cards want the whole coaster, the banner wants a wide band taken from
-  below its dark centre. Its EXIF orientation is stripped and the rotation baked in, so nothing
-  can turn it sideways. Dust and lint specks on the resin were healed out (2026-09-06) — at 6 feet
-  wide they read as blemishes. Only the specks went: the bright glints on the glass marbles are
-  the same colour and brightness, so they were told apart by size and peak brightness (measured,
-  dust blobs are under 95 pixels and peak below 213; the glints run to 1365 pixels and 248)
+- `banner-background.jpeg` — a 3600 × 1200 band cut from `IMG_4374`, one of the rainbow-pour
+  coasters, photographed close-up on 2026-09-07. Used by the booth banner only, and deliberately
+  a separate file from the whole-coaster photos: the cards want a whole piece, the banner wants a
+  wide band. Chosen by scoring every 3:1 crop of ten photos — it is the widest band that keeps
+  7:1 contrast behind the lettering (50 dpi across 6 feet), has the richest colour of the ten,
+  and catches almost no table (0.04%). Specks healed out; EXIF orientation stripped and the
+  rotation baked in
 
 ## Product photos don't go here
 
