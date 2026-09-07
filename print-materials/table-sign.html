@@ -65,11 +65,15 @@
     margin-top:5pt; color:var(--electric); text-shadow:0 1px 3px rgba(0,0,0,.8);
   }
 
-  /* ---- Version A: photo background, matching the business cards ---- */
+  /* ---- Version A: photo background, matching the booth banner ----
+     Uses images/sign-background.jpeg — a portrait crop of the same coaster (IMG_4374) the
+     banner uses, so the two read as a pair on the table. It is a separate file from the
+     banner's because the banner needs a wide 3:1 band and this needs a tall 5:7 one.
+     1158 x 1600, which is about 305 dpi at this size. */
   .photo{
     position:absolute; inset:0; z-index:0;
-    background:url('../images/IMG_3091.jpeg') 50% 46%/cover;
-    filter:brightness(.98) saturate(1.12) contrast(1.02);
+    background:url('../images/sign-background.jpeg') center/cover;
+    filter:brightness(1.02) saturate(1.14) contrast(1.02);
   }
   .veil{
     position:absolute; inset:0; z-index:1;
@@ -120,7 +124,8 @@
   <p>This is the sign that actually gets scanned. It stands on the table in a cheap acrylic
      photo holder, where people can reach it — a QR code up on the banner behind you is too far
      away for phones to read.</p>
-  <p>Two versions, same wording. <b>Print whichever matches the banner you choose.</b>
+  <p>Two versions, same wording. <b>Print Version A</b> — it uses the same coaster as the booth
+     banner, so the pair look like a set.
      The dashed line is the <b>trim line</b> — the design runs past it on purpose (that's “bleed”),
      so there are no white slivers if the cut is slightly off.</p>
   <p><b>To print at home:</b> File → Print → Paper <b>Letter</b> → Scale <b>Fit to page</b> →
@@ -133,7 +138,7 @@
 
   <div class="one">
     <div class="cap"><b>Version A — photo background</b>
-      <span>Matches the business cards and banner Option 1.</span></div>
+      <span>Matches the booth banner — same coaster.</span></div>
     <div class="sign">
       <div class="photo"></div><div class="veil"></div>
       <div class="trim"></div>
@@ -151,7 +156,7 @@
 
   <div class="one">
     <div class="cap"><b>Version B — dark background</b>
-      <span>Matches banner Options 2 and 3.</span></div>
+      <span>Plain alternative, if you would rather the sign didn't compete with the banner.</span></div>
     <div class="sign wash">
       <div class="trim"></div>
       <div class="safe">

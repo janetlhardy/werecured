@@ -12,7 +12,7 @@ printer can trim it cleanly.
 | `stickers.pdf` | 3 designs (1 per page) | 3 in round | Round die-cut / kiss-cut stickers, 3 inch |
 | `thankyou-cards.pdf` | 2 pages: front + inside | 5 × 7 in | Flat greeting/thank-you cards, **double-sided** |
 | `wrapping-paper.pdf` | 1 page repeating pattern | 12 × 12 in tile | Wrapping paper / gift wrap (the dotty background repeats seamlessly) |
-| `booth-banner.pdf` | **The file you upload** — booth banner | 72 × 24 in | Vinyl banner, 6ft × 2ft, hemmed with grommets |
+| `booth-banner.pdf` | **The file you upload** — booth banner | 72 × 24 in trimmed (file is 72.5 × 24.5 with bleed) | Vinyl banner, 6ft × 2ft, hemmed with grommets |
 | `booth-banner.jpg` | Same banner as an image, if a site won't take the PDF | 72 × 24 in | — |
 | `booth-banner.html` | Editable source for the banner | 72 × 24 in | — |
 | `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in | 5 × 7 flat card, or print at home on card stock |
@@ -44,6 +44,17 @@ or a local print shop. When you upload a PDF:
 
 **If it warns about low resolution, that is expected — see below.** If the site refuses a PDF,
 upload `booth-banner.jpg` instead; it is the same artwork.
+
+### About bleed — why the file is bigger than 72 × 24
+
+The PDF is **72.5 × 24.5 in**, not 72 × 24. That extra quarter-inch on every side is **bleed**:
+the design deliberately runs past where the banner gets cut, so a slightly off cut cannot leave a
+white sliver down one edge. The finished banner is still 6ft × 2ft.
+
+This is what VistaPrint means if it warns you to *"extend your design to the edges to avoid white
+borders"* — the earlier file stopped exactly at the trim line, so their preview showed an empty
+bleed zone. The current file fills it, and carries a TrimBox so their software knows where the
+cut goes. Nothing to change at your end: order 6ft × 2ft and upload this file.
 
 ### About the resolution warning
 
