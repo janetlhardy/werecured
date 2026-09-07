@@ -34,32 +34,51 @@
 
   /* ---------- shared bits ---------- */
 
-  /* The Ocean Daisy photo from the business cards, plus a veil to keep text readable.
+  /* The Ocean Daisy photo from the business cards.
      The photo is nearly square (1384 x 1500) and the banner is 3:1, so a plain `cover`
      crop leaves the pale table the coaster is sitting on at both ends — measured at
      6.9in on the left and 3.9in on the right, about 15% of a 6ft banner showing bare
      background instead of art. Zooming to 130% pushes all of it off the edges (measured
-     0% pale) at the cost of some resolution. Position is nudged to 52% because the
-     coaster does not sit dead centre in the frame. */
+     0% pale). Position is nudged to 52% because the coaster is not dead centre. */
   .photo{
     position:absolute; inset:0; z-index:0;
     background:url('../images/IMG_3091.jpeg') 52% 50%/130% auto no-repeat;
     background-color:var(--dark);
-    filter:brightness(.98) saturate(1.12) contrast(1.02);
   }
-  .veil{
-    position:absolute; inset:0; z-index:1;
+  /* The veil is a dark scrim that gives the lettering something to sit on. It is also
+     the main reason the banner looks dark, so it is what gets dialled back below. */
+  .veil{ position:absolute; inset:0; z-index:1; }
+
+  /* ---- three brightness levels for the photo banners ---- */
+  .lvl-a .photo{ filter:brightness(.98) saturate(1.12) contrast(1.02); }
+  .lvl-a .veil{
     background:
       radial-gradient(ellipse 64% 88% at 50% 50%,
         rgba(26,0,31,.74) 0%, rgba(26,0,31,.38) 58%, rgba(26,0,31,.06) 86%),
       linear-gradient(90deg, rgba(26,0,31,.40) 0%, rgba(26,0,31,0) 30%,
         rgba(26,0,31,0) 70%, rgba(26,0,31,.40) 100%);
   }
+  .lvl-b .photo{ filter:brightness(1.16) saturate(1.20) contrast(1.02); }
+  .lvl-b .veil{
+    background:
+      radial-gradient(ellipse 60% 84% at 50% 50%,
+        rgba(26,0,31,.50) 0%, rgba(26,0,31,.24) 58%, rgba(26,0,31,.02) 86%),
+      linear-gradient(90deg, rgba(26,0,31,.26) 0%, rgba(26,0,31,0) 30%,
+        rgba(26,0,31,0) 70%, rgba(26,0,31,.26) 100%);
+  }
+  .lvl-c .photo{ filter:brightness(1.34) saturate(1.26) contrast(1.0); }
+  .lvl-c .veil{
+    background:
+      radial-gradient(ellipse 56% 80% at 50% 50%,
+        rgba(26,0,31,.30) 0%, rgba(26,0,31,.13) 58%, rgba(26,0,31,0) 86%),
+      linear-gradient(90deg, rgba(26,0,31,.15) 0%, rgba(26,0,31,0) 30%,
+        rgba(26,0,31,0) 70%, rgba(26,0,31,.15) 100%);
+  }
 
   .inner{ position:relative; z-index:2; width:100%; padding:0 3.2em; text-align:center; }
 
   /* Bungee has no lowercase — it draws capitals whatever you type, which is why the
-     website reads WE'RE CURED! even though the HTML says "We're Cured!". */
+     website read WE'RE CURED! for months even though the HTML said "We're Cured!". */
   .name{
     font-family:'Bungee',cursive; line-height:.92; letter-spacing:.005em; white-space:nowrap;
   }
@@ -93,6 +112,18 @@
   }
   .opt1 .contact .dot{ color:var(--hot-pink); padding:0 .5em; }
 
+  /* The lighter the background, the harder the small text has to work to stay readable,
+     so the shadow behind it is deepened to match. The big wordmark keeps its own
+     drop-shadows and needs no help. */
+  .lvl-b .tagline, .lvl-b .contact{
+    text-shadow:0 .025em .05em rgba(0,0,0,.95), 0 .05em .14em rgba(0,0,0,.75);
+  }
+  .lvl-c .tagline, .lvl-c .contact{
+    text-shadow:0 .025em .045em rgba(0,0,0,1), 0 .05em .13em rgba(0,0,0,.9),
+                0 0 .3em rgba(0,0,0,.55);
+  }
+  .lvl-c .tagline{ color:#CFFF7A; }   /* lime lifted slightly so it holds on a brighter photo */
+
   /* ================= OPTION 2 — same photo, all caps ================= */
   .opt2 .name{
     font-size:8em;
@@ -123,7 +154,6 @@
 
   /* ================= OPTION 3 — all caps on a light banner ================= */
   .opt3{ background:var(--cream); }
-  /* pale colour pours, so the cream isn't a flat sheet of paper */
   .opt3::before,.opt3::after{
     content:""; position:absolute; width:48em; height:48em; border-radius:50%;
     z-index:0; pointer-events:none;
@@ -165,6 +195,7 @@
     .sheet{ max-width:calc(72 * min(13.2px, calc((100vw - 60px)/72))); margin:0 auto; }
     .notes{ line-height:1.55; font-size:14px; margin-bottom:26px; }
     .notes h1{ font-family:'Righteous',cursive; font-size:22px; margin-bottom:10px; color:#fff; }
+    .notes h2{ font-family:'Righteous',cursive; font-size:18px; margin:26px 0 8px; color:#fff; }
     .notes p{ margin:.55em 0; }
     .notes code{ background:#000; padding:1px 5px; border-radius:3px; color:var(--lime); }
     .cap{ margin:30px 0 9px; }
@@ -187,28 +218,26 @@
 <div class="sheet">
 
 <div class="notes">
-  <h1>Booth banner — three options to choose from</h1>
-  <p>All three are <b>72&Prime; &times; 24&Prime; (6ft &times; 2ft)</b>, shown here scaled down. The dashed
+  <h1>Booth banner — options</h1>
+  <p>All are <b>72&Prime; &times; 24&Prime; (6ft &times; 2ft)</b>, shown here scaled down. The dashed
      line is the <b>safe area</b> — nothing important crosses it, so hems and grommets can't eat
      any text.</p>
-  <p>The medallions design is gone. <b>Option 1 is unchanged.</b> Options 2 and 3 are both the
-     all-capital <b>Bungee</b> version that matches the website — one on the photo, one on a light
-     background, because 6 feet of near-black is a lot of dark to hang in a hall.</p>
+  <p><b>You leaned towards Option 1.</b> It is shown three times below at different brightness,
+     because the darkness came from a dark scrim laid over the photo to keep the lettering
+     readable — that scrim is what gets dialled back. <b>Pick 1A, 1B or 1C.</b>
+     Options 2 and 3 are still here underneath if you change your mind.</p>
   <p><b>No QR code on the banner</b>, on purpose — a code hanging behind your table is too far away
      for phones to read. The QR lives on the <b>table sign</b> (<code>table-sign.html</code>),
      where people can reach it.</p>
-  <p><b>Pick one</b>, then tell Claude which — the others get deleted and the winner becomes
-     <code>booth-banner.html</code>.</p>
   <p><b>To make the print file:</b> File &rarr; Print &rarr; Destination <b>Save as PDF</b> &rarr;
      Paper size <b>72 &times; 24 in</b> (or &ldquo;Custom&rdquo;) &rarr; Margins <b>None</b> &rarr;
      tick <b>Background graphics</b> &rarr; Save. If the printer asks for <b>bleed</b>, tell them to
      add 0.25&Prime; each side — there's plenty of colour to pull from.</p>
   <div class="warn">
-    <b>Photo note — Options 1 and 2 need a bigger photo file.</b>
+    <b>Photo note — the photo options need a bigger photo file.</b>
     The copy of <code>IMG_3091.jpeg</code> in the website folder is <b>1384 &times; 1500 pixels</b>.
-    That is plenty for a business card, but spread across 6 feet — and now zoomed to 130% to keep
-    the bare table out of shot — it works out to about <b>15 dots per inch</b>. It will look soft
-    close up.
+    That is plenty for a business card, but spread across 6 feet — and zoomed to 130% to keep the
+    bare table out of shot — it works out to about <b>15 dots per inch</b>. It will look soft close up.
     <br><br>
     <b>The fix:</b> open the original in <b>Photos</b>, choose
     <b>File &rarr; Export &rarr; Export Unmodified Original</b>, and give Claude the file.
@@ -221,11 +250,38 @@
   </div>
 </div>
 
-<!-- ========== OPTION 1 ========== -->
-<div class="cap"><b>Option 1 — Photo background, lower case</b>
-  <span>Unchanged. Your Ocean Daisy photo full-bleed behind the business-card wordmark
-        (Bagel Fat One). Warm, and it matches the cards you already hand out.</span></div>
-<div class="banner opt1">
+<!-- ========== OPTION 1, three brightness levels ========== -->
+<div class="cap"><b>1A — as it was</b>
+  <span>The original. Strongest scrim, so the lettering is at its most readable and the photo
+        is at its most muted.</span></div>
+<div class="banner opt1 lvl-a">
+  <div class="photo"></div><div class="veil"></div>
+  <div class="safe"></div>
+  <div class="inner">
+    <div class="wordmark">We're Cured!</div>
+    <div class="tagline">Handmade Resin Art</div>
+    <div class="contact">werecured.ca<span class="dot">&bull;</span>@were_cured</div>
+  </div>
+</div>
+
+<div class="cap"><b>1B — lighter (recommended)</b>
+  <span>Scrim cut by about a third and the photo brightened. The coaster's colour comes through
+        properly and the text still has plenty to sit on.</span></div>
+<div class="banner opt1 lvl-b">
+  <div class="photo"></div><div class="veil"></div>
+  <div class="safe"></div>
+  <div class="inner">
+    <div class="wordmark">We're Cured!</div>
+    <div class="tagline">Handmade Resin Art</div>
+    <div class="contact">werecured.ca<span class="dot">&bull;</span>@were_cured</div>
+  </div>
+</div>
+
+<div class="cap"><b>1C — lightest</b>
+  <span>Scrim almost gone, photo brightened further. Brightest and most colourful — but the small
+        print is now working against a busy photo rather than a calm dark ground. Worth a look
+        before you decide.</span></div>
+<div class="banner opt1 lvl-c">
   <div class="photo"></div><div class="veil"></div>
   <div class="safe"></div>
   <div class="inner">
@@ -237,10 +293,9 @@
 
 <!-- ========== OPTION 2 ========== -->
 <div class="cap"><b>Option 2 — Photo background, all caps</b>
-  <span>The background you like with the capitals you like. Same photo as Option 1, but the name
-        is Bungee, so it matches the website letter for letter. No black at all — the photo fills
-        the whole banner.</span></div>
-<div class="banner opt2">
+  <span>Same photo and brightness as 1A, but the name is Bungee, so it matches the website
+        letter for letter.</span></div>
+<div class="banner opt2 lvl-a">
   <div class="photo"></div><div class="veil"></div>
   <div class="safe"></div>
   <div class="inner">
@@ -253,9 +308,8 @@
 
 <!-- ========== OPTION 3 ========== -->
 <div class="cap"><b>Option 3 — All caps on a light banner</b>
-  <span>The all-capital banner with the black taken out: warm cream with soft colour pours, and
-        the six brand colours dropped in tone so they still read on a pale ground. Brightest from
-        a distance, and it will not look like a hole in a dim hall.</span></div>
+  <span>No photo, no black: warm cream with soft colour pours, and the six brand colours dropped
+        in tone so they read on a pale ground. Prints perfectly sharp as it stands.</span></div>
 <div class="banner opt3">
   <div class="safe"></div>
   <div class="inner">
