@@ -254,7 +254,8 @@ Righteous and Nunito, on the rainbow-on-dark palette.
 | `wrapping-paper.pdf` | Repeating gift-wrap pattern | 12 × 12 in seamless tile |
 | `gift-tags.pdf` | 9 "Thank You" tags per sheet | Letter cardstock (cut + punch at home) |
 | `booth-banner.html` | Booth banner for the gift show | 72 × 24 in (6ft × 2ft) vinyl |
-| `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in, two versions |
+| `table-sign.html` | Table sign with the QR code | 5 × 7 in, two versions (print the dark one) |
+| `jewellery-card.html` | Tent card for pieces not listed online | folds to 5 × 3.5 in |
 
 - All files include a print "bleed" edge, ready for an online service (VistaPrint, Canva Print,
   Sticker Mule) or a local print shop. See `print-materials/README.md` for ordering steps.
@@ -453,7 +454,16 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
       werecured.ca (the banner deliberately has no QR: hung behind the table it is too far away
       for phones to read). Two versions — photo background and dark — print whichever matches
       the banner chosen
-- [ ] Print the table sign and buy a cheap acrylic 5 × 7 photo holder to stand it in
+- [ ] Print the table sign (`table-sign.pdf`, page 1 — the dark version) and buy a cheap acrylic
+      5 × 7 photo holder to stand it in
+- [ ] Print two or three jewellery cards (`jewellery-card.pdf`), trim to 5 × 7 and fold in half —
+      they stand on their own beside the pendants and earrings
+- **Wording note:** neither the sign nor the card claims a piece on the table can be bought online.
+      The show pendants and earrings are not listed individually, and show/online stock share one
+      Shopify inventory, so anything sold at the booth disappears from the site at once. The sign
+      offers **shipping** instead, which is true of everything on the table. The jewellery card
+      leads with the hand-picked dried flowers — once the year's are used there are no more until
+      they grow again, which is honest scarcity rather than a sales line
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
 ## Accounts Summary

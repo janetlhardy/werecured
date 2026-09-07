@@ -15,7 +15,8 @@ printer can trim it cleanly.
 | `booth-banner.pdf` | **The file you upload** — booth banner | 72 × 24 in trimmed (file is 72.5 × 24.5 with bleed) | Vinyl banner, 6ft × 2ft, hemmed with grommets |
 | `booth-banner.jpg` | Same banner as an image, if a site won't take the PDF | 72 × 24 in | — |
 | `booth-banner.html` | Editable source for the banner | 72 × 24 in | — |
-| `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in | 5 × 7 flat card, or print at home on card stock |
+| `table-sign.pdf` | Table sign with the QR code | 5 × 7 in | 5 × 7 flat card, or print at home on card stock |
+| `jewellery-card.pdf` | Tent card for pieces that aren't listed online | stands 5 × 3.5 in | Print at home, trim and fold |
 
 The `.html` files are the editable source. The `.png` files are just quick previews to look at.
 
@@ -68,14 +69,34 @@ the real limit: the camera original gives about 28 dpi across 6 feet, so from a 
 right, and close up it is a little soft. That is normal for a banner and cannot be improved without
 a different, much larger photograph.
 
-## Show pieces — banner and table sign
+## Show pieces — banner, table sign, jewellery card
 
-The banner and the table sign are a pair, and they split the job on purpose:
+Three pieces, each doing a different job:
 
 - **The banner** carries the name, big enough to read from across the hall. It has **no QR code** —
   hung behind your table it is too far away for a phone to focus on.
 - **The table sign** carries the **QR code** to `werecured.ca`. It stands on the table in a cheap
   acrylic 5 × 7 photo holder, within arm's reach, which is the only place a QR actually works.
+  Print **Version B**, the dark one — that is Janet's pick, and it doesn't compete with the banner.
+- **The jewellery card** is a tent card for the pendants, earrings and anything else at the show
+  that is **not listed on the website**. Fold it and stand it beside those pieces.
+
+### Why the wording is what it is
+
+The sign does **not** say "it's all on the website", and that is deliberate. The pendants and
+earrings made for the show aren't listed individually — there are too many to photograph and write
+up — so that claim would be false for exactly the pieces people most often want to think about.
+Worse, show and online stock share one Shopify inventory, so a piece sold at the booth is gone from
+the website the same moment.
+
+Instead the sign offers the thing that actually solves "I can't carry this": **we ship**. That is
+true of every piece on the table, listed or not, and Janet can take the payment on her phone at the
+booth. The QR's job is simply to help someone find the shop again later.
+
+The jewellery card leads with the dried flowers because that is the honest reason to buy today
+rather than think about it: the flowers and dandelions are picked and dried by hand, and once the
+year's supply is used there are no more until they grow again. Real scarcity, and a nicer thing to
+read than "buy now".
 
 The banner is the Ocean Daisy coaster photo full-bleed behind the Bagel Fat One wordmark, so it
 matches the business cards. For the table sign, print the **photo background** version — that is
