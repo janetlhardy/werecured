@@ -252,12 +252,24 @@ Righteous and Nunito, on the rainbow-on-dark palette.
 | `thankyou-cards.pdf` | Front + inside | 5 × 7 in, double-sided |
 | `wrapping-paper.pdf` | Repeating gift-wrap pattern | 12 × 12 in seamless tile |
 | `gift-tags.pdf` | 9 "Thank You" tags per sheet | Letter cardstock (cut + punch at home) |
+| `booth-banner.html` | Booth banner for the gift show | 72 × 24 in (6ft × 2ft) vinyl |
+| `booth-banner-options.html` | Three banner designs to choose between | 72 × 24 in each |
+| `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in, two versions |
 
 - All files include a print "bleed" edge, ready for an online service (VistaPrint, Canva Print,
   Sticker Mule) or a local print shop. See `print-materials/README.md` for ordering steps.
 - Featured close-up photos: IMG_3064, IMG_3309, IMG_3134, IMG_3131, IMG_3188.
 - Business card front: name centred on the bright **Ocean Daisy** coaster (IMG_3091); back is **plain white** with the rainbow logo.
 - `business-card-coaster-options.html/.png` keeps the four coaster mock-ups that were considered.
+
+**Two wordmark styles are in use — this is a choice, not a mistake:**
+
+| Font | Where | How the name looks |
+|---|---|---|
+| **Bungee** | the website, the current booth banner | `WE'RE CURED!` — Bungee has no lowercase, so it always draws capitals however it is typed |
+| **Bagel Fat One** | business cards, gift tags, thank-you cards, banner Options 1 and 2 | `We're Cured!` — true lowercase |
+
+If everything should match one day, pick one font and Claude can convert the rest.
 
 ### To do — Print materials
 - [ ] Choose a print service and order a small test batch of business cards + stickers
@@ -414,8 +426,18 @@ later.
 - [ ] Fill in show name / venue / hours at the top of `marketing/SHOW_POSTS.md`
 - [ ] Take the pendant group photo (needed for the first countdown post, ~5 Oct)
 - [x] Booth banner designed ✅ — `print-materials/booth-banner.html`, 72" × 24" vinyl
+- [ ] **Choose a banner design** — open `print-materials/booth-banner-options.html` and pick
+      Option 1 (business-card photo style), 2 (medallions) or 3 (the current one). Tell Claude
+      which; the winner replaces `booth-banner.html` and the options file gets deleted
+- [ ] If Option 1 wins: export the original `IMG_3091` from **Photos** (File → Export → Export
+      Unmodified Original) and give it to Claude — the website copy is only 1384 px wide, which
+      is too soft stretched across 6 feet
 - [ ] Print the booth banner (open the file, Print → Save as PDF at 72 × 24 in, send to a printer)
-- [ ] Make a small table sign with `@were_cured` + `werecured.ca` for the show
+- [x] Table sign made ✅ — `print-materials/table-sign.html`, 5" × 7", carries the QR code to
+      werecured.ca (the banner deliberately has no QR: hung behind the table it is too far away
+      for phones to read). Two versions — photo background and dark — print whichever matches
+      the banner chosen
+- [ ] Print the table sign and buy a cheap acrylic 5 × 7 photo holder to stand it in
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
 ## Accounts Summary

@@ -12,6 +12,9 @@ printer can trim it cleanly.
 | `stickers.pdf` | 3 designs (1 per page) | 3 in round | Round die-cut / kiss-cut stickers, 3 inch |
 | `thankyou-cards.pdf` | 2 pages: front + inside | 5 × 7 in | Flat greeting/thank-you cards, **double-sided** |
 | `wrapping-paper.pdf` | 1 page repeating pattern | 12 × 12 in tile | Wrapping paper / gift wrap (the dotty background repeats seamlessly) |
+| `booth-banner.html` | Booth banner for the gift show | 72 × 24 in | Vinyl banner, 6ft × 2ft, hemmed with grommets |
+| `booth-banner-options.html` | Three banner designs to choose between | 72 × 24 in each | Nothing yet — pick one first |
+| `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in | 5 × 7 flat card, or print at home on card stock |
 
 The `.html` files are the editable source. The `.png` files are just quick previews to look at.
 
@@ -25,6 +28,23 @@ or a local print shop. When you upload a PDF:
 3. If it mentions "bleed," the files already include it — just say **yes / keep bleed**.
 4. For stickers, choose **die-cut** or **kiss-cut**, **circle**, **3 inch**. The faint dashed
    ring in the design shows where it will be cut — it does **not** print.
+
+## Show pieces — banner and table sign
+
+The banner and the table sign are a pair, and they split the job on purpose:
+
+- **The banner** carries the name, big enough to read from across the hall. It has **no QR code** —
+  hung behind your table it is too far away for a phone to focus on.
+- **The table sign** carries the **QR code** to `werecured.ca`. It stands on the table in a cheap
+  acrylic 5 × 7 photo holder, within arm's reach, which is the only place a QR actually works.
+
+`booth-banner-options.html` holds three designs to choose between. Once you pick one, the winner
+becomes `booth-banner.html` and the options file goes away. The table sign comes in a matching
+photo version and dark version — print whichever suits the banner you chose.
+
+The QR codes are drawn as vector shapes right in the HTML, so they stay crisp at any size and
+there is no image file to lose. They encode `https://werecured.ca` at the highest error-correction
+level, so they still scan if a corner gets scuffed.
 
 ## Photos used
 
