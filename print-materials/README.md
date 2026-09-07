@@ -12,7 +12,9 @@ printer can trim it cleanly.
 | `stickers.pdf` | 3 designs (1 per page) | 3 in round | Round die-cut / kiss-cut stickers, 3 inch |
 | `thankyou-cards.pdf` | 2 pages: front + inside | 5 × 7 in | Flat greeting/thank-you cards, **double-sided** |
 | `wrapping-paper.pdf` | 1 page repeating pattern | 12 × 12 in tile | Wrapping paper / gift wrap (the dotty background repeats seamlessly) |
-| `booth-banner.html` | Booth banner for the gift show | 72 × 24 in | Vinyl banner, 6ft × 2ft, hemmed with grommets |
+| `booth-banner.pdf` | **The file you upload** — booth banner | 72 × 24 in | Vinyl banner, 6ft × 2ft, hemmed with grommets |
+| `booth-banner.jpg` | Same banner as an image, if a site won't take the PDF | 72 × 24 in | — |
+| `booth-banner.html` | Editable source for the banner | 72 × 24 in | — |
 | `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in | 5 × 7 flat card, or print at home on card stock |
 
 The `.html` files are the editable source. The `.png` files are just quick previews to look at.
@@ -27,6 +29,33 @@ or a local print shop. When you upload a PDF:
 3. If it mentions "bleed," the files already include it — just say **yes / keep bleed**.
 4. For stickers, choose **die-cut** or **kiss-cut**, **circle**, **3 inch**. The faint dashed
    ring in the design shows where it will be cut — it does **not** print.
+
+## Uploading the banner to VistaPrint (or any print site)
+
+**Upload `booth-banner.pdf`.** It is already the finished 72 × 24 in file — do not upload the
+`.html`, and there is no link to paste. The steps:
+
+1. On VistaPrint choose **Signs & Banners → Vinyl Banners**.
+2. Set the size to **6 ft × 2 ft** (72 × 24 in). It must match, or they will scale the artwork.
+3. Choose the option along the lines of **"Upload your complete design"** — *not* one of their
+   templates, which would make you rebuild the design in their editor.
+4. Upload `booth-banner.pdf` from this folder.
+5. Check their preview, then order. Ask for **hemmed edges with grommets** so it can be tied up.
+
+**If it warns about low resolution, that is expected — see below.** If the site refuses a PDF,
+upload `booth-banner.jpg` instead; it is the same artwork.
+
+### About the resolution warning
+
+The banner is **100 dots per inch at full size**, which is normal for a 6 ft vinyl banner — these
+are made to be read from several feet away, and print shops commonly work from artwork supplied at
+a tenth of final size at 300 dpi, which is only 30 dpi. Automatic checkers are usually set for
+business cards and will flag anything under 300, so a warning here does not mean the file is wrong.
+
+The lettering is rendered at the full 7200 px and is genuinely crisp. The photograph behind it is
+the real limit: the camera original gives about 28 dpi across 6 feet, so from a step away it looks
+right, and close up it is a little soft. That is normal for a banner and cannot be improved without
+a different, much larger photograph.
 
 ## Show pieces — banner and table sign
 
