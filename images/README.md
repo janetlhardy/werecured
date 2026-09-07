@@ -10,7 +10,10 @@
   full-size camera original for the booth banner only. It is deliberately a separate file from
   `IMG_3091.jpeg`: the cards want the whole coaster, the banner wants a wide band taken from
   below its dark centre. Its EXIF orientation is stripped and the rotation baked in, so nothing
-  can turn it sideways
+  can turn it sideways. Dust and lint specks on the resin were healed out (2026-09-06) — at 6 feet
+  wide they read as blemishes. Only the specks went: the bright glints on the glass marbles are
+  the same colour and brightness, so they were told apart by size and peak brightness (measured,
+  dust blobs are under 95 pixels and peak below 213; the glints run to 1365 pixels and 248)
 
 ## Product photos don't go here
 
