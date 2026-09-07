@@ -254,7 +254,6 @@ Righteous and Nunito, on the rainbow-on-dark palette.
 | `wrapping-paper.pdf` | Repeating gift-wrap pattern | 12 × 12 in seamless tile |
 | `gift-tags.pdf` | 9 "Thank You" tags per sheet | Letter cardstock (cut + punch at home) |
 | `booth-banner.html` | Booth banner for the gift show | 72 × 24 in (6ft × 2ft) vinyl |
-| `booth-banner-options.html` | Three banner designs to choose between | 72 × 24 in each |
 | `table-sign.html` | Table sign with the QR code to the shop | 5 × 7 in, two versions |
 
 - All files include a print "bleed" edge, ready for an online service (VistaPrint, Canva Print,
@@ -433,10 +432,10 @@ later.
 - [ ] Fill in show name / venue / hours at the top of `marketing/SHOW_POSTS.md`
 - [ ] Take the pendant group photo (needed for the first countdown post, ~5 Oct)
 - [x] Booth banner designed ✅ — `print-materials/booth-banner.html`, 72" × 24" vinyl
-- [ ] **Choose a banner design** — open `print-materials/booth-banner-options.html` and pick
-      Option 1 (photo background, lower case), 2 (photo background, all caps) or 3 (all caps on a
-      light cream banner — no black). Tell Claude which; the winner replaces `booth-banner.html`
-      and the options file gets deleted. The medallions design was dropped 2026-09-06
+- [x] **Banner design chosen** ✅ 2026-09-06 — the Ocean Daisy photo full-bleed behind the
+      Bagel Fat One wordmark, matching the business cards, at the middle of three brightness
+      levels ("1B"). It is now `print-materials/booth-banner.html`; the options file is deleted.
+      The all-caps and light-cream alternatives were dropped, as was an earlier medallions design
 - [x] Bigger `IMG_3091` swapped into `images/` ✅ 2026-09-06 — now **1890 × 2048** (was 1384 ×
       1500), taken from the `werecured-product-photos` folder. Puts the banner at ~20 dpi, up
       from ~15
