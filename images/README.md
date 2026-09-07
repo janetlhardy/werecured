@@ -6,6 +6,11 @@
 - `IMG_3064.jpeg` — the preview image shown when the site is shared on social media
 - `IMG_3061`, `IMG_3091`, `IMG_3131`, `IMG_3134`, `IMG_3188`, `IMG_3309`, `IMG_3320` — source art
   used by the designs in `print-materials/`
+- `banner-background.jpeg` — a 2000 × 667 slice of the Ocean Daisy coaster, cut from the
+  full-size camera original for the booth banner only. It is deliberately a separate file from
+  `IMG_3091.jpeg`: the cards want the whole coaster, the banner wants a wide band taken from
+  below its dark centre. Its EXIF orientation is stripped and the rotation baked in, so nothing
+  can turn it sideways
 
 ## Product photos don't go here
 

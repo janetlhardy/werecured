@@ -26,26 +26,33 @@
     -webkit-print-color-adjust:exact; print-color-adjust:exact;
   }
 
-  /* ---- The photo: the same Ocean Daisy coaster as the business cards ----
-     Two things are deliberate here.
+  /* ---- The photo ----
+     This is `images/banner-background.jpeg`, a purpose-cut 2000 x 667 slice of the same
+     Ocean Daisy coaster that is on the business cards. It is a separate file from
+     images/IMG_3091.jpeg on purpose — the cards and the table sign want the whole coaster,
+     the banner wants a wide band of it, and the two crops fight each other.
 
-     1. The zoom. The photo is nearly square (1890 x 2048) and the banner is 3:1, so a
-        plain `cover` crop ran off the edge of the coaster onto the table underneath it —
-        measured at 6.9in of bare background on the left and 3.9in on the right, about 15%
-        of a 6ft banner. Zooming to 130% pushes all of it out of frame (measured 0%), and
-        52% horizontally re-centres on the coaster, which does not sit dead centre.
+     How the crop was chosen, so it can be reasoned about later rather than re-guessed:
 
-     2. The brightness. brightness(1.16) here and the lightened veil below are the "1B"
-        setting Janet chose on 2026-09-06 — about twice as bright as the first draft,
-        while keeping 7.6:1 contrast behind the small print.
+       - The coaster's dark green centre used to sit directly behind the wordmark, which
+         read as a murky blob. This band is taken from BELOW the centre, through the
+         radiating petals, so the dark middle is out of frame entirely.
+       - It cannot be any wider. Every 3:1 band wide enough to span the whole coaster also
+         ran off its edge onto the pale table underneath — measured at 15% of the banner
+         given over to bare background. At 2000px the band stays inside the art (measured
+         0.5% pale) while staying as wide as possible.
+       - Cut from the 4032 x 3024 camera original, so 2000px across 72in is about
+         28 dots per inch. Large-format printers generally want 30, and this picture is
+         soft organic colour with no fine detail, which is the forgiving case.
+       - The EXIF orientation tag was stripped and the rotation baked into the pixels, so
+         the file cannot be turned sideways by whatever opens it next.
 
-     TO SWAP IN A SHARPER PHOTO: just replace images/IMG_3091.jpeg. Nothing here needs
-     editing. At 1890px this prints around 20 dots per inch across 6 feet; a camera
-     original (~3000-4000px, via Photos > File > Export > Export Unmodified Original)
-     would put it at 32-42 dpi, which is what large-format printers prefer. */
+     brightness(1.16) and the lightened veil below are the "1B" setting Janet chose on
+     2026-09-06 — about twice as bright as the first draft, keeping good contrast behind
+     the small print. */
   .photo{
     position:absolute; inset:0; z-index:0;
-    background:url('../images/IMG_3091.jpeg') 52% 50%/130% auto no-repeat;
+    background:url('../images/banner-background.jpeg') center/cover no-repeat;
     background-color:var(--dark);
     filter:brightness(1.16) saturate(1.20) contrast(1.02);
   }
@@ -123,9 +130,9 @@
      tick <b>Background graphics</b> &rarr; Save. That PDF goes to the printer.</p>
   <p>If your printer asks for <b>bleed</b>, tell them to add 0.25&Prime; on each side — there's
      plenty of background colour to pull from.</p>
-  <p><b>If you find the camera original of the photo:</b> replace
-     <code>images/IMG_3091.jpeg</code> with it and re-make the PDF. Nothing in this file needs
-     changing, and the banner gets sharper on its own.</p>
+  <p>The background is a wide slice of your Ocean Daisy coaster, cut from the full-size camera
+     photo and taken from below the flower's dark centre so it doesn't sit behind the name.
+     It lives at <code>images/banner-background.jpeg</code> and is used only by this banner.</p>
 </div>
 
 <div class="banner">

@@ -439,11 +439,11 @@ later.
 - [x] Bigger `IMG_3091` swapped into `images/` ✅ 2026-09-06 — now **1890 × 2048** (was 1384 ×
       1500), taken from the `werecured-product-photos` folder. Puts the banner at ~20 dpi, up
       from ~15
-- [ ] Optional, for a sharper banner: export the **camera original** of `IMG_3091` from **Photos**
-      using **File → Export → Export Unmodified Original** (the plain *Export* re-compresses,
-      which is how the 2048 px copies were made). A phone original is ~3000–4000 px, which would
-      put the banner at 32–42 dpi. Large-format printers normally want 30 dpi. Option 3 uses no
-      photo and is sharp regardless
+- [x] Camera original found and used ✅ 2026-09-06 — `IMG_3091.HEIC`, 4032 × 3024. The banner
+      background is now `images/banner-background.jpeg`, a 2000 × 667 band cut from it
+      (~28 dpi across 6 feet). Cropped from **below the flower's dark centre**, which used to sit
+      behind the wordmark as a murky blob
+- [ ] Nothing outstanding on the banner — it is ready to print
 - [ ] Print the booth banner (open the file, Print → Save as PDF at 72 × 24 in, send to a printer)
 - [x] Table sign made ✅ — `print-materials/table-sign.html`, 5" × 7", carries the QR code to
       werecured.ca (the banner deliberately has no QR: hung behind the table it is too far away

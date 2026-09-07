@@ -41,11 +41,13 @@ The banner is the Ocean Daisy coaster photo full-bleed behind the Bagel Fat One 
 matches the business cards. For the table sign, print the **photo background** version — that is
 the one that goes with it.
 
-Two notes live in `booth-banner.html` itself as comments, in case the design is ever revisited:
-why the photo is zoomed to 130% (a plain `cover` crop ran off the coaster onto the table at both
-ends), and why the scrim over it is set where it is (readability behind the small print). To make
-the banner sharper, just replace `images/IMG_3091.jpeg` with a bigger copy — the file needs no
-other edits.
+The banner's background is its own file, `images/banner-background.jpeg` — a wide band cut from
+the full-size camera photo, taken from below the coaster's dark centre so it doesn't sit behind
+the name. The cards keep using `images/IMG_3091.jpeg`, which shows the whole coaster.
+
+`booth-banner.html` carries comments explaining the choices, in case the design is ever
+revisited: why the crop sits where it does, why it can't be any wider (any wider band ran off
+the coaster onto the pale table), and why the dark scrim over it is set where it is.
 
 The QR codes are drawn as vector shapes right in the HTML, so they stay crisp at any size and
 there is no image file to lose. They encode `https://werecured.ca` at the highest error-correction
