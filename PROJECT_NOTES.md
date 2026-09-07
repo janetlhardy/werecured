@@ -432,6 +432,13 @@ later.
 - [ ] Fill in show name / venue / hours at the top of `marketing/SHOW_POSTS.md`
 - [ ] Take the pendant group photo (needed for the first countdown post, ~5 Oct)
 - [x] Booth banner designed ✅ — `print-materials/booth-banner.html`, 72" × 24" vinyl
+
+**Booth size:** the November 2026 gift show booth is **10ft × 10ft**. The banner was still kept at
+**6ft × 2ft** rather than sized up to 8ft, deliberately: 6ft fits a standard 6ft table front with
+a clean 2ft drop *and* hangs behind, so it works at shows whose booth size isn't known yet. In a
+10 × 10 booth, hang it centred on the back wall — the spare wall either side reads as intentional.
+The artwork is 3:1 and would need re-cutting for a different shape; at 8ft × 2ft the same file
+still prints at 38 dpi, so going bigger later is possible without a reshoot.
 - [x] **Banner design chosen** ✅ 2026-09-06 — the Ocean Daisy photo full-bleed behind the
       Bagel Fat One wordmark, matching the business cards, at the middle of three brightness
       levels ("1B"). It is now `print-materials/booth-banner.html`; the options file is deleted.
