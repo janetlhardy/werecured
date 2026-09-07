@@ -437,9 +437,14 @@ later.
       Option 1 (photo background, lower case), 2 (photo background, all caps) or 3 (all caps on a
       light cream banner — no black). Tell Claude which; the winner replaces `booth-banner.html`
       and the options file gets deleted. The medallions design was dropped 2026-09-06
-- [ ] If Option 1 or 2 wins: export the original `IMG_3091` from **Photos** (File → Export →
-      Export Unmodified Original) and give it to Claude — the website copy is only 1384 px wide,
-      which is too soft stretched across 6 feet. Option 3 uses no photo and is already sharp
+- [x] Bigger `IMG_3091` swapped into `images/` ✅ 2026-09-06 — now **1890 × 2048** (was 1384 ×
+      1500), taken from the `werecured-product-photos` folder. Puts the banner at ~20 dpi, up
+      from ~15
+- [ ] Optional, for a sharper banner: export the **camera original** of `IMG_3091` from **Photos**
+      using **File → Export → Export Unmodified Original** (the plain *Export* re-compresses,
+      which is how the 2048 px copies were made). A phone original is ~3000–4000 px, which would
+      put the banner at 32–42 dpi. Large-format printers normally want 30 dpi. Option 3 uses no
+      photo and is sharp regardless
 - [ ] Print the booth banner (open the file, Print → Save as PDF at 72 × 24 in, send to a printer)
 - [x] Table sign made ✅ — `print-materials/table-sign.html`, 5" × 7", carries the QR code to
       werecured.ca (the banner deliberately has no QR: hung behind the table it is too far away
