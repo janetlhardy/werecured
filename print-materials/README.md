@@ -46,6 +46,22 @@ or a local print shop. When you upload a PDF:
 **If it warns about low resolution, that is expected — see below.** If the site refuses a PDF,
 upload `booth-banner.jpg` instead; it is the same artwork.
 
+### If it says "extend your design to the edges"
+
+**Press `Fill` in their editor.** Their uploader drops the file onto their canvas without scaling
+it, so white shows *around* the artwork — the gap is in their layout, not in the file. `Fill`
+scales it until it covers, and the warning goes.
+
+The file itself is clean: sampled along all four edges, it has **zero** white pixels. So if this
+warning appears, it is always a placement problem at their end, never a fault to fix here.
+
+`Fill` crops slightly as it scales, which is exactly what the bleed is for — it eats the
+sacrificial quarter-inch and leaves the design untouched. This is why the file must never be
+uploaded at exact trim size: `Fill` would then crop into the picture and the lettering.
+
+Afterwards, check their proof for **framing** rather than sharpness: wordmark centred and
+unclipped, contact line complete, and the picture not stretched.
+
 ### About bleed — why the file is bigger than 72 × 24
 
 The PDF is **72.5 × 24.5 in**, not 72 × 24. That extra quarter-inch on every side is **bleed**:
