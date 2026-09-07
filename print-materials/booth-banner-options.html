@@ -34,10 +34,17 @@
 
   /* ---------- shared bits ---------- */
 
-  /* The Ocean Daisy photo from the business cards, plus a veil to keep text readable. */
+  /* The Ocean Daisy photo from the business cards, plus a veil to keep text readable.
+     The photo is nearly square (1384 x 1500) and the banner is 3:1, so a plain `cover`
+     crop leaves the pale table the coaster is sitting on at both ends — measured at
+     6.9in on the left and 3.9in on the right, about 15% of a 6ft banner showing bare
+     background instead of art. Zooming to 130% pushes all of it off the edges (measured
+     0% pale) at the cost of some resolution. Position is nudged to 52% because the
+     coaster does not sit dead centre in the frame. */
   .photo{
     position:absolute; inset:0; z-index:0;
-    background:url('../images/IMG_3091.jpeg') 50% 34%/cover;
+    background:url('../images/IMG_3091.jpeg') 52% 50%/130% auto no-repeat;
+    background-color:var(--dark);
     filter:brightness(.98) saturate(1.12) contrast(1.02);
   }
   .veil{
@@ -199,12 +206,18 @@
   <div class="warn">
     <b>Photo note — Options 1 and 2 need a bigger photo file.</b>
     The copy of <code>IMG_3091.jpeg</code> in the website folder is <b>1384 &times; 1500 pixels</b>.
-    That is plenty for a business card, but stretched across 6 feet it works out to only about
-    <b>19 dots per inch</b> — it will look soft close up. Fix: open the original in <b>Photos</b>,
-    choose <b>File &rarr; Export &rarr; Export Unmodified Original</b>, and give Claude the file.
-    Straight off your phone it is likely around 3000 pixels wide, roughly <b>42 dots per inch</b> at
-    this size — normal and acceptable for a vinyl banner seen from a few feet away.
-    <b>Option 3 has no photo at all</b>, so it prints perfectly sharp as it stands.
+    That is plenty for a business card, but spread across 6 feet — and now zoomed to 130% to keep
+    the bare table out of shot — it works out to about <b>15 dots per inch</b>. It will look soft
+    close up.
+    <br><br>
+    <b>The fix:</b> open the original in <b>Photos</b>, choose
+    <b>File &rarr; Export &rarr; Export Unmodified Original</b>, and give Claude the file.
+    Straight off your phone it is likely around 3000 pixels wide, which lands at roughly
+    <b>32 dots per inch</b> here. That is low by desk-printing standards but normal for
+    large-format vinyl — banner printers commonly work to artwork supplied at a tenth of final
+    size at 300 dpi, which is the same 30 dpi. From more than a few feet away it reads as sharp.
+    <br><br>
+    <b>Option 3 has no photo at all</b>, so it prints perfectly sharp exactly as it stands.
   </div>
 </div>
 
