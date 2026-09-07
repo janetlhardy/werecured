@@ -18,7 +18,8 @@
 - **Photos:** Product photos live in **Shopify**, not here. The `images/` folder holds only the few images the website itself displays. See `shopify/ADDING_A_BATCH.md`.
 
 ### Design
-- **Fonts:** Bungee (titles), Righteous (headings/labels), Nunito (body text) — all from Google Fonts
+- **Fonts:** Bagel Fat One (the **We're Cured!** wordmark — hero and footer), Bungee (section
+  headings, product titles, cart), Righteous (labels/taglines), Nunito (body text) — all from Google Fonts
 - **Color palette:** Hot pink, electric blue, lime green, orange, purple, yellow on a dark purple-black background
 - **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (176 pieces as of 2026-08-27)
 
@@ -262,14 +263,20 @@ Righteous and Nunito, on the rainbow-on-dark palette.
 - Business card front: name centred on the bright **Ocean Daisy** coaster (IMG_3091); back is **plain white** with the rainbow logo.
 - `business-card-coaster-options.html/.png` keeps the four coaster mock-ups that were considered.
 
-**Two wordmark styles are in use — this is a choice, not a mistake:**
+**The wordmark is Bagel Fat One everywhere** (decided 2026-09-06). The business cards were
+already printed in it, so the website was changed to match the cards rather than the other way
+round — the name now reads `We're Cured!` in lower case on the site's hero and footer, exactly as
+it does on the cards, gift tags and thank-you cards.
 
-| Font | Where | How the name looks |
-|---|---|---|
-| **Bungee** | the website, the current booth banner | `WE'RE CURED!` — Bungee has no lowercase, so it always draws capitals however it is typed |
-| **Bagel Fat One** | business cards, gift tags, thank-you cards, banner Options 1 and 2 | `We're Cured!` — true lowercase |
+**Bungee is still in use, but only for headings** — section titles, product names and the cart.
+Worth knowing: Bungee has no lowercase letters at all. It draws capitals however you type it,
+which is why the site's hero read `WE'RE CURED!` for months even though the HTML said
+`We're Cured!`.
 
-If everything should match one day, pick one font and Claude can convert the rest.
+One catch when either wordmark is used with a rainbow gradient: the gradient is painted across
+the whole element and then clipped to the letters, so a heading that spans the full page width
+shows the letters only the middle of the sweep. Both the hero and the footer logo are set to
+`display:inline-block` so the gradient shrink-wraps the text and the full rainbow lands on it.
 
 ### To do — Print materials
 - [ ] Choose a print service and order a small test batch of business cards + stickers
@@ -427,11 +434,12 @@ later.
 - [ ] Take the pendant group photo (needed for the first countdown post, ~5 Oct)
 - [x] Booth banner designed ✅ — `print-materials/booth-banner.html`, 72" × 24" vinyl
 - [ ] **Choose a banner design** — open `print-materials/booth-banner-options.html` and pick
-      Option 1 (business-card photo style), 2 (medallions) or 3 (the current one). Tell Claude
-      which; the winner replaces `booth-banner.html` and the options file gets deleted
-- [ ] If Option 1 wins: export the original `IMG_3091` from **Photos** (File → Export → Export
-      Unmodified Original) and give it to Claude — the website copy is only 1384 px wide, which
-      is too soft stretched across 6 feet
+      Option 1 (photo background, lower case), 2 (photo background, all caps) or 3 (all caps on a
+      light cream banner — no black). Tell Claude which; the winner replaces `booth-banner.html`
+      and the options file gets deleted. The medallions design was dropped 2026-09-06
+- [ ] If Option 1 or 2 wins: export the original `IMG_3091` from **Photos** (File → Export →
+      Export Unmodified Original) and give it to Claude — the website copy is only 1384 px wide,
+      which is too soft stretched across 6 feet. Option 3 uses no photo and is already sharp
 - [ ] Print the booth banner (open the file, Print → Save as PDF at 72 × 24 in, send to a printer)
 - [x] Table sign made ✅ — `print-materials/table-sign.html`, 5" × 7", carries the QR code to
       werecured.ca (the banner deliberately has no QR: hung behind the table it is too far away
