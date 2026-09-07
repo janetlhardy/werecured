@@ -59,15 +59,23 @@ cut goes. Nothing to change at your end: order 6ft × 2ft and upload this file.
 
 ### About the resolution warning
 
-The banner is **100 dots per inch at full size**, which is normal for a 6 ft vinyl banner — these
-are made to be read from several feet away, and print shops commonly work from artwork supplied at
-a tenth of final size at 300 dpi, which is only 30 dpi. Automatic checkers are usually set for
-business cards and will flag anything under 300, so a warning here does not mean the file is wrong.
+The banner is **150 dots per inch at full size**, which is more than a 6 ft vinyl banner needs —
+these are made to be read from several feet away, and print shops commonly work from artwork
+supplied at a tenth of final size at 300 dpi, which is only 30 dpi.
 
-The lettering is rendered at the full 7200 px and is genuinely crisp. The photograph behind it is
-the real limit: the camera original gives about 28 dpi across 6 feet, so from a step away it looks
-right, and close up it is a little soft. That is normal for a banner and cannot be improved without
-a different, much larger photograph.
+It was raised from 100 to 150 dpi on 2026-09-07 for one specific reason: VistaPrint's checker is
+calibrated for business cards, flagged the file, and then "fixed" it by upscaling. Resampling
+cannot add detail that was never in the photograph — it only turns their warning green. At 150 dpi
+the file passes on its own, so nothing of theirs touches it, and the **lettering** is genuinely
+sharper because text renders at whatever resolution it is asked for.
+
+The photograph is the real limit either way, and it does not improve: the camera original gives
+about 50 dpi across 6 feet. From a few feet back it reads as sharp; with your nose against it, it
+is a little soft. That is normal for a banner, and no file setting changes it.
+
+If the low-resolution warning appears anyway, it is safe to ignore. What *is* worth checking on
+their proof is the **framing** — that the wordmark is centred and unclipped, the picture is not
+stretched, and the colour runs to all four edges.
 
 ## Show pieces — banner, table sign, jewellery card
 
