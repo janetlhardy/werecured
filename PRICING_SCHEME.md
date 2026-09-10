@@ -71,8 +71,9 @@ their own thinking:
   a hot pan, so they don't work as trivets either. Janet's own read (2026-09-10): _"It's more of a
   statement piece than something to set your coffee cup down on."_ Most resin artists on YouTube
   default to calling them coasters, which is why Etsy prices for them are all over the place.
-- **So sell them as what they are** — a catchall, trinket dish, vanity or candle plate — under
-  **Home Decor**, priced as a single piece. The shop already proves this works: `Golden Tide
+- **So sell them as what they are** — a **Trinket Dish** as the family name, or a **Catchall**
+  where a piece is genuinely flat with no lip — under **Home Decor**, priced as a single piece.
+  Avoid "plate": a plate implies food, and resin can't take a hot one. The shop already proves this works: `Golden Tide
   Trinket Dish` and `Pomegranate Crystal Dish` both sit at **$50** as single items.
 - **Settled prices (2026-09-10):** singles **$55**, matched pairs **$90**, listed under **Home
   Decor** as "Trinket Dish". They had been "Coasters — Set of 2" at $40, i.e. $20 a piece —

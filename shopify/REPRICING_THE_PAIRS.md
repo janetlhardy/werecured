@@ -64,12 +64,15 @@ the piece vanishes from werecured.ca with no warning at all.
 
 ## 3. Blue Sea Urchin Coasters — Set of 2
 
-**New title:** Blue Sea Urchin Trinket Dishes — Pair
+**New title:** Blue Sea Urchin Catchalls — Pair
+
+> ℹ️ This is the only genuinely flat one of the five — no lip at all, just a beaded edge. "Catchall"
+> is the more honest word for it, and it's a good search term in its own right.
 
 **New description:**
 
-> A one-of-a-kind pair of trinket dishes with a bumpy sea-urchin texture in shimmering ocean blues,
-> each centred with a sparkling crystal cluster.
+> A one-of-a-kind pair of flat catchall dishes with a bumpy sea-urchin texture in shimmering ocean
+> blues, each centred with a sparkling crystal cluster.
 >
 > Each one is poured on its own in a single large mould, rather than several at a time, so no two
 > are ever quite alike.
@@ -129,7 +132,10 @@ fragile" $20 rate meant for bowls. These pieces are flat and compact — they sh
 them to the **Coasters** shipping profile ($12) so postage doesn't scare people off a $90 order.
 Settings → Shipping and delivery.
 
-**Photos.** All five have **only one photo each**. That was fine for a $40 coaster pair and is thin
-for a $90 pair. Worth reshooting when the ruler arrives — and for these, a shot with something
-resting on top (keys, rings, a small candle) does more than a ruler, because it shows the size and
-what the piece is for in one go.
+**Photos.** All five have **three photos each** — better than I first said, so this is less urgent
+than I made it sound. Still worth adding one shot apiece with something resting on top (keys, rings,
+a small candle), because at $90 the picture has to argue for the size and the purpose, and a plain
+top-down shot does neither.
+
+⚠️ **Sunrise/Sunset, photo 2 has Janet's hand in it** — holding the piece up to the light. It's
+doing scale duty, but it's a hand, so swap it out when the replacement shots are taken.
