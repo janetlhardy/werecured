@@ -198,6 +198,29 @@ deliberately** — see the note below.
 **Coasters don't need scale shots.** Size is self-evident from the category and most existing
 coaster sets have none. Recorded in `shopify/ADDING_A_BATCH.md` so it doesn't get asked again.
 
+### Shop housekeeping — stock-take (added 2026-09-10)
+
+📋 **Printable stock sheet:** <https://claude.ai/code/artifact/a987bc2c-4d28-4343-bf95-e6baf78b8707>
+All 176 products in one place — SKU, price, weight on file, and a blank column to write packed
+weights into. Grouped by category, with a filter to show only the ones still missing a weight.
+It's a snapshot taken 2026-09-10, not live — ask Claude to refresh it after a batch goes in.
+
+- [ ] **Fill in the 37 missing product weights.** 139 of 176 products already have one, so this is
+      smaller than it looks. Missing: 13 Coasters, 12 Bowls and Platters, 11 Home Decor, 1 Pendant.
+      Weights don't change what a customer is charged under flat-rate shipping, but Shopify prefills
+      the parcel weight from them when you buy a Canada Post label — at zero you're typing it in
+      every time, and guessing low can mean a returned parcel or a bill for the shortfall. They also
+      become mandatory if you ever move to calculated rates or add US shipping.
+      **Quickest way:** weigh one packed example per category, then bulk-edit that figure onto the
+      rest of that type. Close enough beats zero.
+- [ ] **Two products have no SKU** — `Sunrise/Sunset Trinket Dish - Set of 2` and
+      `Iridescent Dragon Platter`. Next free number is WC-3900.
+- [ ] **`Frosted Periwinkle Square Earrings` shows as sold out** (`availableForSale: false`) while
+      looking fine in admin. This is the known quantity-zero trap — Products → the product →
+      Inventory → Quantity → 1 → Save.
+- [ ] Tidy `Candy Hands`, the only product with its weight in **kilograms** (0.562 kg). The value is
+      right, it's just the odd one out — everything else is in grams.
+
 ### Email
 - [ ] Add `werecured.com` to Google Workspace
 - [ ] Add DNS records for `werecured.com` email in Namecheap
