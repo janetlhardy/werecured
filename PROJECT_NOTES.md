@@ -200,7 +200,10 @@ coaster sets have none. Recorded in `shopify/ADDING_A_BATCH.md` so it doesn't ge
 
 ### Shop housekeeping — stock-take (added 2026-09-10)
 
-📋 **Printable stock sheet:** <https://claude.ai/code/artifact/a987bc2c-4d28-4343-bf95-e6baf78b8707>
+📋 **Printable stock sheet:** `shopify/stock-sheet.html` — **double-click it on your Mac** and hit
+Print. (There's a web copy at <https://claude.ai/code/artifact/a987bc2c-4d28-4343-bf95-e6baf78b8707>,
+but browsers block printing from a page shown inside another page, so the local file is the one to
+use. `shopify/` is excluded in `_config.yml`, so it never appears on werecured.ca.)
 All 176 products in one place — SKU, price, weight on file, and a blank column to write packed
 weights into. Grouped by category, with a filter to show only the ones still missing a weight.
 It's a snapshot taken 2026-09-10, not live — ask Claude to refresh it after a batch goes in.

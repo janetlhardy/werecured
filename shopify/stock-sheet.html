@@ -1,0 +1,277 @@
+<title>We're Cured! Stock Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bungee&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+  :root{
+    --paper:#FBFAFC; --card:#FFFFFF; --ink:#221B2A; --ink-soft:#5C5368;
+    --rule:#E6E1EC; --rule-soft:#F0EDF4;
+    --pink:#D81B60; --blue:#0277BD; --lime:#558B2F; --orange:#E65100; --purple:#6A3FB5;
+    --flag-ink:#8A4B00; --flag-bg:#FDF2E0; --flag-edge:#E9C89A;
+    --pen:#B9B1C4;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#16121C; --card:#1E1926; --ink:#F0ECF5; --ink-soft:#A79DB4;
+      --rule:#332B3E; --rule-soft:#272132;
+      --pink:#FF7AA8; --blue:#63C8FF; --lime:#B6E86B; --orange:#FFA759; --purple:#B79BFF;
+      --flag-ink:#F5C77E; --flag-bg:#2E2212; --flag-edge:#5A431F;
+      --pen:#4A4256;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#16121C; --card:#1E1926; --ink:#F0ECF5; --ink-soft:#A79DB4;
+    --rule:#332B3E; --rule-soft:#272132;
+    --pink:#FF7AA8; --blue:#63C8FF; --lime:#B6E86B; --orange:#FFA759; --purple:#B79BFF;
+    --flag-ink:#F5C77E; --flag-bg:#2E2212; --flag-edge:#5A431F;
+    --pen:#4A4256;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:15px; line-height:1.5; margin:0; padding:32px 24px 64px;
+  }
+  .wrap{max-width:1000px; margin:0 auto}
+
+  header{display:flex; flex-wrap:wrap; align-items:flex-end; gap:20px 32px; margin-bottom:8px}
+  .wordmark{
+    font-family:"Bagel Fat One",Nunito,sans-serif; font-size:34px; line-height:1;
+    color:var(--pink); letter-spacing:.01em;
+  }
+  .sheet-name{font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin-top:8px}
+  .dateline{font-size:13px; color:var(--ink-soft); margin-left:auto; text-align:right}
+
+  .tally{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1px;
+    background:var(--rule); border:1px solid var(--rule); margin:24px 0 8px;
+  }
+  .tally div{background:var(--card); padding:12px 14px}
+  .tally .n{font-size:24px; font-weight:700; font-variant-numeric:tabular-nums; line-height:1.1}
+  .tally .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-top:3px}
+  .tally .flagged .n{color:var(--flag-ink)}
+
+  .toolbar{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:20px 0 28px}
+  button{
+    font-family:inherit; font-size:13px; font-weight:600; color:var(--ink);
+    background:var(--card); border:1px solid var(--rule); border-radius:2px;
+    padding:8px 14px; cursor:pointer;
+  }
+  button:hover{border-color:var(--ink-soft)}
+  button[aria-pressed="true"]{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+  button:focus-visible{outline:2px solid var(--pink); outline-offset:2px}
+  .hint{font-size:13px; color:var(--ink-soft); margin-left:4px}
+  a.btn{
+    font-size:13px; font-weight:600; color:var(--ink); text-decoration:none;
+    background:var(--card); border:1px solid var(--rule); border-radius:2px; padding:8px 14px;
+  }
+  a.btn:hover{border-color:var(--ink-soft)}
+  a.btn:focus-visible{outline:2px solid var(--pink); outline-offset:2px}
+  .printnote{
+    font-size:13px; line-height:1.6; color:var(--ink-soft); max-width:64ch;
+    margin:-14px 0 28px; padding:12px 14px;
+    background:var(--card); border:1px solid var(--rule); border-left:4px solid var(--pink);
+  }
+  .printnote a{color:var(--pink); font-weight:700}
+  kbd{
+    font-family:inherit; font-size:11.5px; font-weight:700; color:var(--ink);
+    background:var(--rule-soft); border:1px solid var(--rule); border-radius:3px; padding:1px 5px;
+  }
+
+  section{margin-top:34px; break-inside:auto}
+  h2{
+    font-family:Bungee,Nunito,sans-serif; font-weight:400; font-size:15px; letter-spacing:.06em;
+    margin:0 0 10px; padding-left:12px; border-left:5px solid var(--cat,var(--purple));
+    display:flex; align-items:baseline; gap:10px;
+  }
+  h2 .count{font-family:Nunito,sans-serif; font-size:12px; letter-spacing:.08em; color:var(--ink-soft)}
+  section[data-cat="Coasters"]{--cat:var(--lime)}
+  section[data-cat="Bowls and Platters"]{--cat:var(--blue)}
+  section[data-cat="Home Decor"]{--cat:var(--orange)}
+  section[data-cat="Pendant"]{--cat:var(--pink)}
+  section[data-cat="Earrings"]{--cat:var(--purple)}
+
+  .scroll{overflow-x:auto}
+  table{width:100%; border-collapse:collapse; font-size:13.5px}
+  thead th{
+    font-size:10.5px; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-soft);
+    font-weight:700; text-align:left; padding:0 8px 6px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  tbody td{padding:6px 8px; border-bottom:1px solid var(--rule-soft); vertical-align:baseline}
+  tbody tr:last-child td{border-bottom:1px solid var(--rule)}
+  .box{width:26px}
+  .box i{display:block; width:13px; height:13px; border:1.5px solid var(--pen); border-radius:2px}
+  .sku{font-variant-numeric:tabular-nums; color:var(--ink-soft); white-space:nowrap; width:74px}
+  .name{font-weight:600}
+  .num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .price{width:64px}
+  .onfile{width:76px}
+  .writein{width:96px; border-bottom:1.5px dotted var(--pen)}
+  .none{color:var(--flag-ink); background:var(--flag-bg); border:1px solid var(--flag-edge);
+        border-radius:2px; padding:1px 6px; font-size:11px; font-weight:700; letter-spacing:.04em}
+  .sold{color:var(--flag-ink); font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase}
+  tr.hide{display:none}
+  .empty{color:var(--ink-soft); font-style:italic; padding:8px 0; font-size:13px}
+
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--rule); font-size:12.5px; color:var(--ink-soft); max-width:62ch}
+  footer p{margin:0 0 8px}
+
+  @media print{
+    :root{
+      --paper:#fff; --card:#fff; --ink:#1a1520; --ink-soft:#5b5366;
+      --rule:#c9c3d1; --rule-soft:#e8e4ee; --pen:#9a93a5;
+      --pink:#b01650; --blue:#025c93; --lime:#416d23; --orange:#b84000; --purple:#553296;
+      --flag-ink:#7a4200; --flag-bg:#fff; --flag-edge:#b09166;
+    }
+    @page{size:letter portrait; margin:14mm}
+    body{padding:0; font-size:11pt}
+    .toolbar,.printnote,.dateline .live{display:none}
+    section{break-inside:auto; margin-top:20px}
+    h2{break-after:avoid}
+    thead{display:table-header-group}
+    tr{break-inside:avoid}
+    tbody td{padding:4px 6px}
+    .tally{margin:14px 0 4px}
+    footer{break-before:avoid}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark">We're Cured!</div>
+      <div class="sheet-name">Stock sheet &middot; weigh, label, check</div>
+    </div>
+    <div class="dateline">
+      <div id="stamp"></div>
+      <div class="live">Live from the shop</div>
+    </div>
+  </header>
+
+  <div class="tally">
+    <div><div class="n" id="t-all">—</div><div class="k">Products</div></div>
+    <div class="flagged"><div class="n" id="t-missing">—</div><div class="k">No weight yet</div></div>
+    <div><div class="n" id="t-weighed">—</div><div class="k">Weight on file</div></div>
+    <div><div class="n" id="t-value">—</div><div class="k">Listed value</div></div>
+  </div>
+
+  <div class="toolbar">
+    <button id="f-all" aria-pressed="true">Everything</button>
+    <button id="f-miss" aria-pressed="false">Only missing a weight</button>
+    <a id="print" class="btn" href="#">Print</a>
+    <span class="hint" id="showing"></span>
+  </div>
+  <p class="printnote" id="printnote" hidden>
+    This sheet is sitting inside the Claude page, and browsers won't let it start a print from
+    there. <strong>Open it in its own tab</strong> — <a id="ownlink" href="#" target="_blank"
+    rel="noopener">open the stock sheet</a> — then press <kbd>&#8984;P</kbd> (<kbd>Ctrl</kbd>+<kbd>P</kbd>
+    on Windows). Whatever filter you've picked comes with it.
+    <br><br>Simpler still: there's a copy saved on your Mac at
+    <strong>website / werecured / shopify / stock-sheet.html</strong> &mdash; double-click that and
+    the Print button just works.
+  </p>
+
+  <div id="sheet"></div>
+
+  <footer>
+    <p><strong>Weighed column:</strong> write the packed weight in grams — the piece in its box, padded,
+    ready to post. That's the number Shopify wants when you buy a label, not the bare piece.</p>
+    <p>Weights don't change what a customer is charged while you're on flat rates. They save you typing
+    at the label counter, and they become compulsory if you ever move to calculated rates or add US shipping.</p>
+    <p>Quickest route: weigh one packed example per category, then bulk-edit that figure onto the rest of
+    that type in Shopify. Close enough beats zero.</p>
+  </footer>
+</div>
+
+<script id="data" type="application/json">[{"t": "Amber Geode Set of 4", "c": "Coasters", "s": "WC-3151", "p": 60.0, "g": 291, "a": true}, {"t": "Amethyst Bloom Set of 4", "c": "Coasters", "s": "WC-3098", "p": 60.0, "g": 411, "a": true}, {"t": "Amethyst Geode Set of 4", "c": "Coasters", "s": "WC-3056", "p": 70.0, "g": 565, "a": true}, {"t": "Amethyst Lightning \u2014 Set of 4", "c": "Coasters", "s": "WC-3717", "p": 50.0, "g": null, "a": true}, {"t": "Autumn Bloom Set of 4", "c": "Coasters", "s": "WC-1954", "p": 50.0, "g": 202, "a": true}, {"t": "Berry Marble Set of 4", "c": "Coasters", "s": "WC-3189", "p": 60.0, "g": 312, "a": true}, {"t": "Blue Anemone Set of 4", "c": "Coasters", "s": "WC-2205", "p": 50.0, "g": 305, "a": true}, {"t": "Blue Frost Geode \u2014 Set of 4", "c": "Coasters", "s": "WC-3635", "p": 60.0, "g": 500, "a": true}, {"t": "Blue Hibiscus Coasters \u2014 Set of 4", "c": "Coasters", "s": "WC-3865", "p": 70.0, "g": null, "a": true}, {"t": "Blue Marble Set of 4", "c": "Coasters", "s": "WC-3094", "p": 50.0, "g": 278, "a": true}, {"t": "Bronze Nebula \u2014 Set of 4", "c": "Coasters", "s": "WC-3644", "p": 60.0, "g": 543, "a": true}, {"t": "Bubble Coasters \u2014 Set of 4", "c": "Coasters", "s": "WC-3765", "p": 70.0, "g": null, "a": true}, {"t": "Cobalt Bloom Set of 4", "c": "Coasters", "s": "WC-3194", "p": 60.0, "g": 272, "a": true}, {"t": "Copper Carnation \u2014 Set of 3", "c": "Coasters", "s": "WC-3537", "p": 45.0, "g": 241, "a": true}, {"t": "Copper Galaxy \u2014 Set of 4", "c": "Coasters", "s": "WC-3711", "p": 50.0, "g": null, "a": true}, {"t": "Coral Sunburst Set of 4", "c": "Coasters", "s": "WC-3162", "p": 50.0, "g": 190, "a": true}, {"t": "Cornflower Blossom Set of 4", "c": "Coasters", "s": "WC-3158", "p": 50.0, "g": 156, "a": true}, {"t": "Cosmic Geode \u2014 Set of 4", "c": "Coasters", "s": "WC-3654", "p": 60.0, "g": 513, "a": true}, {"t": "Cotton Candy \u2014 Set of 4", "c": "Coasters", "s": "WC-3615", "p": 40.0, "g": 205, "a": true}, {"t": "Crackling Rose Set of 4", "c": "Coasters", "s": "WC-3039", "p": 60.0, "g": 486, "a": true}, {"t": "Crimson Geode Set of 4", "c": "Coasters", "s": "WC-3046", "p": 70.0, "g": 490, "a": true}, {"t": "Dahlia Dream \u2014 Set of 4", "c": "Coasters", "s": "WC-3619", "p": 60.0, "g": 535, "a": true}, {"t": "Emerald Geode Set of 4", "c": "Coasters", "s": "WC-3043", "p": 70.0, "g": 521, "a": true}, {"t": "Fiesta Set of 4", "c": "Coasters", "s": "WC-3102", "p": 60.0, "g": 190, "a": true}, {"t": "Forest Blossom Set of 5", "c": "Coasters", "s": "WC-3110", "p": 50.0, "g": 186, "a": true}, {"t": "Frost Flower \u2014 Set of 4", "c": "Coasters", "s": "WC-3627", "p": 50.0, "g": 180, "a": true}, {"t": "Galaxy Petal Set of 4", "c": "Coasters", "s": "WC-3065", "p": 70.0, "g": 545, "a": true}, {"t": "Gilded Ember \u2014 Reversible Set of 4", "c": "Coasters", "s": "WC-3727", "p": 50.0, "g": null, "a": true}, {"t": "Gilded Petal Set of 4", "c": "Coasters", "s": "WC-3049", "p": 50.0, "g": 277, "a": true}, {"t": "Golden Fern Coasters \u2014 Set of 4", "c": "Coasters", "s": "WC-3780", "p": 70.0, "g": null, "a": true}, {"t": "Golden Sunflower Set of 4", "c": "Coasters", "s": "WC-1955", "p": 70.0, "g": 548, "a": true}, {"t": "Green Star Flower Set of 4", "c": "Coasters", "s": "WC-1946", "p": 50.0, "g": 210, "a": true}, {"t": "Gumball Galaxy \u2014 Set of 4", "c": "Coasters", "s": "WC-3535", "p": 60.0, "g": 237, "a": true}, {"t": "Ice Blue Geode Set of 4", "c": "Coasters", "s": "WC-3052", "p": 70.0, "g": 621, "a": true}, {"t": "Iridescent Aster \u2014 Set of 4", "c": "Coasters", "s": "WC-3650", "p": 50.0, "g": 296, "a": true}, {"t": "Jade Geode Set of 4", "c": "Coasters", "s": "WC-3117", "p": 60.0, "g": 261, "a": true}, {"t": "Lagoon Geode Set of 4", "c": "Coasters", "s": "WC-3139", "p": 60.0, "g": 212, "a": true}, {"t": "Magenta Geode Set of 4", "c": "Coasters", "s": "WC-3133", "p": 60.0, "g": 217, "a": true}, {"t": "Magenta Smoke \u2014 Set of 3", "c": "Coasters", "s": "WC-3647", "p": 45.0, "g": 220, "a": true}, {"t": "Marigold Set of 4", "c": "Coasters", "s": "WC-3154", "p": 60.0, "g": 259, "a": true}, {"t": "Meadow Blossom Set of 4", "c": "Coasters", "s": "WC-3166", "p": 50.0, "g": 209, "a": true}, {"t": "Mermaid Geode Set of 4", "c": "Coasters", "s": "WC-3174", "p": 60.0, "g": 247, "a": true}, {"t": "Metallic Rose Coasters", "c": "Coasters", "s": "WC-3136", "p": 70.0, "g": 552, "a": true}, {"t": "Midnight Iridescence Set of 3", "c": "Coasters", "s": "WC-2", "p": 50.0, "g": 185, "a": true}, {"t": "Midnight Meadow \u2014 Set of 4", "c": "Coasters", "s": "WC-3638", "p": 50.0, "g": 327, "a": true}, {"t": "Monster Splat Set of 4", "c": "Coasters", "s": "WC-1924", "p": 50.0, "g": 188, "a": true}, {"t": "Navy Daisy Set of 4", "c": "Coasters", "s": "WC-1917", "p": 50.0, "g": 360, "a": true}, {"t": "Nebula Square Set of 4", "c": "Coasters", "s": "WC-1939", "p": 70.0, "g": 355, "a": true}, {"t": "Neon Blob Set of 4", "c": "Coasters", "s": "WC-1947", "p": 50.0, "g": 338, "a": true}, {"t": "Ocean Bubble Set of 4", "c": "Coasters", "s": "WC-1925", "p": 60.0, "g": 364, "a": true}, {"t": "Ocean Marble Set of 4", "c": "Coasters", "s": "WC-1952", "p": 60.0, "g": 270, "a": true}, {"t": "Olive Gold Geode Set of 4", "c": "Coasters", "s": "WC-3147", "p": 50.0, "g": 219, "a": true}, {"t": "Orchid Bloom Coasters \u2014 Set of 4", "c": "Coasters", "s": "WC-3785", "p": 70.0, "g": null, "a": true}, {"t": "Orchid Blossom Set of 4", "c": "Coasters", "s": "WC-3121", "p": 50.0, "g": 292, "a": true}, {"t": "Peacock Blossom Set of 4", "c": "Coasters", "s": "WC-3169", "p": 60.0, "g": 234, "a": true}, {"t": "Poppy Set of 4", "c": "Coasters", "s": "WC-3143", "p": 50.0, "g": 215, "a": true}, {"t": "Prism Eye Set of 4", "c": "Coasters", "s": "WC-3062", "p": 60.0, "g": 393, "a": true}, {"t": "Purple Daisy Set of 4", "c": "Coasters", "s": "WC-1923", "p": 50.0, "g": 280, "a": true}, {"t": "Purple Nebula Set of 4", "c": "Coasters", "s": "WC-3088", "p": 60.0, "g": 248, "a": true}, {"t": "Purple Peony Set of 4", "c": "Coasters", "s": "WC-2211", "p": 50.0, "g": 305, "a": true}, {"t": "Purple Sage Geode \u2014 Set of 4", "c": "Coasters", "s": "WC-3606", "p": 60.0, "g": 538, "a": true}, {"t": "Red Poppy Set of 4", "c": "Coasters", "s": "WC-1920", "p": 50.0, "g": 260, "a": true}, {"t": "Reversible Blue Geode Set of 4", "c": "Coasters", "s": "WC-3081", "p": 60.0, "g": 265, "a": true}, {"t": "Rose Garden Set of 4", "c": "Coasters", "s": "WC-1949", "p": 50.0, "g": 290, "a": true}, {"t": "Royalty Crackles  Set of 4", "c": "Coasters", "s": "WC-3128", "p": 60.0, "g": 266, "a": true}, {"t": "Ruby Ember \u2014 Set of 4 Reversible coasters", "c": "Coasters", "s": "WC-3721", "p": 50.0, "g": null, "a": true}, {"t": "Sapphire Blossom Coasters \u2014 Set of 4", "c": "Coasters", "s": "WC-3840", "p": 70.0, "g": null, "a": true}, {"t": "Sea Foam \u2014 Set of 4", "c": "Coasters", "s": "WC-3641", "p": 60.0, "g": 541, "a": true}, {"t": "Sea Glass Geode Set of 4", "c": "Coasters", "s": "WC-3106", "p": 60.0, "g": 303, "a": true}, {"t": "Shimmer Bloom Set of 4", "c": "Coasters", "s": "WC-2818", "p": 50.0, "g": 325, "a": true}, {"t": "Smoky Rose \u2014 Set of 4", "c": "Coasters", "s": "WC-3631", "p": 60.0, "g": 432, "a": true}, {"t": "Stone Geode Set of 4", "c": "Coasters", "s": "WC-3073", "p": 70.0, "g": 536, "a": true}, {"t": "Stormcloud Geode Set of 4", "c": "Coasters", "s": "WC-3182", "p": 50.0, "g": 243, "a": true}, {"t": "Sunflower Set of 4", "c": "Coasters", "s": "WC-1953", "p": 50.0, "g": 262, "a": true}, {"t": "Sunset Crystal \u2014 Set of 4", "c": "Coasters", "s": "WC-3735", "p": 70.0, "g": null, "a": true}, {"t": "Sunset Vibe Coasters Set of 4", "c": "Coasters", "s": "WC-3185", "p": 60.0, "g": 241, "a": true}, {"t": "Teal Crackle Geode Set of 4", "c": "Coasters", "s": "WC-3078", "p": 60.0, "g": 266, "a": true}, {"t": "Teal Marigold Set of 4", "c": "Coasters", "s": "WC-2044", "p": 50.0, "g": 303, "a": true}, {"t": "Terra Cotta Bloom \u2014 Set of 4", "c": "Coasters", "s": "WC-3624", "p": 50.0, "g": 535, "a": true}, {"t": "Terracotta Geode Set of 4", "c": "Coasters", "s": "WC-3178", "p": 60.0, "g": 256, "a": true}, {"t": "Tropical Storm Set of 4", "c": "Coasters", "s": "WC-1945", "p": 60.0, "g": 244, "a": true}, {"t": "Twilight Bloom \u2014 Set of 4", "c": "Coasters", "s": "WC-3704", "p": 50.0, "g": null, "a": true}, {"t": "Velvet Colorshift Set of 4", "c": "Coasters", "s": "WC-1943", "p": 70.0, "g": 557, "a": true}, {"t": "Violet Bloom Set of 4", "c": "Coasters", "s": "WC-1940", "p": 50.0, "g": 315, "a": true}, {"t": "Watermelon Bloom \u2014 Set of 4", "c": "Coasters", "s": "WC-3609", "p": 50.0, "g": 300, "a": true}, {"t": "White Daisy Set of 4", "c": "Coasters", "s": "WC-1918", "p": 70.0, "g": 522, "a": true}, {"t": "Wild Poppy \u2014 Set of 4", "c": "Coasters", "s": "WC-3714", "p": 50.0, "g": null, "a": true}, {"t": "Winter Blossom \u2014 Set of 4", "c": "Coasters", "s": "WC-3708", "p": 50.0, "g": null, "a": true}, {"t": "Abalone Shell Bowl", "c": "Bowls and Platters", "s": "WC-3845", "p": 75.0, "g": null, "a": true}, {"t": "Aurora Bowl", "c": "Bowls and Platters", "s": "WC-3001", "p": 110.0, "g": 318, "a": true}, {"t": "Bubble Wrap Bowl", "c": "Bowls and Platters", "s": "WC-2995", "p": 110.0, "g": 386, "a": true}, {"t": "Chrysanthemum Plate", "c": "Bowls and Platters", "s": "WC-3025", "p": 70.0, "g": 253, "a": true}, {"t": "Coral Reef Platter", "c": "Bowls and Platters", "s": "WC-3012", "p": 80.0, "g": 331, "a": true}, {"t": "Cosmic Cobalt Bowl", "c": "Bowls and Platters", "s": "WC-3775", "p": 50.0, "g": null, "a": true}, {"t": "Flame Ruffled Bowl", "c": "Bowls and Platters", "s": "WC-1979", "p": 50.0, "g": 93, "a": true}, {"t": "Glacier Wave Bowl", "c": "Bowls and Platters", "s": "WC-1935", "p": 125.0, "g": 297, "a": true}, {"t": "Golden Bough Platter", "c": "Bowls and Platters", "s": "WC-3860", "p": 150.0, "g": null, "a": true}, {"t": "Iridescent Dragon Platter", "c": "Bowls and Platters", "s": "", "p": 90.0, "g": null, "a": true}, {"t": "Lavender Dream Tray", "c": "Bowls and Platters", "s": "WC-3273", "p": 70.0, "g": 201, "a": true}, {"t": "Midnight Forest Tray", "c": "Bowls and Platters", "s": "WC-3018", "p": 110.0, "g": 600, "a": true}, {"t": "Molten Lava Bowl", "c": "Bowls and Platters", "s": "WC-1936", "p": 125.0, "g": 657, "a": true}, {"t": "Moss Agate Bowl", "c": "Bowls and Platters", "s": "WC-3870", "p": 70.0, "g": null, "a": true}, {"t": "Northern Lights Bowl Set", "c": "Bowls and Platters", "s": "WC-3029", "p": 70.0, "g": 303, "a": true}, {"t": "Opal Sunset Tray", "c": "Bowls and Platters", "s": "WC-3740", "p": 110.0, "g": null, "a": true}, {"t": "Opal Wave Bowl", "c": "Bowls and Platters", "s": "WC-3815", "p": 75.0, "g": null, "a": true}, {"t": "Red Geode Crystal", "c": "Bowls and Platters", "s": "WC-1930", "p": 125.0, "g": 525, "a": true}, {"t": "Rose Garden Tray", "c": "Bowls and Platters", "s": "WC-3657", "p": 80.0, "g": null, "a": true}, {"t": "Sandy Shore Bowl", "c": "Bowls and Platters", "s": "WC-2968", "p": 150.0, "g": 334, "a": true}, {"t": "Sapphire Geode Tray", "c": "Bowls and Platters", "s": "WC-3760", "p": 110.0, "g": null, "a": true}, {"t": "Sea Blue Splash Bowl", "c": "Bowls and Platters", "s": "WC-3795", "p": 80.0, "g": null, "a": true}, {"t": "Sea Green Splash Bowl", "c": "Bowls and Platters", "s": "WC-3800", "p": 80.0, "g": null, "a": true}, {"t": "Sunstone Platter", "c": "Bowls and Platters", "s": "WC-3022", "p": 90.0, "g": 483, "a": true}, {"t": "Wild Rose Bowl", "c": "Bowls and Platters", "s": "WC-3015", "p": 70.0, "g": 378, "a": true}, {"t": "Wisteria Shell Bowl", "c": "Bowls and Platters", "s": "WC-3850", "p": 75.0, "g": null, "a": true}, {"t": "Air Plant Hands", "c": "Home Decor", "s": "WC-2974", "p": 60.0, "g": 568, "a": true}, {"t": "Amethyst Crystal Trinket Dishes \u2014 Set of 2", "c": "Home Decor", "s": "WC-3790", "p": 90.0, "g": null, "a": true}, {"t": "Amethyst Embrace", "c": "Home Decor", "s": "WC-3661", "p": 60.0, "g": 362, "a": true}, {"t": "Aurora Thinkers \u2014 Set of 3", "c": "Home Decor", "s": "WC-3855", "p": 65.0, "g": null, "a": true}, {"t": "Blue Dahlia Trinket Dishes \u2014 Set of 2", "c": "Home Decor", "s": "WC-3810", "p": 90.0, "g": null, "a": true}, {"t": "Blue Sea Urchin Catch-alls \u2014 Set of 2", "c": "Home Decor", "s": "WC-3770", "p": 90.0, "g": null, "a": true}, {"t": "Candy Hands", "c": "Home Decor", "s": "WC-2982", "p": 60.0, "g": 562, "a": true}, {"t": "Garden Bloom Thinkers \u2014 Set of 3", "c": "Home Decor", "s": "WC-3820", "p": 109.0, "g": null, "a": true}, {"t": "Gilded Lagoon Thinkers \u2014 Set of 3", "c": "Home Decor", "s": "WC-3835", "p": 65.0, "g": null, "a": true}, {"t": "Golden Tide Trinket Dish", "c": "Home Decor", "s": "WC-3805", "p": 50.0, "g": null, "a": true}, {"t": "Green Thumb", "c": "Home Decor", "s": "WC-3612", "p": 60.0, "g": 362, "a": true}, {"t": "Liquid Metal Thinkers \u2014 Set of 3", "c": "Home Decor", "s": "WC-3825", "p": 65.0, "g": null, "a": true}, {"t": "M&M Hands", "c": "Home Decor", "s": "WC-2991", "p": 60.0, "g": 674, "a": true}, {"t": "Moonbeam Hands", "c": "Home Decor", "s": "WC-2985", "p": 60.0, "g": 568, "a": true}, {"t": "Moonstone Thinkers \u2014 Set of 3", "c": "Home Decor", "s": "WC-3830", "p": 65.0, "g": null, "a": true}, {"t": "Pomegranate Crystal Bowl", "c": "Home Decor", "s": "WC-3750", "p": 50.0, "g": 558, "a": true}, {"t": "Pomegranate Crystal Dish", "c": "Home Decor", "s": "WC-3755", "p": 50.0, "g": 280, "a": true}, {"t": "Sunrise/Sunset Trinket Dish - Set of 2", "c": "Home Decor", "s": "", "p": 90.0, "g": null, "a": true}, {"t": "Tide Pool Trinket Dish \u2014 Set of 2", "c": "Home Decor", "s": "WC-3745", "p": 90.0, "g": null, "a": true}, {"t": "Amber Heart Pendant", "c": "Pendant", "s": "WC-1905", "p": 50.0, "g": 15, "a": true}, {"t": "Blue Larimar Teardrop", "c": "Pendant", "s": "WC-2133", "p": 50.0, "g": 15, "a": true}, {"t": "Blue Moon Pendant", "c": "Pendant", "s": "WC-1899", "p": 50.0, "g": 15, "a": true}, {"t": "Blue Sky Circle", "c": "Pendant", "s": "WC-2150", "p": 60.0, "g": 15, "a": true}, {"t": "Bronze Bubble Heart Pendant", "c": "Pendant", "s": "WC-2129", "p": 50.0, "g": 15, "a": true}, {"t": "Cherry Blossom Tree Pendant", "c": "Pendant", "s": "WC-2126", "p": 60.0, "g": 15, "a": true}, {"t": "Cobalt Foil Oval", "c": "Pendant", "s": "WC-2140", "p": 50.0, "g": 15, "a": true}, {"t": "Coral Branch Pendant", "c": "Pendant", "s": "WC-1875", "p": 50.0, "g": 15, "a": true}, {"t": "Cosmic Glitter Triangle", "c": "Pendant", "s": "WC-2136", "p": 50.0, "g": 15, "a": true}, {"t": "Crimson Swirl Oval", "c": "Pendant", "s": "WC-2162", "p": 50.0, "g": null, "a": true}, {"t": "Dark Coral Branch Oval", "c": "Pendant", "s": "WC-2143", "p": 50.0, "g": 15, "a": true}, {"t": "Encapsulated Rose Pendant", "c": "Pendant", "s": "WC-1904", "p": 50.0, "g": 15, "a": true}, {"t": "Ethereal Being Pendant", "c": "Pendant", "s": "WC-1876", "p": 60.0, "g": 15, "a": true}, {"t": "Galaxy Swirl Pendant", "c": "Pendant", "s": "WC-1907", "p": 50.0, "g": 15, "a": true}, {"t": "Glow Skull Pendant", "c": "Pendant", "s": "WC-2166", "p": 60.0, "g": 15, "a": true}, {"t": "Gold Bubble Heart Pendant", "c": "Pendant", "s": "WC-2125", "p": 50.0, "g": 15, "a": true}, {"t": "Lavender Holographic Pendant", "c": "Pendant", "s": "WC-1910", "p": 50.0, "g": 15, "a": true}, {"t": "Mermaid Oval Pendant", "c": "Pendant", "s": "WC-1901", "p": 60.0, "g": 15, "a": true}, {"t": "Opal Dream Pendant", "c": "Pendant", "s": "WC-1878", "p": 50.0, "g": 15, "a": true}, {"t": "Periwinkle Pendant", "c": "Pendant", "s": "WC-1900", "p": 50.0, "g": 15, "a": true}, {"t": "Pink Rose Heart Pendant", "c": "Pendant", "s": "WC-1903", "p": 50.0, "g": 15, "a": true}, {"t": "Purple Moon Pendant", "c": "Pendant", "s": "WC-1879", "p": 50.0, "g": 15, "a": true}, {"t": "Purple Scallop Pendant", "c": "Pendant", "s": "WC-2156", "p": 50.0, "g": 15, "a": true}, {"t": "Red Heart Pendant", "c": "Pendant", "s": "WC-1881", "p": 50.0, "g": 15, "a": true}, {"t": "Sea Turtle Circle", "c": "Pendant", "s": "WC-2153", "p": 50.0, "g": 15, "a": true}, {"t": "Silver Moon Pendant", "c": "Pendant", "s": "WC-1887", "p": 50.0, "g": 15, "a": true}, {"t": "Silver Void Heart", "c": "Pendant", "s": "WC-2149", "p": 50.0, "g": 15, "a": true}, {"t": "Sky Blue Holographic Pendant", "c": "Pendant", "s": "WC-1909", "p": 50.0, "g": 15, "a": true}, {"t": "Starfish Oval", "c": "Pendant", "s": "WC-2159", "p": 50.0, "g": 15, "a": true}, {"t": "Swirly Mist Pendant", "c": "Pendant", "s": "WC-1908", "p": 50.0, "g": 15, "a": true}, {"t": "Teal Holographic Pendant", "c": "Pendant", "s": "WC-1911", "p": 50.0, "g": 15, "a": true}, {"t": "Teal Moon Pendant", "c": "Pendant", "s": "WC-1877", "p": 50.0, "g": 15, "a": true}, {"t": "Blue Oval Earrings", "c": "Earrings", "s": "WC-1914", "p": 25.0, "g": 5, "a": true}, {"t": "Electric Blue Oval Earrings", "c": "Earrings", "s": "WC-2201", "p": 25.0, "g": 5, "a": true}, {"t": "Ember Circle Earrings", "c": "Earrings", "s": "WC-1913", "p": 25.0, "g": 5, "a": true}, {"t": "Emerald Leaf Earrings", "c": "Earrings", "s": "WC-2193", "p": 25.0, "g": 5, "a": true}, {"t": "Frosted Periwinkle Square Earrings", "c": "Earrings", "s": "WC-2189", "p": 25.0, "g": 5, "a": false}, {"t": "Frosted Periwinkle Teardrop Earrings", "c": "Earrings", "s": "WC-2186", "p": 25.0, "g": 5, "a": true}, {"t": "Honey Bee Earrings", "c": "Earrings", "s": "WC-1912", "p": 25.0, "g": 5, "a": true}, {"t": "Purple Galaxy Earrings", "c": "Earrings", "s": "WC-1915", "p": 25.0, "g": 5, "a": true}, {"t": "Red Heart Set", "c": "Earrings", "s": "WC-1880", "p": 75.0, "g": 5, "a": true}, {"t": "Sea Life Capsule Earrings", "c": "Earrings", "s": "WC-2174", "p": 40.0, "g": 5, "a": true}, {"t": "Spilled Coffee Earrings", "c": "Earrings", "s": "WC-2171", "p": 25.0, "g": 5, "a": true}]</script>
+<script>
+(function(){
+  var rows = JSON.parse(document.getElementById('data').textContent);
+  var ORDER = ["Coasters","Bowls and Platters","Home Decor","Pendant","Earrings"];
+  var LABEL = {"Pendant":"Pendants","Earrings":"Earrings","Coasters":"Coasters",
+               "Bowls and Platters":"Bowls & Platters","Home Decor":"Home Decor"};
+  var esc = function(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+
+  var cats = [];
+  rows.forEach(function(r){ if(cats.indexOf(r.c)<0) cats.push(r.c); });
+  cats.sort(function(a,b){
+    var i=ORDER.indexOf(a), j=ORDER.indexOf(b);
+    return (i<0?99:i)-(j<0?99:j);
+  });
+
+  var html = cats.map(function(cat){
+    var items = rows.filter(function(r){ return r.c===cat; });
+    var miss = items.filter(function(r){ return r.g===null; }).length;
+    var body = items.map(function(r){
+      return '<tr'+(r.g===null?' data-miss="1"':'')+'>'
+        + '<td class="box"><i></i></td>'
+        + '<td class="sku">'+(r.s?esc(r.s):'&mdash;')+'</td>'
+        + '<td class="name">'+esc(r.t)+(r.a?'':' <span class="sold">sold out</span>')+'</td>'
+        + '<td class="num price">$'+r.p.toFixed(0)+'</td>'
+        + '<td class="num onfile">'+(r.g===null?'<span class="none">none</span>':r.g+' g')+'</td>'
+        + '<td class="writein"></td></tr>';
+    }).join('');
+    return '<section data-cat="'+esc(cat)+'">'
+      + '<h2>'+esc(LABEL[cat]||cat)+'<span class="count">'+items.length+' listed'
+      + (miss?' &middot; '+miss+' to weigh':'')+'</span></h2>'
+      + '<div class="scroll"><table><thead><tr>'
+      + '<th class="box"></th><th>SKU</th><th>Product</th>'
+      + '<th class="num price">Price</th><th class="num onfile">On file</th>'
+      + '<th class="num writein">Weighed</th></tr></thead>'
+      + '<tbody>'+body+'</tbody></table></div>'
+      + '<p class="empty" hidden>Nothing missing a weight in here.</p></section>';
+  }).join('');
+
+  document.getElementById('sheet').innerHTML = html;
+
+  var missing = rows.filter(function(r){ return r.g===null; }).length;
+  var value = rows.reduce(function(a,r){ return a+r.p; },0);
+  document.getElementById('t-all').textContent = rows.length;
+  document.getElementById('t-missing').textContent = missing;
+  document.getElementById('t-weighed').textContent = rows.length-missing;
+  document.getElementById('t-value').textContent = '$'+value.toLocaleString('en-CA');
+  document.getElementById('stamp').textContent = new Date().toLocaleDateString('en-CA',
+    {year:'numeric',month:'long',day:'numeric'});
+
+  var bAll=document.getElementById('f-all'), bMiss=document.getElementById('f-miss'),
+      note=document.getElementById('showing');
+  function apply(onlyMissing){
+    bAll.setAttribute('aria-pressed', String(!onlyMissing));
+    bMiss.setAttribute('aria-pressed', String(onlyMissing));
+    document.querySelectorAll('#sheet section').forEach(function(sec){
+      var shown=0;
+      sec.querySelectorAll('tbody tr').forEach(function(tr){
+        var hide = onlyMissing && tr.getAttribute('data-miss')!=='1';
+        tr.classList.toggle('hide', hide);
+        if(!hide) shown++;
+      });
+      sec.querySelector('.scroll').hidden = (shown===0);
+      sec.querySelector('.empty').hidden = (shown!==0);
+    });
+    note.textContent = onlyMissing
+      ? 'Showing the '+missing+' still to weigh.'
+      : 'Showing all '+rows.length+'.';
+  }
+  bAll.addEventListener('click', function(){ apply(false); });
+  bMiss.addEventListener('click', function(){ apply(true); });
+  var framed = (function(){ try{ return window.self !== window.top; }catch(e){ return true; } })();
+  var pBtn = document.getElementById('print'),
+      pNote = document.getElementById('printnote'),
+      pLink = document.getElementById('ownlink');
+  var CANON = 'https://claude.ai/code/artifact/a987bc2c-4d28-4343-bf95-e6baf78b8707';
+  pLink.href = CANON;
+  if(framed){
+    pBtn.textContent = 'How to print';
+    pBtn.setAttribute('href', CANON);
+    pBtn.setAttribute('target', '_blank');
+    pBtn.setAttribute('rel', 'noopener');
+    pBtn.addEventListener('click', function(){ pNote.hidden = false; });
+  } else {
+    pBtn.addEventListener('click', function(e){ e.preventDefault(); window.print(); });
+  }
+  apply(false);
+})();
+</script>
