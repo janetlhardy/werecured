@@ -1,0 +1,135 @@
+# Moving the large-mould pairs out of Coasters
+
+_A one-off job, September 2026. This file is kept off the public website._
+
+Five listings move from **Coasters** to **Home Decor**, from **$40** to **$90**, and stop calling
+themselves coasters. The reasoning is in `PRICING_SCHEME.md` — short version: each one is poured
+individually, they're too big and too precious for a coffee mug, and resin can't take a hot pan, so
+"coaster" was both wrong and costing you money.
+
+## Do these by hand, not by import
+
+Only five products, about ten minutes. **Don't** use a CSV import for this one. An import runs
+against live listings that already have photos and sales history, and a mistake there is much
+harder to undo than a mistake on a fresh product. Hand-editing is barely slower and can't surprise you.
+
+For each: **Products → click the product**, then change four things — **Title**, **Description**,
+**Product type** (to `Home Decor`), and **Price** (to `90.00`). Save.
+
+> Leave the **URL and handle** alone. Shopify offers to update it when you change a title — say no.
+> The old handle keeps any existing links working, and nobody sees it.
+
+⚠️ **Product type must be exactly `Home Decor`** — capitals and spacing as written. Get it wrong and
+the piece vanishes from werecured.ca with no warning at all.
+
+---
+
+## 1. Amethyst Crystal Coasters — Set of 2
+
+**New title:** Amethyst Crystal Trinket Dishes — Pair
+
+**New description:**
+
+> A one-of-a-kind pair of trinket dishes styled like amethyst geode slices — soft lavender petals
+> radiating from a sparkling druzy centre, edged with raw crystal points.
+>
+> Each one is poured on its own in a single large mould, rather than several at a time, so no two
+> are ever quite alike.
+>
+> Lovely under a jarred candle, a set of keys or a few rings. Resin doesn't like heat, though —
+> nothing straight off the stove.
+>
+> Handmade, one-of-a-kind resin art by We're Cured!
+
+---
+
+## 2. Blue Dahlia Coasters — Set of 2
+
+**New title:** Blue Dahlia Trinket Dishes — Pair
+
+**New description:**
+
+> A one-of-a-kind pair of trinket dishes styled like crystal geode blooms — layered teal-blue petals
+> opening from a sparkling druzy centre, edged with raw crystal points.
+>
+> Each one is poured on its own in a single large mould, rather than several at a time, so no two
+> are ever quite alike.
+>
+> Lovely under a jarred candle, a set of keys or a few rings. Resin doesn't like heat, though —
+> nothing straight off the stove.
+>
+> Handmade, one-of-a-kind resin art by We're Cured!
+
+---
+
+## 3. Blue Sea Urchin Coasters — Set of 2
+
+**New title:** Blue Sea Urchin Trinket Dishes — Pair
+
+**New description:**
+
+> A one-of-a-kind pair of trinket dishes with a bumpy sea-urchin texture in shimmering ocean blues,
+> each centred with a sparkling crystal cluster.
+>
+> Each one is poured on its own in a single large mould, rather than several at a time, so no two
+> are ever quite alike.
+>
+> Lovely under a jarred candle, a set of keys or a few rings. Resin doesn't like heat, though —
+> nothing straight off the stove.
+>
+> Handmade, one-of-a-kind resin art by We're Cured!
+
+---
+
+## 4. Sunrise/Sunset Coaster-Set of 2
+
+**New title:** Sunrise & Sunset Trinket Dishes — Pair
+
+**New description:**
+
+> A one-of-a-kind pair of trinket dishes in cloudy orange and pink, like the sky at either end of
+> the day — soft drifts of colour with no two patches the same.
+>
+> Each one is poured on its own in a single large mould, rather than several at a time, so no two
+> are ever quite alike.
+>
+> Lovely under a jarred candle, a set of keys or a few rings. Resin doesn't like heat, though —
+> nothing straight off the stove.
+>
+> Handmade, one-of-a-kind resin art by We're Cured!
+
+---
+
+## 5. Tide Pool Coasters — Set of 2
+
+**New title:** Tide Pool Trinket Dishes — Pair
+
+**New description:**
+
+> A one-of-a-kind pair of ruffled trinket dishes shaped like little sea anemones, in soft ocean
+> blues and greys with a lacy web pattern and a sparkling teal, crystal-filled centre.
+>
+> Each one is poured on its own in a single large mould, rather than several at a time, so no two
+> are ever quite alike.
+>
+> Lovely under a jarred candle, a set of keys or a few rings. Resin doesn't like heat, though —
+> nothing straight off the stove.
+>
+> Handmade, one-of-a-kind resin art by We're Cured!
+
+---
+
+## Afterwards
+
+**Check the site.** Refresh werecured.ca and look at **Decorative Accents** — all five should be
+there, and gone from Coasters. If one is missing, the product type is the first thing to check.
+
+**Shipping profile.** These are now Home Decor, and the Home Decor group may be on the "Large &
+fragile" $20 rate meant for bowls. These pieces are flat and compact — they ship like coasters. Move
+them to the **Coasters** shipping profile ($12) so postage doesn't scare people off a $90 order.
+Settings → Shipping and delivery.
+
+**Photos.** All five have **only one photo each**. That was fine for a $40 coaster pair and is thin
+for a $90 pair. Worth reshooting when the ruler arrives — and for these, a shot with something
+resting on top (keys, rings, a small candle) does more than a ruler, because it shows the size and
+what the piece is for in one go.

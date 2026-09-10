@@ -74,8 +74,10 @@ their own thinking:
 - **So sell them as what they are** — a catchall, trinket dish, vanity or candle plate — under
   **Home Decor**, priced as a single piece. The shop already proves this works: `Golden Tide
   Trinket Dish` and `Pomegranate Crystal Dish` both sit at **$50** as single items.
-- **Benchmark: ~$50 each.** Listed as "Set of 2" coasters at $40 they were earning **$20 a piece**
-  — under half what the same object fetches elsewhere in the same shop under a better name.
+- **Settled prices (2026-09-10):** singles **$55**, matched pairs **$90**, listed under **Home
+  Decor** as "Trinket Dish". They had been "Coasters — Set of 2" at $40, i.e. $20 a piece —
+  under half what the same object fetches elsewhere in the same shop under a better name.
+  The five existing pairs were reworded by hand; see `shopify/REPRICING_THE_PAIRS.md`.
 - **Photograph them with something on them** — keys, a ring, a small jarred candle. That shows the
   scale *and* teaches the buyer what it's for, in one shot. Better than a ruler for these.
 - **Say the heat limit in the description.** Fine for a jarred candle or a cold drink; not for a
