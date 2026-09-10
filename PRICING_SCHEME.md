@@ -58,6 +58,31 @@ gram weight — lead the price.
 
 ---
 
+## The large-mould pieces — don't price them as coasters
+
+Janet has a set of **larger moulds** (Blue Dahlia, Amethyst Crystal, Blue Sea Urchin, Tide Pool,
+Sunrise/Sunset, Midnight Chrysanthemum). These behave differently from ordinary coasters and need
+their own thinking:
+
+- **Each one is poured individually**, in its own mould — not four at a time in a multi-cavity
+  tray. So a *pair* costs about the same active labour as a *set of four* small coasters, and only
+  the resin is cheaper. Labour, not size, is what the formula is mostly counting.
+- **They aren't really coasters.** Too big and too precious for a coffee mug, and resin can't take
+  a hot pan, so they don't work as trivets either. Janet's own read (2026-09-10): _"It's more of a
+  statement piece than something to set your coffee cup down on."_ Most resin artists on YouTube
+  default to calling them coasters, which is why Etsy prices for them are all over the place.
+- **So sell them as what they are** — a catchall, trinket dish, vanity or candle plate — under
+  **Home Decor**, priced as a single piece. The shop already proves this works: `Golden Tide
+  Trinket Dish` and `Pomegranate Crystal Dish` both sit at **$50** as single items.
+- **Benchmark: ~$50 each.** Listed as "Set of 2" coasters at $40 they were earning **$20 a piece**
+  — under half what the same object fetches elsewhere in the same shop under a better name.
+- **Photograph them with something on them** — keys, a ring, a small jarred candle. That shows the
+  scale *and* teaches the buyer what it's for, in one shot. Better than a ruler for these.
+- **Say the heat limit in the description.** Fine for a jarred candle or a cold drink; not for a
+  hot pan or a bare flame.
+
+---
+
 ## Tips & reminders
 - **Sanity-check** against Etsy comparables (e.g., "resin geode coasters set of 4"), but
   price at the **higher** end — the work is one-of-a-kind, local, and handmade.
@@ -77,4 +102,4 @@ When a new product is added, gather these before quoting a price:
 5. (Optional) a comparable market price to sanity-check
 Then apply the formula and fit the result to the tier bands above.
 
-_Last updated: 2026-07-05._
+_Last updated: 2026-09-10._
