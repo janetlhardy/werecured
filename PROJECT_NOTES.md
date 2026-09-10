@@ -213,11 +213,25 @@ It's a snapshot taken 2026-09-10, not live — ask Claude to refresh it after a 
       become mandatory if you ever move to calculated rates or add US shipping.
       **Quickest way:** weigh one packed example per category, then bulk-edit that figure onto the
       rest of that type. Close enough beats zero.
-- [ ] **Two products have no SKU** — `Sunrise/Sunset Trinket Dish - Set of 2` and
-      `Iridescent Dragon Platter`. Next free number is WC-3900.
-- [ ] **`Frosted Periwinkle Square Earrings` shows as sold out** (`availableForSale: false`) while
-      looking fine in admin. This is the known quantity-zero trap — Products → the product →
-      Inventory → Quantity → 1 → Save.
+- [ ] **Two products have no SKU** — `Sunrise/Sunset Trinket Dish - Set of 2` → type **WC-3900**,
+      `Iridescent Dragon Platter` → type **WC-3905**. In Shopify it's Products → the product →
+      the **Inventory** box → the **SKU** field. Thirty seconds each, and entirely optional —
+      see the note on SKUs below.
+- [x] ~~`Frosted Periwinkle Square Earrings` shows as sold out~~ ✅ **It sold!** (2026-09-10) — not
+      the quantity-zero trap after all, an actual sale. The site handles this correctly on its own:
+      a sold piece shows a **Sold** badge in place of the Add to Cart button. Nothing to do.
+      Worth remembering before assuming a zero is a fault — for one-of-a-kind stock, sold out is
+      the expected end state.
+**What a SKU is, since it came up.** It stands for Stock Keeping Unit, which is a grand name for
+a short code that stands in for a product — like a library number. Yours run `WC-1875`,
+`WC-3890` and so on, and Claude assigns the next one whenever a batch is imported, so there's
+nothing to keep track of.
+
+It's genuinely optional for a shop like this. Where it earns its keep is at a **craft show**: every
+piece is one-of-a-kind, so when something sells off the table, a code on the price tag tells you
+exactly which listing to mark sold when you get home. Matching by name across 176 similar-sounding
+pieces is much harder than matching `WC-3890`. Worth putting on the tags before November.
+
 - [ ] Tidy `Candy Hands`, the only product with its weight in **kilograms** (0.562 kg). The value is
       right, it's just the odd one out — everything else is in grams.
 
