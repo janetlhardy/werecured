@@ -118,12 +118,15 @@ worrying about the limit.
 ## Notes for Claude
 
 - **Sizing: never ask Janet to measure and document pieces** — it's too time-consuming for the
-  return. Instead she includes a **frame of reference in one photo** (her hand, or a small ruler).
-  So: don't put dimensions in descriptions, and make sure every product has at least one scale
-  shot. If a batch arrives without one, ask for that single photo rather than for measurements.
+  return. Instead she includes a **frame of reference in one photo**. So: don't put dimensions in
+  descriptions, and make sure every product has at least one scale shot. If a batch arrives without
+  one, ask for that single photo rather than for measurements.
+  **Ask for a ruler, not her hand.** Janet doesn't like her hands in photos. A ruler laid beside
+  the piece is the default; a hand is only acceptable *tucked behind* the piece, the way she does
+  it in the outdoor shots. Don't ask her to "pop your hand in for scale".
   **Exception: coasters don't need one** — the size is self-evident from the category, and most of
   the existing coaster sets have no scale shot. Don't ask for one. This applies to coasters only;
-  bowls, platters, trays and decor pieces still need a hand or ruler in one shot.
+  bowls, platters, trays, boards and decor pieces still need a scale shot.
 - Compress photos at intake with **`sips -Z 2048 -s formatOptions 75`** before handing them over.
   2048 px is Shopify's threshold for zoom quality, so don't go below it for product shots. (The
   1500 px figure in `CLAUDE.md` predates the shop and is too small for product photos now.)
@@ -133,6 +136,11 @@ worrying about the limit.
   the wrong bowl, and Janet had to re-sort them by hand while uploading. Photo numbers do not run
   cleanly piece by piece: she moves back and forth between items. The check is cheap; the fix is
   not, because it lands on her.
+- **Single coasters aren't listed on the website.** Janet only lists coasters as *sets*; one-off
+  single coasters are kept back for craft and gift shows. If a batch contains a lone coaster —
+  including a large one that reads as a small plate — leave it out of the CSV and park its photos
+  in `werecured-product-photos/not-listed-single-coasters/`. Ask if you're unsure whether a flat
+  round piece is a coaster or a plate; it's not always obvious from a photo.
 - Also beware **the same piece looking like two different pieces.** Colour-shift and ghost pigments
   photograph completely differently in shade, direct sun and the light box. Ask before splitting a
   set on appearance alone.
