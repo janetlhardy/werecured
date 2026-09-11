@@ -24,7 +24,28 @@ the piece vanishes from werecured.ca with no warning at all.
 
 ---
 
-## 1. Amethyst Crystal Coasters — Set of 2
+## 1. Amethyst Crystal — ⚠️ PUT THIS ONE BACK
+
+**This one was moved by mistake and needs reverting.** On 2026-09-11 Janet handled the piece and
+found it comes out of the **standard set-of-4 coaster mould**, not the large single mould — so it's
+ordinary coaster size, and none of the reasoning below applies to it. It was the only one of the
+five she couldn't photograph next to a pillar candle, which is the tell.
+
+Change it back: **Title** `Amethyst Crystal Coasters — Set of 2`, **Product type** `Coasters`,
+**Price** `40.00`, and restore the original description:
+
+> A one-of-a-kind set of two resin coasters styled like amethyst geode slices — soft lavender petals
+> radiating from a sparkling druzy centre, edged with raw crystal points.
+>
+> Handmade, one-of-a-kind resin art by We're Cured!
+
+$40 for two standard coasters with crystal edges sits right against the rest of the range — sets of
+four with crystal edges are $70, and the sets of three are $45–50.
+
+> 💡 **Better still, if the pigments can be matched:** pour two more and sell it as a set of four at
+> $70. Same mould, and a four is a far easier sell than a two.
+
+<details><summary>The original instructions for this one, kept for reference — no longer apply</summary>
 
 **New title:** Amethyst Crystal Trinket Dishes — Pair
 
@@ -40,6 +61,8 @@ the piece vanishes from werecured.ca with no warning at all.
 > nothing straight off the stove.
 >
 > Handmade, one-of-a-kind resin art by We're Cured!
+
+</details>
 
 ---
 
