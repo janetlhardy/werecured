@@ -40,10 +40,14 @@ Change it back: **Title** `Amethyst Crystal Coasters — Set of 2`, **Product ty
 > Handmade, one-of-a-kind resin art by We're Cured!
 
 $40 for two standard coasters with crystal edges sits right against the rest of the range — sets of
-four with crystal edges are $70, and the sets of three are $45–50.
+four with crystal edges are $70, and the sets of three are $45–50. Per coaster that's $20 against
+$17.50 in a four, which is the normal small-pack premium and reads as fair.
 
-> 💡 **Better still, if the pigments can be matched:** pour two more and sell it as a set of four at
-> $70. Same mould, and a four is a far easier sell than a two.
+**Keep it as a two on purpose.** Janet's point (2026-09-11): not everyone wants four coasters. She's
+right, and the shop has a gap it fills — of 176 listings only nine are under $30, all earrings, and
+93 of the coaster listings are sets of four. A $40 pair is the cheapest way into the coaster range
+and suits a small household or a gift. Worth doing deliberately with future pieces rather than only
+when a pour comes up short.
 
 <details><summary>The original instructions for this one, kept for reference — no longer apply</summary>
 
