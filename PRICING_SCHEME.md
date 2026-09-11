@@ -124,6 +124,19 @@ materials line that hadn't been counted before. Rose Garden Tray $80 → $125, N
 Set $70 → $100, Sapphire Geode Tray $110 → $125, Cosmic Cobalt Bowl $50 → $75. Golden Bough Platter
 stayed at $150; it was already right.
 
+**A formed piece costs more than the flat one from the same mould.** Wild Rose Bowl comes out of the
+same mould as Coral Reef Platter ($80) and is then shaped into a bowl while the resin is still soft —
+an extra step under time pressure. It can't be worth less than the flat version, so it goes to $80 too.
+
+**Weight is a proxy, not the truth.** Sea Blue and Sea Green Splash are among the heaviest bowls in
+the shop but they're a single easy pour, so $80 is right and the weight ranking is misleading. Always
+ask what a piece took to make before reading anything into how much it weighs.
+
+**Don't discount work you're not proud of.** A piece Janet rates less highly is still priced by what
+it took. A $10 markdown won't win over anyone who doesn't want it, and it makes the range look
+arbitrary to everyone else. If a piece really isn't good enough, better photos or the show table —
+not a quiet price cut.
+
 **Count what's in the set.** Metallic Rose Coasters went $70 → $80 because there are **five** in it
 and the price had been set as though there were four. Worth checking the count against the price for
 anything unusual.
