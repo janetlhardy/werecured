@@ -90,6 +90,46 @@ their own thinking:
 
 ---
 
+## The September 2026 repricing — what moved and why
+
+Janet handled every piece with a scale and a fresh eye and repriced **36 products**. This is the
+reasoning, in her words, so the numbers aren't a mystery later. Every reason below is already in
+the formula at the top of this file — this was the scheme finally being applied properly, not a
+departure from it.
+
+**Why the coasters went up:**
+
+| Her reason | Where it lands in the formula |
+|---|---|
+| "Larger than I remember" | Materials — more resin, bigger mould |
+| "Two coats in two separate steps at least a day apart" | Labour — two handling sessions, not one |
+| "More after-curing work: sanding, handles, a top coat" | Labour — the finishing nobody sees |
+| "The technique is more technical, needs skill and the right resin temperature" | The ×1.3–1.6 difficulty bump, plus the overhead buffer for pours that fail |
+
+**The coaster range is now three clean tiers**, which is a better structure than the scatter it
+replaced:
+
+| Tier | Listings | Roughly |
+|---|---|---|
+| **$50** | 17 | simpler single-pour pieces — the blossom and petal sets |
+| **$60** | 43 | the standard set of four |
+| **$70** | 25 | geode and crystal-edge work, multiple coats, heavy finishing |
+
+Median went from $50 to $60 — about a 20% rise across 93 listings, which is the biggest single
+lever in the shop. It was overdue: the sets of four had been sitting roughly 40% below what this
+file's own formula produces.
+
+**Why the platters went up:** size, the extra time, and **the cost of bought-in handles** — a
+materials line that hadn't been counted before. Rose Garden Tray $80 → $125, Northern Lights Bowl
+Set $70 → $100, Sapphire Geode Tray $110 → $125, Cosmic Cobalt Bowl $50 → $75. Golden Bough Platter
+stayed at $150; it was already right.
+
+**Count what's in the set.** Metallic Rose Coasters went $70 → $80 because there are **five** in it
+and the price had been set as though there were four. Worth checking the count against the price for
+anything unusual.
+
+---
+
 ## Sets of two are a deliberate size, not a leftover
 
 Not everyone wants four coasters (Janet, 2026-09-11). A **pair of standard coasters at $40** is a
