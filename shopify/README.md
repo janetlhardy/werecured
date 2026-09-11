@@ -48,3 +48,29 @@ the URLs no longer resolve.
 
 This doesn't affect the shop at all. Shopify made its own copy of every photo when it imported them,
 and that's what customers see. It just means these files are purely a historical record now.
+
+---
+
+## `snapshot.py` — seeing what changed after a round of edits
+
+When Janet is about to rework a lot of prices, take a snapshot **first**:
+
+```
+python3 shopify/snapshot.py
+```
+
+That writes `price-snapshot.json` — every live product's price, type, weight, SKU and stock.
+Then once she's finished editing in Shopify:
+
+```
+python3 shopify/snapshot.py --diff
+```
+
+which prints exactly what moved. She explains the reasoning once, against a list, instead of
+walking through every product one at a time.
+
+It only reads, never writes. One limitation worth knowing: it sees **published products only**,
+so anything switched to Draft shows up as `GONE` rather than as a change.
+
+Take a fresh snapshot once a round of changes is agreed and recorded, so the next diff starts clean.
+

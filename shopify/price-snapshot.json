@@ -1,0 +1,1413 @@
+{
+ "products": {
+  "abalone-shell-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 75.0,
+   "sku": "WC-3845",
+   "title": "Abalone Shell Bowl",
+   "type": "Bowls and Platters"
+  },
+  "air-plant-hands": {
+   "forSale": true,
+   "grams": 568,
+   "price": 60.0,
+   "sku": "WC-2974",
+   "title": "Air Plant Hands",
+   "type": "Home Decor"
+  },
+  "amber-geode-set-of-4": {
+   "forSale": true,
+   "grams": 291,
+   "price": 60.0,
+   "sku": "WC-3151",
+   "title": "Amber Geode Set of 4",
+   "type": "Coasters"
+  },
+  "amber-heart-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1905",
+   "title": "Amber Heart Pendant",
+   "type": "Pendant"
+  },
+  "amethyst-bloom-set-of-4": {
+   "forSale": true,
+   "grams": 411,
+   "price": 60.0,
+   "sku": "WC-3098",
+   "title": "Amethyst Bloom Set of 4",
+   "type": "Coasters"
+  },
+  "amethyst-crystal-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 90.0,
+   "sku": "WC-3790",
+   "title": "Amethyst Crystal Trinket Dishes \u2014 Set of 2",
+   "type": "Home Decor"
+  },
+  "amethyst-embrace": {
+   "forSale": true,
+   "grams": 362,
+   "price": 60.0,
+   "sku": "WC-3661",
+   "title": "Amethyst Embrace",
+   "type": "Home Decor"
+  },
+  "amethyst-geode-set-of-4": {
+   "forSale": true,
+   "grams": 565,
+   "price": 70.0,
+   "sku": "WC-3056",
+   "title": "Amethyst Geode Set of 4",
+   "type": "Coasters"
+  },
+  "amethyst-lightning": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3717",
+   "title": "Amethyst Lightning \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "aurora-bowl": {
+   "forSale": true,
+   "grams": 318,
+   "price": 110.0,
+   "sku": "WC-3001",
+   "title": "Aurora Bowl",
+   "type": "Bowls and Platters"
+  },
+  "aurora-thinkers": {
+   "forSale": true,
+   "grams": null,
+   "price": 65.0,
+   "sku": "WC-3855",
+   "title": "Aurora Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
+  "autumn-bloom-set-of-4": {
+   "forSale": true,
+   "grams": 202,
+   "price": 50.0,
+   "sku": "WC-1954",
+   "title": "Autumn Bloom Set of 4",
+   "type": "Coasters"
+  },
+  "berry-marble-set-of-4": {
+   "forSale": true,
+   "grams": 312,
+   "price": 60.0,
+   "sku": "WC-3189",
+   "title": "Berry Marble Set of 4",
+   "type": "Coasters"
+  },
+  "blue-anemone-set-of-4": {
+   "forSale": true,
+   "grams": 305,
+   "price": 50.0,
+   "sku": "WC-2205",
+   "title": "Blue Anemone Set of 4",
+   "type": "Coasters"
+  },
+  "blue-dahlia-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 90.0,
+   "sku": "WC-3810",
+   "title": "Blue Dahlia Trinket Dishes \u2014 Set of 2",
+   "type": "Home Decor"
+  },
+  "blue-frost-geode": {
+   "forSale": true,
+   "grams": 500,
+   "price": 60.0,
+   "sku": "WC-3635",
+   "title": "Blue Frost Geode \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "blue-hibiscus-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3865",
+   "title": "Blue Hibiscus Coasters \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "blue-larimar-teardrop": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2133",
+   "title": "Blue Larimar Teardrop",
+   "type": "Pendant"
+  },
+  "blue-marble-set-of-4": {
+   "forSale": true,
+   "grams": 278,
+   "price": 50.0,
+   "sku": "WC-3094",
+   "title": "Blue Marble Set of 4",
+   "type": "Coasters"
+  },
+  "blue-moon-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1899",
+   "title": "Blue Moon Pendant",
+   "type": "Pendant"
+  },
+  "blue-oval-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-1914",
+   "title": "Blue Oval Earrings",
+   "type": "Earrings"
+  },
+  "blue-sea-urchin-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 90.0,
+   "sku": "WC-3770",
+   "title": "Blue Sea Urchin Catch-alls \u2014 Set of 2",
+   "type": "Home Decor"
+  },
+  "blue-sky-circle": {
+   "forSale": true,
+   "grams": 15,
+   "price": 60.0,
+   "sku": "WC-2150",
+   "title": "Blue Sky Circle",
+   "type": "Pendant"
+  },
+  "bronze-bubble-heart-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2129",
+   "title": "Bronze Bubble Heart Pendant",
+   "type": "Pendant"
+  },
+  "bronze-nebula": {
+   "forSale": true,
+   "grams": 543,
+   "price": 60.0,
+   "sku": "WC-3644",
+   "title": "Bronze Nebula \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "bubble-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3765",
+   "title": "Bubble Coasters \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "bubble-wrap-bowl": {
+   "forSale": true,
+   "grams": 386,
+   "price": 110.0,
+   "sku": "WC-2995",
+   "title": "Bubble Wrap Bowl",
+   "type": "Bowls and Platters"
+  },
+  "candy-hands": {
+   "forSale": true,
+   "grams": 562,
+   "price": 60.0,
+   "sku": "WC-2982",
+   "title": "Candy Hands",
+   "type": "Home Decor"
+  },
+  "cherry-blossom-tree-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 60.0,
+   "sku": "WC-2126",
+   "title": "Cherry Blossom Tree Pendant",
+   "type": "Pendant"
+  },
+  "chrysanthemum-plate": {
+   "forSale": true,
+   "grams": 253,
+   "price": 70.0,
+   "sku": "WC-3025",
+   "title": "Chrysanthemum Plate",
+   "type": "Bowls and Platters"
+  },
+  "cobalt-bloom-set-of-4": {
+   "forSale": true,
+   "grams": 272,
+   "price": 60.0,
+   "sku": "WC-3194",
+   "title": "Cobalt Bloom Set of 4",
+   "type": "Coasters"
+  },
+  "cobalt-foil-oval": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2140",
+   "title": "Cobalt Foil Oval",
+   "type": "Pendant"
+  },
+  "copper-carnation": {
+   "forSale": true,
+   "grams": 241,
+   "price": 45.0,
+   "sku": "WC-3537",
+   "title": "Copper Carnation \u2014 Set of 3",
+   "type": "Coasters"
+  },
+  "copper-galaxy": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3711",
+   "title": "Copper Galaxy \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "coral-branch-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1875",
+   "title": "Coral Branch Pendant",
+   "type": "Pendant"
+  },
+  "coral-reef-platter": {
+   "forSale": true,
+   "grams": 331,
+   "price": 80.0,
+   "sku": "WC-3012",
+   "title": "Coral Reef Platter",
+   "type": "Bowls and Platters"
+  },
+  "coral-sunburst-set-of-4": {
+   "forSale": true,
+   "grams": 190,
+   "price": 50.0,
+   "sku": "WC-3162",
+   "title": "Coral Sunburst Set of 4",
+   "type": "Coasters"
+  },
+  "cornflower-blossom-set-of-4": {
+   "forSale": true,
+   "grams": 156,
+   "price": 50.0,
+   "sku": "WC-3158",
+   "title": "Cornflower Blossom Set of 4",
+   "type": "Coasters"
+  },
+  "cosmic-cobalt-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3775",
+   "title": "Cosmic Cobalt Bowl",
+   "type": "Bowls and Platters"
+  },
+  "cosmic-geode": {
+   "forSale": true,
+   "grams": 513,
+   "price": 60.0,
+   "sku": "WC-3654",
+   "title": "Cosmic Geode \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "cosmic-glitter-triangle": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2136",
+   "title": "Cosmic Glitter Triangle",
+   "type": "Pendant"
+  },
+  "cotton-candy": {
+   "forSale": true,
+   "grams": 205,
+   "price": 40.0,
+   "sku": "WC-3615",
+   "title": "Cotton Candy \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "crackling-rose-set-of-4": {
+   "forSale": true,
+   "grams": 486,
+   "price": 60.0,
+   "sku": "WC-3039",
+   "title": "Crackling Rose Set of 4",
+   "type": "Coasters"
+  },
+  "crimson-geode-set-of-4": {
+   "forSale": true,
+   "grams": 490,
+   "price": 70.0,
+   "sku": "WC-3046",
+   "title": "Crimson Geode Set of 4",
+   "type": "Coasters"
+  },
+  "crimson-swirl-oval": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-2162",
+   "title": "Crimson Swirl Oval",
+   "type": "Pendant"
+  },
+  "dahlia-dream": {
+   "forSale": true,
+   "grams": 535,
+   "price": 60.0,
+   "sku": "WC-3619",
+   "title": "Dahlia Dream \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "dark-coral-branch-oval": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2143",
+   "title": "Dark Coral Branch Oval",
+   "type": "Pendant"
+  },
+  "electric-blue-oval-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-2201",
+   "title": "Electric Blue Oval Earrings",
+   "type": "Earrings"
+  },
+  "ember-circle-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-1913",
+   "title": "Ember Circle Earrings",
+   "type": "Earrings"
+  },
+  "emerald-geode-set-of-4": {
+   "forSale": true,
+   "grams": 521,
+   "price": 70.0,
+   "sku": "WC-3043",
+   "title": "Emerald Geode Set of 4",
+   "type": "Coasters"
+  },
+  "emerald-leaf-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-2193",
+   "title": "Emerald Leaf Earrings",
+   "type": "Earrings"
+  },
+  "encapsulated-rose-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1904",
+   "title": "Encapsulated Rose Pendant",
+   "type": "Pendant"
+  },
+  "ethereal-being-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 60.0,
+   "sku": "WC-1876",
+   "title": "Ethereal Being Pendant",
+   "type": "Pendant"
+  },
+  "fiesta-set-of-4": {
+   "forSale": true,
+   "grams": 190,
+   "price": 60.0,
+   "sku": "WC-3102",
+   "title": "Fiesta Set of 4",
+   "type": "Coasters"
+  },
+  "flame-ruffled-bowl": {
+   "forSale": true,
+   "grams": 93,
+   "price": 50.0,
+   "sku": "WC-1979",
+   "title": "Flame Ruffled Bowl",
+   "type": "Bowls and Platters"
+  },
+  "forest-blossom-set-of-5": {
+   "forSale": true,
+   "grams": 186,
+   "price": 50.0,
+   "sku": "WC-3110",
+   "title": "Forest Blossom Set of 5",
+   "type": "Coasters"
+  },
+  "frost-flower": {
+   "forSale": true,
+   "grams": 180,
+   "price": 50.0,
+   "sku": "WC-3627",
+   "title": "Frost Flower \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "frosted-periwinkle-square-earrings": {
+   "forSale": false,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-2189",
+   "title": "Frosted Periwinkle Square Earrings",
+   "type": "Earrings"
+  },
+  "frosted-periwinkle-teardrop-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-2186",
+   "title": "Frosted Periwinkle Teardrop Earrings",
+   "type": "Earrings"
+  },
+  "galaxy-petal-set-of-4": {
+   "forSale": true,
+   "grams": 545,
+   "price": 70.0,
+   "sku": "WC-3065",
+   "title": "Galaxy Petal Set of 4",
+   "type": "Coasters"
+  },
+  "galaxy-swirl-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1907",
+   "title": "Galaxy Swirl Pendant",
+   "type": "Pendant"
+  },
+  "garden-bloom-thinkers": {
+   "forSale": true,
+   "grams": null,
+   "price": 109.0,
+   "sku": "WC-3820",
+   "title": "Garden Bloom Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
+  "gilded-ember": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3727",
+   "title": "Gilded Ember \u2014 Reversible Set of 4",
+   "type": "Coasters"
+  },
+  "gilded-lagoon-thinkers": {
+   "forSale": true,
+   "grams": null,
+   "price": 65.0,
+   "sku": "WC-3835",
+   "title": "Gilded Lagoon Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
+  "gilded-petal-set-of-4": {
+   "forSale": true,
+   "grams": 277,
+   "price": 50.0,
+   "sku": "WC-3049",
+   "title": "Gilded Petal Set of 4",
+   "type": "Coasters"
+  },
+  "glacier-wave-bowl": {
+   "forSale": true,
+   "grams": 297,
+   "price": 125.0,
+   "sku": "WC-1935",
+   "title": "Glacier Wave Bowl",
+   "type": "Bowls and Platters"
+  },
+  "glow-skull-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 60.0,
+   "sku": "WC-2166",
+   "title": "Glow Skull Pendant",
+   "type": "Pendant"
+  },
+  "gold-bubble-heart-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2125",
+   "title": "Gold Bubble Heart Pendant",
+   "type": "Pendant"
+  },
+  "golden-bough-platter": {
+   "forSale": true,
+   "grams": null,
+   "price": 150.0,
+   "sku": "WC-3860",
+   "title": "Golden Bough Platter",
+   "type": "Bowls and Platters"
+  },
+  "golden-fern-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3780",
+   "title": "Golden Fern Coasters \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "golden-sunflower-set-of-4": {
+   "forSale": true,
+   "grams": 548,
+   "price": 70.0,
+   "sku": "WC-1955",
+   "title": "Golden Sunflower Set of 4",
+   "type": "Coasters"
+  },
+  "golden-tide-trinket-dish": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3805",
+   "title": "Golden Tide Trinket Dish",
+   "type": "Home Decor"
+  },
+  "green-star-flower-set-of-4": {
+   "forSale": true,
+   "grams": 210,
+   "price": 50.0,
+   "sku": "WC-1946",
+   "title": "Green Star Flower Set of 4",
+   "type": "Coasters"
+  },
+  "green-thumb": {
+   "forSale": true,
+   "grams": 362,
+   "price": 60.0,
+   "sku": "WC-3612",
+   "title": "Green Thumb",
+   "type": "Home Decor"
+  },
+  "gumball-galaxy": {
+   "forSale": true,
+   "grams": 237,
+   "price": 60.0,
+   "sku": "WC-3535",
+   "title": "Gumball Galaxy \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "honey-bee-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-1912",
+   "title": "Honey Bee Earrings",
+   "type": "Earrings"
+  },
+  "ice-blue-geode-set-of-4": {
+   "forSale": true,
+   "grams": 621,
+   "price": 70.0,
+   "sku": "WC-3052",
+   "title": "Ice Blue Geode Set of 4",
+   "type": "Coasters"
+  },
+  "iridescent-aster": {
+   "forSale": true,
+   "grams": 296,
+   "price": 50.0,
+   "sku": "WC-3650",
+   "title": "Iridescent Aster \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "iridescent-dragon-platter": {
+   "forSale": true,
+   "grams": null,
+   "price": 90.0,
+   "sku": "WC-3905",
+   "title": "Iridescent Dragon Platter",
+   "type": "Bowls and Platters"
+  },
+  "jade-geode-set-of-4": {
+   "forSale": true,
+   "grams": 261,
+   "price": 60.0,
+   "sku": "WC-3117",
+   "title": "Jade Geode Set of 4",
+   "type": "Coasters"
+  },
+  "lagoon-geode-set-of-4": {
+   "forSale": true,
+   "grams": 212,
+   "price": 60.0,
+   "sku": "WC-3139",
+   "title": "Lagoon Geode Set of 4",
+   "type": "Coasters"
+  },
+  "lavender-dream-tray": {
+   "forSale": true,
+   "grams": 201,
+   "price": 70.0,
+   "sku": "WC-3273",
+   "title": "Lavender Dream Tray",
+   "type": "Bowls and Platters"
+  },
+  "lavender-holographic-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1910",
+   "title": "Lavender Holographic Pendant",
+   "type": "Pendant"
+  },
+  "liquid-metal-thinkers": {
+   "forSale": true,
+   "grams": null,
+   "price": 65.0,
+   "sku": "WC-3825",
+   "title": "Liquid Metal Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
+  "m-amp-m-hands": {
+   "forSale": true,
+   "grams": 674,
+   "price": 60.0,
+   "sku": "WC-2991",
+   "title": "M&M Hands",
+   "type": "Home Decor"
+  },
+  "magenta-geode-set-of-4": {
+   "forSale": true,
+   "grams": 217,
+   "price": 60.0,
+   "sku": "WC-3133",
+   "title": "Magenta Geode Set of 4",
+   "type": "Coasters"
+  },
+  "magenta-smoke": {
+   "forSale": true,
+   "grams": 220,
+   "price": 45.0,
+   "sku": "WC-3647",
+   "title": "Magenta Smoke \u2014 Set of 3",
+   "type": "Coasters"
+  },
+  "marigold-set-of-4": {
+   "forSale": true,
+   "grams": 259,
+   "price": 60.0,
+   "sku": "WC-3154",
+   "title": "Marigold Set of 4",
+   "type": "Coasters"
+  },
+  "meadow-blossom-set-of-4": {
+   "forSale": true,
+   "grams": 209,
+   "price": 50.0,
+   "sku": "WC-3166",
+   "title": "Meadow Blossom Set of 4",
+   "type": "Coasters"
+  },
+  "mermaid-geode-set-of-4": {
+   "forSale": true,
+   "grams": 247,
+   "price": 60.0,
+   "sku": "WC-3174",
+   "title": "Mermaid Geode Set of 4",
+   "type": "Coasters"
+  },
+  "mermaid-oval-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 60.0,
+   "sku": "WC-1901",
+   "title": "Mermaid Oval Pendant",
+   "type": "Pendant"
+  },
+  "metallic-rose-coasters": {
+   "forSale": true,
+   "grams": 552,
+   "price": 70.0,
+   "sku": "WC-3136",
+   "title": "Metallic Rose Coasters",
+   "type": "Coasters"
+  },
+  "midnight-forest-tray": {
+   "forSale": true,
+   "grams": 600,
+   "price": 110.0,
+   "sku": "WC-3018",
+   "title": "Midnight Forest Tray",
+   "type": "Bowls and Platters"
+  },
+  "midnight-iridescence-set-of-3": {
+   "forSale": true,
+   "grams": 185,
+   "price": 50.0,
+   "sku": "WC-2",
+   "title": "Midnight Iridescence Set of 3",
+   "type": "Coasters"
+  },
+  "midnight-meadow": {
+   "forSale": true,
+   "grams": 327,
+   "price": 50.0,
+   "sku": "WC-3638",
+   "title": "Midnight Meadow \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "molten-lava-bowl": {
+   "forSale": true,
+   "grams": 657,
+   "price": 125.0,
+   "sku": "WC-1936",
+   "title": "Molten Lava Bowl",
+   "type": "Bowls and Platters"
+  },
+  "monster-splat-set-of-4": {
+   "forSale": true,
+   "grams": 188,
+   "price": 50.0,
+   "sku": "WC-1924",
+   "title": "Monster Splat Set of 4",
+   "type": "Coasters"
+  },
+  "moonbeam-hands": {
+   "forSale": true,
+   "grams": 568,
+   "price": 60.0,
+   "sku": "WC-2985",
+   "title": "Moonbeam Hands",
+   "type": "Home Decor"
+  },
+  "moonstone-thinkers": {
+   "forSale": true,
+   "grams": null,
+   "price": 65.0,
+   "sku": "WC-3830",
+   "title": "Moonstone Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
+  "moss-agate-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3870",
+   "title": "Moss Agate Bowl",
+   "type": "Bowls and Platters"
+  },
+  "navy-daisy-set-of-4": {
+   "forSale": true,
+   "grams": 360,
+   "price": 50.0,
+   "sku": "WC-1917",
+   "title": "Navy Daisy Set of 4",
+   "type": "Coasters"
+  },
+  "nebula-square-set-of-4": {
+   "forSale": true,
+   "grams": 355,
+   "price": 70.0,
+   "sku": "WC-1939",
+   "title": "Nebula Square Set of 4",
+   "type": "Coasters"
+  },
+  "neon-blob-set-of-4": {
+   "forSale": true,
+   "grams": 338,
+   "price": 50.0,
+   "sku": "WC-1947",
+   "title": "Neon Blob Set of 4",
+   "type": "Coasters"
+  },
+  "northern-lights-bowl-set": {
+   "forSale": true,
+   "grams": 303,
+   "price": 70.0,
+   "sku": "WC-3029",
+   "title": "Northern Lights Bowl Set",
+   "type": "Bowls and Platters"
+  },
+  "ocean-bubble-set-of-4": {
+   "forSale": true,
+   "grams": 364,
+   "price": 60.0,
+   "sku": "WC-1925",
+   "title": "Ocean Bubble Set of 4",
+   "type": "Coasters"
+  },
+  "ocean-marble-set-of-4": {
+   "forSale": true,
+   "grams": 270,
+   "price": 60.0,
+   "sku": "WC-1952",
+   "title": "Ocean Marble Set of 4",
+   "type": "Coasters"
+  },
+  "olive-gold-geode-set-of-4": {
+   "forSale": true,
+   "grams": 219,
+   "price": 50.0,
+   "sku": "WC-3147",
+   "title": "Olive Gold Geode Set of 4",
+   "type": "Coasters"
+  },
+  "opal-dream-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1878",
+   "title": "Opal Dream Pendant",
+   "type": "Pendant"
+  },
+  "opal-sunset-tray": {
+   "forSale": true,
+   "grams": null,
+   "price": 110.0,
+   "sku": "WC-3740",
+   "title": "Opal Sunset Tray",
+   "type": "Bowls and Platters"
+  },
+  "opal-wave-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 75.0,
+   "sku": "WC-3815",
+   "title": "Opal Wave Bowl",
+   "type": "Bowls and Platters"
+  },
+  "orchid-bloom-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3785",
+   "title": "Orchid Bloom Coasters \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "orchid-blossom-set-of-4": {
+   "forSale": true,
+   "grams": 292,
+   "price": 50.0,
+   "sku": "WC-3121",
+   "title": "Orchid Blossom Set of 4",
+   "type": "Coasters"
+  },
+  "peacock-blossom-set-of-4": {
+   "forSale": true,
+   "grams": 234,
+   "price": 60.0,
+   "sku": "WC-3169",
+   "title": "Peacock Blossom Set of 4",
+   "type": "Coasters"
+  },
+  "periwinkle-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1900",
+   "title": "Periwinkle Pendant",
+   "type": "Pendant"
+  },
+  "pink-rose-heart-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1903",
+   "title": "Pink Rose Heart Pendant",
+   "type": "Pendant"
+  },
+  "pomegranate-crystal-bowl": {
+   "forSale": true,
+   "grams": 558,
+   "price": 50.0,
+   "sku": "WC-3750",
+   "title": "Pomegranate Crystal Bowl",
+   "type": "Home Decor"
+  },
+  "pomegranate-crystal-dish": {
+   "forSale": true,
+   "grams": 280,
+   "price": 50.0,
+   "sku": "WC-3755",
+   "title": "Pomegranate Crystal Dish",
+   "type": "Home Decor"
+  },
+  "poppy-set-of-4": {
+   "forSale": true,
+   "grams": 215,
+   "price": 50.0,
+   "sku": "WC-3143",
+   "title": "Poppy Set of 4",
+   "type": "Coasters"
+  },
+  "prism-eye-set-of-4": {
+   "forSale": true,
+   "grams": 393,
+   "price": 60.0,
+   "sku": "WC-3062",
+   "title": "Prism Eye Set of 4",
+   "type": "Coasters"
+  },
+  "purple-daisy-set-of-4": {
+   "forSale": true,
+   "grams": 280,
+   "price": 50.0,
+   "sku": "WC-1923",
+   "title": "Purple Daisy Set of 4",
+   "type": "Coasters"
+  },
+  "purple-galaxy-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-1915",
+   "title": "Purple Galaxy Earrings",
+   "type": "Earrings"
+  },
+  "purple-moon-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1879",
+   "title": "Purple Moon Pendant",
+   "type": "Pendant"
+  },
+  "purple-nebula-set-of-4": {
+   "forSale": true,
+   "grams": 248,
+   "price": 60.0,
+   "sku": "WC-3088",
+   "title": "Purple Nebula Set of 4",
+   "type": "Coasters"
+  },
+  "purple-peony-set-of-4": {
+   "forSale": true,
+   "grams": 305,
+   "price": 50.0,
+   "sku": "WC-2211",
+   "title": "Purple Peony Set of 4",
+   "type": "Coasters"
+  },
+  "purple-sage-geode": {
+   "forSale": true,
+   "grams": 538,
+   "price": 60.0,
+   "sku": "WC-3606",
+   "title": "Purple Sage Geode \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "purple-scallop-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2156",
+   "title": "Purple Scallop Pendant",
+   "type": "Pendant"
+  },
+  "red-geode-crystal": {
+   "forSale": true,
+   "grams": 525,
+   "price": 125.0,
+   "sku": "WC-1930",
+   "title": "Red Geode Crystal",
+   "type": "Bowls and Platters"
+  },
+  "red-heart-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1881",
+   "title": "Red Heart Pendant",
+   "type": "Pendant"
+  },
+  "red-heart-set": {
+   "forSale": true,
+   "grams": 5,
+   "price": 75.0,
+   "sku": "WC-1880",
+   "title": "Red Heart Set",
+   "type": "Earrings"
+  },
+  "red-poppy-set-of-4": {
+   "forSale": true,
+   "grams": 260,
+   "price": 50.0,
+   "sku": "WC-1920",
+   "title": "Red Poppy Set of 4",
+   "type": "Coasters"
+  },
+  "reversible-blue-geode-set-of-4": {
+   "forSale": true,
+   "grams": 265,
+   "price": 60.0,
+   "sku": "WC-3081",
+   "title": "Reversible Blue Geode Set of 4",
+   "type": "Coasters"
+  },
+  "rose-garden-set-of-4": {
+   "forSale": true,
+   "grams": 290,
+   "price": 50.0,
+   "sku": "WC-1949",
+   "title": "Rose Garden Set of 4",
+   "type": "Coasters"
+  },
+  "rose-garden-tray": {
+   "forSale": true,
+   "grams": null,
+   "price": 80.0,
+   "sku": "WC-3657",
+   "title": "Rose Garden Tray",
+   "type": "Bowls and Platters"
+  },
+  "royal-mandala-set-of-4": {
+   "forSale": true,
+   "grams": 266,
+   "price": 60.0,
+   "sku": "WC-3128",
+   "title": "Royalty Crackles  Set of 4",
+   "type": "Coasters"
+  },
+  "ruby-ember": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3721",
+   "title": "Ruby Ember \u2014 Set of 4 Reversible coasters",
+   "type": "Coasters"
+  },
+  "sandy-shore-bowl": {
+   "forSale": true,
+   "grams": 334,
+   "price": 150.0,
+   "sku": "WC-2968",
+   "title": "Sandy Shore Bowl",
+   "type": "Bowls and Platters"
+  },
+  "sapphire-blossom-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3840",
+   "title": "Sapphire Blossom Coasters \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "sapphire-geode-tray": {
+   "forSale": true,
+   "grams": null,
+   "price": 110.0,
+   "sku": "WC-3760",
+   "title": "Sapphire Geode Tray",
+   "type": "Bowls and Platters"
+  },
+  "sea-blue-splash-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 80.0,
+   "sku": "WC-3795",
+   "title": "Sea Blue Splash Bowl",
+   "type": "Bowls and Platters"
+  },
+  "sea-foam": {
+   "forSale": true,
+   "grams": 541,
+   "price": 60.0,
+   "sku": "WC-3641",
+   "title": "Sea Foam \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "sea-glass-geode-set-of-4": {
+   "forSale": true,
+   "grams": 303,
+   "price": 60.0,
+   "sku": "WC-3106",
+   "title": "Sea Glass Geode Set of 4",
+   "type": "Coasters"
+  },
+  "sea-green-splash-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 80.0,
+   "sku": "WC-3800",
+   "title": "Sea Green Splash Bowl",
+   "type": "Bowls and Platters"
+  },
+  "sea-life-capsule-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 40.0,
+   "sku": "WC-2174",
+   "title": "Sea Life Capsule Earrings",
+   "type": "Earrings"
+  },
+  "sea-turtle-circle": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2153",
+   "title": "Sea Turtle Circle",
+   "type": "Pendant"
+  },
+  "shimmer-bloom-set-of-4": {
+   "forSale": true,
+   "grams": 325,
+   "price": 50.0,
+   "sku": "WC-2818",
+   "title": "Shimmer Bloom Set of 4",
+   "type": "Coasters"
+  },
+  "silver-moon-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1887",
+   "title": "Silver Moon Pendant",
+   "type": "Pendant"
+  },
+  "silver-void-heart": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2149",
+   "title": "Silver Void Heart",
+   "type": "Pendant"
+  },
+  "sky-blue-holographic-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1909",
+   "title": "Sky Blue Holographic Pendant",
+   "type": "Pendant"
+  },
+  "smoky-rose": {
+   "forSale": true,
+   "grams": 432,
+   "price": 60.0,
+   "sku": "WC-3631",
+   "title": "Smoky Rose \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "spilled-coffee-earrings": {
+   "forSale": true,
+   "grams": 5,
+   "price": 25.0,
+   "sku": "WC-2171",
+   "title": "Spilled Coffee Earrings",
+   "type": "Earrings"
+  },
+  "starfish-oval": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-2159",
+   "title": "Starfish Oval",
+   "type": "Pendant"
+  },
+  "stone-geode-set-of-4": {
+   "forSale": true,
+   "grams": 536,
+   "price": 70.0,
+   "sku": "WC-3073",
+   "title": "Stone Geode Set of 4",
+   "type": "Coasters"
+  },
+  "stormcloud-geode-set-of-4": {
+   "forSale": true,
+   "grams": 243,
+   "price": 50.0,
+   "sku": "WC-3182",
+   "title": "Stormcloud Geode Set of 4",
+   "type": "Coasters"
+  },
+  "sunflower-set-of-4": {
+   "forSale": true,
+   "grams": 262,
+   "price": 50.0,
+   "sku": "WC-1953",
+   "title": "Sunflower Set of 4",
+   "type": "Coasters"
+  },
+  "sunrise-sunset-coaster-set-of-2": {
+   "forSale": true,
+   "grams": null,
+   "price": 90.0,
+   "sku": "WC-3900",
+   "title": "Sunrise/Sunset Trinket Dish - Set of 2",
+   "type": "Home Decor"
+  },
+  "sunset-crystal": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3735",
+   "title": "Sunset Crystal \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "sunset-mandala-set-of-4": {
+   "forSale": true,
+   "grams": 241,
+   "price": 60.0,
+   "sku": "WC-3185",
+   "title": "Sunset Vibe Coasters Set of 4",
+   "type": "Coasters"
+  },
+  "sunstone-platter": {
+   "forSale": true,
+   "grams": 483,
+   "price": 90.0,
+   "sku": "WC-3022",
+   "title": "Sunstone Platter",
+   "type": "Bowls and Platters"
+  },
+  "swirly-mist-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1908",
+   "title": "Swirly Mist Pendant",
+   "type": "Pendant"
+  },
+  "teal-crackle-geode-set-of-4": {
+   "forSale": true,
+   "grams": 266,
+   "price": 60.0,
+   "sku": "WC-3078",
+   "title": "Teal Crackle Geode Set of 4",
+   "type": "Coasters"
+  },
+  "teal-holographic-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1911",
+   "title": "Teal Holographic Pendant",
+   "type": "Pendant"
+  },
+  "teal-marigold-set-of-4": {
+   "forSale": true,
+   "grams": 303,
+   "price": 50.0,
+   "sku": "WC-2044",
+   "title": "Teal Marigold Set of 4",
+   "type": "Coasters"
+  },
+  "teal-moon-pendant": {
+   "forSale": true,
+   "grams": 15,
+   "price": 50.0,
+   "sku": "WC-1877",
+   "title": "Teal Moon Pendant",
+   "type": "Pendant"
+  },
+  "terra-cotta-bloom": {
+   "forSale": true,
+   "grams": 535,
+   "price": 50.0,
+   "sku": "WC-3624",
+   "title": "Terra Cotta Bloom \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "terracotta-geode-set-of-4": {
+   "forSale": true,
+   "grams": 256,
+   "price": 60.0,
+   "sku": "WC-3178",
+   "title": "Terracotta Geode Set of 4",
+   "type": "Coasters"
+  },
+  "tide-pool-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 90.0,
+   "sku": "WC-3745",
+   "title": "Tide Pool Trinket Dish \u2014 Set of 2",
+   "type": "Home Decor"
+  },
+  "tropical-storm-set-of-4": {
+   "forSale": true,
+   "grams": 244,
+   "price": 60.0,
+   "sku": "WC-1945",
+   "title": "Tropical Storm Set of 4",
+   "type": "Coasters"
+  },
+  "twilight-bloom": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3704",
+   "title": "Twilight Bloom \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "velvet-colorshift-set-of-4": {
+   "forSale": true,
+   "grams": 557,
+   "price": 70.0,
+   "sku": "WC-1943",
+   "title": "Velvet Colorshift Set of 4",
+   "type": "Coasters"
+  },
+  "violet-bloom-set-of-4": {
+   "forSale": true,
+   "grams": 315,
+   "price": 50.0,
+   "sku": "WC-1940",
+   "title": "Violet Bloom Set of 4",
+   "type": "Coasters"
+  },
+  "watermelon-bloom": {
+   "forSale": true,
+   "grams": 300,
+   "price": 50.0,
+   "sku": "WC-3609",
+   "title": "Watermelon Bloom \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "white-daisy-set-of-4": {
+   "forSale": true,
+   "grams": 522,
+   "price": 70.0,
+   "sku": "WC-1918",
+   "title": "White Daisy Set of 4",
+   "type": "Coasters"
+  },
+  "wild-poppy": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3714",
+   "title": "Wild Poppy \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "wild-rose-platter": {
+   "forSale": true,
+   "grams": 378,
+   "price": 70.0,
+   "sku": "WC-3015",
+   "title": "Wild Rose Bowl",
+   "type": "Bowls and Platters"
+  },
+  "winter-blossom": {
+   "forSale": true,
+   "grams": null,
+   "price": 50.0,
+   "sku": "WC-3708",
+   "title": "Winter Blossom \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "wisteria-shell-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 75.0,
+   "sku": "WC-3850",
+   "title": "Wisteria Shell Bowl",
+   "type": "Bowls and Platters"
+  }
+ },
+ "taken": "2026-09-11"
+}
