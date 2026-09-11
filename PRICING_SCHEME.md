@@ -90,6 +90,20 @@ their own thinking:
 
 ---
 
+## Sets of two are a deliberate size, not a leftover
+
+Not everyone wants four coasters (Janet, 2026-09-11). A **pair of standard coasters at $40** is a
+legitimate product, not a pour that came up short:
+
+- Per coaster it works out at $20 against $17.50 in a set of four — a normal small-pack premium.
+- It fills a real gap. Of 176 listings only nine are under $30, and all nine are earrings; 93 of the
+  coaster listings are sets of four. A pair is the cheapest way into the range.
+- It suits a small household, a bedside table, or a gift that doesn't need to be a whole set.
+
+Don't confuse this with the **large-mould pairs** above, which are a different product at $90.
+
+---
+
 ## Tips & reminders
 - **Sanity-check** against Etsy comparables (e.g., "resin geode coasters set of 4"), but
   price at the **higher** end — the work is one-of-a-kind, local, and handmade.
