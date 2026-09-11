@@ -60,8 +60,12 @@ gram weight — lead the price.
 
 ## The large-mould pieces — don't price them as coasters
 
-Janet has a set of **larger moulds** (Blue Dahlia, Amethyst Crystal, Blue Sea Urchin, Tide Pool,
-Sunrise/Sunset, Midnight Chrysanthemum). These behave differently from ordinary coasters and need
+Janet has a set of **larger moulds** (Blue Dahlia, Blue Sea Urchin, Tide Pool, Sunrise/Sunset,
+Midnight Chrysanthemum). ⚠️ **Amethyst Crystal is NOT one of them** — it looks the part in photos
+but comes out of the standard set-of-4 coaster mould, and was briefly repriced as a $90 trinket
+dish by mistake in Sept 2026.
+**Ask which mould a piece came from before pricing it this way.** Photographs cannot tell them
+apart — only Janet knows, because she poured them. These behave differently from ordinary coasters and need
 their own thinking:
 
 - **Each one is poured individually**, in its own mould — not four at a time in a multi-cavity
