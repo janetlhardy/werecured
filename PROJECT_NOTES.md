@@ -202,8 +202,10 @@ coaster sets have none. Recorded in `shopify/ADDING_A_BATCH.md` so it doesn't ge
 Found when Janet noticed pieces missing from Collections and from the POS app tiles. The website is
 **unaffected** — it reads Product type directly and never touches collections. Full explanation and
 step-by-step fix in `shopify/FIXING_COLLECTIONS_AND_POS.md`.
-- [ ] **Publish all products to the Point of Sale channel** — do this one first. Products imported by
-      CSV aren't on it, and a piece that isn't on POS **cannot be sold at the show**.
+- [x] **Publish all products to the Point of Sale channel** ✅ (2026-09-11) — the channel had never
+      been added to the store; installing the phone app doesn't do it. Verified by searching for
+      Moonstone Thinkers in the POS app and finding it. **The show could run on search alone now** —
+      tiles are only a convenience. Redo this after every future import.
 - [ ] **Rebuild the five collections as automated ones** (condition: Product type equals …). They
       were made by hand and 121 products are missing from them — Earrings has none at all.
 - [ ] Repoint the POS tiles at the new collections, then check each tile on the actual phone

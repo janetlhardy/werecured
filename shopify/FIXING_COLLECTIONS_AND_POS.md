@@ -68,7 +68,12 @@ you'd have to remember after every single import. The automated version is worth
 
 ---
 
-## Problem 2 — products aren't published to the POS channel
+## Problem 2 — products aren't published to the POS channel ✅ FIXED 2026-09-11
+
+> **Done.** The Point of Sale channel had never been added to the store — installing the app on the
+> phone doesn't do it. Once added and the whole catalogue included, searching for a product in the
+> POS app found it. **Search works, so the show can be run from search alone even if the tiles are
+> still wrong.** The rest of this section stays as the instructions for next time.
 
 Separate from collections, and the more important of the two. **A product only appears in the POS app
 if it's published to the Point of Sale sales channel.** Being on the website channel isn't enough —
