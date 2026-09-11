@@ -19,13 +19,17 @@ _This file is kept off the public website._
 ## One-time setup (do at home before your first show)
 1. **Install** the **Shopify POS** app (App Store / Google Play) and **log in**
    (Google account: **janethardy@werecured.ca**).
-2. **Publish products to Point of Sale.** In Shopify admin: **Products → select all →
-   make available on the *Point of Sale* channel** (same idea as the Headless/website channel).
-   Only products on this channel show up in the POS app.
-3. **Set up your card method:**
+2. **Add the Point of Sale sales channel to the store.** ⚠️ Installing the app on your phone does
+   **not** do this. In Shopify admin, look under **Sales channels** in the left sidebar — if Point
+   of Sale isn't listed, click the **+** beside the heading and add it.
+3. **Publish products to Point of Sale.** **Products → select all → More actions → Include in
+   sales channel → Point of Sale.** Only products on this channel show up in the POS app, and
+   **imported products don't join it on their own** — redo this after every batch.
+   See `FIXING_COLLECTIONS_AND_POS.md`.
+4. **Set up your card method:**
    - iPhone: turn on **Tap to Pay on iPhone** in the POS app settings, OR
    - Pair your **Tap & Chip reader** (POS app → Settings → Hardware → connect).
-4. **Do a practice sale** — ring up one item and either use test mode or make a $1 real sale you
+5. **Do a practice sale** — ring up one item and either use test mode or make a $1 real sale you
    refund, so you're comfortable with the flow.
 
 ---

@@ -74,7 +74,7 @@ Then on to the next piece. About a dozen pieces takes five or ten minutes.
 
 ### 6. Make them available in the POS app
 
-**Products** → select all → **More actions → Make products available** → tick **Point of Sale**.
+**Products** → select all → **More actions → Include in sales channel** → pick **Point of Sale**.
 
 New products don't join the Point of Sale channel on their own, and a piece that isn't on it
 **cannot be sold at a show** — it won't even appear in the app. This bit is easy to forget because

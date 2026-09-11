@@ -78,10 +78,21 @@ The pieces that came in by CSV import almost certainly aren't on it.
 
 ### The fix
 
+**First check the channel actually exists.** Installing the POS app on your phone does *not* add
+the Point of Sale channel to your store — they're separate steps, and it's easy to assume the app
+did it. Look in the left sidebar of Shopify admin under **Sales channels**. If Point of Sale isn't
+listed, click the **+** beside the heading and add it (also findable under
+**Settings → Apps and sales channels**).
+
+Then:
+
 1. **Products** → tick the box at the top to **select all**
-2. **More actions → Make products available** (or **Manage sales channels**)
-3. Tick **Point of Sale**
+2. **More actions → Include in sales channel**
+3. Pick **Point of Sale** from the list
 4. Apply
+
+> If **Point of Sale** doesn't appear in that list, the channel still hasn't been added — go back
+> and do that first. The menu only ever offers channels your store already has.
 
 Then open the POS app on your phone, pull to refresh, and search for a piece you know is new. If it
 comes up, it's working.
