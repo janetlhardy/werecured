@@ -198,6 +198,17 @@ deliberately** — see the note below.
 **Coasters don't need scale shots.** Size is self-evident from the category and most existing
 coaster sets have none. Recorded in `shopify/ADDING_A_BATCH.md` so it doesn't get asked again.
 
+### ⚠️ Before the November show — Collections and POS (added 2026-09-11)
+Found when Janet noticed pieces missing from Collections and from the POS app tiles. The website is
+**unaffected** — it reads Product type directly and never touches collections. Full explanation and
+step-by-step fix in `shopify/FIXING_COLLECTIONS_AND_POS.md`.
+- [ ] **Publish all products to the Point of Sale channel** — do this one first. Products imported by
+      CSV aren't on it, and a piece that isn't on POS **cannot be sold at the show**.
+- [ ] **Rebuild the five collections as automated ones** (condition: Product type equals …). They
+      were made by hand and 121 products are missing from them — Earrings has none at all.
+- [ ] Repoint the POS tiles at the new collections, then check each tile on the actual phone
+- [ ] Practice sale through POS before the show
+
 ### Shop housekeeping — stock-take (added 2026-09-10)
 
 📋 **Printable stock sheet:** `shopify/stock-sheet.html` — **double-click it on your Mac** and hit

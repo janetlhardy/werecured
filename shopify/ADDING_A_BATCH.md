@@ -72,7 +72,15 @@ Then on to the next piece. About a dozen pieces takes five or ten minutes.
 > 💡 A whole folder can be dragged in at once, and 20–30 photos at a time is fine. If you've got a
 > piece with a lot of shots, just do it in two goes.
 
-### 6. Check they've all arrived
+### 6. Make them available in the POS app
+
+**Products** → select all → **More actions → Make products available** → tick **Point of Sale**.
+
+New products don't join the Point of Sale channel on their own, and a piece that isn't on it
+**cannot be sold at a show** — it won't even appear in the app. This bit is easy to forget because
+nothing on the website looks wrong. See `FIXING_COLLECTIONS_AND_POS.md`.
+
+### 7. Check they've all arrived
 
 Refresh **werecured.ca** and look at the sections your new pieces should be in.
 
@@ -82,6 +90,10 @@ if a piece is missing, the first thing to check is whether its photos actually s
 
 If something's still missing after that, ask Claude — Claude can read the live shop data and tell you
 exactly which piece is off and why.
+
+> **Collections look after themselves** as long as the five collections are the automated kind —
+> see `FIXING_COLLECTIONS_AND_POS.md`. If someone ever makes a manual one, it will quietly stop
+> keeping up, which is how 121 products ended up in no collection at all.
 
 ---
 
