@@ -72,15 +72,27 @@ Then on to the next piece. About a dozen pieces takes five or ten minutes.
 > 💡 A whole folder can be dragged in at once, and 20–30 photos at a time is fine. If you've got a
 > piece with a lot of shots, just do it in two goes.
 
-### 6. Make them available in the POS app
+### 6. Switch them from Draft to Active
+
+**Products** → tick the new pieces → **More actions → Set as active**.
+
+⚠️ **Do this before the POS step below, not after.** The CSV imports everything as Draft on purpose,
+so half-finished listings never show on the shop while you're still adding photos — but a draft
+product is unavailable on **every** channel. The POS app will report **"Unavailable on POS"** however
+many times you add it to the sales channel, and it looks broken when nothing is wrong.
+
+### 7. Make them available in the POS app
 
 **Products** → select all → **More actions → Include in sales channel** → pick **Point of Sale**.
+
+Check one piece in the POS app first — once it's Active it may already be there, and this step turns
+out to be unnecessary.
 
 New products don't join the Point of Sale channel on their own, and a piece that isn't on it
 **cannot be sold at a show** — it won't even appear in the app. This bit is easy to forget because
 nothing on the website looks wrong. See `FIXING_COLLECTIONS_AND_POS.md`.
 
-### 7. Check they've all arrived
+### 8. Check they've all arrived
 
 Refresh **werecured.ca** and look at the sections your new pieces should be in.
 
