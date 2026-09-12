@@ -213,6 +213,14 @@ step-by-step fix in `shopify/FIXING_COLLECTIONS_AND_POS.md`.
 
 ### Shop housekeeping — stock-take (added 2026-09-10)
 
+✅ **Mostly cleared 2026-09-11/12.** Weights done, SKUs done, 36 products repriced, the five
+collections rebuilt as automated ones, the Point of Sale channel added, and the September batch of
+five pieces imported and live. The shop is at **181 products**.
+
+**Still open:** the five new pieces have no weights yet — they went in before the new
+weigh-at-photo-time habit. Worth catching on the next pass.
+
+
 📋 **Printable stock sheet:** `shopify/stock-sheet.html` — **double-click it on your Mac** and hit
 Print. (There's a web copy at <https://claude.ai/code/artifact/a987bc2c-4d28-4343-bf95-e6baf78b8707>,
 but browsers block printing from a page shown inside another page, so the local file is the one to
@@ -221,7 +229,11 @@ All 176 products in one place — SKU, price, weight on file, and a blank column
 weights into. Grouped by category, with a filter to show only the ones still missing a weight.
 It's a snapshot taken 2026-09-10, not live — ask Claude to refresh it after a batch goes in.
 
-- [ ] **Fill in the 37 missing product weights.** 139 of 176 products already have one, so this is
+- [x] **Fill in the 37 missing product weights** ✅ (2026-09-11/12) — 26 done in the big pass, the
+      rest with the Thinkers weighed once and applied to all five. **New pieces now get weighed at
+      photo time and the weight goes into the import CSV**, so this shouldn't build up again.
+      _(original note kept below)_
+- [ ] ~~Fill in the 37 missing product weights.~~ 139 of 176 products already have one, so this is
       smaller than it looks. Missing: 13 Coasters, 12 Bowls and Platters, 11 Home Decor, 1 Pendant.
       Weights don't change what a customer is charged under flat-rate shipping, but Shopify prefills
       the parcel weight from them when you buy a Canada Post label — at zero you're typing it in
@@ -229,7 +241,9 @@ It's a snapshot taken 2026-09-10, not live — ask Claude to refresh it after a 
       become mandatory if you ever move to calculated rates or add US shipping.
       **Quickest way:** weigh one packed example per category, then bulk-edit that figure onto the
       rest of that type. Close enough beats zero.
-- [ ] **Two products have no SKU** — `Sunrise/Sunset Trinket Dish - Set of 2` → type **WC-3900**,
+- [x] ~~Two products have no SKU~~ ✅ (2026-09-10) — WC-3900 and WC-3905. They were the only two
+      products created by hand in Shopify rather than imported; hand-created products get no SKU.
+- [ ] ~~Two products have no SKU~~ — `Sunrise/Sunset Trinket Dish - Set of 2` → type **WC-3900**,
       `Iridescent Dragon Platter` → type **WC-3905**. In Shopify it's Products → the product →
       the **Inventory** box → the **SKU** field. Thirty seconds each, and entirely optional —
       see the note on SKUs below.

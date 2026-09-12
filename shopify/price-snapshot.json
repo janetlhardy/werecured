@@ -2,7 +2,7 @@
  "products": {
   "abalone-shell-bowl": {
    "forSale": true,
-   "grams": null,
+   "grams": 188,
    "price": 75.0,
    "sku": "WC-3845",
    "title": "Abalone Shell Bowl",
@@ -35,7 +35,7 @@
   "amethyst-bloom-set-of-4": {
    "forSale": true,
    "grams": 411,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3098",
    "title": "Amethyst Bloom Set of 4",
    "type": "Coasters"
@@ -43,10 +43,10 @@
   "amethyst-crystal-coasters": {
    "forSale": true,
    "grams": null,
-   "price": 90.0,
+   "price": 40.0,
    "sku": "WC-3790",
-   "title": "Amethyst Crystal Trinket Dishes \u2014 Set of 2",
-   "type": "Home Decor"
+   "title": "Amethyst Crystal Coasters \u2014 Set of 2",
+   "type": "Coasters"
   },
   "amethyst-embrace": {
    "forSale": true,
@@ -66,8 +66,8 @@
   },
   "amethyst-lightning": {
    "forSale": true,
-   "grams": null,
-   "price": 50.0,
+   "grams": 248,
+   "price": 60.0,
    "sku": "WC-3717",
    "title": "Amethyst Lightning \u2014 Set of 4",
    "type": "Coasters"
@@ -82,7 +82,7 @@
   },
   "aurora-thinkers": {
    "forSale": true,
-   "grams": null,
+   "grams": 243,
    "price": 65.0,
    "sku": "WC-3855",
    "title": "Aurora Thinkers \u2014 Set of 3",
@@ -91,7 +91,7 @@
   "autumn-bloom-set-of-4": {
    "forSale": true,
    "grams": 202,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1954",
    "title": "Autumn Bloom Set of 4",
    "type": "Coasters"
@@ -107,7 +107,7 @@
   "blue-anemone-set-of-4": {
    "forSale": true,
    "grams": 305,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-2205",
    "title": "Blue Anemone Set of 4",
    "type": "Coasters"
@@ -123,14 +123,14 @@
   "blue-frost-geode": {
    "forSale": true,
    "grams": 500,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3635",
    "title": "Blue Frost Geode \u2014 Set of 4",
    "type": "Coasters"
   },
   "blue-hibiscus-coasters": {
    "forSale": true,
-   "grams": null,
+   "grams": 231,
    "price": 70.0,
    "sku": "WC-3865",
    "title": "Blue Hibiscus Coasters \u2014 Set of 4",
@@ -147,7 +147,7 @@
   "blue-marble-set-of-4": {
    "forSale": true,
    "grams": 278,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3094",
    "title": "Blue Marble Set of 4",
    "type": "Coasters"
@@ -195,14 +195,14 @@
   "bronze-nebula": {
    "forSale": true,
    "grams": 543,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3644",
    "title": "Bronze Nebula \u2014 Set of 4",
    "type": "Coasters"
   },
   "bubble-coasters": {
    "forSale": true,
-   "grams": null,
+   "grams": 265,
    "price": 70.0,
    "sku": "WC-3765",
    "title": "Bubble Coasters \u2014 Set of 4",
@@ -266,8 +266,8 @@
   },
   "copper-galaxy": {
    "forSale": true,
-   "grams": null,
-   "price": 50.0,
+   "grams": 215,
+   "price": 60.0,
    "sku": "WC-3711",
    "title": "Copper Galaxy \u2014 Set of 4",
    "type": "Coasters"
@@ -291,7 +291,7 @@
   "coral-sunburst-set-of-4": {
    "forSale": true,
    "grams": 190,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3162",
    "title": "Coral Sunburst Set of 4",
    "type": "Coasters"
@@ -306,8 +306,8 @@
   },
   "cosmic-cobalt-bowl": {
    "forSale": true,
-   "grams": null,
-   "price": 50.0,
+   "grams": 154,
+   "price": 75.0,
    "sku": "WC-3775",
    "title": "Cosmic Cobalt Bowl",
    "type": "Bowls and Platters"
@@ -315,7 +315,7 @@
   "cosmic-geode": {
    "forSale": true,
    "grams": 513,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3654",
    "title": "Cosmic Geode \u2014 Set of 4",
    "type": "Coasters"
@@ -331,7 +331,7 @@
   "cotton-candy": {
    "forSale": true,
    "grams": 205,
-   "price": 40.0,
+   "price": 50.0,
    "sku": "WC-3615",
    "title": "Cotton Candy \u2014 Set of 4",
    "type": "Coasters"
@@ -339,7 +339,7 @@
   "crackling-rose-set-of-4": {
    "forSale": true,
    "grams": 486,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3039",
    "title": "Crackling Rose Set of 4",
    "type": "Coasters"
@@ -363,7 +363,7 @@
   "dahlia-dream": {
    "forSale": true,
    "grams": 535,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3619",
    "title": "Dahlia Dream \u2014 Set of 4",
    "type": "Coasters"
@@ -391,6 +391,14 @@
    "sku": "WC-1913",
    "title": "Ember Circle Earrings",
    "type": "Earrings"
+  },
+  "emerald-crush-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 110.0,
+   "sku": "WC-3880",
+   "title": "Emerald Crush Bowl",
+   "type": "Bowls and Platters"
   },
   "emerald-geode-set-of-4": {
    "forSale": true,
@@ -445,7 +453,7 @@
    "grams": 186,
    "price": 50.0,
    "sku": "WC-3110",
-   "title": "Forest Blossom Set of 5",
+   "title": "Forest Blossom Set of 5 (small)",
    "type": "Coasters"
   },
   "frost-flower": {
@@ -490,7 +498,7 @@
   },
   "garden-bloom-thinkers": {
    "forSale": true,
-   "grams": null,
+   "grams": 243,
    "price": 109.0,
    "sku": "WC-3820",
    "title": "Garden Bloom Thinkers \u2014 Set of 3",
@@ -498,15 +506,15 @@
   },
   "gilded-ember": {
    "forSale": true,
-   "grams": null,
-   "price": 50.0,
+   "grams": 220,
+   "price": 60.0,
    "sku": "WC-3727",
    "title": "Gilded Ember \u2014 Reversible Set of 4",
    "type": "Coasters"
   },
   "gilded-lagoon-thinkers": {
    "forSale": true,
-   "grams": null,
+   "grams": 245,
    "price": 65.0,
    "sku": "WC-3835",
    "title": "Gilded Lagoon Thinkers \u2014 Set of 3",
@@ -546,7 +554,7 @@
   },
   "golden-bough-platter": {
    "forSale": true,
-   "grams": null,
+   "grams": 636,
    "price": 150.0,
    "sku": "WC-3860",
    "title": "Golden Bough Platter",
@@ -554,7 +562,7 @@
   },
   "golden-fern-coasters": {
    "forSale": true,
-   "grams": null,
+   "grams": 319,
    "price": 70.0,
    "sku": "WC-3780",
    "title": "Golden Fern Coasters \u2014 Set of 4",
@@ -570,7 +578,7 @@
   },
   "golden-tide-trinket-dish": {
    "forSale": true,
-   "grams": null,
+   "grams": 131,
    "price": 50.0,
    "sku": "WC-3805",
    "title": "Golden Tide Trinket Dish",
@@ -579,7 +587,7 @@
   "green-star-flower-set-of-4": {
    "forSale": true,
    "grams": 210,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1946",
    "title": "Green Star Flower Set of 4",
    "type": "Coasters"
@@ -619,14 +627,14 @@
   "iridescent-aster": {
    "forSale": true,
    "grams": 296,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3650",
    "title": "Iridescent Aster \u2014 Set of 4",
    "type": "Coasters"
   },
   "iridescent-dragon-platter": {
    "forSale": true,
-   "grams": null,
+   "grams": 450,
    "price": 90.0,
    "sku": "WC-3905",
    "title": "Iridescent Dragon Platter",
@@ -648,6 +656,14 @@
    "title": "Lagoon Geode Set of 4",
    "type": "Coasters"
   },
+  "lagoon-mosaic-bowl": {
+   "forSale": true,
+   "grams": null,
+   "price": 85.0,
+   "sku": "WC-3875",
+   "title": "Lagoon Mosaic Bowl",
+   "type": "Bowls and Platters"
+  },
   "lavender-dream-tray": {
    "forSale": true,
    "grams": 201,
@@ -666,7 +682,7 @@
   },
   "liquid-metal-thinkers": {
    "forSale": true,
-   "grams": null,
+   "grams": 245,
    "price": 65.0,
    "sku": "WC-3825",
    "title": "Liquid Metal Thinkers \u2014 Set of 3",
@@ -731,10 +747,18 @@
   "metallic-rose-coasters": {
    "forSale": true,
    "grams": 552,
-   "price": 70.0,
+   "price": 80.0,
    "sku": "WC-3136",
-   "title": "Metallic Rose Coasters",
+   "title": "Metallic Rose Coasters - set of 5",
    "type": "Coasters"
+  },
+  "midnight-chrysanthemum-dish": {
+   "forSale": true,
+   "grams": null,
+   "price": 55.0,
+   "sku": "WC-3895",
+   "title": "Midnight Chrysanthemum Trinket Dish",
+   "type": "Home Decor"
   },
   "midnight-forest-tray": {
    "forSale": true,
@@ -755,7 +779,7 @@
   "midnight-meadow": {
    "forSale": true,
    "grams": 327,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3638",
    "title": "Midnight Meadow \u2014 Set of 4",
    "type": "Coasters"
@@ -786,7 +810,7 @@
   },
   "moonstone-thinkers": {
    "forSale": true,
-   "grams": null,
+   "grams": 245,
    "price": 65.0,
    "sku": "WC-3830",
    "title": "Moonstone Thinkers \u2014 Set of 3",
@@ -794,7 +818,7 @@
   },
   "moss-agate-bowl": {
    "forSale": true,
-   "grams": null,
+   "grams": 244,
    "price": 70.0,
    "sku": "WC-3870",
    "title": "Moss Agate Bowl",
@@ -803,7 +827,7 @@
   "navy-daisy-set-of-4": {
    "forSale": true,
    "grams": 360,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1917",
    "title": "Navy Daisy Set of 4",
    "type": "Coasters"
@@ -819,7 +843,7 @@
   "neon-blob-set-of-4": {
    "forSale": true,
    "grams": 338,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1947",
    "title": "Neon Blob Set of 4",
    "type": "Coasters"
@@ -827,7 +851,7 @@
   "northern-lights-bowl-set": {
    "forSale": true,
    "grams": 303,
-   "price": 70.0,
+   "price": 100.0,
    "sku": "WC-3029",
    "title": "Northern Lights Bowl Set",
    "type": "Bowls and Platters"
@@ -835,7 +859,7 @@
   "ocean-bubble-set-of-4": {
    "forSale": true,
    "grams": 364,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-1925",
    "title": "Ocean Bubble Set of 4",
    "type": "Coasters"
@@ -866,7 +890,7 @@
   },
   "opal-sunset-tray": {
    "forSale": true,
-   "grams": null,
+   "grams": 680,
    "price": 110.0,
    "sku": "WC-3740",
    "title": "Opal Sunset Tray",
@@ -874,7 +898,7 @@
   },
   "opal-wave-bowl": {
    "forSale": true,
-   "grams": null,
+   "grams": 166,
    "price": 75.0,
    "sku": "WC-3815",
    "title": "Opal Wave Bowl",
@@ -882,7 +906,7 @@
   },
   "orchid-bloom-coasters": {
    "forSale": true,
-   "grams": null,
+   "grams": 228,
    "price": 70.0,
    "sku": "WC-3785",
    "title": "Orchid Bloom Coasters \u2014 Set of 4",
@@ -939,7 +963,7 @@
   "poppy-set-of-4": {
    "forSale": true,
    "grams": 215,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3143",
    "title": "Poppy Set of 4",
    "type": "Coasters"
@@ -947,7 +971,7 @@
   "prism-eye-set-of-4": {
    "forSale": true,
    "grams": 393,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3062",
    "title": "Prism Eye Set of 4",
    "type": "Coasters"
@@ -955,7 +979,7 @@
   "purple-daisy-set-of-4": {
    "forSale": true,
    "grams": 280,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1923",
    "title": "Purple Daisy Set of 4",
    "type": "Coasters"
@@ -1051,15 +1075,15 @@
   "rose-garden-set-of-4": {
    "forSale": true,
    "grams": 290,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1949",
    "title": "Rose Garden Set of 4",
    "type": "Coasters"
   },
   "rose-garden-tray": {
    "forSale": true,
-   "grams": null,
-   "price": 80.0,
+   "grams": 504,
+   "price": 125.0,
    "sku": "WC-3657",
    "title": "Rose Garden Tray",
    "type": "Bowls and Platters"
@@ -1074,8 +1098,8 @@
   },
   "ruby-ember": {
    "forSale": true,
-   "grams": null,
-   "price": 50.0,
+   "grams": 285,
+   "price": 60.0,
    "sku": "WC-3721",
    "title": "Ruby Ember \u2014 Set of 4 Reversible coasters",
    "type": "Coasters"
@@ -1090,7 +1114,7 @@
   },
   "sapphire-blossom-coasters": {
    "forSale": true,
-   "grams": null,
+   "grams": 204,
    "price": 70.0,
    "sku": "WC-3840",
    "title": "Sapphire Blossom Coasters \u2014 Set of 4",
@@ -1098,15 +1122,15 @@
   },
   "sapphire-geode-tray": {
    "forSale": true,
-   "grams": null,
-   "price": 110.0,
+   "grams": 556,
+   "price": 125.0,
    "sku": "WC-3760",
    "title": "Sapphire Geode Tray",
    "type": "Bowls and Platters"
   },
   "sea-blue-splash-bowl": {
    "forSale": true,
-   "grams": null,
+   "grams": 450,
    "price": 80.0,
    "sku": "WC-3795",
    "title": "Sea Blue Splash Bowl",
@@ -1115,7 +1139,7 @@
   "sea-foam": {
    "forSale": true,
    "grams": 541,
-   "price": 60.0,
+   "price": 70.0,
    "sku": "WC-3641",
    "title": "Sea Foam \u2014 Set of 4",
    "type": "Coasters"
@@ -1130,7 +1154,7 @@
   },
   "sea-green-splash-bowl": {
    "forSale": true,
-   "grams": null,
+   "grams": 426,
    "price": 80.0,
    "sku": "WC-3800",
    "title": "Sea Green Splash Bowl",
@@ -1155,7 +1179,7 @@
   "shimmer-bloom-set-of-4": {
    "forSale": true,
    "grams": 325,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-2818",
    "title": "Shimmer Bloom Set of 4",
    "type": "Coasters"
@@ -1184,6 +1208,14 @@
    "title": "Sky Blue Holographic Pendant",
    "type": "Pendant"
   },
+  "slate-bloom-coasters": {
+   "forSale": true,
+   "grams": null,
+   "price": 70.0,
+   "sku": "WC-3890",
+   "title": "Slate Bloom \u2014 Set of 4",
+   "type": "Coasters"
+  },
   "smoky-rose": {
    "forSale": true,
    "grams": 432,
@@ -1199,6 +1231,14 @@
    "sku": "WC-2171",
    "title": "Spilled Coffee Earrings",
    "type": "Earrings"
+  },
+  "stained-glass-serving-board": {
+   "forSale": true,
+   "grams": null,
+   "price": 95.0,
+   "sku": "WC-3885",
+   "title": "Stained Glass Serving Board",
+   "type": "Bowls and Platters"
   },
   "starfish-oval": {
    "forSale": true,
@@ -1227,14 +1267,14 @@
   "sunflower-set-of-4": {
    "forSale": true,
    "grams": 262,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1953",
    "title": "Sunflower Set of 4",
    "type": "Coasters"
   },
   "sunrise-sunset-coaster-set-of-2": {
    "forSale": true,
-   "grams": null,
+   "grams": 317,
    "price": 90.0,
    "sku": "WC-3900",
    "title": "Sunrise/Sunset Trinket Dish - Set of 2",
@@ -1242,7 +1282,7 @@
   },
   "sunset-crystal": {
    "forSale": true,
-   "grams": null,
+   "grams": 520,
    "price": 70.0,
    "sku": "WC-3735",
    "title": "Sunset Crystal \u2014 Set of 4",
@@ -1307,7 +1347,7 @@
   "terra-cotta-bloom": {
    "forSale": true,
    "grams": 535,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3624",
    "title": "Terra Cotta Bloom \u2014 Set of 4",
    "type": "Coasters"
@@ -1338,7 +1378,7 @@
   },
   "twilight-bloom": {
    "forSale": true,
-   "grams": null,
+   "grams": 247,
    "price": 50.0,
    "sku": "WC-3704",
    "title": "Twilight Bloom \u2014 Set of 4",
@@ -1355,7 +1395,7 @@
   "violet-bloom-set-of-4": {
    "forSale": true,
    "grams": 315,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-1940",
    "title": "Violet Bloom Set of 4",
    "type": "Coasters"
@@ -1363,7 +1403,7 @@
   "watermelon-bloom": {
    "forSale": true,
    "grams": 300,
-   "price": 50.0,
+   "price": 60.0,
    "sku": "WC-3609",
    "title": "Watermelon Bloom \u2014 Set of 4",
    "type": "Coasters"
@@ -1378,7 +1418,7 @@
   },
   "wild-poppy": {
    "forSale": true,
-   "grams": null,
+   "grams": 288,
    "price": 50.0,
    "sku": "WC-3714",
    "title": "Wild Poppy \u2014 Set of 4",
@@ -1387,14 +1427,14 @@
   "wild-rose-platter": {
    "forSale": true,
    "grams": 378,
-   "price": 70.0,
+   "price": 80.0,
    "sku": "WC-3015",
    "title": "Wild Rose Bowl",
    "type": "Bowls and Platters"
   },
   "winter-blossom": {
    "forSale": true,
-   "grams": null,
+   "grams": 246,
    "price": 50.0,
    "sku": "WC-3708",
    "title": "Winter Blossom \u2014 Set of 4",
@@ -1402,12 +1442,12 @@
   },
   "wisteria-shell-bowl": {
    "forSale": true,
-   "grams": null,
+   "grams": 170,
    "price": 75.0,
    "sku": "WC-3850",
    "title": "Wisteria Shell Bowl",
    "type": "Bowls and Platters"
   }
  },
- "taken": "2026-09-11"
+ "taken": "2026-09-12"
 }

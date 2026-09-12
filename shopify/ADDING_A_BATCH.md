@@ -23,9 +23,18 @@ if you're curious.
 
 ## Your part, step by step
 
-### 1. Send Claude the photos
+### 1. Send Claude the photos — and weigh each piece while you've got it in your hands
 
 All of them, however you like. Claude can see them and work out which shots belong to which piece.
+
+⚖️ **Weigh each piece as you photograph it** and send the numbers along with the photos. It's the
+one moment the piece is already out on the bench, and weighing it then costs seconds. Claude puts
+the weight straight into the CSV, so it arrives in Shopify with the product and never becomes a
+separate job. (Janet's own note, 2026-09-12: this is the thing she most often forgets.)
+
+Rough packed weight in grams is fine — the piece boxed and padded, ready to post, because that's the
+number Shopify wants when you buy a label. If you only have the bare piece, say so and Claude will
+note it.
 
 Helpful but not essential: mention anything that isn't obvious from a photo — if a piece glows in the
 dark, what a bowl's made of, roughly how big something is.
@@ -172,6 +181,9 @@ worrying about the limit.
   `<product-handle>-1.jpeg`, `-2`, and so on. The intended main shot is `-1`.
 - Avoid filenames ending in `_thumb`, `_small`, `_medium`, `large`, `grande`, `compact`, `icon` or
   `pico` — Shopify's CDN reads those as resizing instructions.
+- **Put the weight in `Variant Grams`** when Janet has sent one. Leaving it at 0 means it becomes a
+  separate job later, and 37 products once piled up that way. If she hasn't sent weights, ask for
+  them before building the CSV — not after the import, when the piece is back on a shelf.
 - Generate the CSV with **no `Image Src`, `Image Position` or `Image Alt Text` columns.** Only
   `Title` is genuinely required by Shopify (plus `Handle` where there are variant rows), so a CSV
   without image columns imports cleanly.
