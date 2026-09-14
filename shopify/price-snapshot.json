@@ -216,6 +216,14 @@
    "title": "Bubble Wrap Bowl",
    "type": "Bowls and Platters"
   },
+  "burnished-copper-bowl": {
+   "forSale": true,
+   "grams": 233,
+   "price": 75.0,
+   "sku": "WC-3925",
+   "title": "Burnished Copper Bowl",
+   "type": "Bowls and Platters"
+  },
   "candy-hands": {
    "forSale": true,
    "grams": 562,
@@ -271,6 +279,14 @@
    "sku": "WC-3711",
    "title": "Copper Galaxy \u2014 Set of 4",
    "type": "Coasters"
+  },
+  "copper-sky-serving-board": {
+   "forSale": true,
+   "grams": 218,
+   "price": 85.0,
+   "sku": "WC-3940",
+   "title": "Copper Sky Serving Board",
+   "type": "Bowls and Platters"
   },
   "coral-branch-pendant": {
    "forSale": true,
@@ -351,6 +367,14 @@
    "sku": "WC-3046",
    "title": "Crimson Geode Set of 4",
    "type": "Coasters"
+  },
+  "crimson-peony-plate": {
+   "forSale": true,
+   "grams": 363,
+   "price": 70.0,
+   "sku": "WC-3920",
+   "title": "Crimson Peony Plate",
+   "type": "Bowls and Platters"
   },
   "crimson-swirl-oval": {
    "forSale": true,
@@ -440,6 +464,14 @@
    "title": "Fiesta Set of 4",
    "type": "Coasters"
   },
+  "firework-trinket-dish": {
+   "forSale": true,
+   "grams": 71,
+   "price": 55.0,
+   "sku": "WC-3930",
+   "title": "Firework Trinket Dish",
+   "type": "Home Decor"
+  },
   "flame-ruffled-bowl": {
    "forSale": true,
    "grams": 93,
@@ -463,6 +495,14 @@
    "sku": "WC-3627",
    "title": "Frost Flower \u2014 Set of 4",
    "type": "Coasters"
+  },
+  "frostbloom-bowl": {
+   "forSale": true,
+   "grams": 587,
+   "price": 125.0,
+   "sku": "WC-3960",
+   "title": "Frostbloom Bowl",
+   "type": "Bowls and Platters"
   },
   "frosted-periwinkle-square-earrings": {
    "forSale": false,
@@ -840,6 +880,14 @@
    "title": "Nebula Square Set of 4",
    "type": "Coasters"
   },
+  "nebula-tealight-holder": {
+   "forSale": true,
+   "grams": 334,
+   "price": 55.0,
+   "sku": "WC-3955",
+   "title": "Nebula Tealight Holder",
+   "type": "Home Decor"
+  },
   "neon-blob-set-of-4": {
    "forSale": true,
    "grams": 338,
@@ -918,6 +966,14 @@
    "price": 50.0,
    "sku": "WC-3121",
    "title": "Orchid Blossom Set of 4",
+   "type": "Coasters"
+  },
+  "orchid-jigsaw-coasters": {
+   "forSale": true,
+   "grams": 241,
+   "price": 70.0,
+   "sku": "WC-3915",
+   "title": "Orchid Jigsaw \u2014 Set of 4",
    "type": "Coasters"
   },
   "peacock-blossom-set-of-4": {
@@ -1184,6 +1240,14 @@
    "title": "Shimmer Bloom Set of 4",
    "type": "Coasters"
   },
+  "shoreline-thinkers": {
+   "forSale": true,
+   "grams": 280,
+   "price": 75.0,
+   "sku": "WC-3950",
+   "title": "Shoreline Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
   "silver-moon-pendant": {
    "forSale": true,
    "grams": 15,
@@ -1231,6 +1295,14 @@
    "sku": "WC-2171",
    "title": "Spilled Coffee Earrings",
    "type": "Earrings"
+  },
+  "spilled-wine": {
+   "forSale": true,
+   "grams": 290,
+   "price": 45.0,
+   "sku": "WC-3945",
+   "title": "Spilled Wine",
+   "type": "Home Decor"
   },
   "stained-glass-serving-board": {
    "forSale": true,
@@ -1400,6 +1472,14 @@
    "title": "Violet Bloom Set of 4",
    "type": "Coasters"
   },
+  "violet-frost-tray": {
+   "forSale": true,
+   "grams": 179,
+   "price": 60.0,
+   "sku": "WC-3910",
+   "title": "Violet Frost Tray",
+   "type": "Bowls and Platters"
+  },
   "watermelon-bloom": {
    "forSale": true,
    "grams": 300,
@@ -1414,6 +1494,14 @@
    "price": 70.0,
    "sku": "WC-1918",
    "title": "White Daisy Set of 4",
+   "type": "Coasters"
+  },
+  "wild-pansy-coasters": {
+   "forSale": true,
+   "grams": 204,
+   "price": 70.0,
+   "sku": "WC-3935",
+   "title": "Wild Pansy \u2014 Set of 4",
    "type": "Coasters"
   },
   "wild-poppy": {
@@ -1449,5 +1537,5 @@
    "type": "Bowls and Platters"
   }
  },
- "taken": "2026-09-12"
+ "taken": "2026-09-14"
 }

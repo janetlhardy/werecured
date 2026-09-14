@@ -92,3 +92,23 @@ To display, a product also needs: a **price**, at least one **photo**, and to be
 Claude *can* add products to Shopify via the Admin API, but you'd still have to send the photos and
 details — so using the **Add product** screen yourself is usually simpler. Claude is most useful for
 **pricing**, **bulk changes**, and **fixing/rearranging** things. Just ask.
+
+---
+
+## Don't fill in "Collections" by hand
+
+When you add or edit a product there's a **Collections** box under **Product organization**. **Leave
+it empty.**
+
+Since September 2026 all five collections are the *automated* kind: each one has a rule saying
+"include every product whose type is X", so a new product joins the right one the moment you set its
+Product type. Proven on the batch of 2026-09-14 — eleven new pieces, none added by hand, all eleven
+filed correctly.
+
+That box only ever adds a product to a **manual** collection. Typing in it either does nothing or
+quietly creates a stray manual collection, which then stops keeping up as new products arrive —
+exactly how 121 products once ended up in no collection at all.
+
+**So the one field that matters is Product type.** It drives three things at once: which section the
+piece appears in on werecured.ca, which collection it joins, and which tile it shows under in the POS
+app. Get that right and the rest looks after itself.
