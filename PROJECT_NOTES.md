@@ -91,6 +91,42 @@ The Shivering Sheep.)_
 - [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
+### New Pieces — September 2026 batch (`2026-09c`)
+
+- [x] Nine pieces named, priced and written up ✅ (2026-09-25)
+- [x] `shopify/new-products-2026-09c.csv` imported ✅ — shop went 192 → **201 products**
+- [x] Photos added to all nine and verified live ✅ — 8 / 8 / 9 / 9 / 17 / 7 / 8 / 8 / 7
+- [x] All nine confirmed Active, in stock and showing correctly ✅
+- [x] Stock sheet rebuilt at 201 products ✅ (2026-09-25)
+- [ ] Weigh the ten pieces still without a weight on file — all confirmed genuinely for sale,
+      just missed at photo time. The stock sheet's **Only missing a weight** button filters to them
+
+| Piece | SKU | Type | Weight | Price |
+|---|---|---|---|---|
+| Beachcomber Bowl | WC-3965 | Bowls and Platters | 597 g | $175 |
+| Everlasting Bowl | WC-3970 | Bowls and Platters | 366 g | $160 |
+| Everlasting Stone | WC-3975 | Bowls and Platters | 552 g | $185 |
+| Frozen Lagoon | WC-3980 | Home Decor | 205 g | $65 |
+| Flower Power Hands — Pair | WC-3985 | Home Decor | 789 g | $165 |
+| Everlasting Hands | WC-3990 | Home Decor | 615 g | $150 |
+| Ember Bloom Bowl | WC-3995 | Bowls and Platters | 398 g | $120 |
+| Limelight | WC-4000 | Home Decor | 180 g | $80 |
+| Opal Halo | WC-4005 | Home Decor | 307 g | $70 |
+
+The two Everlastings and the two Hands pieces are priced above heavier bowls because each is
+**three separate pours of deep-pour resin** with days of curing between — see `PRICING_SCHEME.md`.
+Flower Power Hands uses the **Green Thumb mould** (WC-3612, $60), which gave a same-mould anchor
+to price against. Next SKU: **WC-4010**.
+
+**Four pieces held back for the November show, deliberately not listed:** two ruffled square
+coasters, the spilled-coffee coaster (it carries a real cafe's logo — a branded item on sale
+invites a takedown, so it stays off the website), and **Wildfire**, the drip bowl, whose thin
+flame-fingers would be very hard to post intact.
+
+**Open, not urgent:** the five Hands pieces (Air Plant, Candy, Green Thumb, M&M, Moonbeam) are all
+$60 at 362–674 g, which sits well under what `PRICING_SCHEME.md` produces — the same gap the
+coasters had before the September repricing. Worth a look before the show.
+
 ### New Pieces — Thinker Statuettes (August 2026)
 - [x] Set a price for each of the four thinker sets ✅ (2026-08-19)
 - [x] Light box arrived and all four sets reshot ✅ (2026-08-24) — a big improvement on the
