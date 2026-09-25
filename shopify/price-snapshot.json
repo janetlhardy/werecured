@@ -96,6 +96,14 @@
    "title": "Autumn Bloom Set of 4",
    "type": "Coasters"
   },
+  "beachcomber-bowl": {
+   "forSale": true,
+   "grams": 597,
+   "price": 175.0,
+   "sku": "WC-3965",
+   "title": "Beachcomber Bowl",
+   "type": "Bowls and Platters"
+  },
   "berry-marble-set-of-4": {
    "forSale": true,
    "grams": 312,
@@ -408,6 +416,14 @@
    "title": "Electric Blue Oval Earrings",
    "type": "Earrings"
   },
+  "ember-bloom-bowl": {
+   "forSale": true,
+   "grams": 398,
+   "price": 120.0,
+   "sku": "WC-3995",
+   "title": "Ember Bloom Bowl",
+   "type": "Bowls and Platters"
+  },
   "ember-circle-earrings": {
    "forSale": true,
    "grams": 5,
@@ -456,6 +472,30 @@
    "title": "Ethereal Being Pendant",
    "type": "Pendant"
   },
+  "everlasting-bowl": {
+   "forSale": true,
+   "grams": 366,
+   "price": 160.0,
+   "sku": "WC-3970",
+   "title": "Everlasting Bowl",
+   "type": "Bowls and Platters"
+  },
+  "everlasting-hands": {
+   "forSale": true,
+   "grams": 615,
+   "price": 150.0,
+   "sku": "WC-3990",
+   "title": "Everlasting Hands",
+   "type": "Home Decor"
+  },
+  "everlasting-stone": {
+   "forSale": true,
+   "grams": 552,
+   "price": 185.0,
+   "sku": "WC-3975",
+   "title": "Everlasting Stone",
+   "type": "Bowls and Platters"
+  },
   "fiesta-set-of-4": {
    "forSale": true,
    "grams": 190,
@@ -479,6 +519,14 @@
    "sku": "WC-1979",
    "title": "Flame Ruffled Bowl",
    "type": "Bowls and Platters"
+  },
+  "flower-power-hands-pair": {
+   "forSale": true,
+   "grams": 789,
+   "price": 165.0,
+   "sku": "WC-3985",
+   "title": "Flower Power Hands \u2014 Pair",
+   "type": "Home Decor"
   },
   "forest-blossom-set-of-5": {
    "forSale": true,
@@ -519,6 +567,14 @@
    "sku": "WC-2186",
    "title": "Frosted Periwinkle Teardrop Earrings",
    "type": "Earrings"
+  },
+  "frozen-lagoon": {
+   "forSale": true,
+   "grams": 205,
+   "price": 65.0,
+   "sku": "WC-3980",
+   "title": "Frozen Lagoon",
+   "type": "Home Decor"
   },
   "galaxy-petal-set-of-4": {
    "forSale": true,
@@ -719,6 +775,14 @@
    "sku": "WC-1910",
    "title": "Lavender Holographic Pendant",
    "type": "Pendant"
+  },
+  "limelight": {
+   "forSale": true,
+   "grams": 180,
+   "price": 80.0,
+   "sku": "WC-4000",
+   "title": "Limelight",
+   "type": "Home Decor"
   },
   "liquid-metal-thinkers": {
    "forSale": true,
@@ -935,6 +999,14 @@
    "sku": "WC-1878",
    "title": "Opal Dream Pendant",
    "type": "Pendant"
+  },
+  "opal-halo": {
+   "forSale": true,
+   "grams": 307,
+   "price": 70.0,
+   "sku": "WC-4005",
+   "title": "Opal Halo",
+   "type": "Home Decor"
   },
   "opal-sunset-tray": {
    "forSale": true,
@@ -1537,5 +1609,5 @@
    "type": "Bowls and Platters"
   }
  },
- "taken": "2026-09-14"
+ "taken": "2026-09-25"
 }
