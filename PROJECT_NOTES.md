@@ -91,6 +91,44 @@ The Shivering Sheep.)_
 - [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
+### New Pieces — October 2026 batch (`2026-10`)
+
+- [x] 99 photos sorted into 14 pieces, named, weighed and priced ✅ (2026-10-06)
+- [x] Photos sorted into one folder per piece in `werecured-product-photos/batch-2026-10/` ✅
+- [ ] Import `shopify/new-products-2026-10.csv` (13 products, saved as drafts) — shop goes 201 → **214**
+- [ ] Drag each piece's photo folder onto its product's Media box, then set all 13 to Active
+- [ ] Check every piece shows **in stock** after the import (imports sometimes land stock at 0)
+- [ ] Add a photo of each tealight holder with a tealight sitting in it (for scale) — six holders
+- [ ] Rebuild the stock sheet at 214 products
+
+| Piece | SKU | Type | Weight | Price |
+|---|---|---|---|---|
+| Moonlit Tide Bowl | WC-4010 | Bowls and Platters | 367 g | $110 |
+| Twilight Harbour Bowl | WC-4015 | Bowls and Platters | 145 g | $55 |
+| Sangria Bowl | WC-4020 | Bowls and Platters | 145 g | $55 |
+| Blackberry Agate Tray | WC-4025 | Bowls and Platters | 725 g | $135 |
+| Copper Peacock Serving Board | WC-4030 | Bowls and Platters | 193 g | $85 |
+| Copper Lagoon Tealight Holder | WC-4035 | Home Decor | 119 g | $45 |
+| Mermaid Scale Tealight Holder | WC-4040 | Home Decor | 123 g | $45 |
+| Autumn Jewel Tealight Holder | WC-4045 | Home Decor | 108 g | $45 |
+| Dandelion Wish Tealight Holder | WC-4050 | Home Decor | 112 g | $50 |
+| Starfish Cove Tealight Holder | WC-4055 | Home Decor | 83 g | $50 |
+| Seashell Lantern | WC-4060 | Home Decor | 243 g | $100 |
+| Garnet Thinkers — Set of 3 | WC-4065 | Home Decor | 239 g | $65 |
+| Moonflower Geode — Set of 4 | WC-4070 | Coasters | 547 g | $70 |
+
+**Moonlit Tide Bowl** is the first piece from Janet's new **wavy-edge bowl mould**. Janet raised it
+from $85 to $110 because it's nearly Beachcomber's size; it stays below Beachcomber ($175) because
+it's a single pour with no embedded flowers. **Seashell Lantern** is $100 because it took three pours
+plus about $10 of real shells. The two straight-sided bowls are each about one Northern Lights bowl
+($100 for the pair), and singles sell for a bit more than half a pair. Tealight listings
+say flameless, or a tealight in its own glass cup. Next SKU: **WC-4075**.
+
+**Held for the November show:** a new **Spilled Coffee** piece. The cup, the spill and a lid filled
+with resin are all one piece, and the lid works as a real coaster. It has no logo, so it *could* be
+listed, but it's delicate and needs a big box despite weighing 53 g. It's a great conversation
+piece for the table.
+
 ### New Pieces — September 2026 batch (`2026-09c`)
 
 - [x] Nine pieces named, priced and written up ✅ (2026-09-25)
