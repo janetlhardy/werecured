@@ -127,8 +127,8 @@ say flameless, or a tealight in its own glass cup. Next SKU: **WC-4075**.
 
 **Seven pieces no longer in the shop** (found 2026-10-08, gone since the 25 Sept snapshot): Blue
 Larimar Teardrop, Glow Skull Pendant, Teal Moon Pendant, Spilled Coffee Earrings, Flame Ruffled
-Bowl, Midnight Forest Tray, Moonstone Thinkers. Asked Janet whether these were taken down on
-purpose.
+Bowl, Midnight Forest Tray, Moonstone Thinkers. **Janet is keeping these for herself** and took them
+out of the shop on purpose so no one could buy them by mistake. Leave them out.
 
 **Held for the November show:** a new **Spilled Coffee** piece. The cup, the spill and a lid filled
 with resin are all one piece, and the lid works as a real coaster. It has no logo, so it *could* be
