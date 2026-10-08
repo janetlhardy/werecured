@@ -96,6 +96,14 @@
    "title": "Autumn Bloom Set of 4",
    "type": "Coasters"
   },
+  "autumn-jewel-tealight-holder": {
+   "forSale": true,
+   "grams": 108,
+   "price": 45.0,
+   "sku": "WC-4045",
+   "title": "Autumn Jewel Tealight Holder",
+   "type": "Home Decor"
+  },
   "beachcomber-bowl": {
    "forSale": true,
    "grams": 597,
@@ -111,6 +119,14 @@
    "sku": "WC-3189",
    "title": "Berry Marble Set of 4",
    "type": "Coasters"
+  },
+  "blackberry-agate-tray": {
+   "forSale": true,
+   "grams": 725,
+   "price": 135.0,
+   "sku": "WC-4025",
+   "title": "Blackberry Agate Tray",
+   "type": "Bowls and Platters"
   },
   "blue-anemone-set-of-4": {
    "forSale": true,
@@ -143,14 +159,6 @@
    "sku": "WC-3865",
    "title": "Blue Hibiscus Coasters \u2014 Set of 4",
    "type": "Coasters"
-  },
-  "blue-larimar-teardrop": {
-   "forSale": true,
-   "grams": 15,
-   "price": 50.0,
-   "sku": "WC-2133",
-   "title": "Blue Larimar Teardrop",
-   "type": "Pendant"
   },
   "blue-marble-set-of-4": {
    "forSale": true,
@@ -288,6 +296,22 @@
    "title": "Copper Galaxy \u2014 Set of 4",
    "type": "Coasters"
   },
+  "copper-lagoon-tealight-holder": {
+   "forSale": true,
+   "grams": 119,
+   "price": 45.0,
+   "sku": "WC-4035",
+   "title": "Copper Lagoon Tealight Holder",
+   "type": "Home Decor"
+  },
+  "copper-peacock-serving-board": {
+   "forSale": true,
+   "grams": 193,
+   "price": 85.0,
+   "sku": "WC-4030",
+   "title": "Copper Peacock Serving Board",
+   "type": "Bowls and Platters"
+  },
   "copper-sky-serving-board": {
    "forSale": true,
    "grams": 218,
@@ -399,6 +423,14 @@
    "sku": "WC-3619",
    "title": "Dahlia Dream \u2014 Set of 4",
    "type": "Coasters"
+  },
+  "dandelion-wish-tealight-holder": {
+   "forSale": true,
+   "grams": 112,
+   "price": 50.0,
+   "sku": "WC-4050",
+   "title": "Dandelion Wish Tealight Holder",
+   "type": "Home Decor"
   },
   "dark-coral-branch-oval": {
    "forSale": true,
@@ -512,14 +544,6 @@
    "title": "Firework Trinket Dish",
    "type": "Home Decor"
   },
-  "flame-ruffled-bowl": {
-   "forSale": true,
-   "grams": 93,
-   "price": 50.0,
-   "sku": "WC-1979",
-   "title": "Flame Ruffled Bowl",
-   "type": "Bowls and Platters"
-  },
   "flower-power-hands-pair": {
    "forSale": true,
    "grams": 789,
@@ -600,6 +624,14 @@
    "title": "Garden Bloom Thinkers \u2014 Set of 3",
    "type": "Home Decor"
   },
+  "garnet-thinkers-set-of-3": {
+   "forSale": true,
+   "grams": 239,
+   "price": 65.0,
+   "sku": "WC-4065",
+   "title": "Garnet Thinkers \u2014 Set of 3",
+   "type": "Home Decor"
+  },
   "gilded-ember": {
    "forSale": true,
    "grams": 220,
@@ -631,14 +663,6 @@
    "sku": "WC-1935",
    "title": "Glacier Wave Bowl",
    "type": "Bowls and Platters"
-  },
-  "glow-skull-pendant": {
-   "forSale": true,
-   "grams": 15,
-   "price": 60.0,
-   "sku": "WC-2166",
-   "title": "Glow Skull Pendant",
-   "type": "Pendant"
   },
   "gold-bubble-heart-pendant": {
    "forSale": true,
@@ -848,6 +872,14 @@
    "title": "Mermaid Oval Pendant",
    "type": "Pendant"
   },
+  "mermaid-scale-tealight-holder": {
+   "forSale": true,
+   "grams": 123,
+   "price": 45.0,
+   "sku": "WC-4040",
+   "title": "Mermaid Scale Tealight Holder",
+   "type": "Home Decor"
+  },
   "metallic-rose-coasters": {
    "forSale": true,
    "grams": 552,
@@ -863,14 +895,6 @@
    "sku": "WC-3895",
    "title": "Midnight Chrysanthemum Trinket Dish",
    "type": "Home Decor"
-  },
-  "midnight-forest-tray": {
-   "forSale": true,
-   "grams": 600,
-   "price": 110.0,
-   "sku": "WC-3018",
-   "title": "Midnight Forest Tray",
-   "type": "Bowls and Platters"
   },
   "midnight-iridescence-set-of-3": {
    "forSale": true,
@@ -912,13 +936,21 @@
    "title": "Moonbeam Hands",
    "type": "Home Decor"
   },
-  "moonstone-thinkers": {
+  "moonflower-geode-set-of-4": {
    "forSale": true,
-   "grams": 245,
-   "price": 65.0,
-   "sku": "WC-3830",
-   "title": "Moonstone Thinkers \u2014 Set of 3",
-   "type": "Home Decor"
+   "grams": 547,
+   "price": 70.0,
+   "sku": "WC-4070",
+   "title": "Moonflower Geode \u2014 Set of 4",
+   "type": "Coasters"
+  },
+  "moonlit-tide-bowl": {
+   "forSale": true,
+   "grams": 367,
+   "price": 110.0,
+   "sku": "WC-4010",
+   "title": "Moonlit Tide Bowl",
+   "type": "Bowls and Platters"
   },
   "moss-agate-bowl": {
    "forSale": true,
@@ -1240,6 +1272,14 @@
    "title": "Sandy Shore Bowl",
    "type": "Bowls and Platters"
   },
+  "sangria-bowl": {
+   "forSale": true,
+   "grams": 145,
+   "price": 55.0,
+   "sku": "WC-4020",
+   "title": "Sangria Bowl",
+   "type": "Bowls and Platters"
+  },
   "sapphire-blossom-coasters": {
    "forSale": true,
    "grams": 204,
@@ -1304,6 +1344,14 @@
    "title": "Sea Turtle Circle",
    "type": "Pendant"
   },
+  "seashell-lantern": {
+   "forSale": true,
+   "grams": 243,
+   "price": 100.0,
+   "sku": "WC-4060",
+   "title": "Seashell Lantern",
+   "type": "Home Decor"
+  },
   "shimmer-bloom-set-of-4": {
    "forSale": true,
    "grams": 325,
@@ -1360,14 +1408,6 @@
    "title": "Smoky Rose \u2014 Set of 4",
    "type": "Coasters"
   },
-  "spilled-coffee-earrings": {
-   "forSale": true,
-   "grams": 5,
-   "price": 25.0,
-   "sku": "WC-2171",
-   "title": "Spilled Coffee Earrings",
-   "type": "Earrings"
-  },
   "spilled-wine": {
    "forSale": true,
    "grams": 290,
@@ -1383,6 +1423,14 @@
    "sku": "WC-3885",
    "title": "Stained Glass Serving Board",
    "type": "Bowls and Platters"
+  },
+  "starfish-cove-tealight-holder": {
+   "forSale": true,
+   "grams": 83,
+   "price": 50.0,
+   "sku": "WC-4055",
+   "title": "Starfish Cove Tealight Holder",
+   "type": "Home Decor"
   },
   "starfish-oval": {
    "forSale": true,
@@ -1480,14 +1528,6 @@
    "title": "Teal Marigold Set of 4",
    "type": "Coasters"
   },
-  "teal-moon-pendant": {
-   "forSale": true,
-   "grams": 15,
-   "price": 50.0,
-   "sku": "WC-1877",
-   "title": "Teal Moon Pendant",
-   "type": "Pendant"
-  },
   "terra-cotta-bloom": {
    "forSale": true,
    "grams": 535,
@@ -1527,6 +1567,14 @@
    "sku": "WC-3704",
    "title": "Twilight Bloom \u2014 Set of 4",
    "type": "Coasters"
+  },
+  "twilight-harbour-bowl": {
+   "forSale": true,
+   "grams": 145,
+   "price": 55.0,
+   "sku": "WC-4015",
+   "title": "Twilight Harbour Bowl",
+   "type": "Bowls and Platters"
   },
   "velvet-colorshift-set-of-4": {
    "forSale": true,
@@ -1609,5 +1657,5 @@
    "type": "Bowls and Platters"
   }
  },
- "taken": "2026-09-25"
+ "taken": "2026-10-08"
 }

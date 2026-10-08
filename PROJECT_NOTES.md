@@ -95,11 +95,12 @@ The Shivering Sheep.)_
 
 - [x] 99 photos sorted into 14 pieces, named, weighed and priced ✅ (2026-10-06)
 - [x] Photos sorted into one folder per piece in `werecured-product-photos/batch-2026-10/` ✅
-- [ ] Import `shopify/new-products-2026-10.csv` (13 products, saved as drafts) — shop goes 201 → **214**
-- [ ] Drag each piece's photo folder onto its product's Media box, then set all 13 to Active
-- [ ] Check every piece shows **in stock** after the import (imports sometimes land stock at 0)
+- [x] `shopify/new-products-2026-10.csv` imported ✅ (2026-10-08)
+- [x] Photos added to all 13 and verified live, all Active ✅ — 8 / 8 / 8 / 8 / 7 / 5 / 4 / 4 / 5 / 7 / 10 / 14 / 5
+- [x] All 13 confirmed in stock ✅ — Blackberry Agate Tray landed at 0 and was fixed by hand
 - [ ] Add a photo of each tealight holder with a tealight sitting in it (for scale) — six holders
-- [ ] Rebuild the stock sheet at 214 products
+- [x] Stock sheet rebuilt ✅ (2026-10-08) — **207 products**, not 214, because seven earlier
+      pieces had left the shop since 25 Sept (see below)
 
 | Piece | SKU | Type | Weight | Price |
 |---|---|---|---|---|
@@ -123,6 +124,11 @@ it's a single pour with no embedded flowers. **Seashell Lantern** is $100 becaus
 plus about $10 of real shells. The two straight-sided bowls are each about one Northern Lights bowl
 ($100 for the pair), and singles sell for a bit more than half a pair. Tealight listings
 say flameless, or a tealight in its own glass cup. Next SKU: **WC-4075**.
+
+**Seven pieces no longer in the shop** (found 2026-10-08, gone since the 25 Sept snapshot): Blue
+Larimar Teardrop, Glow Skull Pendant, Teal Moon Pendant, Spilled Coffee Earrings, Flame Ruffled
+Bowl, Midnight Forest Tray, Moonstone Thinkers. Asked Janet whether these were taken down on
+purpose.
 
 **Held for the November show:** a new **Spilled Coffee** piece. The cup, the spill and a lid filled
 with resin are all one piece, and the lid works as a real coaster. It has no logo, so it *could* be
