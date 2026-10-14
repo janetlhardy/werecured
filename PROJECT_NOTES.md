@@ -121,7 +121,7 @@ The Shivering Sheep.)_
 | Harvest Agate — Set of 5 | WC-4135 | Coasters | 321 g | $85 |
 | Blue Lace Agate — Set of 5 | WC-4140 | Coasters | 376 g | $80 |
 | Meadow Lace Tealight Holder | WC-4145 | Home Decor | 120 g | $55 |
-| Beach Treasure Tealight Holder | WC-4150 | Home Decor | 160 g | $75 |
+| Beach Treasure Tealight Holder | WC-4150 | Home Decor | 160 g | $85 |
 | Seashell Ring Tealight Holder | WC-4155 | Home Decor | ~115 g | $55 |
 | Dryad Bust | WC-4160 | Home Decor | 61 g | $45 |
 | Autumn Wreath Platter | WC-4165 | Bowls and Platters | 399 g | $140 |
