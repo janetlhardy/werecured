@@ -143,6 +143,15 @@ anything unusual.
 
 ---
 
+## Pendants are a flat $50 (October 2026)
+
+Every pendant is **$50**, unless it's sold as part of a set (Red Heart Set, pendant plus earrings, is
+$75). Janet moved the last $60 ones down on 2026-10-14: one price is far easier to label, and to
+sell at a show table, than a mix of $50 and $60. New pendants come in at $50 without needing the
+formula. The $45–70 band in the tiers table above is the market range, not the shop's price.
+
+---
+
 ## Lessons from Janet's October 2026 pricing
 
 - **Cheap inclusions don't earn a price step.** Crystal centres on the agate coaster sets are small

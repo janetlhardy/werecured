@@ -227,7 +227,7 @@
   "blue-sky-circle": {
    "forSale": true,
    "grams": 15,
-   "price": 60.0,
+   "price": 50.0,
    "sku": "WC-2150",
    "title": "Blue Sky Circle",
    "type": "Pendant"
@@ -563,7 +563,7 @@
   "ethereal-being-pendant": {
    "forSale": true,
    "grams": 15,
-   "price": 60.0,
+   "price": 50.0,
    "sku": "WC-1876",
    "title": "Ethereal Being Pendant",
    "type": "Pendant"
@@ -987,7 +987,7 @@
   "mermaid-oval-pendant": {
    "forSale": true,
    "grams": 15,
-   "price": 60.0,
+   "price": 50.0,
    "sku": "WC-1901",
    "title": "Mermaid Oval Pendant",
    "type": "Pendant"
