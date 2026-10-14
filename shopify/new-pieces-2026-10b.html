@@ -1,0 +1,270 @@
+<title>New Pieces Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bungee&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+  :root{
+    --paper:#FBFAFC; --card:#FFFFFF; --ink:#221B2A; --ink-soft:#5C5368;
+    --rule:#E6E1EC; --rule-soft:#F0EDF4;
+    --pink:#D81B60; --blue:#0277BD; --lime:#558B2F; --orange:#E65100; --purple:#6A3FB5;
+    --flag-ink:#8A4B00; --flag-bg:#FDF2E0; --flag-edge:#E9C89A;
+    --pen:#B9B1C4;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#16121C; --card:#1E1926; --ink:#F0ECF5; --ink-soft:#A79DB4;
+      --rule:#332B3E; --rule-soft:#272132;
+      --pink:#FF7AA8; --blue:#63C8FF; --lime:#B6E86B; --orange:#FFA759; --purple:#B79BFF;
+      --flag-ink:#F5C77E; --flag-bg:#2E2212; --flag-edge:#5A431F;
+      --pen:#4A4256;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#16121C; --card:#1E1926; --ink:#F0ECF5; --ink-soft:#A79DB4;
+    --rule:#332B3E; --rule-soft:#272132;
+    --pink:#FF7AA8; --blue:#63C8FF; --lime:#B6E86B; --orange:#FFA759; --purple:#B79BFF;
+    --flag-ink:#F5C77E; --flag-bg:#2E2212; --flag-edge:#5A431F;
+    --pen:#4A4256;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:15px; line-height:1.5; margin:0; padding:32px 24px 64px;
+  }
+  .wrap{max-width:1000px; margin:0 auto}
+
+  header{display:flex; flex-wrap:wrap; align-items:flex-end; gap:20px 32px; margin-bottom:8px}
+  .wordmark{
+    font-family:"Bagel Fat One",Nunito,sans-serif; font-size:34px; line-height:1;
+    color:var(--pink); letter-spacing:.01em;
+  }
+  .sheet-name{font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin-top:8px}
+  .dateline{font-size:13px; color:var(--ink-soft); margin-left:auto; text-align:right}
+
+  .tally{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1px;
+    background:var(--rule); border:1px solid var(--rule); margin:24px 0 8px;
+  }
+  .tally div{background:var(--card); padding:12px 14px}
+  .tally .n{font-size:24px; font-weight:700; font-variant-numeric:tabular-nums; line-height:1.1}
+  .tally .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-top:3px}
+  .tally .flagged .n{color:var(--flag-ink)}
+
+  .toolbar{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:20px 0 28px}
+  button{
+    font-family:inherit; font-size:13px; font-weight:600; color:var(--ink);
+    background:var(--card); border:1px solid var(--rule); border-radius:2px;
+    padding:8px 14px; cursor:pointer;
+  }
+  button:hover{border-color:var(--ink-soft)}
+  button[aria-pressed="true"]{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+  button:focus-visible{outline:2px solid var(--pink); outline-offset:2px}
+  .hint{font-size:13px; color:var(--ink-soft); margin-left:4px}
+  a.btn{
+    font-size:13px; font-weight:600; color:var(--ink); text-decoration:none;
+    background:var(--card); border:1px solid var(--rule); border-radius:2px; padding:8px 14px;
+  }
+  a.btn:hover{border-color:var(--ink-soft)}
+  a.btn:focus-visible{outline:2px solid var(--pink); outline-offset:2px}
+  .printnote{
+    font-size:13px; line-height:1.6; color:var(--ink-soft); max-width:64ch;
+    margin:-14px 0 28px; padding:12px 14px;
+    background:var(--card); border:1px solid var(--rule); border-left:4px solid var(--pink);
+  }
+  .printnote a{color:var(--pink); font-weight:700}
+  kbd{
+    font-family:inherit; font-size:11.5px; font-weight:700; color:var(--ink);
+    background:var(--rule-soft); border:1px solid var(--rule); border-radius:3px; padding:1px 5px;
+  }
+
+  section{margin-top:34px; break-inside:auto}
+  h2{
+    font-family:Bungee,Nunito,sans-serif; font-weight:400; font-size:15px; letter-spacing:.06em;
+    margin:0 0 10px; padding-left:12px; border-left:5px solid var(--cat,var(--purple));
+    display:flex; align-items:baseline; gap:10px;
+  }
+  h2 .count{font-family:Nunito,sans-serif; font-size:12px; letter-spacing:.08em; color:var(--ink-soft)}
+  section[data-cat="Coasters"]{--cat:var(--lime)}
+  section[data-cat="Bowls and Platters"]{--cat:var(--blue)}
+  section[data-cat="Home Decor"]{--cat:var(--orange)}
+  section[data-cat="Pendant"]{--cat:var(--pink)}
+  section[data-cat="Earrings"]{--cat:var(--purple)}
+
+  .scroll{overflow-x:auto}
+  table{width:100%; border-collapse:collapse; font-size:13.5px}
+  thead th{
+    font-size:10.5px; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-soft);
+    font-weight:700; text-align:left; padding:0 8px 6px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  tbody td{padding:6px 8px; border-bottom:1px solid var(--rule-soft); vertical-align:baseline}
+  tbody tr:last-child td{border-bottom:1px solid var(--rule)}
+  .box{width:26px}
+  .box i{display:block; width:13px; height:13px; border:1.5px solid var(--pen); border-radius:2px}
+  .sku{font-variant-numeric:tabular-nums; color:var(--ink-soft); white-space:nowrap; width:74px}
+  .name{font-weight:600}
+  .num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .price{width:64px}
+  .onfile{width:76px}
+  .writein{width:96px; border-bottom:1.5px dotted var(--pen)}
+  .none{color:var(--flag-ink); background:var(--flag-bg); border:1px solid var(--flag-edge);
+        border-radius:2px; padding:1px 6px; font-size:11px; font-weight:700; letter-spacing:.04em}
+  .sold{color:var(--flag-ink); font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase}
+  tr.hide{display:none}
+  .empty{color:var(--ink-soft); font-style:italic; padding:8px 0; font-size:13px}
+
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--rule); font-size:12.5px; color:var(--ink-soft); max-width:62ch}
+  footer p{margin:0 0 8px}
+
+  @media print{
+    :root{
+      --paper:#fff; --card:#fff; --ink:#1a1520; --ink-soft:#5b5366;
+      --rule:#c9c3d1; --rule-soft:#e8e4ee; --pen:#9a93a5;
+      --pink:#b01650; --blue:#025c93; --lime:#416d23; --orange:#b84000; --purple:#553296;
+      --flag-ink:#7a4200; --flag-bg:#fff; --flag-edge:#b09166;
+    }
+    @page{size:letter portrait; margin:14mm}
+    body{padding:0; font-size:11pt}
+    .toolbar,.printnote,.dateline .live{display:none}
+    section{break-inside:auto; margin-top:20px}
+    h2{break-after:avoid}
+    thead{display:table-header-group}
+    tr{break-inside:avoid}
+    tbody td{padding:4px 6px}
+    .tally{margin:14px 0 4px}
+    footer{break-before:avoid}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark">We're Cured!</div>
+      <div class="sheet-name">New pieces &middot; October 2026 &middot; labels &amp; price tags</div>
+    </div>
+    <div class="dateline">
+      <div id="stamp"></div>
+      <div class="live">From the import files</div>
+    </div>
+  </header>
+
+  <div class="tally">
+    <div><div class="n" id="t-all">—</div><div class="k">Products</div></div>
+    <div class="flagged"><div class="n" id="t-missing">—</div><div class="k">No weight yet</div></div>
+    <div><div class="n" id="t-weighed">—</div><div class="k">Weight on file</div></div>
+    <div><div class="n" id="t-value">—</div><div class="k">Listed value</div></div>
+  </div>
+
+  <div class="toolbar">
+    <button id="f-all" aria-pressed="true">Everything</button>
+    <button id="f-miss" aria-pressed="false">Only missing a weight</button>
+    <a id="print" class="btn" href="#">Print</a>
+    <span class="hint" id="showing"></span>
+  </div>
+  <p class="printnote" id="printnote" hidden>
+    This sheet is sitting inside the Claude page, and browsers won't let it start a print from
+    there. <strong>Open it in its own tab</strong> — <a id="ownlink" href="#" target="_blank"
+    rel="noopener">open the stock sheet</a> — then press <kbd>&#8984;P</kbd> (<kbd>Ctrl</kbd>+<kbd>P</kbd>
+    on Windows). Whatever filter you've picked comes with it.
+    <br><br>Simpler still: there's a copy saved on your Mac at
+    <strong>website / werecured / shopify / stock-sheet.html</strong> &mdash; double-click that and
+    the Print button just works.
+  </p>
+
+  <div id="sheet"></div>
+
+  <footer><p>The 19 pieces from the second October batch (photos of 14 October). Tick each box as its label and price tag go on. To print, open this file from the shopify folder on the Mac and press the Print button.</p></footer>
+</div>
+
+<script id="data" type="application/json">[{"t": "Blue Lace Agate \u2014 Set of 5", "c": "Coasters", "s": "WC-4140", "p": 80.0, "g": 376, "a": true}, {"t": "Copper Moss Geode \u2014 Set of 5", "c": "Coasters", "s": "WC-4130", "p": 85.0, "g": 330, "a": true}, {"t": "Harvest Agate \u2014 Set of 5", "c": "Coasters", "s": "WC-4135", "p": 85.0, "g": 321, "a": true}, {"t": "Abalone Ripple Platter", "c": "Bowls and Platters", "s": "WC-4080", "p": 90.0, "g": 268, "a": true}, {"t": "Autumn Wreath Platter", "c": "Bowls and Platters", "s": "WC-4165", "p": 140.0, "g": 399, "a": true}, {"t": "Cinnamon Spark Tray", "c": "Bowls and Platters", "s": "WC-4110", "p": 65.0, "g": 206, "a": true}, {"t": "Falling Leaves Bowl", "c": "Bowls and Platters", "s": "WC-4115", "p": 150.0, "g": 564, "a": true}, {"t": "Flower Child Tray", "c": "Bowls and Platters", "s": "WC-4100", "p": 95.0, "g": 346, "a": true}, {"t": "Glacier Agate Tray", "c": "Bowls and Platters", "s": "WC-4095", "p": 130.0, "g": 650, "a": true}, {"t": "Hidden Cove Tray", "c": "Bowls and Platters", "s": "WC-4105", "p": 70.0, "g": 246, "a": true}, {"t": "Labradorite Tray", "c": "Bowls and Platters", "s": "WC-4090", "p": 110.0, "g": 469, "a": true}, {"t": "Starry Night Platter", "c": "Bowls and Platters", "s": "WC-4075", "p": 90.0, "g": 465, "a": true}, {"t": "Turning Leaf Bowl", "c": "Bowls and Platters", "s": "WC-4120", "p": 85.0, "g": 418, "a": true}, {"t": "Twilight Anemone Bowl", "c": "Bowls and Platters", "s": "WC-4085", "p": 80.0, "g": 265, "a": true}, {"t": "Beach Treasure Tealight Holder", "c": "Home Decor", "s": "WC-4150", "p": 85.0, "g": 160, "a": true}, {"t": "Bronze Leaf Dish", "c": "Home Decor", "s": "WC-4125", "p": 50.0, "g": 99, "a": true}, {"t": "Dryad Bust", "c": "Home Decor", "s": "WC-4160", "p": 45.0, "g": 61, "a": true}, {"t": "Meadow Lace Tealight Holder", "c": "Home Decor", "s": "WC-4145", "p": 55.0, "g": 120, "a": true}, {"t": "Seashell Ring Tealight Holder", "c": "Home Decor", "s": "WC-4155", "p": 55.0, "g": 115, "a": true}]</script>
+<script>
+(function(){
+  var rows = JSON.parse(document.getElementById('data').textContent);
+  var ORDER = ["Coasters","Bowls and Platters","Home Decor","Pendant","Earrings"];
+  var LABEL = {"Pendant":"Pendants","Earrings":"Earrings","Coasters":"Coasters",
+               "Bowls and Platters":"Bowls & Platters","Home Decor":"Home Decor"};
+  var esc = function(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+
+  var cats = [];
+  rows.forEach(function(r){ if(cats.indexOf(r.c)<0) cats.push(r.c); });
+  cats.sort(function(a,b){
+    var i=ORDER.indexOf(a), j=ORDER.indexOf(b);
+    return (i<0?99:i)-(j<0?99:j);
+  });
+
+  var html = cats.map(function(cat){
+    var items = rows.filter(function(r){ return r.c===cat; });
+    var miss = items.filter(function(r){ return r.g===null; }).length;
+    var body = items.map(function(r){
+      return '<tr'+(r.g===null?' data-miss="1"':'')+'>'
+        + '<td class="box"><i></i></td>'
+        + '<td class="sku">'+(r.s?esc(r.s):'&mdash;')+'</td>'
+        + '<td class="name">'+esc(r.t)+(r.a?'':' <span class="sold">sold out</span>')+'</td>'
+        + '<td class="num price">$'+r.p.toFixed(0)+'</td>'
+        + '<td class="num onfile">'+(r.g===null?'<span class="none">none</span>':r.g+' g')+'</td>'
+        + '<td class="writein"></td></tr>';
+    }).join('');
+    return '<section data-cat="'+esc(cat)+'">'
+      + '<h2>'+esc(LABEL[cat]||cat)+'<span class="count">'+items.length+' listed'
+      + (miss?' &middot; '+miss+' to weigh':'')+'</span></h2>'
+      + '<div class="scroll"><table><thead><tr>'
+      + '<th class="box"></th><th>SKU</th><th>Product</th>'
+      + '<th class="num price">Price</th><th class="num onfile">On file</th>'
+      + '<th class="num writein">Weighed</th></tr></thead>'
+      + '<tbody>'+body+'</tbody></table></div>'
+      + '<p class="empty" hidden>Nothing missing a weight in here.</p></section>';
+  }).join('');
+
+  document.getElementById('sheet').innerHTML = html;
+
+  var missing = rows.filter(function(r){ return r.g===null; }).length;
+  var value = rows.reduce(function(a,r){ return a+r.p; },0);
+  document.getElementById('t-all').textContent = rows.length;
+  document.getElementById('t-missing').textContent = missing;
+  document.getElementById('t-weighed').textContent = rows.length-missing;
+  document.getElementById('t-value').textContent = '$'+value.toLocaleString('en-CA');
+  document.getElementById('stamp').textContent = new Date().toLocaleDateString('en-CA',
+    {year:'numeric',month:'long',day:'numeric'});
+
+  var bAll=document.getElementById('f-all'), bMiss=document.getElementById('f-miss'),
+      note=document.getElementById('showing');
+  function apply(onlyMissing){
+    bAll.setAttribute('aria-pressed', String(!onlyMissing));
+    bMiss.setAttribute('aria-pressed', String(onlyMissing));
+    document.querySelectorAll('#sheet section').forEach(function(sec){
+      var shown=0;
+      sec.querySelectorAll('tbody tr').forEach(function(tr){
+        var hide = onlyMissing && tr.getAttribute('data-miss')!=='1';
+        tr.classList.toggle('hide', hide);
+        if(!hide) shown++;
+      });
+      sec.querySelector('.scroll').hidden = (shown===0);
+      sec.querySelector('.empty').hidden = (shown!==0);
+    });
+    note.textContent = onlyMissing
+      ? 'Showing the '+missing+' still to weigh.'
+      : 'Showing all '+rows.length+'.';
+  }
+  bAll.addEventListener('click', function(){ apply(false); });
+  bMiss.addEventListener('click', function(){ apply(true); });
+  var framed = (function(){ try{ return window.self !== window.top; }catch(e){ return true; } })();
+  var pBtn = document.getElementById('print'),
+      pNote = document.getElementById('printnote'),
+      pLink = document.getElementById('ownlink');
+  var CANON = 'https://claude.ai/code/artifact/a987bc2c-4d28-4343-bf95-e6baf78b8707';
+  pLink.href = CANON;
+  if(framed){
+    pBtn.textContent = 'How to print';
+    pBtn.setAttribute('href', CANON);
+    pBtn.setAttribute('target', '_blank');
+    pBtn.setAttribute('rel', 'noopener');
+    pBtn.addEventListener('click', function(){ pNote.hidden = false; });
+  } else {
+    pBtn.addEventListener('click', function(e){ e.preventDefault(); window.print(); });
+  }
+  apply(false);
+})();
+</script>
