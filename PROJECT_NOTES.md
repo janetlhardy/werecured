@@ -95,7 +95,7 @@ The Shivering Sheep.)_
 
 - [x] Two sets named, priced and written up ✅ (2026-10-14)
 - [x] Weights in: 170 g a set ✅
-- [ ] Import `shopify/new-products-2026-10c.csv`, drag in the folders from `batch-2026-10c/`, set Active
+- [x] Imported, photos added, both live and in stock ✅ (2026-10-14) — shop now at **228 products**
 - [ ] Add a photo with the lids on to each listing
 
 | Piece | SKU | Type | Weight | Price |
@@ -114,10 +114,10 @@ Next SKU: **WC-4180**.
 - [x] Photos in `werecured-product-photos/batch-2026-10b/`, one folder per piece ✅
 - [x] Tea light photos for last batch's six holders, in `batch-2026-10b/add-to-existing-tealight-holders/` ✅
 - [ ] Drag each of those six tea light photos into its holder's listing in Shopify
-- [ ] Import `shopify/new-products-2026-10b.csv` (18 products, saved as drafts)
-- [ ] Import `shopify/new-products-2026-10b-autumn-wreath.csv` (1 product — found late, so it has its own file)
-- [ ] Drag each piece's folder onto its Media box, then set all 18 to Active
-- [ ] Check all 18 show **in stock** after the import
+- [x] `shopify/new-products-2026-10b.csv` imported ✅
+- [x] `shopify/new-products-2026-10b-autumn-wreath.csv` imported ✅ (found late, so it has its own file)
+- [x] All 19 live with their photos ✅
+- [x] All 19 confirmed in stock ✅ (2026-10-14)
 - [x] More photos of Seashell Ring Tealight Holder, and a ruler shot of Glacier Agate Tray ✅
 - [ ] Confirm Seashell Ring's weight (115 g is an estimate based on the other small round holders)
 

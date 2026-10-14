@@ -1,5 +1,13 @@
 {
  "products": {
+  "abalone-ripple-platter": {
+   "forSale": true,
+   "grams": 268,
+   "price": 90.0,
+   "sku": "WC-4080",
+   "title": "Abalone Ripple Platter",
+   "type": "Bowls and Platters"
+  },
   "abalone-shell-bowl": {
    "forSale": true,
    "grams": 188,
@@ -104,6 +112,22 @@
    "title": "Autumn Jewel Tealight Holder",
    "type": "Home Decor"
   },
+  "autumn-wreath-platter": {
+   "forSale": true,
+   "grams": 399,
+   "price": 140.0,
+   "sku": "WC-4165",
+   "title": "Autumn Wreath Platter",
+   "type": "Bowls and Platters"
+  },
+  "beach-treasure-tealight-holder": {
+   "forSale": true,
+   "grams": 160,
+   "price": 85.0,
+   "sku": "WC-4150",
+   "title": "Beach Treasure Tealight Holder",
+   "type": "Home Decor"
+  },
   "beachcomber-bowl": {
    "forSale": true,
    "grams": 597,
@@ -160,6 +184,14 @@
    "title": "Blue Hibiscus Coasters \u2014 Set of 4",
    "type": "Coasters"
   },
+  "blue-lace-agate-set-of-5": {
+   "forSale": true,
+   "grams": 376,
+   "price": 80.0,
+   "sku": "WC-4140",
+   "title": "Blue Lace Agate \u2014 Set of 5",
+   "type": "Coasters"
+  },
   "blue-marble-set-of-4": {
    "forSale": true,
    "grams": 278,
@@ -207,6 +239,14 @@
    "sku": "WC-2129",
    "title": "Bronze Bubble Heart Pendant",
    "type": "Pendant"
+  },
+  "bronze-leaf-dish": {
+   "forSale": true,
+   "grams": 99,
+   "price": 50.0,
+   "sku": "WC-4125",
+   "title": "Bronze Leaf Dish",
+   "type": "Home Decor"
   },
   "bronze-nebula": {
    "forSale": true,
@@ -264,6 +304,14 @@
    "title": "Chrysanthemum Plate",
    "type": "Bowls and Platters"
   },
+  "cinnamon-spark-tray": {
+   "forSale": true,
+   "grams": 206,
+   "price": 65.0,
+   "sku": "WC-4110",
+   "title": "Cinnamon Spark Tray",
+   "type": "Bowls and Platters"
+  },
   "cobalt-bloom-set-of-4": {
    "forSale": true,
    "grams": 272,
@@ -303,6 +351,14 @@
    "sku": "WC-4035",
    "title": "Copper Lagoon Tealight Holder",
    "type": "Home Decor"
+  },
+  "copper-moss-geode-set-of-5": {
+   "forSale": true,
+   "grams": 330,
+   "price": 85.0,
+   "sku": "WC-4130",
+   "title": "Copper Moss Geode \u2014 Set of 5",
+   "type": "Coasters"
   },
   "copper-peacock-serving-board": {
    "forSale": true,
@@ -440,6 +496,14 @@
    "title": "Dark Coral Branch Oval",
    "type": "Pendant"
   },
+  "dryad-bust": {
+   "forSale": true,
+   "grams": 61,
+   "price": 45.0,
+   "sku": "WC-4160",
+   "title": "Dryad Bust",
+   "type": "Home Decor"
+  },
   "electric-blue-oval-earrings": {
    "forSale": true,
    "grams": 5,
@@ -528,6 +592,14 @@
    "title": "Everlasting Stone",
    "type": "Bowls and Platters"
   },
+  "falling-leaves-bowl": {
+   "forSale": true,
+   "grams": 564,
+   "price": 150.0,
+   "sku": "WC-4115",
+   "title": "Falling Leaves Bowl",
+   "type": "Bowls and Platters"
+  },
   "fiesta-set-of-4": {
    "forSale": true,
    "grams": 190,
@@ -543,6 +615,14 @@
    "sku": "WC-3930",
    "title": "Firework Trinket Dish",
    "type": "Home Decor"
+  },
+  "flower-child-tray": {
+   "forSale": true,
+   "grams": 346,
+   "price": 95.0,
+   "sku": "WC-4100",
+   "title": "Flower Child Tray",
+   "type": "Bowls and Platters"
   },
   "flower-power-hands-pair": {
    "forSale": true,
@@ -656,6 +736,14 @@
    "title": "Gilded Petal Set of 4",
    "type": "Coasters"
   },
+  "glacier-agate-tray": {
+   "forSale": true,
+   "grams": 650,
+   "price": 130.0,
+   "sku": "WC-4095",
+   "title": "Glacier Agate Tray",
+   "type": "Bowls and Platters"
+  },
   "glacier-wave-bowl": {
    "forSale": true,
    "grams": 297,
@@ -728,6 +816,22 @@
    "title": "Gumball Galaxy \u2014 Set of 4",
    "type": "Coasters"
   },
+  "harvest-agate-set-of-5": {
+   "forSale": true,
+   "grams": 321,
+   "price": 85.0,
+   "sku": "WC-4135",
+   "title": "Harvest Agate \u2014 Set of 5",
+   "type": "Coasters"
+  },
+  "hidden-cove-tray": {
+   "forSale": true,
+   "grams": 246,
+   "price": 70.0,
+   "sku": "WC-4105",
+   "title": "Hidden Cove Tray",
+   "type": "Bowls and Platters"
+  },
   "honey-bee-earrings": {
    "forSale": true,
    "grams": 5,
@@ -767,6 +871,14 @@
    "sku": "WC-3117",
    "title": "Jade Geode Set of 4",
    "type": "Coasters"
+  },
+  "labradorite-tray": {
+   "forSale": true,
+   "grams": 469,
+   "price": 110.0,
+   "sku": "WC-4090",
+   "title": "Labradorite Tray",
+   "type": "Bowls and Platters"
   },
   "lagoon-geode-set-of-4": {
    "forSale": true,
@@ -855,6 +967,14 @@
    "sku": "WC-3166",
    "title": "Meadow Blossom Set of 4",
    "type": "Coasters"
+  },
+  "meadow-lace-tealight-holder": {
+   "forSale": true,
+   "grams": 120,
+   "price": 55.0,
+   "sku": "WC-4145",
+   "title": "Meadow Lace Tealight Holder",
+   "type": "Home Decor"
   },
   "mermaid-geode-set-of-4": {
    "forSale": true,
@@ -1352,6 +1472,14 @@
    "title": "Seashell Lantern",
    "type": "Home Decor"
   },
+  "seashell-ring-tealight-holder": {
+   "forSale": true,
+   "grams": 115,
+   "price": 55.0,
+   "sku": "WC-4155",
+   "title": "Seashell Ring Tealight Holder",
+   "type": "Home Decor"
+  },
   "shimmer-bloom-set-of-4": {
    "forSale": true,
    "grams": 325,
@@ -1424,6 +1552,14 @@
    "title": "Stained Glass Serving Board",
    "type": "Bowls and Platters"
   },
+  "staphylaurenis-petri-dish-coasters-set-of-4": {
+   "forSale": true,
+   "grams": 170,
+   "price": 50.0,
+   "sku": "WC-4175",
+   "title": "Staphylaurenis \u2014 Petri Dish Coasters, Set of 4",
+   "type": "Coasters"
+  },
   "starfish-cove-tealight-holder": {
    "forSale": true,
    "grams": 83,
@@ -1440,6 +1576,14 @@
    "title": "Starfish Oval",
    "type": "Pendant"
   },
+  "starry-night-platter": {
+   "forSale": true,
+   "grams": 465,
+   "price": 90.0,
+   "sku": "WC-4075",
+   "title": "Starry Night Platter",
+   "type": "Bowls and Platters"
+  },
   "stone-geode-set-of-4": {
    "forSale": true,
    "grams": 536,
@@ -1454,6 +1598,14 @@
    "price": 50.0,
    "sku": "WC-3182",
    "title": "Stormcloud Geode Set of 4",
+   "type": "Coasters"
+  },
+  "streptolaurenis-petri-dish-coasters-set-of-4": {
+   "forSale": true,
+   "grams": 170,
+   "price": 50.0,
+   "sku": "WC-4170",
+   "title": "Streptolaurenis \u2014 Petri Dish Coasters, Set of 4",
    "type": "Coasters"
   },
   "sunflower-set-of-4": {
@@ -1560,6 +1712,22 @@
    "title": "Tropical Storm Set of 4",
    "type": "Coasters"
   },
+  "turning-leaf-bowl": {
+   "forSale": true,
+   "grams": 418,
+   "price": 85.0,
+   "sku": "WC-4120",
+   "title": "Turning Leaf Bowl",
+   "type": "Bowls and Platters"
+  },
+  "twilight-anemone-bowl": {
+   "forSale": true,
+   "grams": 265,
+   "price": 80.0,
+   "sku": "WC-4085",
+   "title": "Twilight Anemone Bowl",
+   "type": "Bowls and Platters"
+  },
   "twilight-bloom": {
    "forSale": true,
    "grams": 247,
@@ -1657,5 +1825,5 @@
    "type": "Bowls and Platters"
   }
  },
- "taken": "2026-10-08"
+ "taken": "2026-10-14"
 }
