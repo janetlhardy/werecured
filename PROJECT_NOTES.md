@@ -91,6 +91,23 @@ The Shivering Sheep.)_
 - [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
+### New Pieces — Petri dish coasters (`2026-10c`)
+
+- [x] Two sets named, priced and written up ✅ (2026-10-14)
+- [ ] Send Claude the weight of each set (they're blank in the file until then)
+- [ ] Import `shopify/new-products-2026-10c.csv`, drag in the folders from `batch-2026-10c/`, set Active
+- [ ] Add a photo with the lids on to each listing
+
+| Piece | SKU | Type | Weight | Price |
+|---|---|---|---|---|
+| Streptolaurenis — Petri Dish Coasters, Set of 4 (black colonies) | WC-4170 | Coasters | — | $50 |
+| Staphylaurenis — Petri Dish Coasters, Set of 4 (white colonies) | WC-4175 | Coasters | — | $50 |
+
+Poured in real lab petri dishes, each with its lid. Two pours plus UV resin for the "bacteria",
+sealed under a clear top coat, so they work as coasters. The idea came from Janet's niece **Lauren**,
+and the names are in her honour. Kept at $50 because most buyers will be Lauren's fellow students.
+Next SKU: **WC-4180**.
+
 ### New Pieces — October 2026, second batch (`2026-10b`)
 
 - [x] 123 photos sorted into 18 new pieces, named, weighed and priced ✅ (2026-10-14)
