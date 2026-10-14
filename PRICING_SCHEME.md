@@ -143,6 +143,19 @@ anything unusual.
 
 ---
 
+## Lessons from Janet's October 2026 pricing
+
+- **Cheap inclusions don't earn a price step.** Crystal centres on the agate coaster sets are small
+  stones that cost very little, so a set without them isn't worth less: Blue Lace Agate (no
+  crystals) sits at $80 with the crystal sets at $85. Price the *work*, not the sparkle.
+- **Fiddly counts as much as pours.** Falling Leaves Bowl took fewer pours than Beachcomber ($175),
+  but placing every leaf took patience, so it sits at $150 — close behind, not far below.
+- **Small pieces stay small, however much is in them.** Hidden Cove has sand, shells, a starfish and
+  a pearl, but it's a small tray, so it prices alongside Cinnamon Spark ($65) at $70.
+- **Same-kind pieces share a price.** Starry Night went to $90 to match the other big round platters.
+
+---
+
 ## Sets of two are a deliberate size, not a leftover
 
 Not everyone wants four coasters (Janet, 2026-09-11). A **pair of standard coasters at $40** is a

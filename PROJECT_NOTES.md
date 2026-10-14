@@ -91,6 +91,44 @@ The Shivering Sheep.)_
 - [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
+### New Pieces — October 2026, second batch (`2026-10b`)
+
+- [x] 123 photos sorted into 18 new pieces, named, weighed and priced ✅ (2026-10-14)
+- [x] Photos in `werecured-product-photos/batch-2026-10b/`, one folder per piece ✅
+- [x] Tea light photos for last batch's six holders, in `batch-2026-10b/add-to-existing-tealight-holders/` ✅
+- [ ] Drag each of those six tea light photos into its holder's listing in Shopify
+- [ ] Import `shopify/new-products-2026-10b.csv` (18 products, saved as drafts)
+- [ ] Drag each piece's folder onto its Media box, then set all 18 to Active
+- [ ] Check all 18 show **in stock** after the import
+- [ ] More photos of Seashell Ring Tealight Holder (it has one so far), and a ruler shot of Glacier Agate Tray
+- [ ] Confirm Seashell Ring's weight (115 g is an estimate based on the other small round holders)
+
+| Piece | SKU | Type | Weight | Price |
+|---|---|---|---|---|
+| Starry Night Platter | WC-4075 | Bowls and Platters | 465 g | $90 |
+| Abalone Ripple Platter | WC-4080 | Bowls and Platters | 268 g | $90 |
+| Twilight Anemone Bowl | WC-4085 | Bowls and Platters | 265 g | $80 |
+| Labradorite Tray | WC-4090 | Bowls and Platters | 469 g | $110 |
+| Glacier Agate Tray | WC-4095 | Bowls and Platters | 650 g | $130 |
+| Flower Child Tray | WC-4100 | Bowls and Platters | 346 g | $95 |
+| Hidden Cove Tray | WC-4105 | Bowls and Platters | 246 g | $70 |
+| Cinnamon Spark Tray | WC-4110 | Bowls and Platters | 206 g | $65 |
+| Falling Leaves Bowl | WC-4115 | Bowls and Platters | 564 g | $150 |
+| Turning Leaf Bowl | WC-4120 | Bowls and Platters | 418 g | $85 |
+| Bronze Leaf Dish | WC-4125 | Home Decor | 99 g | $50 |
+| Copper Moss Geode — Set of 5 | WC-4130 | Coasters | 330 g | $85 |
+| Harvest Agate — Set of 5 | WC-4135 | Coasters | 321 g | $85 |
+| Blue Lace Agate — Set of 5 | WC-4140 | Coasters | 376 g | $80 |
+| Meadow Lace Tealight Holder | WC-4145 | Home Decor | 120 g | $55 |
+| Beach Treasure Tealight Holder | WC-4150 | Home Decor | 160 g | $75 |
+| Seashell Ring Tealight Holder | WC-4155 | Home Decor | ~115 g | $55 |
+| Dryad Bust | WC-4160 | Home Decor | 61 g | $45 |
+
+**Dryad Bust** is the first piece from Janet's new **bust mould**. **Meadow Lace** is ocean spray
+from Janet's own garden. **Beach Treasure** is the middle size of three sea-themed square holders
+(Starfish Cove small, Seashell Lantern large). The three coaster sets each have **five** coasters.
+How Janet settled these prices is written up in `PRICING_SCHEME.md`. Next SKU: **WC-4165**.
+
 ### New Pieces — October 2026 batch (`2026-10`)
 
 - [x] 99 photos sorted into 14 pieces, named, weighed and priced ✅ (2026-10-06)
