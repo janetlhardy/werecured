@@ -98,9 +98,10 @@ The Shivering Sheep.)_
 - [x] Tea light photos for last batch's six holders, in `batch-2026-10b/add-to-existing-tealight-holders/` ✅
 - [ ] Drag each of those six tea light photos into its holder's listing in Shopify
 - [ ] Import `shopify/new-products-2026-10b.csv` (18 products, saved as drafts)
+- [ ] Import `shopify/new-products-2026-10b-autumn-wreath.csv` (1 product — found late, so it has its own file)
 - [ ] Drag each piece's folder onto its Media box, then set all 18 to Active
 - [ ] Check all 18 show **in stock** after the import
-- [ ] More photos of Seashell Ring Tealight Holder (it has one so far), and a ruler shot of Glacier Agate Tray
+- [x] More photos of Seashell Ring Tealight Holder, and a ruler shot of Glacier Agate Tray ✅
 - [ ] Confirm Seashell Ring's weight (115 g is an estimate based on the other small round holders)
 
 | Piece | SKU | Type | Weight | Price |
@@ -123,11 +124,14 @@ The Shivering Sheep.)_
 | Beach Treasure Tealight Holder | WC-4150 | Home Decor | 160 g | $75 |
 | Seashell Ring Tealight Holder | WC-4155 | Home Decor | ~115 g | $55 |
 | Dryad Bust | WC-4160 | Home Decor | 61 g | $45 |
+| Autumn Wreath Platter | WC-4165 | Bowls and Platters | 399 g | $140 |
 
 **Dryad Bust** is the first piece from Janet's new **bust mould**. **Meadow Lace** is ocean spray
 from Janet's own garden. **Beach Treasure** is the middle size of three sea-themed square holders
 (Starfish Cove small, Seashell Lantern large). The three coaster sets each have **five** coasters.
-How Janet settled these prices is written up in `PRICING_SCHEME.md`. Next SKU: **WC-4165**.
+**Autumn Wreath Platter** was poured free-hand, shaped into a tray, and took three pours — priced
+near Golden Bough and Falling Leaves ($150). Dryad Bust's veining is natural, not painted.
+How Janet settled these prices is written up in `PRICING_SCHEME.md`. Next SKU: **WC-4170**.
 
 ### New Pieces — October 2026 batch (`2026-10`)
 
