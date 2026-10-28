@@ -16,6 +16,7 @@ printer can trim it cleanly.
 | `booth-banner.jpg` | Same banner as an image, if a site won't take the PDF | 72 × 24 in | — |
 | `booth-banner.html` | Editable source for the banner | 72 × 24 in | — |
 | `table-sign.pdf` | Table sign with the QR code | 5 × 7 in | 5 × 7 flat card, or print at home on card stock |
+| `price-signs.pdf` | 2 pages: Spilled Wine & Coffee ($45), wine stoppers ($35/$30/$25) | 8.5 × 11 in | Print at home, letter paper, for the 8.5 × 11 acrylic holders |
 | `jewellery-card.pdf` | Tent card for pieces that aren't listed online | stands 5 × 3.5 in | Print at home, trim and fold |
 
 The `.html` files are the editable source. The `.png` files are just quick previews to look at.

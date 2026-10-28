@@ -165,6 +165,19 @@ formula. The $45–70 band in the tiers table above is the market range, not the
 
 ---
 
+## Show pricing, October 2026 — cheap materials don't mean a cheap price
+
+- **Spilled Wine and Spilled Coffee are $45 each.** The materials are under $5 (a dollar-store glass
+  or a paper cup and about 30 ml of resin), but the formula still gives about $70 once the
+  hands-on time is counted. The skill is in matching the colour and making the spill; the lid on
+  the coffee also has to cure first so it can sit on top. Janet felt $45 was already a lot, so it
+  stayed there, and the show will tell us more.
+- **Wine stoppers come in three prices by fiddliness:** flowers & dandelions $35, seashells $30,
+  colour pours $25. Size and materials barely differ; the work does. The same idea applies to
+  earrings, where the tiny-flower pairs are more work than the big ones.
+
+---
+
 ## Sets of two are a deliberate size, not a leftover
 
 Not everyone wants four coasters (Janet, 2026-09-11). A **pair of standard coasters at $40** is a

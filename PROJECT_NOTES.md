@@ -193,6 +193,12 @@ out of the shop on purpose so no one could buy them by mistake. Leave them out.
 with resin are all one piece, and the lid works as a real coaster. It has no logo, so it *could* be
 listed, but it's delicate and needs a big box despite weighing 53 g. It's a great conversation
 piece for the table.
+Priced at **$45** on 2026-10-28, the same as Spilled Wine, and they share a sign on the back table.
+
+**Wine bottle stoppers (show-only for now, not on the website):** about 20, resin tops Janet moulds
+onto bought metal stoppers with rubber rings (~$1 each). Priced in three groups by how fiddly they
+are: **flowers & dandelions $35** (two pours plus about 20 min to attach and sand), **seashells $30**,
+**colour pours $25**. The sign is `print-materials/price-signs.pdf`.
 
 ### New Pieces — September 2026 batch (`2026-09c`)
 

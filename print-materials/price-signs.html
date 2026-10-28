@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8" />
+<title>We're Cured! Price Signs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bungee&family=Righteous&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --hot-pink:#FF2D78; --electric:#00D4FF; --lime:#A8FF3E;
+    --orange:#FF6B1A;  --purple:#BF5AF2;  --yellow:#FFE600;
+    --dark:#1A001F;    --white:#FFFFFF;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Letter, to fit Janet's 8.5 x 11 acrylic holders. No bleed: these are printed at home. */
+  @page{ size:8.5in 11in; margin:0; }
+
+  .sign{
+    position:relative; width:8.5in; height:11in; overflow:hidden;
+    background:var(--dark); color:var(--white);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; font-family:'Nunito',sans-serif;
+    page-break-after:always;
+  }
+  .sign:last-of-type{ page-break-after:auto; }
+  .safe{ position:relative; z-index:3; padding:0 .45in; width:5.25in; }
+  /* the layout is drawn at 5 x 7 scale and enlarged to fill letter paper */
+  .safe{ zoom:1.62; }
+
+  /* the resin-pour wash from Version B of the QR sign, so the signs read as a set */
+  .wash::before,.wash::after{
+    content:""; position:absolute; width:7.2in; height:7.2in; border-radius:50%;
+    z-index:0; pointer-events:none;
+  }
+  .wash::before{ top:-3.7in; left:-2.5in;
+    background:radial-gradient(circle, rgba(191,90,242,.55) 0%, rgba(255,45,120,.34) 38%,
+      rgba(255,45,120,.12) 58%, rgba(255,45,120,0) 74%); }
+  .wash::after{ bottom:-3.7in; right:-2.2in;
+    background:radial-gradient(circle, rgba(0,212,255,.45) 0%, rgba(168,255,62,.28) 38%,
+      rgba(168,255,62,.10) 58%, rgba(168,255,62,0) 74%); }
+
+  .kicker{
+    font-family:'Righteous',cursive; font-size:12pt; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--electric);
+  }
+  /* gradient clipped to text needs inline-block, or it only picks up the middle */
+  .title{
+    font-family:'Bungee',cursive; font-size:38pt; line-height:1; margin-top:6pt;
+    display:inline-block;
+    background:linear-gradient(92deg,#FF2D78 5%,#FF6B1A 30%,#FFE600 55%,#A8FF3E 80%,#00D4FF 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 1px 2px rgba(0,0,0,.95)) drop-shadow(0 3px 10px rgba(0,0,0,.6));
+  }
+  .title.small{ font-size:30pt; }
+  .rule{
+    width:2.6in; height:4px; margin:11pt auto 0; border-radius:4px;
+    background:linear-gradient(90deg,var(--hot-pink),var(--orange),var(--yellow),
+                                     var(--lime),var(--electric),var(--purple));
+  }
+  .pitch{
+    font-weight:800; font-size:12pt; line-height:1.45; margin-top:13pt;
+
+  }
+  .pitch b{ color:var(--yellow); }
+
+  .bigprice{
+    font-family:'Bungee',cursive; font-size:54pt; line-height:1; margin-top:16pt;
+    color:var(--yellow);
+  }
+  .each{
+    font-family:'Righteous',cursive; font-size:13pt; letter-spacing:.14em;
+    text-transform:uppercase; margin-top:3pt; color:var(--white);
+  }
+
+  .callout{
+    margin-top:16pt; padding:11pt 14pt; border-radius:.14in;
+    border:2px solid var(--lime); background:rgba(26,0,31,.55);
+    font-weight:800; font-size:11.5pt; line-height:1.4;
+  }
+  .callout .head{
+    font-family:'Righteous',cursive; font-size:12pt; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--lime); display:block; margin-bottom:3pt;
+  }
+
+  /* price list for the stoppers */
+  .tiers{ margin-top:16pt; text-align:left; }
+  .tier{
+    display:flex; align-items:center; gap:12pt; padding:9pt 0;
+    border-bottom:1px dashed rgba(255,255,255,.28);
+  }
+  .tier:last-child{ border-bottom:none; }
+  /* dots double as a key if Janet uses coloured dot stickers on the bottoms */
+  .dot{ flex:none; width:.36in; height:.36in; border-radius:50%;
+        box-shadow:0 0 0 2px rgba(255,255,255,.85); }
+  .dot.green{ background:#3DCB4B; } .dot.blue{ background:#2A7DE1; } .dot.yellow{ background:#FFE600; }
+  .what{ flex:1; }
+  .what b{ font-family:'Righteous',cursive; font-weight:400; font-size:14pt; display:block; }
+  .what span{ font-weight:600; font-size:10pt; color:rgba(255,255,255,.82); }
+  .amt{ font-family:'Bungee',cursive; font-size:24pt; color:var(--yellow); }
+
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; font-size:20pt; line-height:1; margin-top:18pt;
+    display:inline-block;
+    background:linear-gradient(92deg,#FF2D78 5%,#FFE600 35%,#A8FF3E 55%,#00D4FF 78%,#BF5AF2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 1px 2px rgba(0,0,0,.95));
+  }
+
+  /* ---- screen preview only ---- */
+  @media screen{
+    body{ background:#2b2b2e; padding:26px 30px 60px; font-family:'Nunito',sans-serif; color:#eee; }
+    .sheet{ max-width:860px; margin:0 auto; }
+    .notes{ line-height:1.55; font-size:14px; margin-bottom:24px; }
+    .notes h1{ font-family:'Righteous',cursive; font-size:22px; color:#fff; margin-bottom:10px; }
+    .notes p{ margin:.55em 0; }
+    .pair{ display:flex; gap:34px; flex-wrap:wrap; }
+    .cap{ margin:0 0 9px; }
+    .cap b{ font-family:'Righteous',cursive; font-size:28px; color:#fff; }
+    .sign{ box-shadow:0 10px 34px rgba(0,0,0,.6); }
+    .one{ zoom:.40; }
+  }
+  @media print{ .notes,.cap{ display:none !important; } body{ background:#fff; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="notes">
+  <h1>Price signs — 8½″ × 11″</h1>
+  <p>Two table signs for the November show, made to match the dark QR table sign: one for the
+     Spilled Wine and Spilled Coffee on the back table, one for the wine bottle stoppers.
+     Letter size, for the 8½ × 11 acrylic holders.</p>
+  <p>The coloured dots on the stopper sign work either way: as a key if you put matching dot
+     stickers on the bottoms, or just as decoration if you group the stoppers by price.</p>
+  <p><b>To print at home:</b> open <b>price-signs.pdf</b> → File → Print → Paper <b>Letter</b> →
+     Scale <b>Fit to page</b> → print on card stock or plain paper. Most home printers leave a
+     thin white edge; the holder's frame hides it, or trim it off if you like.</p>
+</div>
+
+<div class="pair">
+
+  <div class="one">
+    <div class="cap"><b>Spilled Wine &amp; Coffee</b></div>
+    <div class="sign wash">
+      <div class="safe">
+        <div class="kicker">Oops!</div>
+        <div class="title">Spilled</div>
+        <div class="rule"></div>
+        <div class="pitch">Wine &amp; coffee, caught mid-spill.<br>
+          <b>Nothing's wet &mdash; it's all solid resin.</b></div>
+        <div class="callout"><span class="head">Fun &amp; functional</span>
+          The coffee lid lifts off &mdash;<br>it's a real coaster you can use!</div>
+        <div class="bigprice">$45</div>
+        <div class="each">each</div>
+        <div class="wordmark">We're Cured!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="one">
+    <div class="cap"><b>Wine stoppers</b></div>
+    <div class="sign wash">
+      <div class="safe">
+        <div class="kicker">Handmade resin</div>
+        <div class="title small">Wine Stoppers</div>
+        <div class="rule"></div>
+        <div class="pitch">Every one is one of a kind.<br><b>A perfect hostess gift!</b></div>
+        <div class="tiers">
+          <div class="tier"><div class="dot green"></div>
+            <div class="what"><b>Flowers &amp; dandelions</b><span>real dried flowers, poured in layers</span></div>
+            <div class="amt">$35</div></div>
+          <div class="tier"><div class="dot blue"></div>
+            <div class="what"><b>Seashells</b><span>real shells set in resin</span></div>
+            <div class="amt">$30</div></div>
+          <div class="tier"><div class="dot yellow"></div>
+            <div class="what"><b>Colour pours</b><span>swirls, shimmer &amp; colour</span></div>
+            <div class="amt">$25</div></div>
+        </div>
+        <div class="wordmark">We're Cured!</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
