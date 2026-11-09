@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8" />
+<title>We're Cured! Booth Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --hot-pink:#FF2D78; --electric:#00B8E0; --lime:#5DBB1F;
+    --orange:#FF6B1A;  --purple:#9B3FD1;  --yellow:#FFE600;
+    --dark:#1A001F;    --ink:#2a2230;    --soft:#6b6270;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Printed at home on letter paper, so it's mostly white to save ink */
+  @page{ size:8.5in 11in; margin:.55in .6in; }
+
+  body{ font-family:'Nunito',sans-serif; color:var(--ink); font-size:10.5pt; line-height:1.4; }
+  @media screen{ body{ background:#e9e6ec; } .page{ background:#fff; max-width:8.5in; margin:24px auto;
+    padding:.55in .6in; box-shadow:0 6px 24px rgba(0,0,0,.18); } }
+
+  header{ text-align:center; margin-bottom:14pt; }
+  /* letter-by-letter colours: a gradient clipped to text renders badly in Chrome's PDF output */
+  .wordmark{ font-family:'Bagel Fat One',cursive; font-size:28pt; line-height:1; }
+  h1{ font-family:'Righteous',cursive; font-weight:400; font-size:15pt; letter-spacing:.12em;
+      text-transform:uppercase; margin-top:4pt; }
+  .rule{ width:3in; height:4px; margin:8pt auto 0; border-radius:4px;
+    background:linear-gradient(90deg,var(--hot-pink),var(--orange),var(--yellow),
+                                     var(--lime),var(--electric),var(--purple)); }
+  .intro{ max-width:6.2in; margin:9pt auto 0; color:var(--soft); font-size:10pt; }
+
+  section{ margin-top:13pt; }
+  h2{ font-family:'Righteous',cursive; font-weight:400; font-size:13pt; letter-spacing:.06em;
+      text-transform:uppercase; padding-bottom:3pt; margin-bottom:5pt; border-bottom:2px solid;
+      break-after:avoid; }
+  section:nth-of-type(6n+1) h2{ color:var(--hot-pink); }
+  section:nth-of-type(6n+2) h2{ color:var(--orange); }
+  section:nth-of-type(6n+3) h2{ color:var(--lime); }
+  section:nth-of-type(6n+4) h2{ color:var(--electric); }
+  section:nth-of-type(6n+5) h2{ color:var(--purple); }
+  section:nth-of-type(6n+6) h2{ color:var(--hot-pink); }
+
+  ul{ list-style:none; }
+  li{ position:relative; padding:2.5pt 0 2.5pt 20pt; break-inside:avoid; }
+  li::before{ content:""; position:absolute; left:0; top:4.5pt; width:10pt; height:10pt;
+              border:1.5px solid var(--ink); border-radius:2.5px; }
+  li b{ font-weight:800; }
+  li .why{ color:var(--soft); }
+
+  .tip{ margin-top:6pt; padding:7pt 10pt; border-left:4px solid var(--yellow);
+        background:#fffbe0; font-size:10pt; }
+  .tip b{ font-weight:800; }
+  .newpage{ break-before:page; }
+  footer{ margin-top:16pt; text-align:center; color:var(--soft); font-size:9pt; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div class="wordmark"><span style="color:#FF2D78">W</span><span style="color:#FF4560">e</span><span style="color:#FF6B1A">'</span><span style="color:#FF6B1A">r</span><span style="color:#F59A00">e</span> <span style="color:#D9B800">C</span><span style="color:#8CC21A">u</span><span style="color:#5DBB1F">r</span><span style="color:#00B8E0">e</span><span style="color:#5A7BE6">d</span><span style="color:#9B3FD1">!</span></div>
+  <h1>Show &amp; Booth Checklist</h1>
+  <div class="rule"></div>
+  <p class="intro">Everything learned from the November 2026 gift show, in one place.
+     The big idea: <b>show less, light it well, and let the colours glow against black.</b>
+     Space around a piece tells people it's art.</p>
+</header>
+
+<section>
+  <h2>Before you book a show</h2>
+  <ul>
+    <li><b>Ask the organiser how many people came last year</b> <span class="why">and what sort of things sold.</span></li>
+    <li><b>Ask what the other vendors sell.</b> <span class="why">Lots of food, kits and resale = a bargain crowd.</span></li>
+    <li><b>Ask other vendors how it went for them</b> <span class="why">&mdash; they'll usually be honest.</span></li>
+    <li><b>Visit as a shopper first</b> if you can. <span class="why">Look at the lighting, and whether people are carrying bags out.</span></li>
+    <li><b>Ask if booth fabric has to be flame-retardant.</b></li>
+    <li><b>Ask if there's power at the booth</b> <span class="why">(and whether it costs extra), and how far the outlet is.</span></li>
+    <li><b>Ask for a booth on a busy aisle or a corner</b> if they let you choose.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>To buy or gather</h2>
+  <ul>
+    <li><b>Black matte fabric for behind each rack</b> <span class="why">&mdash; black queen flat sheets work. Flame-retardant if the show asks.</span></li>
+    <li><b>Big binder clips or bulldog clips</b> and <b>zip ties</b> <span class="why">(plus scissors to cut the ties).</span></li>
+    <li><b>Black matte tablecloth that reaches the floor</b> <span class="why">&mdash; not satin, not white.</span></li>
+    <li><b>3&ndash;4 warm LED clip-on lights</b> <span class="why">(not white work lamps), an extension cord and a power bar.</span></li>
+    <li><b>Battery LED puck lights</b> <span class="why">to tuck under or behind see-through pieces so they glow.</span></li>
+    <li><b>LED light pad</b> <span class="why">(tracing / diamond-painting kind) to backlight a few pendants.</span></li>
+    <li><b>5&ndash;6 empty wine bottles</b> <span class="why">&mdash; a mix of colours. Soak the labels off, or keep pretty ones.</span></li>
+    <li><b>2&ndash;3 more busts or necklace stands</b> <span class="why">at different heights.</span></li>
+    <li><b>Plate stands and small risers</b> <span class="why">so flat pieces stand up instead of lying down.</span></li>
+    <li><b>A small mirror</b> for trying on pendants.</li>
+    <li><b>Plastic bins that fit under the table</b> for back stock.</li>
+    <li><b>Coloured dot stickers</b> <span class="why">(green, blue, yellow) for the bottoms of the wine stoppers.</span></li>
+    <li><b>UV flashlight and a small dark box</b> <span class="why">&mdash; &ldquo;peek inside to see them glow!&rdquo; for the Monster Splats.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Packing the stock</h2>
+  <ul>
+    <li><b>Pick 3&ndash;5 &ldquo;hero&rdquo; pieces</b> <span class="why">&mdash; the showstoppers that pull people in from the aisle.</span></li>
+    <li><b>Bring about half of everything</b>, and plan to put out only a third of that.</li>
+    <li><b>One of each coaster style on display</b>, <span class="why">the rest boxed underneath.</span></li>
+    <li><b>Choose 20&ndash;30 pendants to display</b>, <span class="why">the rest in a box to refill from.</span></li>
+    <li><b>Pack the Monster Splats</b> <span class="why">&mdash; they were the biggest crowd-pleaser.</span></li>
+    <li><b>Signs:</b> QR table sign, Spilled sign, wine stopper sign, and an &ldquo;All pendants $50&rdquo; sign.</li>
+    <li><b>Business cards</b>, bags, tissue, gift tags, tape, pen, notebook.</li>
+    <li><b>Phone charged</b>, charger, card reader, cash float.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Setting up</h2>
+  <ul>
+    <li><b>Table at the front or along one side</b> <span class="why">(an L-shape), so people can browse from the aisle without stepping in.</span></li>
+    <li><b>Jewellery closest to the aisle</b> <span class="why">&mdash; small, detailed pieces need to be up close.</span></li>
+    <li><b>Black fabric behind every rack</b>, <span class="why">reaching the floor to hide back stock.</span></li>
+    <li><b>Heroes at eye level</b>, <span class="why">with space around each one and a light on it.</span></li>
+    <li><b>Group by colour or theme</b> <span class="why">&mdash; blues and oceans together, autumn and sunflowers together, pinks together.</span></li>
+    <li><b>Leave gaps on every shelf.</b> <span class="why">If a shelf looks full, take something off.</span></li>
+    <li><b>Nothing on the floor.</b> <span class="why">Anything at foot level looks like overflow.</span></li>
+    <li><b>Pendants hanging from the resin hands</b>, a few on busts, a few backlit on the light pad.</li>
+    <li><b>Wine stoppers: a few in bottles, the rest in one of your own bowls</b> <span class="why">with the sign beside them.</span></li>
+    <li><b>Puck lights under the see-through pieces</b>, clip lights aimed at the shelves.</li>
+    <li><b>Price on everything</b>, <span class="why">and signs where one price covers a group.</span></li>
+    <li><b>Walk out into the aisle and look from 10 feet away.</b> <span class="why">What catches your eye first? Is it a hero piece?</span></li>
+    <li><b>Take booth photos</b> before the doors open.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>During the show</h2>
+  <ul>
+    <li><b>Refill from the bins</b> as things sell <span class="why">&mdash; keep the gaps.</span></li>
+    <li><b>Stand, and say hello</b> to anyone who stops.</li>
+    <li><b>Jot down what people pick up</b> and anything they say about prices.</li>
+    <li><b>Hand a card to everyone who lingers</b> <span class="why">&mdash; &ldquo;we ship anywhere in Canada.&rdquo;</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Afterwards</h2>
+  <ul>
+    <li><b>List what sold</b>, to whom, and at what price.</li>
+    <li><b>Note what got the most attention</b>, even if it didn't sell.</li>
+    <li><b>Post the crowd favourites on Instagram</b> <span class="why">so people who took a card can find them again.</span></li>
+    <li><b>Send Claude the booth photos and your notes</b> <span class="why">to update this list.</span></li>
+  </ul>
+  <div class="tip"><b>Remember:</b> one quiet show doesn't mean the work or the prices are wrong.
+    The right room matters more than anything on this list.</div>
+</section>
+
+<footer>werecured.ca &middot; @were_cured</footer>
+</div>
+</body>
+</html>

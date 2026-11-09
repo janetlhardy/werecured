@@ -82,6 +82,15 @@ The Shivering Sheep.)_
 
 ## Outstanding To-Dos
 
+### Next show (after the November 2026 gift show)
+The November show sold almost nothing outside family: a $500 booth in a rec-centre gym, with a
+bargain-hunting crowd. People loved the Monster Splats and the iridescent bowl. The booth photos
+showed too much on display, a U-shaped layout people had to walk into, and the venue's red and
+white drapes behind everything. Everything learned is in `print-materials/booth-checklist.pdf`.
+- [ ] Gather the display gear on the checklist (black fabric for the racks, black tablecloth, warm lights, wine bottles, busts)
+- [ ] Ask the questions on the checklist before booking the next show
+- [ ] Make an "All pendants $50" sign (ask Claude)
+
 ### GitHub & Hosting
 - [x] Create GitHub account ✅
 - [x] Create GitHub repository ✅
