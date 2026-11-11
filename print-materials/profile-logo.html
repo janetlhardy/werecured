@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8" />
+<title>We're Cured! Profile Logo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Righteous&display=swap" rel="stylesheet">
+<style>
+  /* Profile picture for Instagram and Facebook: 1080 x 1080, exported to PNG.
+     Both sites crop it to a circle, so everything important sits well inside it.
+     Render one version at a time with ?v=photo or ?v=dark. */
+  :root{ --dark:#1A001F; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ width:1080px; height:1080px; overflow:hidden; background:var(--dark); }
+
+  .logo{
+    position:relative; width:1080px; height:1080px; overflow:hidden; background:var(--dark);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+  }
+  .logo > *{ position:relative; z-index:2; }
+
+  /* Version "photo": the Ocean Daisy coaster, as on the front of the business card */
+  .photo{
+    position:absolute !important; inset:0; z-index:0 !important;
+    background:url('../images/IMG_3091.jpeg') 50% 30%/135%;
+    filter:brightness(.98) saturate(1.15) contrast(1.03);
+  }
+  .veil{
+    position:absolute !important; inset:0; z-index:1 !important;
+    background:radial-gradient(circle at 50% 50%,
+      rgba(26,0,31,.62) 0%, rgba(26,0,31,.40) 38%, rgba(26,0,31,.10) 62%, rgba(26,0,31,0) 75%);
+  }
+
+  /* Version "dark": the resin-pour wash used on the table signs */
+  .wash::before,.wash::after{
+    content:""; position:absolute; width:900px; height:900px; border-radius:50%; z-index:0;
+  }
+  .wash::before{ top:-330px; left:-300px;
+    background:radial-gradient(circle, rgba(191,90,242,.65) 0%, rgba(255,45,120,.40) 38%,
+      rgba(255,45,120,.14) 58%, rgba(255,45,120,0) 74%); }
+  .wash::after{ bottom:-330px; right:-300px;
+    background:radial-gradient(circle, rgba(0,212,255,.55) 0%, rgba(168,255,62,.32) 38%,
+      rgba(168,255,62,.12) 58%, rgba(168,255,62,0) 74%); }
+
+  /* gradient clipped to text needs inline-block, or it only picks up the middle */
+  .wordmark{
+    font-family:'Bagel Fat One',cursive; font-size:250px; line-height:.9; display:inline-block;
+    background:linear-gradient(100deg,#FF2D78 8%,#FF6B1A 28%,#FFE600 46%,#A8FF3E 62%,#00D4FF 80%,#BF5AF2 96%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 4px 6px rgba(0,0,0,.9)) drop-shadow(0 10px 34px rgba(0,0,0,.65));
+    margin-top:-10px;
+  }
+  .tagline{
+    font-family:'Righteous',cursive; font-size:44px; letter-spacing:.14em; text-transform:uppercase;
+    color:#A8FF3E; margin-top:26px; text-shadow:0 2px 6px rgba(0,0,0,.9), 0 4px 20px rgba(0,0,0,.6);
+  }
+</style>
+</head>
+<body>
+<div class="logo" id="logo">
+  <div class="wordmark">We're<br>Cured!</div>
+  <div class="tagline">Resin Art</div>
+</div>
+<script>
+  // ?v=dark gives the plain dark version; anything else gives the photo version
+  var v = new URLSearchParams(location.search).get('v');
+  var logo = document.getElementById('logo');
+  if (v === 'dark') {
+    logo.classList.add('wash');
+  } else {
+    logo.insertAdjacentHTML('afterbegin', '<div class="photo"></div><div class="veil"></div>');
+  }
+</script>
+</body>
+</html>
