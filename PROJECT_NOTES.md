@@ -422,7 +422,7 @@ pieces is much harder than matching `WC-3890`. Worth putting on the tags before 
 ### Email
 - [ ] Add `werecured.com` to Google Workspace
 - [ ] Add DNS records for `werecured.com` email in Namecheap
-- [ ] Fix hello@werecured.ca delivery (DNS/DMARC issue — son helping with this)
+- [x] Fix hello@werecured.ca delivery ✅ (confirmed working with a test email, 2026-11-11)
 
 ### High Priority — Website Improvements
 - [x] Add lazy loading to all images (`loading="lazy"` on all 617 img tags) ✅
@@ -687,7 +687,17 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
       they grow again, which is honest scarcity rather than a sales line
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
-## Accounts Summary
+### Facebook & Instagram shop (set up 2026-11-11)
+Connected through Shopify's **Facebook & Instagram** app. Choices made during setup: data sharing
+**Conservative** (only worth raising to Enhanced if paid ads start), a new dataset, an ad account
+Shopify created automatically (unused, no payment method), shop email **hello@werecured.ca**,
+returns **0 days** to match "all sales final".
+- [ ] Check the catalogue in Shopify → Sales channels → Facebook & Instagram: how many products synced?
+      If few or none, the products need the Facebook & Instagram channel turned on (like Headless)
+- [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
+      Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
+
+
 
 | Service | Purpose | Login | Password |
 |---|---|---|---|
@@ -695,3 +705,4 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
 | Google Workspace | Business email | janethardy@werecured.ca | Dashlane |
 | GitHub | Website hosting (GitHub Pages) | janetlhardy / knitwit1@telus.net | Dashlane |
 | Shopify | Online store + POS | janethardy@werecured.ca (Google sign-in) | via Google / Dashlane |
+| Facebook & Instagram (Meta) | Shop on Facebook/Instagram, synced from Shopify's **Facebook & Instagram** sales channel | Janet's Facebook login | Dashlane |
