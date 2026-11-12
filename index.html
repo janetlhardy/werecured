@@ -676,6 +676,10 @@
     .cart-line .info{ flex:1; min-width:0; }
     .cart-line .t{ font-family:'Righteous',sans-serif; font-size:.9rem; color:#fff; }
     .cart-line .p{ font-family:'Nunito'; color:var(--yellow); font-size:.85rem; margin-top:2px; }
+    /* necklace choice for pendants: one product, the choice rides on the cart line as an attribute */
+    .cart-line .neck{ display:flex; align-items:center; gap:6px; margin-top:6px; font-family:'Nunito',sans-serif; font-size:.78rem; color:rgba(255,255,255,.75); }
+    .cart-line .neck select{ background:#2a0030; color:#fff; border:1px solid rgba(255,255,255,.3); border-radius:6px; padding:3px 6px; font:inherit; cursor:pointer; }
+    .pm-neck{ font-family:'Nunito',sans-serif; font-size:.9rem; color:var(--lime); margin:-12px 0 22px; }
     .cart-line .rm{ background:none; border:none; color:rgba(255,255,255,.55); cursor:pointer; font-size:.75rem; text-decoration:underline; margin-top:4px; padding:0; }
     .cart-foot{ padding:18px 20px; border-top:2px solid rgba(255,255,255,.12); }
     .cart-subtotal{ display:flex; justify-content:space-between; font-family:'Righteous',sans-serif; color:#fff; margin-bottom:6px; }
@@ -845,6 +849,7 @@
         <h2 class="pm-title"></h2>
         <p class="pm-price"></p>
         <div class="pm-desc"></div>
+        <p class="pm-neck" style="display:none">Comes on your choice of black cord, silver chain or gold chain &mdash; pick it in your cart.</p>
         <button class="pm-add">Add to Cart</button>
         <p class="pm-note">🔒 Secure checkout powered by Shopify</p>
       </div>
@@ -960,7 +965,7 @@
 
     const CART_FIELDS = `id checkoutUrl totalQuantity attributes{ key value }
       cost{ subtotalAmount{ amount currencyCode } }
-      lines(first:100){ edges{ node{ id quantity
+      lines(first:100){ edges{ node{ id quantity attributes{ key value }
         merchandise{ ... on ProductVariant{ id
           product{ title productType featuredImage{ url } } price{ amount currencyCode } } } } } }`;
 
@@ -969,6 +974,9 @@
       'Pendant':'pendants', 'Earrings':'earrings', 'Coasters':'coasters',
       'Bowls and Platters':'bowls', 'Home Decor':'accents'
     };
+    // Pendants come on the buyer's choice of necklace, at no extra charge
+    const NECKLACES = ['Black cord', 'Silver chain', 'Gold chain'];
+    const lineAttrs = type => type === 'Pendant' ? [{ key:'Necklace', value:NECKLACES[0] }] : [];
     const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
     // 1. Load every published product (images, tags, price, variant) from Shopify
@@ -1026,7 +1034,7 @@
           if(p.avail){
             const b = document.createElement('button');
             b.className = 'add-cart-btn'; b.textContent = 'Add to Cart';
-            b.addEventListener('click', e => { e.stopPropagation(); addToCart(p.variantId, b); });
+            b.addEventListener('click', e => { e.stopPropagation(); addToCart(p.variantId, b, p.type); });
             buttonsByVariant[p.variantId] = b;
             body.appendChild(b);
           } else {
@@ -1062,17 +1070,17 @@
       return null;
     }
 
-    async function addToCart(variantId, btn){
+    async function addToCart(variantId, btn, type){
       if(btn){ btn.disabled = true; btn.textContent = 'Adding…'; }
       let cart = null;
       if(CART_ID){
         const d = await gql('mutation($id:ID!,$l:[CartLineInput!]!){ cartLinesAdd(cartId:$id, lines:$l){ cart{ ' + CART_FIELDS + ' } userErrors{ message } } }',
-          { id: CART_ID, l:[{ merchandiseId:variantId, quantity:1 }] });
+          { id: CART_ID, l:[{ merchandiseId:variantId, quantity:1, attributes:lineAttrs(type) }] });
         cart = d && d.cartLinesAdd && d.cartLinesAdd.cart;
       }
       if(!cart){
         const d = await gql('mutation($l:[CartLineInput!]!){ cartCreate(input:{ lines:$l }){ cart{ ' + CART_FIELDS + ' } userErrors{ message } } }',
-          { l:[{ merchandiseId:variantId, quantity:1 }] });
+          { l:[{ merchandiseId:variantId, quantity:1, attributes:lineAttrs(type) }] });
         cart = d && d.cartCreate && d.cartCreate.cart;
       }
       if(cart){
@@ -1104,10 +1112,12 @@
               img = (m.product.featuredImage && m.product.featuredImage.url) || '';
         return '<div class="cart-line"><img src="' + img + '" alt=""><div class="info">' +
                '<div class="t">' + m.product.title + '</div>' +
-               '<div class="p">' + money(m.price) + '</div>' +
+               '<div class="p">' + money(m.price) + '</div>' + neckSelect(n) +
                '<button class="rm" data-line="' + n.id + '" data-variant="' + m.id + '">Remove</button>' +
                '</div></div>';
       }).join('');
+      body.querySelectorAll('.neck select').forEach(sel =>
+        sel.addEventListener('change', () => setNecklace(sel.dataset.line, sel.value)));
       body.querySelectorAll('.rm').forEach(b =>
         b.addEventListener('click', () => removeLine(b.dataset.line, b.dataset.variant)));
       document.getElementById('cart-subtotal').textContent = money(cart.cost.subtotalAmount);
@@ -1118,6 +1128,19 @@
       document.getElementById('cork-check').checked = !!(corkAttr && /yes/i.test(corkAttr.value || ''));
       foot.style.display = 'block';
       document.getElementById('checkout-btn').href = checkoutUrl || '#';
+    }
+
+    function neckSelect(n){
+      if(n.merchandise.product.productType !== 'Pendant') return '';
+      const cur = ((n.attributes || []).find(a => a.key === 'Necklace') || {}).value || NECKLACES[0];
+      return '<label class="neck">Necklace: <select data-line="' + n.id + '">' +
+        NECKLACES.map(o => '<option' + (o === cur ? ' selected' : '') + '>' + o + '</option>').join('') +
+        '</select></label>';
+    }
+    async function setNecklace(lineId, value){
+      if(!CART_ID) return;
+      await gql('mutation($id:ID!,$l:[CartLineUpdateInput!]!){ cartLinesUpdate(cartId:$id, lines:$l){ cart{ id } userErrors{ message } } }',
+        { id: CART_ID, l:[{ id: lineId, attributes:[{ key:'Necklace', value }] }] });
     }
 
     function openCart(){ document.getElementById('cart-drawer').classList.add('open'); document.getElementById('cart-overlay').classList.add('open'); }
@@ -1164,6 +1187,7 @@
       pmTitle.textContent = p.title;
       pmPrice.textContent = money(p.price);
       pmDesc.innerHTML = p.descriptionHtml || '';
+      pm.querySelector('.pm-neck').style.display = p.type === 'Pendant' ? '' : 'none';
       pmThumbs.innerHTML = pmImgs.map((im,i)=>
         `<img src="${esc(im.url)}" alt="${esc(im.altText||p.title)}" data-i="${i}">`).join('');
       pmThumbs.querySelectorAll('img').forEach(t =>
@@ -1174,7 +1198,7 @@
       else if(buttonsByVariant[p.variantId] && buttonsByVariant[p.variantId].classList.contains('in-cart')){
         pmAdd.textContent='In Cart ✓'; pmAdd.disabled=true; pmAdd.classList.add('in-cart');
       } else { pmAdd.textContent='Add to Cart'; pmAdd.disabled=false; }
-      pmAdd.onclick = async ()=>{ if(pmAdd.disabled) return; await addToCart(p.variantId, pmAdd); closeProductModal(); };
+      pmAdd.onclick = async ()=>{ if(pmAdd.disabled) return; await addToCart(p.variantId, pmAdd, p.type); closeProductModal(); };
       pm.classList.add('open'); document.body.style.overflow='hidden';
     }
     window.openProductModal = openProductModal;

@@ -540,6 +540,20 @@ so online + markets share one inventory. Full plain-language steps: `shopify/SHO
 _The July 2026 setup steps (identity verification, the first CSV import, wiring up the cart) are all
 finished. They're kept in `shopify/SHOPIFY_SETUP.md` as a record of how the shop was built._
 
+### Pendant necklace choice (added 2026-11-12)
+
+Every pendant comes on the buyer's choice of **black cord, silver chain or gold chain**, at no extra
+charge (Janet has other colours, but three keeps it simple). On werecured.ca, a pendant in the cart
+shows a **Necklace** dropdown, black cord by default. The choice appears on the order in Shopify
+next to the pendant, as "Necklace: Gold chain" and so on. Check it before packing.
+
+It's deliberately **not** set up as Shopify variants: each pendant is one of a kind, and three
+variants would let the same pendant sell three times. It works on every pendant automatically,
+old and new, as long as its product type is **Pendant**.
+
+Orders from the **Facebook / Instagram shop** skip the website cart, so they don't get the
+dropdown. Those come on black cord unless you message the buyer to ask.
+
 ### Sales Tax (BC) — currently charging NO tax
 
 Janet lives in **BC** and operates as an unregistered **small seller / small supplier** (sole
