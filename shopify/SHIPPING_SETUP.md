@@ -36,6 +36,22 @@ ships, not by weight alone. (Numbers above are starting points — adjust once y
 Add **Local pickup** as an option (Settings → Shipping → Local pickup). Great for your market/local
 customers — they skip shipping entirely.
 
+### Pickup-only pieces (for anything too delicate to post)
+Some pieces, like the **Wildfire Drip Bowl**, are too fragile to ship. Shopify has no "pickup only"
+tick box on a product, so instead you put the piece in its own shipping profile with no shipping
+rates. Checkout then offers only local pickup for it.
+
+1. **Settings → Shipping and delivery**.
+2. Under **Shipping**, click **Create a custom shipping profile** (sometimes just **Create profile**).
+3. Name it **Pickup only**.
+4. Click **Add products** and choose the delicate piece(s).
+5. **Don't add any shipping zones or rates.** Leave that part empty. Shopify will warn that the
+   products can't be shipped — that's exactly what we want.
+6. **Save**.
+
+Local pickup (Step 2 above) needs to be switched on for this to work, or nobody could buy the
+piece at all. To add more delicate pieces later, open the **Pickup only** profile and add them.
+
 ### Step 3 — Buy discounted labels to ship (all plans)
 When an order comes in: **Orders → the order → Buy shipping label** → **Canada Post** (discounted).
 Print at home, pack, done. (UPS labels also available if cheaper for a given parcel.)

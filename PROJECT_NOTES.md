@@ -100,6 +100,24 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 - [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
+### New Pieces — Drip bowls (`2026-11`)
+
+- [x] Four drip bowls named, priced and written up ✅ (2026-11-12)
+- [x] Import file `shopify/new-products-2026-11.csv` built; photos in `werecured-product-photos/batch-2026-11/`, one folder per bowl ✅
+- [ ] Import the CSV, drag in the photos, set Active (steps in `shopify/ADDING_A_BATCH.md`)
+- [ ] Type in Crystal Crown's weight in Shopify once it's found
+- [ ] Put Wildfire in a "Pickup only" shipping profile (steps in `shopify/SHIPPING_SETUP.md`)
+
+| Piece | SKU | Type | Weight | Price |
+|---|---|---|---|---|
+| Wildfire Drip Bowl (very delicate, **local pickup only**) | WC-4180 | Bowls and Platters | 250 g | $150 |
+| Crystal Crown Drip Bowl (crushed glass rims and base) | WC-4185 | Bowls and Platters | *to come* | $150 |
+| Copper Splash Drip Bowl (clear with copper flakes) | WC-4190 | Bowls and Platters | 330 g | $150 |
+| Nebula Drip Bowl (purple/orange/blue shimmer) | WC-4195 | Bowls and Platters | 273 g | $135 |
+
+The drip bowls drew a lot of attention at the November show. All four are decorative.
+Next SKU: **WC-4200**.
+
 ### New Pieces — Petri dish coasters (`2026-10c`)
 
 - [x] Two sets named, priced and written up ✅ (2026-10-14)
