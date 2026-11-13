@@ -90,9 +90,14 @@ so half-finished listings never show on the shop while you're still adding photo
 product is unavailable on **every** channel. The POS app will report **"Unavailable on POS"** however
 many times you add it to the sales channel, and it looks broken when nothing is wrong.
 
-### 7. Make them available in the POS app
+### 7. Make them available in the POS app and the Facebook & Instagram shop
 
-**Products** → select all → **More actions → Include in sales channel** → pick **Point of Sale**.
+**Products** → tick the new pieces → **More actions → Include in sales channel** → tick **Point of Sale**
+**and Facebook & Instagram** → confirm. One step does both.
+
+The Facebook & Instagram shop only shows products that are on its sales channel, and new products
+don't always join it on their own. Meta then reviews each one, which takes from a few hours to a
+day. (Added 2026-11-12.)
 
 Check one piece in the POS app first — once it's Active it may already be there, and this step turns
 out to be unnecessary.
