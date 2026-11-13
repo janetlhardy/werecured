@@ -725,8 +725,9 @@ Connected through Shopify's **Facebook & Instagram** app. Choices made during se
 **Conservative** (only worth raising to Enhanced if paid ads start), a new dataset, an ad account
 Shopify created automatically (unused, no payment method), shop email **hello@werecured.ca**,
 returns **0 days** to match "all sales final".
-- [ ] Check the catalogue in Shopify → Sales channels → Facebook & Instagram: how many products synced?
-      If few or none, the products need the Facebook & Instagram channel turned on (like Headless)
+- [x] Catalogue synced: 228 items, all 228 approved; Facebook Page and @were_cured both Active ✅ (2026-11-12)
+- [ ] Add the 4 drip bowls (and future batches) to the Facebook & Instagram channel — batch guide step 7
+- [ ] Find the shop on the Facebook Page (may sit under **More**) and check Instagram Shopping is approved
 - [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
       Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
 
