@@ -727,7 +727,10 @@ Shopify created automatically (unused, no payment method), shop email **hello@we
 returns **0 days** to match "all sales final".
 - [x] Catalogue synced: 228 items, all 228 approved; Facebook Page and @were_cured both Active ✅ (2026-11-12)
 - [ ] Add the 4 drip bowls (and future batches) to the Facebook & Instagram channel — batch guide step 7
-- [ ] Find the shop on the Facebook Page (may sit under **More**) and check Instagram Shopping is approved
+- [x] Facebook Page: no Shop tab is offered (Meta has shrunk it), so the Page buttons are **Message** +
+      **Learn more → https://werecured.ca** instead. Checked from the iPad as a visitor ✅ (2026-11-12)
+- [ ] Check Instagram Shopping is approved (Instagram → Settings → Business tools → Shopping)
+- [ ] Invite friends to follow the Page (Page settings → Invite people to connect)
 - [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
       Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
 
