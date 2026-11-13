@@ -104,14 +104,15 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 
 - [x] Four drip bowls named, priced and written up ✅ (2026-11-12)
 - [x] Import file `shopify/new-products-2026-11.csv` built; photos in `werecured-product-photos/batch-2026-11/`, one folder per bowl ✅
-- [ ] Import the CSV, drag in the photos, set Active (steps in `shopify/ADDING_A_BATCH.md`)
-- [ ] Type in Crystal Crown's weight in Shopify once it's found
-- [ ] Put Wildfire in a "Pickup only" shipping profile (steps in `shopify/SHIPPING_SETUP.md`)
+- [x] Imported, photos added, all four live and in stock ✅ (2026-11-12)
+- [x] Crystal Crown weighed: 480 g ✅
+- [x] Wildfire put in a "Pickup only" shipping profile ✅ (2026-11-12)
+- [ ] Test checkout once with Wildfire to confirm only pickup is offered
 
 | Piece | SKU | Type | Weight | Price |
 |---|---|---|---|---|
 | Wildfire Drip Bowl (very delicate, **local pickup only**) | WC-4180 | Bowls and Platters | 250 g | $150 |
-| Crystal Crown Drip Bowl (crushed glass rims and base) | WC-4185 | Bowls and Platters | *to come* | $150 |
+| Crystal Crown Drip Bowl (crushed glass rims and base) | WC-4185 | Bowls and Platters | 480 g | $150 |
 | Copper Splash Drip Bowl (clear with copper flakes) | WC-4190 | Bowls and Platters | 330 g | $150 |
 | Nebula Drip Bowl (purple/orange/blue shimmer) | WC-4195 | Bowls and Platters | 273 g | $135 |
 
