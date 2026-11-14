@@ -111,7 +111,8 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 - [ ] One more iridescent copper "3D" pendant that's hard to photograph: held back for now
 
 - [x] 12 picked-flower and dandelion "wish" pendants named; import file `shopify/new-pendants-2026-11d-flowers.csv` (WC-4320–4375, $50), photos in `batch-2026-11d-flower-pendants/` ✅ (2026-11-14). Descriptions stay general ("picked on one of her walks"), except the two purple ones from a neighbour's garden
-- [ ] Import the flower file
+- [x] Flower file imported ✅ (2026-11-14). "Two Wishes Oval" is really **Three Wishes** (three seeds): description fixed by Janet; rename the title in Shopify
+- Some pendants have more than one in stock (similar pieces), so their quantity is above 1 on purpose
 
 Every pendant comes on the buyer's choice of black cord, silver chain or gold chain (see the
 Online Store section). Next SKU: **WC-4380**.
