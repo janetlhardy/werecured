@@ -104,14 +104,14 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 
 - [x] First 11 named and written up; import file `shopify/new-pendants-2026-11.csv` (WC-4200–4250, $50, 15 g) ✅ (2026-11-14)
 - [x] Photos in `werecured-product-photos/batch-2026-11-pendants/`, bust shot first ✅
-- [ ] Import, drag in photos, set Active, add to Point of Sale **and** Facebook & Instagram
-- [ ] Gumdrop Bubbles: probably the same pendant as July's **Jewel Bubbles** — search Shopify for it before listing (photos in `batch-2026-11-pendants-on-hold/`)
+- [x] Both pendant files imported and live ✅ (2026-11-14)
+- [ ] Emerald Wave Oval shows as sold out: set its stock to 1
+- [ ] Gumdrop Bubbles: Jewel Bubbles isn't on the site, so it gets its own import file `shopify/new-pendants-2026-11c-gumdrop.csv` (WC-4315); photos in `batch-2026-11-pendants/gumdrop-bubbles-pendant`
 - [x] Next 12 (colour-shift nail-powder backs) named; import file `shopify/new-pendants-2026-11b.csv` (WC-4255–4310), photos in `batch-2026-11b-pendants/` ✅ (2026-11-14)
-- [ ] Import the second file the same way
 - [ ] One more iridescent copper "3D" pendant that's hard to photograph: held back for now
 
 Every pendant comes on the buyer's choice of black cord, silver chain or gold chain (see the
-Online Store section). Next SKU: **WC-4315**.
+Online Store section). Next SKU: **WC-4320**.
 
 ### New Pieces — Drip bowls (`2026-11`)
 
