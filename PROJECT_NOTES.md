@@ -100,6 +100,17 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 - [x] Enable "Enforce HTTPS" in GitHub Pages settings ✅ (the site serves over HTTPS correctly — if you ever want to double-check the setting itself, it's in the repo's Settings → Pages)
 - [x] Confirm `werecured.com` redirect to `werecured.ca` still works ✅
 
+### New Pieces — Unsold show pendants (`2026-11` pendants)
+
+- [x] First 11 named and written up; import file `shopify/new-pendants-2026-11.csv` (WC-4200–4250, $50, 15 g) ✅ (2026-11-14)
+- [x] Photos in `werecured-product-photos/batch-2026-11-pendants/`, bust shot first ✅
+- [ ] Import, drag in photos, set Active, add to Point of Sale **and** Facebook & Instagram
+- [ ] Gumdrop Bubbles: probably the same pendant as July's **Jewel Bubbles** — search Shopify for it before listing (photos in `batch-2026-11-pendants-on-hold/`)
+- [ ] Next 12 (colour-shift nail-powder backs): names proposed, waiting for OK
+
+Every pendant comes on the buyer's choice of black cord, silver chain or gold chain (see the
+Online Store section). Next SKU: **WC-4255**.
+
 ### New Pieces — Drip bowls (`2026-11`)
 
 - [x] Four drip bowls named, priced and written up ✅ (2026-11-12)
@@ -117,7 +128,7 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 | Nebula Drip Bowl (purple/orange/blue shimmer) | WC-4195 | Bowls and Platters | 273 g | $135 |
 
 The drip bowls drew a lot of attention at the November show. All four are decorative.
-Next SKU: **WC-4200**.
+Next SKU: see the pendants section above.
 
 ### New Pieces — Petri dish coasters (`2026-10c`)
 
