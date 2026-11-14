@@ -106,10 +106,12 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 - [x] Photos in `werecured-product-photos/batch-2026-11-pendants/`, bust shot first ✅
 - [ ] Import, drag in photos, set Active, add to Point of Sale **and** Facebook & Instagram
 - [ ] Gumdrop Bubbles: probably the same pendant as July's **Jewel Bubbles** — search Shopify for it before listing (photos in `batch-2026-11-pendants-on-hold/`)
-- [ ] Next 12 (colour-shift nail-powder backs): names proposed, waiting for OK
+- [x] Next 12 (colour-shift nail-powder backs) named; import file `shopify/new-pendants-2026-11b.csv` (WC-4255–4310), photos in `batch-2026-11b-pendants/` ✅ (2026-11-14)
+- [ ] Import the second file the same way
+- [ ] One more iridescent copper "3D" pendant that's hard to photograph: held back for now
 
 Every pendant comes on the buyer's choice of black cord, silver chain or gold chain (see the
-Online Store section). Next SKU: **WC-4255**.
+Online Store section). Next SKU: **WC-4315**.
 
 ### New Pieces — Drip bowls (`2026-11`)
 
