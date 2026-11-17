@@ -117,7 +117,7 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
 - [ ] Blue Galaxy Teardrop Studs have no bust shot yet
 - Janet confirmed the little white flowers are **Queen Anne's lace** and added that to the descriptions
 - Final earring prices (Janet adjusted some in Shopify after import): picked-flower studs $35
-  (Sunshine $30), colour-pour studs $25 (Galaxy Dome), Blue Galaxy Teardrop Studs $35, colour-pour
+  (Sunshine $30), Galaxy Dome Studs $25 (quick pour), Blue Galaxy Teardrop Studs $35 (crystallized, fiddly), colour-pour
   dangles $35, dangles with flowers, seeds, shells, bottles or frames $40, Pink Fern Hoop $25,
   Coffee Break $25 (quick and easy to make). All 10 g. Existing earrings in the shop already fit
 - The "mermaid" heart and square earrings are tiny mermaid tails with a pearl

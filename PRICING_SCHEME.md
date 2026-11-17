@@ -197,6 +197,12 @@ like. The earrings already in the shop fit this table, so none needed repricing.
 Janet first agreed $30 for the flower studs, then raised most to $35 after import. Picking and
 drying the flowers herself is real work, and she knows best which pairs took the most patience.
 
+**Crystallized pieces count as fiddly too.** Blue Galaxy Teardrop Studs are $35, not $25, although
+there are no flowers in them. While the resin is still warm, Janet paints on a crystallizing solution
+to make the white snowflake effect, then adds a background colour. Galaxy Dome Studs ($25) are a
+quicker, completely different kind of pour. What a piece *looks* like isn't a guide to the work, so
+ask before pricing anything new.
+
 ---
 
 ## Sets of two are a deliberate size, not a leftover
