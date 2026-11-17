@@ -21,7 +21,12 @@
 - **Fonts:** Bagel Fat One (the **We're Cured!** wordmark — hero and footer), Bungee (section
   headings, product titles, cart), Righteous (labels/taglines), Nunito (body text) — all from Google Fonts
 - **Color palette:** Hot pink, electric blue, lime green, orange, purple, yellow on a dark purple-black background
-- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (176 pieces as of 2026-08-27)
+- **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (306 pieces as of 2026-11-17)
+- **One category at a time (live 2026-11-17, on trial):** the home page has a "Shop by Category" row
+  of tiles, each with a random photo and a count. Tapping one shows only that category, with the
+  others as tiles at the bottom. Links like werecured.ca/#earrings go straight to that category.
+  Janet's son is having a look. **Going back to the old long scroll is one quick step**: ask Claude
+  to undo the "category pages" change
 
 ### Web Hosting
 - **Service:** GitHub Pages (free)

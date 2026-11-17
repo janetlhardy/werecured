@@ -79,6 +79,61 @@
     nav a:nth-child(4):hover     { background: var(--orange);    border-color: var(--orange); }
     nav a:nth-child(5):hover     { background: var(--purple);    border-color: var(--purple); }
     nav a:nth-child(6):hover     { background: var(--yellow);    border-color: var(--yellow);   color: var(--dark); }
+    nav a.active { border-color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.10); }
+
+    /* ── One section at a time ──
+       The home view shows the hero, the category tiles, About and Contact.
+       Picking a category (#pendants, #earrings…) shows only that gallery,
+       with the other categories as tiles underneath. See route() in the script. */
+    #shop, #about, #contact { scroll-margin-top: 60px; } /* keep headings clear of the sticky menu */
+    .shop-sec { display: none; }
+    .shop-sec.active { display: block; }
+    body.shop-view #hero,
+    body.shop-view #about,
+    body.shop-view #contact { display: none; }
+
+    #shop .section-label   { color: var(--yellow); }
+    #shop .section-divider { background: linear-gradient(90deg, var(--hot-pink), var(--yellow), var(--electric)); }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .cat-tile {
+      position: relative;
+      display: block;
+      aspect-ratio: 1 / 1;
+      border-radius: 20px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--white);
+      border: 3px solid var(--c);
+      background: rgba(255,255,255,0.05);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .cat-tile:hover { transform: translateY(-6px); box-shadow: 0 12px 32px color-mix(in srgb, var(--c) 45%, transparent); }
+    .cat-img {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+      transition: transform 0.4s;
+    }
+    .cat-tile:hover .cat-img { transform: scale(1.06); }
+    .cat-tile::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,0,31,0.95) 0%, rgba(26,0,31,0.35) 45%, transparent 75%);
+    }
+    .cat-name {
+      position: absolute; left: 14px; right: 14px; bottom: 34px; z-index: 1;
+      font-family: 'Bungee', sans-serif; font-size: clamp(1rem, 3.6vw, 1.35rem); line-height: 1.1;
+      color: var(--c);
+    }
+    .cat-count {
+      position: absolute; left: 14px; bottom: 12px; z-index: 1;
+      font-family: 'Righteous', sans-serif; font-size: 0.85rem; color: rgba(255,255,255,0.8);
+    }
+    body.shop-view .cat-tile.current { display: none; }
 
     /* ── Hero ── */
     #hero {
@@ -716,12 +771,28 @@
       <p class="hero-tagline">Handmade Resin Art</p>
       <h1 class="hero-title">We're Cured!</h1>
       <p class="hero-sub">Bold, one-of-a-kind resin jewellery and home decor pieces made with love, colour, and a whole lot of fun.</p>
-      <a href="#pendants" class="hero-btn">Shop the Collection</a>
+      <a href="#shop" class="hero-btn">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Shop by category (tiles get a photo and a count once the products load) -->
+  <section id="shop">
+    <div class="section-header">
+      <p class="section-label">Browse</p>
+      <h2 class="section-title" id="shop-title">Shop by Category</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-tile" href="#pendants" style="--c:var(--hot-pink)"><span class="cat-img"></span><span class="cat-name">Pendants</span><span class="cat-count"></span></a>
+      <a class="cat-tile" href="#earrings" style="--c:var(--electric)"><span class="cat-img"></span><span class="cat-name">Earrings</span><span class="cat-count"></span></a>
+      <a class="cat-tile" href="#coasters" style="--c:var(--lime)"><span class="cat-img"></span><span class="cat-name">Coasters</span><span class="cat-count"></span></a>
+      <a class="cat-tile" href="#bowls" style="--c:var(--orange)"><span class="cat-img"></span><span class="cat-name">Bowls &amp; Platters</span><span class="cat-count"></span></a>
+      <a class="cat-tile" href="#accents" style="--c:var(--purple)"><span class="cat-img"></span><span class="cat-name">Decorative Accents</span><span class="cat-count"></span></a>
     </div>
   </section>
 
   <!-- Pendants -->
-  <section id="pendants">
+  <section id="pendants" class="shop-sec">
     <div class="section-header">
       <p class="section-label">Jewellery</p>
       <h2 class="section-title">Pendants</h2>
@@ -732,7 +803,7 @@
   </section>
 
   <!-- Earrings -->
-  <section id="earrings">
+  <section id="earrings" class="shop-sec">
     <div class="section-header">
       <p class="section-label">Jewellery</p>
       <h2 class="section-title">Earrings</h2>
@@ -743,7 +814,7 @@
   </section>
 
   <!-- Coasters -->
-  <section id="coasters">
+  <section id="coasters" class="shop-sec">
     <div class="section-header">
       <p class="section-label">Home</p>
       <h2 class="section-title">Coasters</h2>
@@ -754,7 +825,7 @@
   </section>
 
   <!-- Bowls & Platters -->
-  <section id="bowls">
+  <section id="bowls" class="shop-sec">
     <div class="section-header">
       <p class="section-label">Art</p>
       <h2 class="section-title">Bowls &amp; Platters</h2>
@@ -765,7 +836,7 @@
   </section>
 
   <!-- Decorative Accents -->
-  <section id="accents">
+  <section id="accents" class="shop-sec">
     <div class="section-header">
       <p class="section-label">Art</p>
       <h2 class="section-title">Decorative Accents</h2>
@@ -938,6 +1009,31 @@
       card.appendChild(btn);
     }
     window.wireCard = wireCard;
+
+    // ── One section at a time ──
+    // The address after # decides what shows: a category name shows only that
+    // gallery; anything else (#hero, #shop, #about, #contact, or nothing) shows the home view.
+    const CATS = ['pendants', 'earrings', 'coasters', 'bowls', 'accents'];
+    function route(){
+      const id = (location.hash || '#hero').slice(1);
+      const cat = CATS.includes(id) ? id : null;
+      document.body.classList.toggle('shop-view', !!cat);
+      document.querySelectorAll('.shop-sec').forEach(s => s.classList.toggle('active', s.id === cat));
+      document.querySelectorAll('.cat-tile').forEach(t => t.classList.toggle('current', t.getAttribute('href') === '#' + cat));
+      document.getElementById('shop-title').textContent = cat ? 'Keep Browsing' : 'Shop by Category';
+      // the tiles sit under the hero on the home view, and under the gallery in a category view
+      const shop = document.getElementById('shop');
+      if (cat) document.getElementById('about').before(shop);
+      else document.getElementById('hero').after(shop);
+      const navHref = cat ? '#' + cat : (id === 'contact' ? '#contact' : '#hero');
+      document.querySelectorAll('nav a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === navHref));
+      const target = !cat && id !== 'hero' && document.getElementById(id);
+      if (target) target.scrollIntoView();
+      else window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+    window.addEventListener('hashchange', route);
+    window.route = route;
+    route();
   </script>
 
   <!-- ── Shopify Storefront integration ── -->
@@ -1052,6 +1148,20 @@
         });
       });
       if(rendered > 0) document.getElementById('cart-toggle').classList.add('show');
+      // Category tiles: a random available piece as the photo (so the home page changes each visit), plus a count
+      document.querySelectorAll('.cat-tile').forEach(tile => {
+        const list = groups[tile.getAttribute('href').slice(1)] || [];
+        const pool = list.filter(p => p.avail).length ? list.filter(p => p.avail) : list;
+        const pick = pool[Math.floor(Math.random() * pool.length)];
+        if(pick){
+          // jewellery photo 1 is the bust shot, where the piece is tiny, so use the first close-up instead
+          const jewel = pick.type === 'Pendant' || pick.type === 'Earrings';
+          const u = (jewel && pick.imgs[1] ? pick.imgs[1] : pick.imgs[0]).url;
+          tile.querySelector('.cat-img').style.backgroundImage = `url("${u}${u.includes('?') ? '&' : '?'}width=600")`;
+        }
+        tile.querySelector('.cat-count').textContent = list.length ? list.length + ' pieces' : '';
+        tile.setAttribute('aria-label', tile.querySelector('.cat-name').textContent + (list.length ? ', ' + list.length + ' pieces' : ''));
+      });
       console.log('Shop: rendered ' + rendered + ' products from Shopify');
     }
 
@@ -1221,6 +1331,8 @@
       try{
         const products = await loadProducts();
         renderSections(products);
+        // a link straight to #about or #contact: the page grew while loading, so jump there again
+        if(/^#(shop|about|contact)$/.test(location.hash) && window.route) window.route();
         const cart = await ensureCart();
         if(cart){ cart.lines.edges.forEach(e => markInCart(e.node.merchandise.id)); renderCart(cart); }
       }catch(err){ console.warn('Shop init failed:', err); }
