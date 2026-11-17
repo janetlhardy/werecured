@@ -185,7 +185,7 @@ Settled by Janet on 2026-11-17, when 37 pairs were listed at once:
 | Earrings | Price |
 |---|---|
 | Studs, colour pour (no flowers) | $25 |
-| Studs with flowers Janet picked and dried | $30 |
+| Studs with flowers Janet picked and dried | $35 (simpler ones $30) |
 | Dangles, colour pour or foil | $35 |
 | Dangles with flowers, dandelion seeds, shells, bottles or framed settings | $40 |
 | Quick novelty pairs (e.g. Coffee Break) | $25 |
@@ -193,6 +193,9 @@ Settled by Janet on 2026-11-17, when 37 pairs were listed at once:
 **Fiddly beats big.** Flower studs are small, but placing tiny dried flowers takes patience, so
 they sit above the plain studs. A pair that was quick and easy goes in at $25 whatever it looks
 like. The earrings already in the shop fit this table, so none needed repricing.
+
+Janet first agreed $30 for the flower studs, then raised most to $35 after import. Picking and
+drying the flowers herself is real work, and she knows best which pairs took the most patience.
 
 ---
 

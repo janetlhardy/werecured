@@ -105,21 +105,21 @@ white drapes behind everything. Everything learned is in `print-materials/booth-
 Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with which piece are in
 `werecured-product-photos/name-sheets-2026-11e/` (with `build.py`, which made the folders and files).
 
-- [ ] **Bowls and platters:** `shopify/new-bowls-platters-2026-11e.csv` (WC-4380–4400), photos in
-      `batch-2026-11e-bowls-platters/`. Amber Tide Bowl $135 (201 g), Crystal Confetti Bowl $135 (281 g),
-      Forest Stream and Red Canyon Platters $100 each (275 g, single pour, smaller mould), Midnight Gold
-      Platter $90 (two pours on a secondhand platter; **weight still needed**)
-- [ ] **Earrings, part 1:** `shopify/new-earrings-2026-11f.csv` (11 pairs, WC-4405–4455), photos in `batch-2026-11f-earrings/`
-- [ ] **Earrings, part 2:** `shopify/new-earrings-2026-11g.csv` (12 pairs, WC-4460–4515), photos in `batch-2026-11g-earrings/`
-- [ ] **Earrings, part 3:** `shopify/new-earrings-2026-11h.csv` (14 pairs, WC-4520–4585), photos in `batch-2026-11h-earrings/`.
-      Midnight Lace Studs has **4** in stock (four near-identical pairs, one set of photos)
+- [x] **All 42 pieces imported, photographed and live** ✅ (checked 2026-11-17: every one available, photos attached)
+- [x] **Bowls and platters:** `shopify/new-bowls-platters-2026-11e.csv` (WC-4380–4400). Amber Tide Bowl $135 (201 g),
+      Crystal Confetti Bowl $135 (281 g), Forest Stream and Red Canyon Platters $100 each (275 g, single pour,
+      smaller mould), Midnight Gold Platter $90 (two pours on a secondhand platter)
+- [ ] Midnight Gold Platter: **weight still needed** (shows 0 g, so shipping won't charge properly)
+- [x] **Earrings:** `shopify/new-earrings-2026-11f/g/h.csv` (37 pairs, WC-4405–4585). Midnight Lace Studs has
+      **4** in stock (four near-identical pairs, one set of photos)
 - [ ] **Already listed:** new photos for Electric Blue Oval and Frosted Periwinkle Teardrop are in
-      `batch-2026-11-add-to-existing-earrings/`. Add them to those listings
+      `batch-2026-11-add-to-existing-earrings/`. Not added yet (both still show their old photos). Optional
 - [ ] Blue Galaxy Teardrop Studs have no bust shot yet
-- Earring prices agreed with Janet (2026-11-17): flower studs $30 (tiny picked-and-dried flowers are
-  fiddly), colour-pour studs $25, colour-pour dangles $35, dangles with flowers, seeds, shells,
-  bottles or frames $40, Coffee Break $25 (quick and easy to make). All 10 g. Existing earrings in the
-  shop already fit this, so no repricing needed
+- Janet confirmed the little white flowers are **Queen Anne's lace** and added that to the descriptions
+- Final earring prices (Janet adjusted some in Shopify after import): picked-flower studs $35
+  (Sunshine $30), colour-pour studs $25 (Galaxy Dome), Blue Galaxy Teardrop Studs $35, colour-pour
+  dangles $35, dangles with flowers, seeds, shells, bottles or frames $40, Pink Fern Hoop $25,
+  Coffee Break $25 (quick and easy to make). All 10 g. Existing earrings in the shop already fit
 - The "mermaid" heart and square earrings are tiny mermaid tails with a pearl
 
 Next SKU: **WC-4590**.
