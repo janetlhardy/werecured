@@ -116,8 +116,10 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
 - [ ] **Already listed:** new photos for Electric Blue Oval and Frosted Periwinkle Teardrop are in
       `batch-2026-11-add-to-existing-earrings/`. Add them to those listings
 - [ ] Blue Galaxy Teardrop Studs have no bust shot yet
-- Earring prices are Claude's starting suggestion, waiting for Janet's OK: studs $25, colour-pour
-  dangles $35, dangles with flowers, seeds, shells, bottles, frames or mugs $40. All 10 g
+- Earring prices agreed with Janet (2026-11-17): flower studs $30 (tiny picked-and-dried flowers are
+  fiddly), colour-pour studs $25, colour-pour dangles $35, dangles with flowers, seeds, shells,
+  bottles or frames $40, Coffee Break $25 (quick and easy to make). All 10 g. Existing earrings in the
+  shop already fit this, so no repricing needed
 - The "mermaid" heart and square earrings are tiny mermaid tails with a pearl
 
 Next SKU: **WC-4590**.
