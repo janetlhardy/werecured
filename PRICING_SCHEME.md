@@ -178,6 +178,24 @@ formula. The $45–70 band in the tiers table above is the market range, not the
 
 ---
 
+## Earring prices (November 2026)
+
+Settled by Janet on 2026-11-17, when 37 pairs were listed at once:
+
+| Earrings | Price |
+|---|---|
+| Studs, colour pour (no flowers) | $25 |
+| Studs with flowers Janet picked and dried | $30 |
+| Dangles, colour pour or foil | $35 |
+| Dangles with flowers, dandelion seeds, shells, bottles or framed settings | $40 |
+| Quick novelty pairs (e.g. Coffee Break) | $25 |
+
+**Fiddly beats big.** Flower studs are small, but placing tiny dried flowers takes patience, so
+they sit above the plain studs. A pair that was quick and easy goes in at $25 whatever it looks
+like. The earrings already in the shop fit this table, so none needed repricing.
+
+---
+
 ## Sets of two are a deliberate size, not a leftover
 
 Not everyone wants four coasters (Janet, 2026-09-11). A **pair of standard coasters at $40** is a
