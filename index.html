@@ -88,9 +88,27 @@
     #shop, #about, #contact { scroll-margin-top: 60px; } /* keep headings clear of the sticky menu */
     .shop-sec { display: none; }
     .shop-sec.active { display: block; }
+    body.shop-view #featured,
     body.shop-view #hero,
     body.shop-view #about,
     body.shop-view #contact { display: none; }
+
+    /* Featured row: hidden until the products load and there's something to show */
+    #featured { display: none; padding-bottom: 20px; }
+    #featured.has-items { display: block; }
+    body.shop-view #featured.has-items { display: none; }
+    #featured .section-label   { color: var(--lime); }
+    #featured .section-title   { color: var(--yellow); }
+    #featured .section-divider { background: linear-gradient(90deg, var(--yellow), var(--lime)); }
+    @media (max-width: 600px) {
+      /* on a phone the featured pieces sit in one row you swipe sideways */
+      #featured .gallery {
+        display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+        gap: 16px; padding: 4px 4px 14px; margin: 0 -20px; padding-left: 20px; padding-right: 20px;
+      }
+      #featured .card { flex: 0 0 72%; scroll-snap-align: center; height: auto; }
+      #featured .card:hover { transform: none; }
+    }
 
     #shop .section-label   { color: var(--yellow); }
     #shop .section-divider { background: linear-gradient(90deg, var(--hot-pink), var(--yellow), var(--electric)); }
@@ -314,7 +332,7 @@
     .card:hover .card-photo img { transform: scale(1.07); }
     /* Pendant photos are tall bust shots with the pendant hanging low, so crop the square
        from near the bottom (trimming the bust's head, not the pendant). Cards stay square. */
-    #pendants .card-photo img { object-position: 50% 88%; transform-origin: 50% 88%; }
+    #pendants .card-photo img, .card.c-pendants .card-photo img { object-position: 50% 88%; transform-origin: 50% 88%; }
 
     /* Quick Look button */
     .quick-look-btn {
@@ -460,7 +478,7 @@
     #pendants .section-title  { color: var(--hot-pink); }
     #pendants .section-divider { background: linear-gradient(90deg, var(--hot-pink), var(--purple)); }
     #pendants .card:hover      { box-shadow: 0 20px 50px rgba(255,45,120,0.3); }
-    #pendants .card-name       { color: var(--hot-pink); }
+    #pendants .card-name, .c-pendants .card-name { color: var(--hot-pink); }
 
     /* ── Earrings ── */
     #earrings { background: linear-gradient(180deg, #001a2a 0%, #002a40 100%); }
@@ -468,7 +486,7 @@
     #earrings .section-title  { color: var(--electric); }
     #earrings .section-divider { background: linear-gradient(90deg, var(--electric), var(--lime)); }
     #earrings .card:hover      { box-shadow: 0 20px 50px rgba(0,212,255,0.3); }
-    #earrings .card-name       { color: var(--electric); }
+    #earrings .card-name, .c-earrings .card-name { color: var(--electric); }
 
     /* ── Coasters ── */
     #coasters { background: linear-gradient(180deg, #1a2a00 0%, #2a3d00 100%); }
@@ -476,7 +494,7 @@
     #coasters .section-title  { color: var(--lime); }
     #coasters .section-divider { background: linear-gradient(90deg, var(--lime), var(--yellow)); }
     #coasters .card:hover      { box-shadow: 0 20px 50px rgba(168,255,62,0.3); }
-    #coasters .card-name       { color: var(--lime); }
+    #coasters .card-name, .c-coasters .card-name { color: var(--lime); }
 
     /* ── Bowls & Platters ── */
     #bowls { background: linear-gradient(180deg, #2a1500 0%, #3d2000 100%); }
@@ -484,7 +502,7 @@
     #bowls .section-title  { color: var(--orange); }
     #bowls .section-divider { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
     #bowls .card:hover      { box-shadow: 0 20px 50px rgba(255,107,26,0.3); }
-    #bowls .card-name       { color: var(--orange); }
+    #bowls .card-name, .c-bowls .card-name { color: var(--orange); }
 
     /* ── Decorative Accents ── */
     #accents { background: linear-gradient(180deg, #1a0030 0%, #2a0050 100%); }
@@ -492,7 +510,7 @@
     #accents .section-title  { color: var(--purple); }
     #accents .section-divider { background: linear-gradient(90deg, var(--purple), var(--hot-pink)); }
     #accents .card:hover      { box-shadow: 0 20px 50px rgba(180,0,255,0.3); }
-    #accents .card-name       { color: var(--purple); }
+    #accents .card-name, .c-accents .card-name { color: var(--purple); }
 
     /* ── About ── */
     #about {
@@ -775,6 +793,16 @@
     </div>
   </section>
 
+  <!-- Featured: pieces tagged "Featured" in Shopify (or the newest, if none are tagged). Filled by renderFeatured() -->
+  <section id="featured">
+    <div class="section-header">
+      <p class="section-label">Handpicked</p>
+      <h2 class="section-title">Featured</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery"></div>
+  </section>
+
   <!-- Shop by category (tiles get a photo and a count once the products load) -->
   <section id="shop">
     <div class="section-header">
@@ -1024,7 +1052,7 @@
       // the tiles sit under the hero on the home view, and under the gallery in a category view
       const shop = document.getElementById('shop');
       if (cat) document.getElementById('about').before(shop);
-      else document.getElementById('hero').after(shop);
+      else document.getElementById('featured').after(shop);
       const navHref = cat ? '#' + cat : (id === 'contact' ? '#contact' : '#hero');
       document.querySelectorAll('nav a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === navHref));
       const target = !cat && id !== 'hero' && document.getElementById(id);
@@ -1082,7 +1110,7 @@
     async function loadProducts(){
       const out = []; let cursor = null, more = true;
       const q = `query($c:String){ products(first:60, after:$c){ pageInfo{ hasNextPage endCursor }
-        edges{ node{ title productType tags descriptionHtml
+        edges{ node{ title productType tags descriptionHtml createdAt
           images(first:12){ edges{ node{ url altText } } }
           variants(first:1){ edges{ node{ id availableForSale price{ amount currencyCode } } } } } } } }`;
       while(more){
@@ -1092,7 +1120,7 @@
           const n = e.node, v = n.variants.edges[0] && n.variants.edges[0].node;
           const imgs = n.images.edges.map(x => x.node);
           if(v && imgs.length) out.push({
-            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml,
+            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml, created:n.createdAt,
             variantId:v.id, price:v.price, avail:v.availableForSale
           });
         });
@@ -1102,18 +1130,9 @@
     }
 
     // 2. Render products into their section galleries (products live in Shopify, not the HTML)
-    function renderSections(products){
-      const groups = {};
-      products.forEach(p => {
-        const sec = TYPE_TO_SECTION[p.type]; if(!sec) return;
-        (groups[sec] = groups[sec] || []).push(p);
-      });
-      let rendered = 0;
-      Object.keys(groups).forEach(sec => {
-        const gallery = document.querySelector('#' + sec + ' .gallery');
-        if(!gallery) return;
-        gallery.innerHTML = '';
-        groups[sec].sort((a,b) => a.title.localeCompare(b.title)).forEach(p => {
+    // One product card. The same piece can appear twice (its category and the Featured row),
+    // so every Add to Cart button for a piece is remembered and updated together.
+    function makeCard(p){
           const main = p.imgs[0];
           const thumbs = p.imgs.slice(1).map(im =>
             `<img loading="lazy" src="${esc(im.url)}" alt="${esc(im.altText||p.title)}" />`).join('');
@@ -1134,20 +1153,37 @@
             const b = document.createElement('button');
             b.className = 'add-cart-btn'; b.textContent = 'Add to Cart';
             b.addEventListener('click', e => { e.stopPropagation(); addToCart(p.variantId, b, p.type); });
-            buttonsByVariant[p.variantId] = b;
+            (buttonsByVariant[p.variantId] = buttonsByVariant[p.variantId] || []).push(b);
             body.appendChild(b);
           } else {
             const s = document.createElement('span');
             s.className = 'sold-badge'; s.textContent = 'Sold';
             body.appendChild(s);
           }
+          card.classList.add('c-' + TYPE_TO_SECTION[p.type]);
           card._product = p;
-          gallery.appendChild(card);
           if(window.wireCard) window.wireCard(card);
+          return card;
+    }
+
+    function renderSections(products){
+      const groups = {};
+      products.forEach(p => {
+        const sec = TYPE_TO_SECTION[p.type]; if(!sec) return;
+        (groups[sec] = groups[sec] || []).push(p);
+      });
+      let rendered = 0;
+      Object.keys(groups).forEach(sec => {
+        const gallery = document.querySelector('#' + sec + ' .gallery');
+        if(!gallery) return;
+        gallery.innerHTML = '';
+        groups[sec].sort((a,b) => a.title.localeCompare(b.title)).forEach(p => {
+          gallery.appendChild(makeCard(p));
           rendered++;
         });
       });
       if(rendered > 0) document.getElementById('cart-toggle').classList.add('show');
+      renderFeatured(products);
       // Category tiles: a random available piece as the photo (so the home page changes each visit), plus a count
       document.querySelectorAll('.cat-tile').forEach(tile => {
         const list = groups[tile.getAttribute('href').slice(1)] || [];
@@ -1165,13 +1201,30 @@
       console.log('Shop: rendered ' + rendered + ' products from Shopify');
     }
 
+    // Featured row on the home view: pieces Janet tags "Featured" in Shopify (up to 8, sold ones
+    // left out). With nothing tagged, it shows the newest pieces as "New Arrivals" instead.
+    const FEATURED_MAX = 8;
+    function renderFeatured(products){
+      const sec = document.getElementById('featured');
+      const gallery = sec.querySelector('.gallery');
+      const newest = (a,b) => (b.created || '').localeCompare(a.created || '');
+      const forSale = products.filter(p => p.avail && TYPE_TO_SECTION[p.type]);
+      let picks = forSale.filter(p => p.tags.some(t => t.trim().toLowerCase() === 'featured'));
+      const handpicked = picks.length > 0;
+      if(!handpicked) picks = forSale.slice();
+      picks = picks.sort(newest).slice(0, FEATURED_MAX);
+      sec.querySelector('.section-label').textContent = handpicked ? 'Handpicked' : 'Just Added';
+      sec.querySelector('.section-title').textContent = handpicked ? 'Featured' : 'New Arrivals';
+      gallery.innerHTML = '';
+      picks.forEach(p => gallery.appendChild(makeCard(p)));
+      sec.classList.toggle('has-items', picks.length > 0);
+    }
+
     function markInCart(variantId){
-      const b = buttonsByVariant[variantId];
-      if(b){ b.disabled = true; b.textContent = 'In Cart ✓'; b.classList.add('in-cart'); }
+      (buttonsByVariant[variantId] || []).forEach(b => { b.disabled = true; b.textContent = 'In Cart ✓'; b.classList.add('in-cart'); });
     }
     function resetButton(variantId){
-      const b = buttonsByVariant[variantId];
-      if(b){ b.disabled = false; b.textContent = 'Add to Cart'; b.classList.remove('in-cart'); }
+      (buttonsByVariant[variantId] || []).forEach(b => { b.disabled = false; b.textContent = 'Add to Cart'; b.classList.remove('in-cart'); });
     }
 
     async function ensureCart(){
@@ -1308,7 +1361,7 @@
       updatePmImage();
       pmAdd.classList.remove('in-cart','sold');
       if(!p.avail){ pmAdd.textContent='Sold'; pmAdd.disabled=true; pmAdd.classList.add('sold'); }
-      else if(buttonsByVariant[p.variantId] && buttonsByVariant[p.variantId].classList.contains('in-cart')){
+      else if((buttonsByVariant[p.variantId] || []).some(b => b.classList.contains('in-cart'))){
         pmAdd.textContent='In Cart ✓'; pmAdd.disabled=true; pmAdd.classList.add('in-cart');
       } else { pmAdd.textContent='Add to Cart'; pmAdd.disabled=false; }
       pmAdd.onclick = async ()=>{ if(pmAdd.disabled) return; await addToCart(p.variantId, pmAdd, p.type); closeProductModal(); };

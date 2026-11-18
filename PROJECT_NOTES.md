@@ -22,7 +22,10 @@
   headings, product titles, cart), Righteous (labels/taglines), Nunito (body text) — all from Google Fonts
 - **Color palette:** Hot pink, electric blue, lime green, orange, purple, yellow on a dark purple-black background
 - **Sections:** Pendants, Earrings, Coasters, Bowls & Platters, Decorative Accents, About, Contact — the products in each are pulled live from Shopify, so the counts change on their own (306 pieces as of 2026-11-17)
-- **One category at a time (live 2026-11-17, on trial):** the home page has a "Shop by Category" row
+- **Featured row (added 2026-11-18, her son's idea):** under the welcome banner, up to 8 pieces
+  Janet tags **Featured** in Shopify. Sold ones drop out; with nothing tagged it shows the 8 newest
+  as "New Arrivals". How-to: `shopify/FEATURED_PIECES.md`
+- **One category at a time (live 2026-11-17; her son likes it):** the home page has a "Shop by Category" row
   of tiles, each with a random photo and a count. Tapping one shows only that category, with the
   others as tiles at the bottom. Links like werecured.ca/#earrings go straight to that category.
   Janet's son is having a look. **Going back to the old long scroll is one quick step**: ask Claude
@@ -114,7 +117,7 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
 - [x] **Bowls and platters:** `shopify/new-bowls-platters-2026-11e.csv` (WC-4380–4400). Amber Tide Bowl $135 (201 g),
       Crystal Confetti Bowl $135 (281 g), Forest Stream and Red Canyon Platters $100 each (275 g, single pour,
       smaller mould), Midnight Gold Platter $90 (two pours on a secondhand platter)
-- [ ] Midnight Gold Platter: **weight still needed** (shows 0 g, so shipping won't charge properly)
+- [x] Midnight Gold Platter weight added by Janet ✅ (2026-11-18)
 - [x] **Earrings:** `shopify/new-earrings-2026-11f/g/h.csv` (37 pairs, WC-4405–4585). Midnight Lace Studs has
       **4** in stock (four near-identical pairs, one set of photos)
 - [ ] **Already listed:** new photos for Electric Blue Oval and Frosted Periwinkle Teardrop are in
