@@ -793,6 +793,10 @@ returns **0 days** to match "all sales final".
 - [ ] Invite friends to follow the Page (Page settings → Invite people to connect)
 - [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
       Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
+      **Checked 2026-11-18 from the outside: `fbkwka-jw.myshopify.com/products/<handle>` gives "page not
+      found"**, because products are published to the Headless channel, not Shopify's Online Store. So a
+      tap on a product in the Facebook/Instagram shop most likely dead-ends. Not yet confirmed on a phone.
+      Fix before any catalogue/shop ads; plain boosted posts linking to werecured.ca aren't affected
 
 
 
