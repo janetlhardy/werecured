@@ -780,6 +780,15 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
       they grow again, which is honest scarcity rather than a sales line
 - [ ] Claude can help: captions for specific pieces, a monthly posting calendar, fresh hashtag sets
 
+### Paid ads (started 2026-11-18)
+- **Plan:** boosted posts first, not Ads Manager. **$5/day, 7 days at a time, Victoria + ~40 km**,
+  goal "More website visits" to werecured.ca (or a category link like werecured.ca/#bowls). Then try
+  **BC + Alberta** to compare. Last gift-season boost ends ~**December 10**. First month ~$100–150.
+- **Guide:** `marketing/BOOSTING_POSTS.md` (steps, what the numbers mean, Page invites, a spending log)
+- Catalogue/shop ads wait until the Facebook/Instagram shop product links are fixed (see below)
+- [ ] First boost: pick a Reel or striking photo of a piece still for sale
+- [ ] Invite friends to follow the Facebook Page (free; helps ads look trusted)
+
 ### Facebook & Instagram shop (set up 2026-11-11)
 Connected through Shopify's **Facebook & Instagram** app. Choices made during setup: data sharing
 **Conservative** (only worth raising to Enhanced if paid ads start), a new dataset, an ad account
