@@ -136,8 +136,12 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
 - [ ] **Two more hoop earrings** (found 2026-11-18): `shopify/new-earrings-2026-11i.csv` (WC-4590–4595),
       photos in `batch-2026-11i-earrings/`. Pink Blossom Hoop and Blush Petal Hoop, $25 to match
       Pink Fern Hoop
+- [ ] **Sapphire Cascade Drip Bowl** (2026-11-18): `shopify/new-products-2026-11j.csv` (WC-4600),
+      photos in `batch-2026-11j/sapphire-cascade-drip-bowl/`. Three draped pours of sapphire blue
+      fading to frosty white, 600 g, **$195** (top of the drip bowls because of the three timed pours;
+      Janet may drop it if it doesn't move). Ruler shot is photo 8
 
-Next SKU: **WC-4600**.
+Next SKU: **WC-4605**.
 
 ### New Pieces — Unsold show pendants (`2026-11` pendants)
 
