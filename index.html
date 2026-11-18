@@ -454,6 +454,16 @@
       align-items: flex-start;
     }
 
+    /* "NEW" corner badge on pieces published in the last NEW_DAYS days */
+    .card-photo { position: relative; }
+    .new-badge {
+      position: absolute; top: 10px; left: 10px; z-index: 2; pointer-events: none;
+      font-family: 'Bungee', sans-serif; font-size: 0.75rem; letter-spacing: 1px;
+      color: var(--dark); background: linear-gradient(135deg, var(--lime), var(--yellow));
+      padding: 4px 10px; border-radius: 50px; box-shadow: 0 3px 10px rgba(0,0,0,.45);
+      transform: rotate(-6deg);
+    }
+
     .card-name {
       font-family: 'Righteous', sans-serif;
       font-size: 1rem;
@@ -1110,7 +1120,7 @@
     async function loadProducts(){
       const out = []; let cursor = null, more = true;
       const q = `query($c:String){ products(first:60, after:$c){ pageInfo{ hasNextPage endCursor }
-        edges{ node{ title productType tags descriptionHtml createdAt
+        edges{ node{ title productType tags descriptionHtml createdAt publishedAt
           images(first:12){ edges{ node{ url altText } } }
           variants(first:1){ edges{ node{ id availableForSale price{ amount currencyCode } } } } } } } }`;
       while(more){
@@ -1120,7 +1130,7 @@
           const n = e.node, v = n.variants.edges[0] && n.variants.edges[0].node;
           const imgs = n.images.edges.map(x => x.node);
           if(v && imgs.length) out.push({
-            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml, created:n.createdAt,
+            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml, created:n.createdAt, published:n.publishedAt || n.createdAt,
             variantId:v.id, price:v.price, avail:v.availableForSale
           });
         });
@@ -1132,6 +1142,11 @@
     // 2. Render products into their section galleries (products live in Shopify, not the HTML)
     // One product card. The same piece can appear twice (its category and the Featured row),
     // so every Add to Cart button for a piece is remembered and updated together.
+    // A piece counts as new for this many days after it goes live in Shopify
+    const NEW_DAYS = 30;
+    const isNew = p => p.avail && p.published &&
+      (Date.now() - new Date(p.published).getTime()) < NEW_DAYS * 864e5;
+
     function makeCard(p){
           const main = p.imgs[0];
           const thumbs = p.imgs.slice(1).map(im =>
@@ -1140,7 +1155,7 @@
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML =
-            `<div class="card-photo"><img loading="lazy" src="${esc(main.url)}" alt="${esc(main.altText||p.title)}" /></div>` +
+            `<div class="card-photo">${isNew(p) ? '<span class="new-badge">New</span>' : ''}<img loading="lazy" src="${esc(main.url)}" alt="${esc(main.altText||p.title)}" /></div>` +
             (thumbs ? `<div class="card-thumbs">${thumbs}</div>` : '') +
             `<div class="card-body"><p class="card-name">${esc(p.title)}</p>` +
             (glow ? `<span class="glow-badge">I glow in the dark</span>` : '') +

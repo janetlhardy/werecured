@@ -25,6 +25,9 @@
 - **Featured row (added 2026-11-18, her son's idea):** under the welcome banner, up to 8 pieces
   Janet tags **Featured** in Shopify. Sold ones drop out; with nothing tagged it shows the 8 newest
   as "New Arrivals". How-to: `shopify/FEATURED_PIECES.md`
+- **NEW badges (added 2026-11-18):** a little lime-and-yellow "NEW" label sits on the photo of any
+  piece that went live in the last 30 days and is still for sale. Nothing to do: it comes and goes
+  by itself. The 30 days is one number (`NEW_DAYS`) in `index.html` if it ever needs changing
 - **One category at a time (live 2026-11-17; her son likes it):** the home page has a "Shop by Category" row
   of tiles, each with a random photo and a count. Tapping one shows only that category, with the
   others as tiles at the bottom. Links like werecured.ca/#earrings go straight to that category.

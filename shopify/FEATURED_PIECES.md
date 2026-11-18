@@ -30,6 +30,8 @@ tag, then Save.
 - **If nothing is tagged**, the row doesn't disappear. It turns into **New Arrivals** and shows your
   8 newest pieces instead.
 - The tag doesn't care about capitals: Featured, featured or FEATURED all work.
+- **The NEW badge is separate.** Any piece that went live in the last 30 days gets a little "NEW"
+  label on its photo, wherever it shows. You don't tag anything for that; it takes care of itself.
 
 ## How often to change it
 
