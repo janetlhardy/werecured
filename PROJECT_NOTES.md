@@ -119,7 +119,7 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
       **4** in stock (four near-identical pairs, one set of photos)
 - [ ] **Already listed:** new photos for Electric Blue Oval and Frosted Periwinkle Teardrop are in
       `batch-2026-11-add-to-existing-earrings/`. Not added yet (both still show their old photos). Optional
-- [ ] Blue Galaxy Teardrop Studs have no bust shot yet
+- [x] Blue Galaxy Teardrop Studs bust shot added by Janet ✅ (2026-11-18)
 - Janet confirmed the little white flowers are **Queen Anne's lace** and added that to the descriptions
 - Final earring prices (Janet adjusted some in Shopify after import): picked-flower studs $35
   (Sunshine $30), Galaxy Dome Studs $25 (quick pour), Blue Galaxy Teardrop Studs $35 (crystallized, fiddly), colour-pour
@@ -127,7 +127,11 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
   Coffee Break $25 (quick and easy to make). All 10 g. Existing earrings in the shop already fit
 - The "mermaid" heart and square earrings are tiny mermaid tails with a pearl
 
-Next SKU: **WC-4590**.
+- [ ] **Two more hoop earrings** (found 2026-11-18): `shopify/new-earrings-2026-11i.csv` (WC-4590–4595),
+      photos in `batch-2026-11i-earrings/`. Pink Blossom Hoop and Blush Petal Hoop, $25 to match
+      Pink Fern Hoop
+
+Next SKU: **WC-4600**.
 
 ### New Pieces — Unsold show pendants (`2026-11` pendants)
 
