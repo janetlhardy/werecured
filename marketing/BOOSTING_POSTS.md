@@ -34,6 +34,14 @@ decide what to try next.
    - Button: **Shop now**
    - Tip: you can send them straight to a category. Use **https://werecured.ca/#bowls** for a bowl
      post, **#earrings** for earrings, **#pendants**, **#coasters** or **#accents** for the others.
+   - **Which link to use:**
+     - A post or reel showing **several pieces** → **https://werecured.ca**, and tag those pieces
+       **Featured** in Shopify first, so they're the first thing people see on the home page.
+     - A post about **one piece** → a link straight to it, like
+       **https://werecured.ca/#product/seafoam-agate-tray**. It opens that piece's photos and
+       Add to Cart button, and closing it leaves them in its category, ready to browse. The end part
+       is the piece's handle; ask Claude for it, or copy it from the bottom of the piece's page in
+       Shopify (under "Search engine listing").
 4. **Audience:** tap **Create your own**, then:
    - **Locations:** remove "Canada" if it's there, then search **Victoria, British Columbia** and set
      the circle to about **40 km**. That covers the whole Greater Victoria area and the Saanich
