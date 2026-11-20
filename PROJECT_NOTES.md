@@ -812,9 +812,10 @@ returns **0 days** to match "all sales final".
       found"**, because products are published to the Headless channel, not Shopify's Online Store. So a
       tap on a product in the Facebook/Instagram shop most likely dead-ends. Not yet confirmed on a phone.
       Fix before any catalogue/shop ads; plain boosted posts linking to werecured.ca aren't affected
-- [ ] **Shop-link fix (2026-11-20):** werecured.ca now opens a piece from `#product/<handle>` (done, live).
-      Janet to paste the forwarding code into the Shopify theme (Horizon → layout/theme.liquid) using
-      `shopify/SHOP_LINKS.md`, then Claude checks `fbkwka-jw.myshopify.com/products/<handle>` forwards
+- [x] **Shop-link fix** ✅ (2026-11-20): Janet pasted the forwarding code into the Shopify theme (Horizon →
+      layout/theme.liquid) per `shopify/SHOP_LINKS.md`. Tested: `fbkwka-jw.myshopify.com/products/<handle>`
+      now lands on werecured.ca with that piece open. **Don't press Horizon's "Update"** without
+      re-checking the code survives. Still worth one real tap from the Instagram shop on a phone
 
 
 
