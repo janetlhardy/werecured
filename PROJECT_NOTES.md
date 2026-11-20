@@ -141,7 +141,11 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
       fading to frosty white, 600 g, **$195** (top of the drip bowls because of the three timed pours;
       Janet may drop it if it doesn't move). Ruler shot is photo 8
 
-Next SKU: **WC-4605**.
+- [ ] **Three pieces from the ad reel** (2026-11-20): `shopify/new-products-2026-11k.csv`, photos in
+      `batch-2026-11k/`. Seafoam Agate Tray $110 (WC-4605), Midnight Marble Thinkers — Pair $45
+      (WC-4610), Ocean Cube Tealight Holder $45 (WC-4615). **Weights blank**, Janet adds them in Shopify
+
+Next SKU: **WC-4620**.
 
 ### New Pieces — Unsold show pendants (`2026-11` pendants)
 
@@ -787,6 +791,8 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
 - **Guide:** `marketing/BOOSTING_POSTS.md` (steps, what the numbers mean, Page invites, a spending log)
 - Catalogue/shop ads wait until the Facebook/Instagram shop product links are fixed (see below)
 - [ ] First boost: pick a Reel or striking photo of a piece still for sale
+- **Where to link:** a reel showing several pieces → **werecured.ca** (tag those pieces Featured so they
+  lead the home page); a post about one piece → `werecured.ca/#product/<handle>` opens just that piece
 - [ ] Invite friends to follow the Facebook Page (free; helps ads look trusted)
 
 ### Facebook & Instagram shop (set up 2026-11-11)
