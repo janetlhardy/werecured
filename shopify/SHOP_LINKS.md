@@ -20,7 +20,8 @@ It doesn't touch checkout, orders, Point of Sale or your products.
 1. Sign in to **Shopify admin**.
 2. In the left-hand menu, click **Online Store** (under "Sales channels"). It opens on **Themes**.
 3. Your current theme (called **Horizon**) is in the box at the top. Click the **⋯** (three dots)
-   button beside the **Customize** button, and choose **Edit code**.
+   button beside the **Edit theme** button, and choose **Edit code**. (Ignore the blue **Update**
+   button for now; see "Good to know" at the bottom.)
 4. A code editor opens. On the left is a list of files. Under the **layout** folder, click
    **theme.liquid**.
 5. Near the very top of the file, find the line that says **`<head>`**. It's usually line 3 or 4.
@@ -69,4 +70,6 @@ choose the version from before today and save.
   screen, so that keeps working as normal (not that you need it).
 - **New products work automatically.** Nothing to do when you add a batch.
 - If you ever change the Shopify theme, the code goes with the old theme. It would need pasting
-  into the new one.
+  into the new one. **The same goes for Horizon's "Update" button:** Shopify may leave the
+  pasted code behind in the updated version. Nobody sees Horizon anyway, so there's no need to update it.
+  If you ever do, check this code is still in theme.liquid afterwards (or ask Claude to check).
