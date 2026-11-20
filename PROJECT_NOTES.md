@@ -790,7 +790,12 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
   **BC + Alberta** to compare. Last gift-season boost ends ~**December 10**. First month ~$100–150.
 - **Guide:** `marketing/BOOSTING_POSTS.md` (steps, what the numbers mean, Page invites, a spending log)
 - Catalogue/shop ads wait until the Facebook/Instagram shop product links are fixed (see below)
-- [ ] First boost: pick a Reel or striking photo of a piece still for sale
+- [x] First boost started ✅ (2026-11-20): Sapphire Cascade photo post, product-tagged, $35 over 7 days,
+      Victoria + Advantage+ audience, link werecured.ca/#product/sapphire-cascade-drip-bowl. Getting there:
+      no reel could be boosted (library music), and the prepaid ad account needed funds added via
+      **instagram.com in Safari on the phone → Ad tools → Payment settings** (the app says "Ad account
+      restricted" until then)
+- [ ] Check the boost's results around 2026-11-23 (link clicks, cost per click, Shopify orders)
 - **Where to link:** a reel showing several pieces → **werecured.ca** (tag those pieces Featured so they
   lead the home page); a post about one piece → `werecured.ca/#product/<handle>` opens just that piece
 - [ ] Invite friends to follow the Facebook Page (free; helps ads look trusted)

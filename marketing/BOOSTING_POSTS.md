@@ -32,6 +32,11 @@ decide what to try next.
 
 ## How to boost from the Instagram app
 
+> **First time only: money goes in on the web.** Your ad account is *prepaid*: you put money in
+> first and Meta takes about $5 a day. If the boost says **"Ad account restricted, payment issue"**,
+> that just means the account is empty. Open **Safari** on your phone, go to **instagram.com**, then
+> **Ad tools → Payment settings**, and add funds. Then boost again in the app.
+
 1. Open Instagram and go to your profile (**@were_cured**).
 2. Tap the post or Reel you want, then tap the blue **Boost post** button under it.
 3. **Goal:** choose **More website visits**.
@@ -117,4 +122,4 @@ Keep a note here so you can see what each boost did.
 
 | Dates | Post | Area | Spent | Clicks | Sales |
 |---|---|---|---|---|---|
-| | | | | | |
+| Nov 20–27, 2026 | Sapphire Cascade photo | Victoria | $35 | | |
