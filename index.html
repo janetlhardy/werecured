@@ -1052,9 +1052,14 @@
     // The address after # decides what shows: a category name shows only that
     // gallery; anything else (#hero, #shop, #about, #contact, or nothing) shows the home view.
     const CATS = ['pendants', 'earrings', 'coasters', 'bowls', 'accents'];
+    // #product/<handle> opens that piece's popup over its category. Facebook and Instagram shop
+    // links arrive this way, sent on from Shopify's own store (see shopify/SHOP_LINKS.md).
     function route(){
       const id = (location.hash || '#hero').slice(1);
-      const cat = CATS.includes(id) ? id : null;
+      const pm = id.match(/^product\/(.+)$/);
+      const hit = pm && window.productsByHandle && window.productsByHandle[decodeURIComponent(pm[1])];
+      const cat = CATS.includes(id) ? id : (hit ? hit.sec : null);
+      window.currentCat = cat;
       document.body.classList.toggle('shop-view', !!cat);
       document.querySelectorAll('.shop-sec').forEach(s => s.classList.toggle('active', s.id === cat));
       document.querySelectorAll('.cat-tile').forEach(t => t.classList.toggle('current', t.getAttribute('href') === '#' + cat));
@@ -1068,6 +1073,7 @@
       const target = !cat && id !== 'hero' && document.getElementById(id);
       if (target) target.scrollIntoView();
       else window.scrollTo({ top: 0, behavior: 'instant' });
+      if (hit && window.openProductModal) window.openProductModal(hit.p);
     }
     window.addEventListener('hashchange', route);
     window.route = route;
@@ -1120,7 +1126,7 @@
     async function loadProducts(){
       const out = []; let cursor = null, more = true;
       const q = `query($c:String){ products(first:60, after:$c){ pageInfo{ hasNextPage endCursor }
-        edges{ node{ title productType tags descriptionHtml createdAt publishedAt
+        edges{ node{ handle title productType tags descriptionHtml createdAt publishedAt
           images(first:12){ edges{ node{ url altText } } }
           variants(first:1){ edges{ node{ id availableForSale price{ amount currencyCode } } } } } } } }`;
       while(more){
@@ -1130,7 +1136,7 @@
           const n = e.node, v = n.variants.edges[0] && n.variants.edges[0].node;
           const imgs = n.images.edges.map(x => x.node);
           if(v && imgs.length) out.push({
-            title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml, created:n.createdAt, published:n.publishedAt || n.createdAt,
+            handle:n.handle, title:n.title, type:n.productType, tags:n.tags || [], imgs:imgs, descriptionHtml:n.descriptionHtml, created:n.createdAt, published:n.publishedAt || n.createdAt,
             variantId:v.id, price:v.price, avail:v.availableForSale
           });
         });
@@ -1360,7 +1366,11 @@
     }
     function pmPrev(){ pmIndex = (pmIndex-1+pmImgs.length)%pmImgs.length; updatePmImage(); }
     function pmNext(){ pmIndex = (pmIndex+1)%pmImgs.length; updatePmImage(); }
-    function closeProductModal(){ pm.classList.remove('open'); document.body.style.overflow=''; }
+    function closeProductModal(){
+      pm.classList.remove('open'); document.body.style.overflow='';
+      // after arriving on a product link, closing the popup leaves you on its category
+      if(/^#product\//.test(location.hash)) history.replaceState(null, '', '#' + (window.currentCat || 'shop'));
+    }
 
     function openProductModal(p, startIndex){
       if(!p) return;
@@ -1399,6 +1409,9 @@
       try{
         const products = await loadProducts();
         renderSections(products);
+        window.productsByHandle = {};
+        products.forEach(p => { const sec = TYPE_TO_SECTION[p.type]; if(sec) window.productsByHandle[p.handle] = { p, sec }; });
+        if(/^#product\//.test(location.hash) && window.route) window.route();
         // a link straight to #about or #contact: the page grew while loading, so jump there again
         if(/^#(shop|about|contact)$/.test(location.hash) && window.route) window.route();
         const cart = await ensureCart();
