@@ -18,8 +18,13 @@ decide what to try next.
    - Otherwise, **your most striking single photo**: one piece, bright, filling the frame.
    - A post that already did well (more likes than usual) is a good sign.
    - ⚠️ **Avoid posts with popular music on them.** Meta often won't let you boost a Reel that
-     uses a commercial song. Reels with no music, or music from Instagram's "original audio" or
-     royalty-free sounds, are fine.
+     uses a commercial song, **even one picked from Instagram's own music library** (found out
+     November 2026: none of the existing reels could be boosted). Reels with no music, or music from
+     Instagram's "original audio" or royalty-free sounds, are fine. Photo posts never have this
+     problem.
+   - **Making a reel you might want to boost later?** Pick its music by searching **"royalty free"** in
+     the audio picker. Or make two versions: one with a trending song to post for free views, and
+     a copy with royalty-free music to boost.
 3. **Check the piece in the post is still for sale.** Sending people to something that's sold is
    wasted money.
 
