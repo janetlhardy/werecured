@@ -798,7 +798,7 @@ still prints at 38 dpi, so going bigger later is possible without a reshoot.
 - [ ] Check the boost's results around 2026-11-23 (link clicks, cost per click, Shopify orders)
 - **Where to link:** a reel showing several pieces → **werecured.ca** (tag those pieces Featured so they
   lead the home page); a post about one piece → `werecured.ca/#product/<handle>` opens just that piece
-- [ ] Invite friends to follow the Facebook Page (free; helps ads look trusted)
+- [x] Invite friends to follow the Facebook Page ✅ (found already done, 2026-11-25: the invite list shows everyone as invited; Facebook offers this when a Page is first set up)
 
 ### Facebook & Instagram shop (set up 2026-11-11)
 Connected through Shopify's **Facebook & Instagram** app. Choices made during setup: data sharing
@@ -811,7 +811,6 @@ returns **0 days** to match "all sales final".
       **Learn more → https://werecured.ca** instead. Checked from the iPad as a visitor ✅ (2026-11-12)
 - [x] Instagram Shopping works ✅ (2026-11-20): product tags (name, photo, price) can be added to posts. There's
       no "Shopping" item in Instagram's Tools menu any more, so the product tag offer is the sign it's on
-- [ ] Invite friends to follow the Page (Page settings → Invite people to connect)
 - [x] **How Janet posts (settled 2026-11-25):** post in the **Instagram app** first. It auto-shares to her
       personal Facebook (Accounts Centre → Sharing across profiles only offers personal profiles, never a Page).
       Then post the same thing to the **We're Cured! Page** from the **Meta Business Suite** app. Business Suite
