@@ -812,12 +812,16 @@ returns **0 days** to match "all sales final".
 - [x] Instagram Shopping works ✅ (2026-11-20): product tags (name, photo, price) can be added to posts. There's
       no "Shopping" item in Instagram's Tools menu any more, so the product tag offer is the sign it's on
 - [ ] Invite friends to follow the Page (Page settings → Invite people to connect)
-- [ ] Posting to both Facebook places (2026-11-25): Instagram's auto-share (Accounts Centre → Sharing across
-      profiles) only offers **personal profiles**, so it sends posts to Janet's own Facebook, never the We're Cured!
-      Page. Plan: post from the **Meta Business Suite** app to the Page + @were_cured together, then Share → Share to
-      Feed onto her personal page (friends see it "from We're Cured!" and can follow). Auto-share toggles left on.
-      Trying it first with the Lapis Gold Drip Bowl post. Check whether Business Suite posts also auto-share to her profile
-      Business Suite was already set up for The Shivering Sheep. Switch business with the name at the top; check it says We're Cured! before posting
+- [x] **How Janet posts (settled 2026-11-25):** post in the **Instagram app** first. It auto-shares to her
+      personal Facebook (Accounts Centre → Sharing across profiles only offers personal profiles, never a Page).
+      Then post the same thing to the **We're Cured! Page** from the **Meta Business Suite** app. Business Suite
+      also holds The Shivering Sheep, so switch business with the name at the top and check it says We're Cured!
+      Lessons from the first post (Lapis Gold Drip Bowl):
+      - Piece links need the `#`: `werecured.ca/#product/<handle>`. Without it the page is "Page Not Found"
+      - A link in the text attaches a **link preview** showing the website's share picture (a rainbow coaster),
+        which replaces the photos on Facebook and blocks Instagram. Tap the ✕ on the grey preview box
+      - Instagram needs every photo in a multi-photo post to be the **same shape**. Business Suite won't fix
+        that, so it posts to Facebook only. The Instagram app crops them to match (square suits wide bowl shots)
 - [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
       Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
       **Checked 2026-11-18 from the outside: `fbkwka-jw.myshopify.com/products/<handle>` gives "page not
