@@ -817,6 +817,7 @@ returns **0 days** to match "all sales final".
       Page. Plan: post from the **Meta Business Suite** app to the Page + @were_cured together, then Share → Share to
       Feed onto her personal page (friends see it "from We're Cured!" and can follow). Auto-share toggles left on.
       Trying it first with the Lapis Gold Drip Bowl post. Check whether Business Suite posts also auto-share to her profile
+      Business Suite was already set up for The Shivering Sheep. Switch business with the name at the top; check it says We're Cured! before posting
 - [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
       Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
       **Checked 2026-11-18 from the outside: `fbkwka-jw.myshopify.com/products/<handle>` gives "page not
