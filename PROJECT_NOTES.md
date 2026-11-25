@@ -812,6 +812,11 @@ returns **0 days** to match "all sales final".
 - [x] Instagram Shopping works ✅ (2026-11-20): product tags (name, photo, price) can be added to posts. There's
       no "Shopping" item in Instagram's Tools menu any more, so the product tag offer is the sign it's on
 - [ ] Invite friends to follow the Page (Page settings → Invite people to connect)
+- [ ] Posting to both Facebook places (2026-11-25): Instagram's auto-share (Accounts Centre → Sharing across
+      profiles) only offers **personal profiles**, so it sends posts to Janet's own Facebook, never the We're Cured!
+      Page. Plan: post from the **Meta Business Suite** app to the Page + @were_cured together, then Share → Share to
+      Feed onto her personal page (friends see it "from We're Cured!" and can follow). Auto-share toggles left on.
+      Trying it first with the Lapis Gold Drip Bowl post. Check whether Business Suite posts also auto-share to her profile
 - [ ] Tap a product in the Facebook/Instagram shop on a phone and see where it lands. Shoppers go to
       Shopify's own product page, not werecured.ca; if it shows a password or "opening soon" page, ask Claude
       **Checked 2026-11-18 from the outside: `fbkwka-jw.myshopify.com/products/<handle>` gives "page not
