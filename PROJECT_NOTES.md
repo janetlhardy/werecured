@@ -147,11 +147,11 @@ Janet sent 226 photos on 2026-11-17. Named sheets showing which name goes with w
 
 - [x] **Lapis Gold Drip Bowl** (2026-11-24): `shopify/new-products-2026-11l.csv` (WC-4620), $175, 620 g. LIVE
 
-- [ ] **Sea Glass Shallows Tray** (2026-11-26): `shopify/new-products-2026-11m.csv` (WC-4625), photos in
+- [x] **Sea Glass Shallows Tray** (2026-11-26): `shopify/new-products-2026-11m.csv` (WC-4625), photos in
       `batch-2026-11m/sea-glass-shallows-tray/` (ruler shot is photo 9). Freehand crinkled aqua tray,
       two coats with ghost powder shimmer, separately poured handles holding shells, starfish, sea glass,
       pearls and moss. About 27 cm long. **$145**, name and price approved by Janet (between the agate trays at $130–135 and
-      Golden Bough Platter at $150). **Weight blank**, Janet adds it in Shopify
+      Golden Bough Platter at $150). 925 g. LIVE 2026-11-26 (checked: available, $145, 9 photos)
 
 Next SKU: **WC-4630**.
 
